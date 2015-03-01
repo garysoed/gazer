@@ -1,0 +1,21 @@
+{
+  "name": "gazer",
+  "version": "0.0.0",
+  "homepage": "https://github.com/garysoed/gazer",
+  "authors": [
+    "Gary Soedarsono <garysoed@gmail.com>"
+  ],
+  "description": "Deck building card game",
+  "main": "gazer.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "protoboard": "garysoed/protoboard"
+  }
+}
