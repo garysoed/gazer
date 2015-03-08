@@ -7,7 +7,7 @@ gz.cards = {
       "count": "10",
       "description": "Tap: +1 Energy",
       "cost": "2",
-      "life": "4"
+      "life": "5"
     },
     {
       "name": "Bot",
@@ -16,7 +16,7 @@ gz.cards = {
       "count": "10",
       "description": "",
       "cost": "3",
-      "life": "2",
+      "life": "3",
       "attack": "2",
       "armor": "0"
     },
@@ -26,7 +26,7 @@ gz.cards = {
       "element": "Base",
       "count": "10",
       "description": "At the beginning of the turn, draw a card",
-      "cost": "2"
+      "cost": "1"
     },
     {
       "name": "Meditate",
@@ -68,7 +68,7 @@ gz.cards = {
       "element": "Fire",
       "count": "2",
       "description": "Untap all your Devices",
-      "cost": "1"
+      "cost": "2"
     },
     {
       "name": "Recharge",
@@ -83,8 +83,8 @@ gz.cards = {
       "type": "Enchantment",
       "element": "Fire",
       "count": "2",
-      "description": "When this Minion is damaged, take a Fire card from your discard pile and put it to your hand",
-      "cost": "3"
+      "description": "When this Minion is damaged, untap a Minion",
+      "cost": "2"
     },
     {
       "name": "Burn",
@@ -100,7 +100,7 @@ gz.cards = {
       "element": "Fire",
       "count": "2",
       "description": "When this Minion is damaged, untap 2 devices.",
-      "cost": "4"
+      "cost": "3"
     },
     {
       "name": "Fire Spirit",
@@ -108,7 +108,7 @@ gz.cards = {
       "element": "Fire",
       "count": "3",
       "description": "",
-      "cost": "2",
+      "cost": "1",
       "life": "1",
       "attack": "3",
       "armor": "0"
@@ -119,7 +119,7 @@ gz.cards = {
       "element": "Fire",
       "count": "2",
       "description": "",
-      "cost": "4",
+      "cost": "3",
       "life": "3",
       "attack": "2",
       "armor": "0"
@@ -129,8 +129,8 @@ gz.cards = {
       "type": "Minion",
       "element": "Fire",
       "count": "3",
-      "description": "When this minion takes a damage, draw a card",
-      "cost": "3",
+      "description": "The first time in a turn this minion takes a damage, draw a card",
+      "cost": "2",
       "life": "5",
       "attack": "1",
       "armor": "0"
@@ -161,7 +161,7 @@ gz.cards = {
       "element": "Fire",
       "count": "3",
       "description": "T: Damage up to 2 Minions or Devices by 1",
-      "cost": "3",
+      "cost": "2",
       "life": "3"
     },
     {
@@ -170,7 +170,7 @@ gz.cards = {
       "element": "Fire",
       "count": "2",
       "description": "T: Damage a target you control by 2, damage all Minions and Devices controlled by a player by 1",
-      "cost": "3",
+      "cost": "4",
       "life": "4"
     },
     {
@@ -188,7 +188,7 @@ gz.cards = {
       "element": "Fire",
       "count": "3",
       "description": "T: Damage a target you control by 2, untap 3 devices",
-      "cost": "3",
+      "cost": "2",
       "life": "4"
     },
     {
@@ -196,9 +196,9 @@ gz.cards = {
       "type": "Device",
       "element": "Fire",
       "count": "2",
-      "description": "T: Damage a target you control by 2, damage up to 2 Minions or Devices by 2",
-      "cost": "3",
-      "life": "3"
+      "description": "T: Damage a target you control by 3, damage up to 2 Minions or Devices by 2",
+      "cost": "1",
+      "life": "5"
     },
     {
       "name": "Fire Orb",
@@ -206,7 +206,7 @@ gz.cards = {
       "element": "Fire",
       "count": "3",
       "description": "T: +2 Energy",
-      "cost": "5",
+      "cost": "4",
       "life": "4"
     }
   ],
@@ -216,8 +216,8 @@ gz.cards = {
       "type": "Spell",
       "element": "Earth",
       "count": "3",
-      "description": "Reveal the top 3 cards of the deck. Put any Minions in hand, discard the rest. Draw a card",
-      "cost": "1"
+      "description": "Reveal the top 4 cards of the deck. Put any Minions in hand, discard the rest. Draw a card",
+      "cost": "2"
     },
     {
       "name": "Pottery",
@@ -240,8 +240,8 @@ gz.cards = {
       "type": "Spell",
       "element": "Earth",
       "count": "2",
-      "description": "Activates a Minion's entrance ability",
-      "cost": "1"
+      "description": "Activates all your Minions entrance abilities",
+      "cost": "3"
     },
     {
       "name": "Alpha Minion",
@@ -249,7 +249,7 @@ gz.cards = {
       "element": "Earth",
       "count": "2",
       "description": "At the beginning of the turn, you may draft a Bot",
-      "cost": "2"
+      "cost": "1"
     },
     {
       "name": "Earth Reinforcement",
@@ -257,7 +257,7 @@ gz.cards = {
       "element": "Earth",
       "count": "3",
       "description": "At the beginning of the turn, take a Minion from your discard pile and put it in your hand",
-      "cost": "4"
+      "cost": "3"
     },
     {
       "name": "Natural Selection",
@@ -265,15 +265,15 @@ gz.cards = {
       "element": "Earth",
       "count": "2",
       "description": "At the beginning of the turn, reveal the top 4 cards of your deck. Discard any of them and put the rest back in any order.",
-      "cost": "3"
+      "cost": "2"
     },
     {
       "name": "Symbiosis",
       "type": "Enchantment",
       "element": "Earth",
       "count": "2",
-      "description": "When another target receives a damage, you may redirect it to this Minion.",
-      "cost": "2"
+      "description": "When this Minion about to receive a damage, you may redirect it to another Minion",
+      "cost": "1"
     },
     {
       "name": "Group Spirit",
@@ -289,7 +289,7 @@ gz.cards = {
       "element": "Earth",
       "count": "3",
       "description": "When this comes into play put all Bots in your discard pile on top of your deck.",
-      "cost": "5",
+      "cost": "4",
       "life": "3",
       "attack": "1",
       "armor": "0"
@@ -300,7 +300,7 @@ gz.cards = {
       "element": "Earth",
       "count": "2",
       "description": "When this comes into play, put one Bot in your hand into play for free.",
-      "cost": "5",
+      "cost": "4",
       "life": "3",
       "attack": "1",
       "armor": "0"
@@ -311,7 +311,7 @@ gz.cards = {
       "element": "Earth",
       "count": "2",
       "description": "When this comes into play, you may draft a Minion into your hand",
-      "cost": "5",
+      "cost": "4",
       "life": "2",
       "attack": "2",
       "armor": "0"
@@ -322,7 +322,7 @@ gz.cards = {
       "element": "Earth",
       "count": "2",
       "description": "+1 Attack to all Minions you control",
-      "cost": "2",
+      "cost": "1",
       "life": "1",
       "attack": "0",
       "armor": "1"
@@ -344,7 +344,7 @@ gz.cards = {
       "element": "Earth",
       "count": "3",
       "description": "When this comes into play, draw a card",
-      "cost": "4",
+      "cost": "3",
       "life": "3",
       "attack": "1",
       "armor": "1"
@@ -366,7 +366,7 @@ gz.cards = {
       "element": "Earth",
       "count": "2",
       "description": "T: Trigger the entrance ability of one of your Minions",
-      "cost": "3",
+      "cost": "1",
       "life": "2"
     },
     {
@@ -375,7 +375,7 @@ gz.cards = {
       "element": "Earth",
       "count": "2",
       "description": "T: Play a Minion in your discard pile, paying its energy cost",
-      "cost": "3",
+      "cost": "2",
       "life": "5"
     },
     {
@@ -384,7 +384,7 @@ gz.cards = {
       "element": "Earth",
       "count": "2",
       "description": "T: Put a Minion in play back in your hand. Put a Minion with the same cost into play",
-      "cost": "5",
+      "cost": "3",
       "life": "3"
     }
   ],
@@ -427,7 +427,7 @@ gz.cards = {
       "element": "Air",
       "count": "2",
       "description": "Move a Minion you control back to the owner's hand. The owner gains the same amount of energy used to summon the Minion.",
-      "cost": "2"
+      "cost": "1"
     },
     {
       "name": "Hallucinate",
@@ -435,7 +435,7 @@ gz.cards = {
       "element": "Air",
       "count": "2",
       "description": "Name a type. While this spell is in play, all cards of that type are also considered a spell",
-      "cost": "3"
+      "cost": "2"
     },
     {
       "name": "Reset",
@@ -459,7 +459,7 @@ gz.cards = {
       "element": "Air",
       "count": "2",
       "description": "When you play a Spell, you may deal 1 damage to a target",
-      "cost": "3"
+      "cost": "2"
     },
     {
       "name": "Flight",
@@ -467,7 +467,7 @@ gz.cards = {
       "element": "Air",
       "count": "3",
       "description": "This Minion is Flying",
-      "cost": "2"
+      "cost": "1"
     },
     {
       "name": "Intelligence",
@@ -483,7 +483,7 @@ gz.cards = {
       "element": "Air",
       "count": "2",
       "description": "At the beginning of the turn, tap a Minion or Device",
-      "cost": "3"
+      "cost": "2"
     },
     {
       "name": "Mind Devourer",
@@ -491,7 +491,7 @@ gz.cards = {
       "element": "Air",
       "count": "3",
       "description": "When you play a Spell, pick a player. That player discards a card you pick.",
-      "cost": "4",
+      "cost": "3",
       "life": "2",
       "attack": "1",
       "armor": "0"
@@ -502,7 +502,7 @@ gz.cards = {
       "element": "Air",
       "count": "1",
       "description": "Flying",
-      "cost": "5",
+      "cost": "3",
       "life": "2",
       "attack": "2",
       "armor": "0"
@@ -513,7 +513,7 @@ gz.cards = {
       "element": "Air",
       "count": "2",
       "description": "When this minion attacks, it deals damage equal to the number of spells you have in play.",
-      "cost": "3",
+      "cost": "2",
       "life": "3",
       "attack": "1.50",
       "armor": "0"
@@ -524,7 +524,7 @@ gz.cards = {
       "element": "Air",
       "count": "2",
       "description": "T: Every opponent player discards down to the number of cards you have in hand.",
-      "cost": "2",
+      "cost": "1",
       "life": "4"
     },
     {
@@ -542,7 +542,7 @@ gz.cards = {
       "element": "Air",
       "count": "3",
       "description": "T: Draw a Card. Pick a player. Both you and that player take a card from hand and put it on top of the other player’s deck.",
-      "cost": "3",
+      "cost": "2",
       "life": "5"
     },
     {
@@ -551,7 +551,7 @@ gz.cards = {
       "element": "Air",
       "count": "2",
       "description": "T: Redirect an attack causing up to X damage, where X is the number of Spells in play, to a target of your choice.",
-      "cost": "2",
+      "cost": "1",
       "life": "4"
     },
     {
@@ -560,7 +560,7 @@ gz.cards = {
       "element": "Air",
       "count": "3",
       "description": "T: You may play a spell from the draft deck",
-      "cost": "3",
+      "cost": "2",
       "life": "5"
     }
   ],
@@ -579,7 +579,7 @@ gz.cards = {
       "element": "Water",
       "count": "1",
       "description": "Fully Heals one Minion",
-      "cost": "3"
+      "cost": "2"
     },
     {
       "name": "Freeze",
@@ -595,7 +595,7 @@ gz.cards = {
       "element": "Water",
       "count": "2",
       "description": "Armor + 1",
-      "cost": "2"
+      "cost": "1"
     },
     {
       "name": "Everlasting Water",
@@ -611,7 +611,7 @@ gz.cards = {
       "element": "Water",
       "count": "2",
       "description": "When this Minion attacks, the damage not absorbed by a defending Minion will go towards the intended target.",
-      "cost": "2"
+      "cost": "1"
     },
     {
       "name": "Icy Spear",
@@ -643,7 +643,7 @@ gz.cards = {
       "element": "Water",
       "count": "3",
       "description": "At the beginning of the turn, draw X cards, where X is the number of Enchantments on this Minion",
-      "cost": "3"
+      "cost": "2"
     },
     {
       "name": "Ice Golem",
@@ -651,7 +651,7 @@ gz.cards = {
       "element": "Water",
       "count": "3",
       "description": "",
-      "cost": "4",
+      "cost": "3",
       "life": "5",
       "attack": "1",
       "armor": "1"
@@ -662,7 +662,7 @@ gz.cards = {
       "element": "Water",
       "count": "3",
       "description": "T: Play an Enchantment from discard pile on this minion",
-      "cost": "3",
+      "cost": "2",
       "life": "2",
       "attack": "2",
       "armor": "1"
@@ -673,7 +673,7 @@ gz.cards = {
       "element": "Water",
       "count": "2",
       "description": "T: Put a Minion in play back into hand. Water Blob heals by the remaining life of that Minion.",
-      "cost": "3",
+      "cost": "2",
       "life": "4",
       "attack": "1",
       "armor": "1"
@@ -695,7 +695,7 @@ gz.cards = {
       "element": "Water",
       "count": "2",
       "description": "T: Reduce the cost of the next Minion by X, where X is the number of enchantments on this Minion",
-      "cost": "4",
+      "cost": "3",
       "life": "3",
       "attack": "1",
       "armor": "2"
@@ -706,7 +706,7 @@ gz.cards = {
       "element": "Water",
       "count": "2",
       "description": "T: Put one Enchantment into play from hand for free.",
-      "cost": "3",
+      "cost": "1",
       "life": "2"
     },
     {
@@ -715,7 +715,7 @@ gz.cards = {
       "element": "Water",
       "count": "3",
       "description": "T: Put one Enchantment from discard pile into hand.",
-      "cost": "5",
+      "cost": "3",
       "life": "3"
     },
     {
@@ -724,7 +724,7 @@ gz.cards = {
       "element": "Water",
       "count": "2",
       "description": "T: Tap a Minion. Draw X cards, where X is the number of Enchantments on that Minion.",
-      "cost": "3",
+      "cost": "2",
       "life": "3"
     },
     {
@@ -733,7 +733,7 @@ gz.cards = {
       "element": "Water",
       "count": "2",
       "description": "T: Untap a Minion",
-      "cost": "3",
+      "cost": "2",
       "life": "5"
     }
   ]

@@ -1,15 +1,39 @@
-var gulp = require('gulp');
-var gutil = require('gulp-util');
-
-var sass   = require('gulp-ruby-sass');
+var gulp    = require('gulp');
+var gutil   = require('gulp-util');
+var myth    = require('gulp-myth');
+var plumber = require('gulp-plumber');
 
 var fs = require('fs');
-var through  = require('through2');
+var through = require('through2');
+
 
 function handleError(error) {
   console.log(error.toString());
   this.emit('end');
-};
+}
+
+function chain(fn) {
+  return through.obj(function(file, enc, callback) {
+    // TODO(gs): How to open a stream?
+    var stream = gulp.src('')
+        .pipe(plumber({
+          errorHandler: function(err) {
+            this.emit('error', err);
+          }.bind(this)
+        }))
+        .pipe(through.obj(function(f, enc, cb) {
+          cb(null, file);
+        }));
+    fn(stream)
+        .pipe(through.obj(function(f, enc, cb) {
+          this.push(f);
+          cb(null, f);
+        }.bind(this), function(cb) {
+          callback();
+          cb();
+        }));
+  });
+}
 
 function toJson() {
   return through.obj(function(file, enc, cb) {
@@ -57,11 +81,26 @@ function toJson() {
   });
 }
 
-gulp.task('sass', function() {
-  return gulp.src('*.scss')
-      .pipe(sass({ loadPath: ['../../src/themes'] }))
-      .on('error', handleError)
-      .pipe(gulp.dest('.'));
+function readJsonTheme(file) {
+  var json = require(file);
+  var base = json.base ? readJsonTheme(json.base) : {};
+  for (var key in json.vars) {
+    base[key] = json.vars[key];
+  }
+  return base;
+}
+
+function subMyth() {
+  return chain(function(stream) {
+    return stream
+        .pipe(myth({ 'variables': readJsonTheme('./themes/grey.json') }));
+  })
+}
+
+gulp.task('myth', function() {
+  return gulp.src('gazer.css')
+      .pipe(subMyth())
+      .pipe(gulp.dest('css'));
 });
 
 gulp.task('json', function() {
@@ -69,7 +108,8 @@ gulp.task('json', function() {
       .pipe(toJson())
       .pipe(gulp.dest('.'));
 });
+
 gulp.task('watch', function() {
-  gulp.watch(['*.scss'], ['sass']);
+  gulp.watch(['*.css'], ['myth']);
 });
 
