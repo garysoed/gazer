@@ -29,8 +29,17 @@ input {
   justify-content: space-between;
 }
 
-pb-u-previewer {
-  width: 25%;
+#side {
+  display: flex;
+  flex-direction: column;
+}
+
+#side pb-u-previewer {
+  flex: 1;
+}
+
+pb-u-previewer::shadow #root {
+  width: 25vw;
   margin: 20px;
 }
 
@@ -78,27 +87,27 @@ pb-u-previewer {
   right: 0;
 }
 
-pb-c-card.Base .pb-front {
+pb-c-card.Base [pb-front] {
   background-color: #ffaaff;
 }
 
-pb-c-card.Air .pb-front {
+pb-c-card.Air [pb-front] {
   background-color: #aaaaaa;
 }
 
-pb-c-card.Earth .pb-front {
+pb-c-card.Earth [pb-front] {
   background-color: #aaffaa;
 }
 
-pb-c-card.Fire .pb-front {
+pb-c-card.Fire [pb-front] {
   background-color: #ffaaaa;
 }
 
-pb-c-card.Water .pb-front {
+pb-c-card.Water [pb-front] {
   background-color: #aaaaff;
 }
 
-.pb-front {
+[pb-front] {
   display: flex;
   flex-direction: column;
   align-items: center;

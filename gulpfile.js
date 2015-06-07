@@ -3,6 +3,8 @@ var gutil   = require('gulp-util');
 var myth    = require('gulp-myth');
 var plumber = require('gulp-plumber');
 
+var loadtheme = require('./bower_components/protoboard/loadtheme');
+
 var fs = require('fs');
 var through = require('through2');
 
@@ -81,7 +83,7 @@ function toJson() {
   });
 }
 
-function readJsonTheme(file) {
+function readJsonTheme(file, base) {
   var json = require(file);
   var base = json.base ? readJsonTheme(json.base) : {};
   for (var key in json.vars) {
@@ -92,8 +94,11 @@ function readJsonTheme(file) {
 
 function subMyth() {
   return chain(function(stream) {
+    var theme = loadtheme(__dirname + '/bower_components/protoboard/themes/grey.json');
     return stream
-        .pipe(myth({ 'variables': readJsonTheme('./themes/grey.json') }));
+        .pipe(myth({
+          'variables': theme
+        }));
   })
 }
 
@@ -112,4 +117,3 @@ gulp.task('json', function() {
 gulp.task('watch', function() {
   gulp.watch(['*.css'], ['myth']);
 });
-

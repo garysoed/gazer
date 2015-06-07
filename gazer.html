@@ -2,15 +2,16 @@
 <html>
   <base href=".">
   <head>
-    <link rel="import" href="protoboard/out/bootstrap.html">
-    <link rel="import" href="protoboard/out/component/card.html">
-    <link rel="import" href="protoboard/out/di.html">
-    <link rel="import" href="protoboard/out/region/deck.html">
-    <link rel="import" href="protoboard/out/region/hand.html">
-    <link rel="import" href="protoboard/out/region/rect.html">
-    <link rel="import" href="protoboard/out/ui/preview.html">
-    <link rel="import" href="protoboard/out/ui/previewer.html">
-    <link rel="import" href="protoboard/out/ui/generate.html">
+    <link rel="import" href="bower_components/protoboard/out/bootstrap.html">
+    <link rel="import" href="bower_components/protoboard/out/component/card.html">
+    <link rel="import" href="bower_components/protoboard/out/region/deck.html">
+    <link rel="import" href="bower_components/protoboard/out/region/hand.html">
+    <link rel="import" href="bower_components/protoboard/out/region/rect.html">
+    <link rel="import" href="bower_components/protoboard/out/third_party/chance.html">
+    <link rel="import" href="bower_components/protoboard/out/third_party/di.html">
+    <link rel="import" href="bower_components/protoboard/out/ui/preview.html">
+    <link rel="import" href="bower_components/protoboard/out/ui/previewer.html">
+    <link rel="import" href="bower_components/protoboard/out/ui/generate.html">
     <link rel="stylesheet" href="css/gazer.css">
 
     <script>
@@ -21,8 +22,8 @@
     <template id="cardTemplate">
       {{#pb-for 0 count 1}}
       <pb-c-card class="{{element}}" flip-active="{{showfront}}">
-        <div class="pb-back"></div>
-        <div class="pb-front">
+        <div pb-back></div>
+        <div pb-front>
           <div>{{name}}</div>
           {{#if life}}
           <input type="number">
@@ -89,7 +90,19 @@
         </section>
       </section>
 
-      <pb-u-previewer></pb-u-previewer>
+      <section id="side">
+        <pb-u-previewer></pb-u-previewer>
+        <section>
+          <ol>
+            <li>Beginning of the turn</li>
+            <li>Refresh &amp; Cleanup</li>
+            <li>Plan</li>
+            <li>Draft</li>
+            <li>Play / Attack</li>
+          </ol>
+        </section>
+        <button id="log">Download Log</button>
+      </section>
     </section>
 
     <section id="bottom-section" class="player1">
@@ -125,19 +138,27 @@
 
     <script>
       DI
-          .run(function(
-              Abilities,
-              Bootstrap,
-              Config,
-              Key,
-              Shuffleable,
-              service_Template,
-              Toggleable,
-              Utils) {
+          .prefix('pb')
+          .run({
+              Abilities: 'ability.=',
+              Bootstrap: '=',
+              Config: 'service.=',
+              Key: 'trigger.=',
+              Log: 'service.=',
+              Shuffleable: 'ability.=',
+              Template: 'service.=',
+              Toggleable: 'ability.=',
+              Utils: '=',
+              seed: '='
+            },
+            function($i) {
 
-        var riftCards = gz.cards.Air
-            .concat(gz.cards.Water)
-            .concat(gz.cards.Fire)
+        // var riftCards = gz.cards.Air
+        //     .concat(gz.cards.Water)
+        //     .concat(gz.cards.Fire)
+        //     .concat(gz.cards.Earth);
+
+        var riftCards = gz.cards.Water
             .concat(gz.cards.Earth);
 
         var playerCardSetting = {
@@ -163,57 +184,57 @@
           clone.count = playerCardSetting[name];
           playerCards.push(clone);
         }
-        service_Template
+        $i.Template
             .addData('riftCards', riftCards)
             .addData('stapleCards', gz.cards.Base)
             .addData('playerCards', playerCards)
             .addData('players', [1, 2])
             .addPartial('gz-card', document.querySelector('template#cardTemplate'));
 
-        Config.add('pb-c-card', new Toggleable('flip', new Key('f'), true));
-        Bootstrap.run(document);
+        $i.Config.setDefaultTrigger(new $i.Key('f'), 'flip', 'pb-c-card');
+        $i.Bootstrap.run(document);
 
-        var riftPromise = Utils.watch(function() {
+        var riftPromise = $i.Utils.watch(function() {
           return document.querySelector('#rift pb-u-generate') === null;
         })
         .then(function() {
-          Abilities.of(document.querySelector('#riftdeck')).trigger('shuffle');
+          $i.Abilities.of(document.querySelector('#riftdeck')).trigger('shuffle');
         });
 
-        var playersPromise = Utils.watch(function() {
+        var playersPromise = $i.Utils.watch(function() {
           return document.querySelector('#switcher pb-u-generate') === null;
         }).then(function() {
           // Process player 1's deck.
           var deck = document.querySelector('#player1area .deck');
-          Abilities.of(document.querySelector('#player1area .deck')).trigger('shuffle');
+          $i.Abilities.of(document.querySelector('#player1area .deck')).trigger('shuffle');
 
-          var observer = new MutationObserver(function() {
+          var observer = new MutationObserver(function(deck) {
             document.querySelector('#player1area .decksize').innerText = deck.children.length;
-          });
+          }.bind(window, deck));
           document.querySelector('#player1area .decksize').innerText = deck.children.length
           observer.observe(deck, { childList: true });
 
           // Process player 2's deck
           var deck = document.querySelector('#player2area .deck');
-          Abilities.of(document.querySelector('#player2area .deck')).trigger('shuffle');
+          $i.Abilities.of(document.querySelector('#player2area .deck')).trigger('shuffle');
 
-          var observer = new MutationObserver(function() {
+          var observer = new MutationObserver(function(deck) {
             document.querySelector('#player2area .decksize').innerText = deck.children.length;
-          });
+          }.bind(window, deck));
           document.querySelector('#player2area .decksize').innerText = deck.children.length
           observer.observe(deck, { childList: true });
 
           // Process the hands.
-          Utils.toArray(document.querySelectorAll('.playerarea')).forEach(function(area) {
+          $i.Utils.toArray(document.querySelectorAll('.playerarea')).forEach(function(area) {
             var deck = area.querySelector('.deck');
             var discard = area.querySelector('.discard');
             var hand = area.querySelector('pb-r-hand');
 
             area.querySelector('button.shuffle').addEventListener('click', function() {
-              Abilities.of(discard).trigger('shuffle');
+              $i.Abilities.of(discard).trigger('shuffle');
 
               // Flip all the children and move them to the bottom of the deck.
-              Utils.toArray(discard.children).forEach(function(child) {
+              $i.Utils.toArray(discard.children).forEach(function(child) {
                 $(child).attr('flip-active', false);
                 deck.insertBefore(child, deck.firstElementChild);
               });
@@ -234,7 +255,7 @@
         Promise.all([ riftPromise, playersPromise ])
             .then(function() {
               // Process all the input elements to not propagate click.
-              Utils.toArray(document.querySelectorAll('input')).forEach(function(el) {
+              $i.Utils.toArray(document.querySelectorAll('input')).forEach(function(el) {
                 el.addEventListener('click', function(e) {
                   e.stopPropagation();
                 });
@@ -242,6 +263,12 @@
                   e.stopPropagation();
                 });
               });
+            })
+            .then(function() {
+              // Clears any initial setup logs.
+              $i.Log
+                  .clear()
+                  .log('seed', $i.seed);
             });
 
         // Make the tabs
@@ -254,6 +281,26 @@
           bottom.classList.toggle('player2');
           bottom.classList.remove('player1');
         });
+
+        // Log button
+        document.querySelector('#log').addEventListener('click', function() {
+          var url = window.URL.createObjectURL($i.Log.blob);
+          var a = document.createElement('a');
+          a.href = url;
+          a.download = 'gazer.log';
+          a.click();
+          window.URL.revokeObjectURL(url);
+        });
+
+        $i.Log
+            .addProcessor(function(timestamp, category, value) {
+              if (category !== 'seed') {
+                return timestamp.toLocaleString() + ': ' + category + ' on ' + value;
+              } else {
+                return null;
+              }
+            })
+            .addProcessor($i.Log.defaultProcessor);
       });
     </script>
   </body>
