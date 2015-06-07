@@ -1,0 +1,40 @@
+<link rel="import" href="dijs.html">
+
+<script type="text/javascript">
+  DI
+      .prefix('gz')
+      .bind(
+          'log',
+          {
+            Log: '/pb.service.=',
+            seed: '/pb.=',
+          },
+          function($i) {
+
+  return function(document) {
+    $i.Log
+        .clear()
+        .log('seed', $i.seed);
+
+    // Log button
+    document.querySelector('#log').addEventListener('click', function() {
+      var url = window.URL.createObjectURL($i.Log.blob);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = 'gazer.log';
+      a.click();
+      window.URL.revokeObjectURL(url);
+    });
+
+    $i.Log
+        .addProcessor(function(timestamp, category, value) {
+          if (category !== 'seed') {
+            return timestamp.toLocaleString() + ': ' + category + ' on ' + value;
+          } else {
+            return null;
+          }
+        })
+        .addProcessor($i.Log.defaultProcessor);
+  };
+});
+</script>

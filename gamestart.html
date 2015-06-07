@@ -1,0 +1,20 @@
+<link rel="import" href="bower_components/protoboard/out/ability/abilities.html">
+<link rel="import" href="bower_components/protoboard/out/utils.html">
+<link rel="import" href="dijs.html">
+
+<script type="text/javascript">
+  DI
+      .prefix('gz')
+      .bind(
+          'gamestart',
+          {
+            Abilities: '/pb.=',
+            Utils: '/pb.='
+          },
+          function($i) {
+
+  return function(document) {
+    shuffleRiftDeck(document);
+  };
+});
+</script>

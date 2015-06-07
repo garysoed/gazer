@@ -1,0 +1,167 @@
+<link rel="import" href="bower_components/protoboard/out/ability/abilities.html">
+<link rel="import" href="bower_components/protoboard/out/service/config.html">
+<link rel="import" href="bower_components/protoboard/out/service/template.html">
+<link rel="import" href="bower_components/protoboard/out/trigger/key.html">
+<link rel="import" href="bower_components/protoboard/out/utils.html">
+<link rel="import" href="card.html">
+<link rel="import" href="dijs.html">
+<link rel="import" href="log.html">
+
+<script>
+  DI
+      .prefix('gz')
+      .bind(
+          'setup',
+          {
+            Abilities: '/pb.ability.=',
+            Config: '/pb.service.=',
+            card: '=',
+            Key: '/pb.trigger.=',
+            Template: '/pb.service.=',
+            Utils: '/pb.=',
+            log: '=',
+          },
+          function($i) {
+  var playerAreaPromises = {};
+  var riftDeckPromise = null;
+  var switcherPromise = null;
+
+  function disableInputClickPropagation(document) {
+    Promise
+        .all([
+          getRiftDeckAsync(document),
+          getPlayerAreaAsync(document, 'player1'),
+          getPlayerAreaAsync(document, 'player2'),
+          getSwitcherAsync(document)
+        ])
+        .then(function() {
+          // Process all the input elements to not propagate click.
+          $i.Utils.toArray(document.querySelectorAll('input')).forEach(function(el) {
+            el.addEventListener('click', function(e) {
+              e.stopPropagation();
+            });
+            el.addEventListener('mousedown', function(e) {
+              e.stopPropagation();
+            });
+          });
+        })
+  }
+
+  function processPlayerButtons(document) {
+    Promise
+        .all([
+          getPlayerAreaAsync(document, 'player1'),
+          getPlayerAreaAsync(document, 'player2')
+        ]).
+        then(function(playerAreas) {
+
+      // Process the shuffle discard pile into deck button.
+      // TODO(gs): Make this an ability.
+      playerAreas.forEach(function(area) {
+        var deck = getDeck(area);
+        var hand = area.querySelector('.hand');
+        var discard = area.querySelector('.discard');
+
+        area.querySelector('button.shuffle').addEventListener('click', function() {
+          $i.Abilities.of(discard).trigger('shuffle');
+
+          // Flip all the children and move them to the bottom of the deck.
+          $i.Utils.toArray(discard.children).forEach(function(child) {
+            $(child).attr('flip-active', false);
+            deck.insertBefore(child, deck.firstElementChild);
+          });
+        });
+
+        // Process the draw 4 button.
+        // TODO(gs): Make this an ability.
+        area.querySelector('button.draw').addEventListener('click', function() {
+          for (var i = 0; i < 4 && deck.childElementCount > 0; i++) {
+            var child = deck.lastElementChild;
+            hand.appendChild(child);
+            $(child).attr('flip-active', true);
+          }
+        });
+      });
+    });
+  }
+
+  function processTabs(document) {
+    // Make the tabs
+    var bottom = document.querySelector('#bottom-section');
+    document.querySelector('#bottom-section li.player1').addEventListener('click', function() {
+      bottom.classList.toggle('player1');
+      bottom.classList.remove('player2');
+    });
+    document.querySelector('#bottom-section li.player2').addEventListener('click', function() {
+      bottom.classList.toggle('player2');
+      bottom.classList.remove('player1');
+    });
+  }
+
+  function shuffle(el) {
+    $i.Abilities.of(el).trigger('shuffle');
+  }
+
+  function getDeck(playerArea) {
+    return playerArea.querySelector('.deck');
+  }
+
+  function getRiftDeckAsync(document) {
+    if (!riftDeckPromise) {
+      riftDeckPromise = getElementAsync(document, '#riftdeck');
+    }
+
+    return riftDeckPromise;
+  }
+
+  function getPlayerAreaAsync(document, playerName) {
+    if (!playerAreaPromises[playerName]) {
+      playerAreaPromises[playerName] = getSwitcherAsync(document)
+          .then(function(switcher) {
+            return switcher.querySelector('#' + playerName + 'area');
+          });
+    }
+
+    return playerAreaPromises[playerName];
+  }
+
+  function getSwitcherAsync(document) {
+    if (!switcherPromise) {
+      switcherPromise = getElementAsync(document, '#switcher');
+    }
+
+    return switcherPromise;
+  }
+
+  function getElementAsync(document, selector) {
+    return $i.Utils.watch(function() {
+      return document.querySelector(selector + ' pb-u-generate') === null;
+    }).then(function() {
+      return document.querySelector(selector);
+    });
+  }
+
+  return {
+    preBootstrap: function() {
+      $i.card();
+
+      // Misc setup script
+      $i.Template.addData('players', [1, 2]);
+      $i.Config.setDefaultTrigger(new $i.Key('f'), 'flip', 'pb-c-card');
+    },
+
+    postBootstrap: function(document) {
+      // Shuffle the decks
+      getRiftDeckAsync(document).then(shuffle);
+      getPlayerAreaAsync(document, 'player1').then(getDeck).then(shuffle);
+      getPlayerAreaAsync(document, 'player2').then(getDeck).then(shuffle);
+
+      processPlayerButtons(document);
+      processTabs(document);
+
+      disableInputClickPropagation(document);
+      $i.log(document);
+    }
+  };
+});
+</script>

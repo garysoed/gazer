@@ -1,0 +1,80 @@
+<link rel="import" href="bower_components/protoboard/out/service/template.html">
+<link rel="import" href="card-data.html">
+<link rel="import" href="dijs.html">
+
+<template>
+  {{#pb-for 0 count 1}}
+  <pb-c-card class="{{element}}" flip-active="{{showfront}}">
+    <div pb-back></div>
+    <div pb-front>
+      <div>{{name}}</div>
+      {{#if life}}
+      <input type="number">
+      {{#if attack}}{{attack}} / {{armor}}{{/if}}
+      {{/if}}
+      <pb-u-preview>
+        <h1>{{name}}</h1>
+        <h2>{{type}}, {{element}}</h2>
+        <h2>{{#if life}}L: {{life}}{{/if}}{{#if attack}} A: {{attack}} D: {{armor}}{{/if}}</h2>
+        <h2>Cost: {{cost}}</h2>
+        <main>{{description}}</main>
+      </pb-u-preview>
+    </div>
+  </pb-c-card>
+  {{/pb-for}}
+</template>
+
+<script>
+  DI
+      .prefix('gz')
+      .constant('cardTemplate', document.currentScript.ownerDocument.querySelector('template'))
+      .bind(
+          'card',
+          {
+            cardTemplate: '=',
+            data: '=',
+            Template: '/pb.service.='
+          },
+          function($i) {
+
+  var PLAYER_CARDS = {
+    'Energy Orb': 2,
+    'Mind Link': 2,
+    'Bot': 2,
+    'Meditate': 2
+  };
+
+  var RIFT_CARDS = $i.data.Water
+      .concat($i.data.Water);
+
+  function initPlayerCards() {
+    var playerCards = [];
+    for (var name in PLAYER_CARDS) {
+      var card = null;
+      $i.data.Base.forEach(function(candidate) {
+        if (candidate.name === name) {
+          card = candidate;
+        }
+      });
+      if (!card) {
+        throw name + ' cannot be found';
+      }
+
+      var clone = JSON.parse(JSON.stringify(card));
+      clone.count = PLAYER_CARDS[name];
+      playerCards.push(clone);
+    }
+
+    $i.Template.addData('playerCards', playerCards);
+  }
+
+  return function() {
+    initPlayerCards();
+
+    $i.Template
+        .addData('riftCards', RIFT_CARDS)
+        .addData('stapleCards', $i.data.Base)
+        .addPartial('gz-card', $i.cardTemplate);
+  };
+});
+</script>

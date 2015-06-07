@@ -71,9 +71,16 @@ function toJson() {
         elements[card.element].push(card);
       }
 
+      var content =
+          '<link rel="import" href="dijs.html">'
+        + '<script>'
+          + 'DI.prefix("gz").bind("data", {}, function() { '
+            + 'return ' + JSON.stringify(elements, null, 2) + ';'
+          + '});'
+        + '</script>'
       this.push(new gutil.File({
-        path: 'gz-data.js',
-        contents: new Buffer('gz.cards = ' + JSON.stringify(elements, null, 2) + ';')
+        path: 'card-data.html',
+        contents: new Buffer(content)
       }));
     } else {
       throw 'Only supports buffer';
@@ -81,15 +88,6 @@ function toJson() {
 
     cb();
   });
-}
-
-function readJsonTheme(file, base) {
-  var json = require(file);
-  var base = json.base ? readJsonTheme(json.base) : {};
-  for (var key in json.vars) {
-    base[key] = json.vars[key];
-  }
-  return base;
 }
 
 function subMyth() {

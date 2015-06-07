@@ -12,38 +12,8 @@
     <link rel="import" href="bower_components/protoboard/out/ui/preview.html">
     <link rel="import" href="bower_components/protoboard/out/ui/previewer.html">
     <link rel="import" href="bower_components/protoboard/out/ui/generate.html">
+    <link rel="import" href="setup.html">
     <link rel="stylesheet" href="css/gazer.css">
-
-    <script>
-      var gz = {};
-    </script>
-    <script src="gz-data.js"></script>
-
-    <template id="cardTemplate">
-      {{#pb-for 0 count 1}}
-      <pb-c-card class="{{element}}" flip-active="{{showfront}}">
-        <div pb-back></div>
-        <div pb-front>
-          <div>{{name}}</div>
-          {{#if life}}
-          <input type="number">
-          {{#if attack}}{{attack}} / {{armor}}{{/if}}
-          {{/if}}
-          <pb-u-preview>
-            <h1>{{name}}</h1>
-            <h2>{{type}}, {{element}}</h2>
-            <h2>{{#if life}}L: {{life}}{{/if}}{{#if attack}} A: {{attack}} D: {{armor}}{{/if}}</h2>
-            <h2>Cost: {{cost}}</h2>
-            <main>{{description}}</main>
-          </pb-u-preview>
-        </div>
-      </pb-c-card>
-      {{/pb-for}}
-    </template>
-
-    <script>
-      Handlebars.registerPartial('gz-card', document.querySelector('#cardTemplate').innerHTML);
-    </script>
   </head>
   <body>
     <section id="top-section">
@@ -140,167 +110,15 @@
       DI
           .prefix('pb')
           .run({
-              Abilities: 'ability.=',
               Bootstrap: '=',
-              Config: 'service.=',
-              Key: 'trigger.=',
               Log: 'service.=',
-              Shuffleable: 'ability.=',
-              Template: 'service.=',
-              Toggleable: 'ability.=',
-              Utils: '=',
-              seed: '='
+              seed: '=',
+              setup: '/gz.='
             },
             function($i) {
-
-        // var riftCards = gz.cards.Air
-        //     .concat(gz.cards.Water)
-        //     .concat(gz.cards.Fire)
-        //     .concat(gz.cards.Earth);
-
-        var riftCards = gz.cards.Water
-            .concat(gz.cards.Earth);
-
-        var playerCardSetting = {
-          'Energy Orb': 2,
-          'Mind Link': 2,
-          'Bot': 2,
-          'Meditate': 2
-        };
-
-        var playerCards = [];
-        for (var name in playerCardSetting) {
-          var card = null;
-          gz.cards.Base.forEach(function(candidate) {
-            if (candidate.name === name) {
-              card = candidate;
-            }
-          });
-          if (!card) {
-            throw name + ' cannot be found';
-          }
-
-          var clone = JSON.parse(JSON.stringify(card));
-          clone.count = playerCardSetting[name];
-          playerCards.push(clone);
-        }
-        $i.Template
-            .addData('riftCards', riftCards)
-            .addData('stapleCards', gz.cards.Base)
-            .addData('playerCards', playerCards)
-            .addData('players', [1, 2])
-            .addPartial('gz-card', document.querySelector('template#cardTemplate'));
-
-        $i.Config.setDefaultTrigger(new $i.Key('f'), 'flip', 'pb-c-card');
+        $i.setup.preBootstrap();
         $i.Bootstrap.run(document);
-
-        var riftPromise = $i.Utils.watch(function() {
-          return document.querySelector('#rift pb-u-generate') === null;
-        })
-        .then(function() {
-          $i.Abilities.of(document.querySelector('#riftdeck')).trigger('shuffle');
-        });
-
-        var playersPromise = $i.Utils.watch(function() {
-          return document.querySelector('#switcher pb-u-generate') === null;
-        }).then(function() {
-          // Process player 1's deck.
-          var deck = document.querySelector('#player1area .deck');
-          $i.Abilities.of(document.querySelector('#player1area .deck')).trigger('shuffle');
-
-          var observer = new MutationObserver(function(deck) {
-            document.querySelector('#player1area .decksize').innerText = deck.children.length;
-          }.bind(window, deck));
-          document.querySelector('#player1area .decksize').innerText = deck.children.length
-          observer.observe(deck, { childList: true });
-
-          // Process player 2's deck
-          var deck = document.querySelector('#player2area .deck');
-          $i.Abilities.of(document.querySelector('#player2area .deck')).trigger('shuffle');
-
-          var observer = new MutationObserver(function(deck) {
-            document.querySelector('#player2area .decksize').innerText = deck.children.length;
-          }.bind(window, deck));
-          document.querySelector('#player2area .decksize').innerText = deck.children.length
-          observer.observe(deck, { childList: true });
-
-          // Process the hands.
-          $i.Utils.toArray(document.querySelectorAll('.playerarea')).forEach(function(area) {
-            var deck = area.querySelector('.deck');
-            var discard = area.querySelector('.discard');
-            var hand = area.querySelector('pb-r-hand');
-
-            area.querySelector('button.shuffle').addEventListener('click', function() {
-              $i.Abilities.of(discard).trigger('shuffle');
-
-              // Flip all the children and move them to the bottom of the deck.
-              $i.Utils.toArray(discard.children).forEach(function(child) {
-                $(child).attr('flip-active', false);
-                deck.insertBefore(child, deck.firstElementChild);
-              });
-
-              // TODO(gs): Add "add to bottom" to card
-            });
-
-            area.querySelector('button.draw').addEventListener('click', function() {
-              for (var i = 0; i < 4 && deck.childElementCount > 0; i++) {
-                var child = deck.lastElementChild;
-                hand.appendChild(child);
-                $(child).attr('flip-active', true);
-              }
-            });
-          });
-        });
-
-        Promise.all([ riftPromise, playersPromise ])
-            .then(function() {
-              // Process all the input elements to not propagate click.
-              $i.Utils.toArray(document.querySelectorAll('input')).forEach(function(el) {
-                el.addEventListener('click', function(e) {
-                  e.stopPropagation();
-                });
-                el.addEventListener('mousedown', function(e) {
-                  e.stopPropagation();
-                });
-              });
-            })
-            .then(function() {
-              // Clears any initial setup logs.
-              $i.Log
-                  .clear()
-                  .log('seed', $i.seed);
-            });
-
-        // Make the tabs
-        var bottom = document.querySelector('#bottom-section');
-        document.querySelector('#bottom-section li.player1').addEventListener('click', function() {
-          bottom.classList.toggle('player1');
-          bottom.classList.remove('player2');
-        });
-        document.querySelector('#bottom-section li.player2').addEventListener('click', function() {
-          bottom.classList.toggle('player2');
-          bottom.classList.remove('player1');
-        });
-
-        // Log button
-        document.querySelector('#log').addEventListener('click', function() {
-          var url = window.URL.createObjectURL($i.Log.blob);
-          var a = document.createElement('a');
-          a.href = url;
-          a.download = 'gazer.log';
-          a.click();
-          window.URL.revokeObjectURL(url);
-        });
-
-        $i.Log
-            .addProcessor(function(timestamp, category, value) {
-              if (category !== 'seed') {
-                return timestamp.toLocaleString() + ': ' + category + ' on ' + value;
-              } else {
-                return null;
-              }
-            })
-            .addProcessor($i.Log.defaultProcessor);
+        $i.setup.postBootstrap(document);
       });
     </script>
   </body>
