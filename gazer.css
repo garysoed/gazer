@@ -87,6 +87,11 @@ pb-u-previewer::shadow #root {
   right: 0;
 }
 
+#playarea pb-r-rect::shadow #root {
+  height: 100%;
+  width: 100%;
+}
+
 pb-c-card.Base [pb-front] {
   background-color: #ffaaff;
 }
