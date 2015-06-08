@@ -7,6 +7,8 @@
     <link rel="import" href="bower_components/protoboard/out/region/deck.html">
     <link rel="import" href="bower_components/protoboard/out/region/hand.html">
     <link rel="import" href="bower_components/protoboard/out/region/rect.html">
+    <link rel="import" href="bower_components/protoboard/out/service/acl.html">
+    <link rel="import" href="bower_components/protoboard/out/service/state.html">
     <link rel="import" href="bower_components/protoboard/out/third_party/chance.html">
     <link rel="import" href="bower_components/protoboard/out/third_party/di.html">
     <link rel="import" href="bower_components/protoboard/out/ui/preview.html">
@@ -16,9 +18,9 @@
     <link rel="stylesheet" href="css/gazer.css">
   </head>
   <body>
+    <pb-state currentPlayer="player1"></pb-state>
     <section id="top-section">
       <section id="active-area">
-
         <section id="draft">
           <section id="rift">
             <pb-r-deck id="riftdeck">
@@ -71,6 +73,7 @@
             <li>Play / Attack</li>
           </ol>
         </section>
+        <button id="nextturn">Next Turn (Player 1)</button>
         <button id="log">Download Log</button>
       </section>
     </section>
@@ -84,7 +87,7 @@
         <pb-u-generate input="players playerCards">
           <template>
             {{#each players}}
-              <section class="playerarea" id="player{{this}}area">
+              <section class="playerarea" id="player{{this}}area" pb-acl-readable="player{{this}}">
                 <section class="hand">
                   <pb-r-deck class="discard"></pb-r-deck>
                   <pb-r-deck class="deck" show-count="true" data-count="5">

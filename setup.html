@@ -3,9 +3,11 @@
 <link rel="import" href="bower_components/protoboard/out/service/template.html">
 <link rel="import" href="bower_components/protoboard/out/trigger/key.html">
 <link rel="import" href="bower_components/protoboard/out/utils.html">
+<link rel="import" href="acl.html">
 <link rel="import" href="card.html">
 <link rel="import" href="dijs.html">
 <link rel="import" href="log.html">
+<link rel="import" href="ui.html">
 
 <script>
   DI
@@ -14,25 +16,24 @@
           'setup',
           {
             Abilities: '/pb.ability.=',
+            acl: '=',
             Config: '/pb.service.=',
             card: '=',
             Key: '/pb.trigger.=',
-            Template: '/pb.service.=',
-            Utils: '/pb.=',
             log: '=',
+            Template: '/pb.service.=',
+            ui: '=',
+            Utils: '/pb.=',
           },
           function($i) {
-  var playerAreaPromises = {};
-  var riftDeckPromise = null;
-  var switcherPromise = null;
 
-  function disableInputClickPropagation(document) {
+  function disableInputClickPropagation(document, ui) {
     Promise
         .all([
-          getRiftDeckAsync(document),
-          getPlayerAreaAsync(document, 'player1'),
-          getPlayerAreaAsync(document, 'player2'),
-          getSwitcherAsync(document)
+          ui.getRiftDeckAsync(),
+          ui.getPlayerAreaAsync('player1'),
+          ui.getPlayerAreaAsync('player2'),
+          ui.getSwitcherAsync()
         ])
         .then(function() {
           // Process all the input elements to not propagate click.
@@ -47,18 +48,18 @@
         })
   }
 
-  function processPlayerButtons(document) {
+  function processPlayerButtons(ui) {
     Promise
         .all([
-          getPlayerAreaAsync(document, 'player1'),
-          getPlayerAreaAsync(document, 'player2')
+          ui.getPlayerAreaAsync('player1'),
+          ui.getPlayerAreaAsync('player2'),
         ]).
         then(function(playerAreas) {
 
       // Process the shuffle discard pile into deck button.
       // TODO(gs): Make this an ability.
       playerAreas.forEach(function(area) {
-        var deck = getDeck(area);
+        var deck = area.querySelector('.deck');
         var hand = area.querySelector('.hand');
         var discard = area.querySelector('.discard');
 
@@ -102,45 +103,6 @@
     $i.Abilities.of(el).trigger('shuffle');
   }
 
-  function getDeck(playerArea) {
-    return playerArea.querySelector('.deck');
-  }
-
-  function getRiftDeckAsync(document) {
-    if (!riftDeckPromise) {
-      riftDeckPromise = getElementAsync(document, '#riftdeck');
-    }
-
-    return riftDeckPromise;
-  }
-
-  function getPlayerAreaAsync(document, playerName) {
-    if (!playerAreaPromises[playerName]) {
-      playerAreaPromises[playerName] = getSwitcherAsync(document)
-          .then(function(switcher) {
-            return switcher.querySelector('#' + playerName + 'area');
-          });
-    }
-
-    return playerAreaPromises[playerName];
-  }
-
-  function getSwitcherAsync(document) {
-    if (!switcherPromise) {
-      switcherPromise = getElementAsync(document, '#switcher');
-    }
-
-    return switcherPromise;
-  }
-
-  function getElementAsync(document, selector) {
-    return $i.Utils.watch(function() {
-      return document.querySelector(selector + ' pb-u-generate') === null;
-    }).then(function() {
-      return document.querySelector(selector);
-    });
-  }
-
   return {
     preBootstrap: function() {
       $i.card();
@@ -151,15 +113,18 @@
     },
 
     postBootstrap: function(document) {
-      // Shuffle the decks
-      getRiftDeckAsync(document).then(shuffle);
-      getPlayerAreaAsync(document, 'player1').then(getDeck).then(shuffle);
-      getPlayerAreaAsync(document, 'player2').then(getDeck).then(shuffle);
+      var ui = $i.ui(document);
 
-      processPlayerButtons(document);
+      // Shuffle the decks
+      ui.getRiftDeckAsync().then(shuffle);
+      ui.getPlayerDeckAsync('player1').then(shuffle);
+      ui.getPlayerDeckAsync('player2').then(shuffle);
+
+      processPlayerButtons(ui);
       processTabs(document);
 
-      disableInputClickPropagation(document);
+      disableInputClickPropagation(document, ui);
+      $i.acl(document);
       $i.log(document);
     }
   };

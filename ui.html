@@ -1,0 +1,66 @@
+<link rel="import" href="dijs.html">
+
+<script type="text/javascript">
+  DI
+      .prefix('gz')
+      .bind('ui', { Utils: '/pb.=' }, function($i) {
+
+  var INSTANCE = null;
+
+  var UI = function(document) {
+    this.document = document;
+    this.playerAreaPromises = {};
+    this.riftDeckPromise = null;
+    this.switcherPromise = null;
+  };
+
+  UI.prototype.getRiftDeckAsync = function() {
+    if (!this.riftDeckPromise) {
+      this.riftDeckPromise = this.getElementAsync('#riftdeck');
+    }
+
+    return this.riftDeckPromise;
+  };
+
+  UI.prototype.getPlayerAreaAsync = function(playerName) {
+    if (!this.playerAreaPromises[playerName]) {
+      this.playerAreaPromises[playerName] = this.getSwitcherAsync()
+          .then(function(switcher) {
+            return switcher.querySelector('#' + playerName + 'area');
+          });
+    }
+
+    return this.playerAreaPromises[playerName];
+  };
+
+  UI.prototype.getPlayerDeckAsync = function(playerName) {
+    return this.getPlayerAreaAsync(playerName)
+        .then(function(area) {
+          return area.querySelector('.deck');
+        });
+  };
+
+  UI.prototype.getElementAsync = function(selector) {
+    return $i.Utils.watch(function() {
+      return this.document.querySelector(selector + ' pb-u-generate') === null;
+    }).then(function() {
+      return this.document.querySelector(selector);
+    });
+  };
+
+  UI.prototype.getSwitcherAsync = function() {
+    if (!this.switcherPromise) {
+      this.switcherPromise = this.getElementAsync('#switcher');
+    }
+
+    return this.switcherPromise;
+  }
+
+  return function(document) {
+    if (!INSTANCE) {
+      INSTANCE = new UI(document);
+    }
+    return INSTANCE;
+  };
+});
+</script>
