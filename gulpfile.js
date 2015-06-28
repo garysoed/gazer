@@ -2,41 +2,11 @@ var gulp    = require('gulp');
 var gutil   = require('gulp-util');
 var myth    = require('gulp-myth');
 var plumber = require('gulp-plumber');
-var combine = require('combine-stream');
 
 var loadtheme = require('./bower_components/protoboard/loadtheme');
 
 var fs = require('fs');
 var through = require('through2');
-
-
-function handleError(error) {
-  console.log(error.toString());
-  this.emit('end');
-}
-
-function chain(fn) {
-  return through.obj(function(file, enc, callback) {
-    // TODO(gs): How to open a stream?
-    var stream = gulp.src('')
-        .pipe(plumber({
-          errorHandler: function(err) {
-            this.emit('error', err);
-          }.bind(this)
-        }))
-        .pipe(through.obj(function(f, enc, cb) {
-          cb(null, file);
-        }));
-    fn(stream)
-        .pipe(through.obj(function(f, enc, cb) {
-          this.push(f);
-          cb(null, f);
-        }.bind(this), function(cb) {
-          callback();
-          cb();
-        }));
-  });
-}
 
 function toJson() {
   return through.obj(function(file, enc, cb) {
@@ -91,16 +61,12 @@ function toJson() {
   });
 }
 
-function subMyth() {
-  var theme = loadtheme(__dirname + '/bower_components/protoboard/themes/grey.json');
-  return combine(myth({
-    'variables': theme
-  }));
-}
-
 gulp.task('myth', function() {
+  var theme = loadtheme(__dirname + '/bower_components/protoboard/themes/grey.json');
   return gulp.src('gazer.css')
-      .pipe(subMyth())
+      .pipe(myth({
+        'variables': theme
+      }))
       .pipe(gulp.dest('css'));
 });
 
@@ -111,5 +77,5 @@ gulp.task('json', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(['*.css'], ['myth']);
+  gulp.watch(['*.css'], gulp.task('myth'));
 });
