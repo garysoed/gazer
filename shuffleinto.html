@@ -1,0 +1,44 @@
+<link rel="import" href="bower_components/protoboard/out/ability/abilities.html">
+<link rel="import" href="bower_components/protoboard/out/ability/ability.html">
+<link rel="import" href="bower_components/protoboard/out/third_party/jquery.html">
+<link rel="import" href="bower_components/protoboard/out/trigger/click.html">
+<link rel="import" href="bower_components/protoboard/out/utils.html">
+
+<link rel="import" href="dijs.html">
+
+<script type="text/javascript">
+DI
+		.prefix('gz')
+		.bind(
+				'ShuffleInto',
+				{
+					$: '/=',
+					Abilities: '/pb.ability.=',
+					Ability: '/pb.ability.=',
+					Click: '/pb.trigger.=',
+					Utils: '/pb.='
+				},
+				function($i) {
+
+	var ShuffleInto = function(toEl) {
+		$i.Ability.call(this, 'shuffleinto', new $i.Click())
+		this.toEl = toEl;
+	};
+
+	ShuffleInto.prototype = Object.create($i.Ability.prototype);
+
+	ShuffleInto.prototype.doTrigger = function(el) {
+		$i.Abilities.of(el).trigger('shuffle');
+
+		// Flip all the children and move them to the bottom of the deck.
+		$i.Utils.toArray(el.children).forEach(function(child) {
+			$i.$(child).attr('flip-active', false);
+			this.toEl.insertBefore(child, this.toEl.firstElementChild);
+		}.bind(this));
+	};
+
+	ShuffleInto.prototype.isEnabled = function() { return true; };
+
+	return ShuffleInto;
+});
+</script>

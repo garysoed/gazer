@@ -1,0 +1,40 @@
+<link rel="import" href="bower_components/protoboard/out/ability/ability.html">
+<link rel="import" href="bower_components/protoboard/out/third_party/jquery.html">
+<link rel="import" href="bower_components/protoboard/out/trigger/click.html">
+
+<link rel="import" href="dijs.html">
+
+<script type="text/javascript">
+DI
+		.prefix('gz')
+		.bind(
+				'DrawInto',
+				{
+					$: '/=',
+					Ability: '/pb.ability.=',
+					Click: '/pb.trigger.=',
+				},
+				function($i) {
+
+	var DrawInto = function(toEl) {
+		$i.Ability.call(this, 'drawinto', new $i.Click());
+		this.toEl = toEl;
+	};
+
+	DrawInto.prototype = Object.create($i.Ability.prototype);
+
+	DrawInto.prototype.doTrigger = function(el) {
+		for (var i = 0; i < 4 && el.childElementCount > 0; i++) {
+			var child = el.lastElementChild;
+			this.toEl.appendChild(child);
+
+			// Make the drawn card show its front side.
+			$i.$(child).attr('flip-active', true);
+		}
+	};
+
+	DrawInto.prototype.isEnabled = function() { return true; };
+
+	return DrawInto;
+});
+</script>

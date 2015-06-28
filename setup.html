@@ -3,10 +3,13 @@
 <link rel="import" href="bower_components/protoboard/out/service/template.html">
 <link rel="import" href="bower_components/protoboard/out/trigger/key.html">
 <link rel="import" href="bower_components/protoboard/out/utils.html">
+
 <link rel="import" href="acl.html">
 <link rel="import" href="card.html">
 <link rel="import" href="dijs.html">
+<link rel="import" href="drawinto.html">
 <link rel="import" href="log.html">
+<link rel="import" href="shuffleinto.html">
 <link rel="import" href="ui.html">
 
 <script>
@@ -19,8 +22,10 @@
             acl: '=',
             Config: '/pb.service.=',
             card: '=',
+            DrawInto: '=',
             Key: '/pb.trigger.=',
             log: '=',
+            ShuffleInto: '=',
             Template: '/pb.service.=',
             ui: '=',
             Utils: '/pb.=',
@@ -55,35 +60,22 @@
           ui.getPlayerAreaAsync('player2'),
         ]).
         then(function(playerAreas) {
+          playerAreas.forEach(function(area) {
+            var deck = area.querySelector('.deck');
 
-      // Process the shuffle discard pile into deck button.
-      // TODO(gs): Make this an ability.
-      playerAreas.forEach(function(area) {
-        var deck = area.querySelector('.deck');
-        var hand = area.querySelector('pb-r-hand');
-        var discard = area.querySelector('.discard');
+            // Process the shuffle discard pile into deck button.
+            var shuffleInto = new $i.ShuffleInto(deck);
+            area.querySelector('button.shuffle').addEventListener(
+                'click',
+                shuffleInto.trigger.bind(shuffleInto, area.querySelector('.discard')));
 
-        area.querySelector('button.shuffle').addEventListener('click', function() {
-          $i.Abilities.of(discard).trigger('shuffle');
-
-          // Flip all the children and move them to the bottom of the deck.
-          $i.Utils.toArray(discard.children).forEach(function(child) {
-            $(child).attr('flip-active', false);
-            deck.insertBefore(child, deck.firstElementChild);
+            // Process the draw 4 button.
+            var drawInto = new $i.DrawInto(area.querySelector('pb-r-hand'));
+            area.querySelector('button.draw').addEventListener(
+                'click',
+                drawInto.trigger.bind(drawInto, deck));
           });
         });
-
-        // Process the draw 4 button.
-        // TODO(gs): Make this an ability.
-        area.querySelector('button.draw').addEventListener('click', function() {
-          for (var i = 0; i < 4 && deck.childElementCount > 0; i++) {
-            var child = deck.lastElementChild;
-            hand.appendChild(child);
-            $(child).attr('flip-active', true);
-          }
-        });
-      });
-    });
   }
 
   function processTabs(document) {
