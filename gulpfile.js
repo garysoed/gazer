@@ -2,6 +2,7 @@ var gulp    = require('gulp');
 var gutil   = require('gulp-util');
 var myth    = require('gulp-myth');
 var plumber = require('gulp-plumber');
+var combine = require('combine-stream');
 
 var loadtheme = require('./bower_components/protoboard/loadtheme');
 
@@ -50,7 +51,7 @@ function toJson() {
           'element': segments[1],
           'count': segments[3],
           'description': segments[7],
-          'cost': segments[14]
+          'cost': segments[8]
         };
 
         if (segments[4]) {
@@ -91,13 +92,10 @@ function toJson() {
 }
 
 function subMyth() {
-  return chain(function(stream) {
-    var theme = loadtheme(__dirname + '/bower_components/protoboard/themes/grey.json');
-    return stream
-        .pipe(myth({
-          'variables': theme
-        }));
-  })
+  var theme = loadtheme(__dirname + '/bower_components/protoboard/themes/grey.json');
+  return combine(myth({
+    'variables': theme
+  }));
 }
 
 gulp.task('myth', function() {

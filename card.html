@@ -44,7 +44,9 @@
     'Meditate': 2
   };
 
-  var RIFT_CARDS = $i.data.Water
+  var RIFT_CARDS = $i.data.Fire
+      .concat($i.data.Earth)
+      .concat($i.data.Air)
       .concat($i.data.Water);
 
   function initPlayerCards() {
