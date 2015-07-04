@@ -21,7 +21,8 @@ function toJson() {
           'element': segments[1],
           'count': segments[3],
           'description': segments[7],
-          'cost': segments[8]
+          'cost': segments[8],
+          'code': segments[0].toLowerCase().replace(' ', '_')
         };
 
         if (segments[4]) {
