@@ -1,5 +1,7 @@
 <base href="..">
 
+<link rel="import" href="bower_components/protoboard/out/utils.html">
+
 <link rel="import" href="src/dijs.html">
 
 <script type="text/javascript">
@@ -56,6 +58,10 @@
     }
 
     return this.switcherPromise;
+  }
+
+  UI.prototype.getRiftChoiceDecks = function() {
+    return $i.Utils.toArray(this.document.querySelectorAll('#riftchoice pb-r-deck'));
   }
 
   return function(document) {

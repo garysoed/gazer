@@ -13,8 +13,8 @@
     <div pb-front>
       <div>{{name}}</div>
       {{#if life}}
-      <input type="number">
-      {{#if attack}}{{attack}} / {{armor}}{{/if}}
+      <input type="number" placeholder="{{life}}">
+      {{#if attack}}{{#pb-for 0 attack}}⚔{{/pb-for}}&nbsp;{{#pb-for 0 armor}}♦{{/pb-for}}{{/if}}
       {{/if}}
       <pb-u-preview>
         <h1>{{name}}</h1>

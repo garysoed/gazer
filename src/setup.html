@@ -3,6 +3,7 @@
 <link rel="import" href="bower_components/protoboard/out/ability/abilities.html">
 <link rel="import" href="bower_components/protoboard/out/service/config.html">
 <link rel="import" href="bower_components/protoboard/out/service/template.html">
+<link rel="import" href="bower_components/protoboard/out/third_party/jquery.html">
 <link rel="import" href="bower_components/protoboard/out/trigger/key.html">
 <link rel="import" href="bower_components/protoboard/out/utils.html">
 
@@ -20,6 +21,7 @@
       .bind(
           'setup',
           {
+            $: '/=',
             Abilities: '/pb.ability.=',
             acl: '=',
             Config: '/pb.service.=',
@@ -97,6 +99,28 @@
     $i.Abilities.of(el).trigger('shuffle');
   }
 
+  function shuffleDecksAsync(ui) {
+    return Promise.all([
+      ui.getRiftDeckAsync(),
+      ui.getPlayerDeckAsync('player1'),
+      ui.getPlayerDeckAsync('player2')
+    ]).then(function(values) {
+      values.forEach(function(value) {
+        shuffle(value);
+      })
+    });
+  }
+
+  function initRiftChoicesAsync(ui) {
+    return ui.getRiftDeckAsync().then(function(riftDeck) {
+      ui.getRiftChoiceDecks().forEach(function(deck) {
+        var movedElement = riftDeck.lastElementChild;
+        deck.appendChild(movedElement);
+        $i.$(movedElement).attr('flip-active', 'true');
+      });
+    });
+  }
+
   return {
     preBootstrap: function() {
       $i.card();
@@ -109,10 +133,8 @@
     postBootstrap: function(document) {
       var ui = $i.ui(document);
 
-      // Shuffle the decks
-      ui.getRiftDeckAsync().then(shuffle);
-      ui.getPlayerDeckAsync('player1').then(shuffle);
-      ui.getPlayerDeckAsync('player2').then(shuffle);
+      shuffleDecksAsync(ui)
+          .then(initRiftChoicesAsync.bind(null, ui));
 
       processPlayerButtons(ui);
       processTabs(document);
