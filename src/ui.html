@@ -44,6 +44,20 @@
         });
   };
 
+  UI.prototype.getPlayerHandAsync = function(playerName) {
+    return this.getPlayerAreaAsync(playerName)
+        .then(function(area) {
+          return area.querySelector('pb-r-hand');
+        });
+  };
+
+  UI.prototype.getPlayerDiscardAsync = function(playerName) {
+    return this.getPlayerAreaAsync(playerName)
+        .then(function(area) {
+          return area.querySelector('.discard');
+        });
+  };
+
   UI.prototype.getElementAsync = function(selector) {
     return $i.Utils.watch(function() {
       return this.document.querySelector(selector + ' pb-u-generate') === null;

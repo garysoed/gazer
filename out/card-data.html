@@ -39,7 +39,7 @@
       "element": "Base",
       "count": "10",
       "description": "At the beginning of the turn, draw a card",
-      "cost": "2",
+      "cost": "1",
       "code": "mind_link"
     },
     {
@@ -86,7 +86,7 @@
       "element": "Fire",
       "count": "2",
       "description": "Untap all your Devices",
-      "cost": "2",
+      "cost": "3",
       "code": "hot_recharge"
     },
     {
@@ -121,8 +121,8 @@
       "type": "Enchantment",
       "element": "Fire",
       "count": "2",
-      "description": "When this Minion is damaged, untap 2 Devices.",
-      "cost": "3",
+      "description": "When this Minion is damaged, untap 1 Device",
+      "cost": "1",
       "code": "warm_up"
     },
     {
@@ -198,7 +198,7 @@
       "type": "Device",
       "element": "Fire",
       "count": "2",
-      "description": "T: Damage a non Device you control by 2, +3 Energy",
+      "description": "T: Damage a non Device you control by 2. If you do, +3 Energy",
       "cost": "4",
       "code": "heat_engine",
       "life": "4"
@@ -208,7 +208,7 @@
       "type": "Device",
       "element": "Fire",
       "count": "3",
-      "description": "T: Damage a non Device you control by 2, draw 3 cards",
+      "description": "T: Damage a non Device you control by 2. If you do, draw 3 cards",
       "cost": "4",
       "code": "blast_furnace",
       "life": "4"
@@ -218,8 +218,8 @@
       "type": "Device",
       "element": "Fire",
       "count": "3",
-      "description": "T: Damage a non Device you control by 2, untap 3 devices",
-      "cost": "5",
+      "description": "T: Damage a non Device you control by 2. If you do, untap 2 devices",
+      "cost": "2",
       "code": "thermo_cycle",
       "life": "3"
     },
@@ -228,7 +228,7 @@
       "type": "Device",
       "element": "Fire",
       "count": "2",
-      "description": "T: Damage a non Device you control by 2, damage up to 2 Minions or Devices by 2",
+      "description": "T: Damage a non Device you control by 2. If you do, damage up to 2 Minions or Devices by 2",
       "cost": "5",
       "code": "magma_turret",
       "life": "5"
@@ -273,13 +273,13 @@
       "code": "evolution"
     },
     {
-      "name": "Call to Raise",
+      "name": "Call to Rise",
       "type": "Spell",
       "element": "Earth",
       "count": "2",
       "description": "Draw a card from your discard pile",
       "cost": "1",
-      "code": "call_to raise"
+      "code": "call_to rise"
     },
     {
       "name": "Alpha Minion",
@@ -287,7 +287,7 @@
       "element": "Earth",
       "count": "2",
       "description": "At the beginning of the turn, you may draft a Bot",
-      "cost": "2",
+      "cost": "1",
       "code": "alpha_minion"
     },
     {
@@ -296,7 +296,7 @@
       "element": "Earth",
       "count": "3",
       "description": "At the beginning of the turn, take a Minion from your discard pile and put it in your hand",
-      "cost": "4",
+      "cost": "3",
       "code": "earth_reinforcement"
     },
     {
@@ -305,7 +305,7 @@
       "element": "Earth",
       "count": "2",
       "description": "At the beginning of the turn, reveal the top 4 cards of your deck. Discard any of them and put the rest back in any order.",
-      "cost": "2",
+      "cost": "1",
       "code": "natural_selection"
     },
     {
@@ -313,8 +313,8 @@
       "type": "Enchantment",
       "element": "Earth",
       "count": "2",
-      "description": "When this Minion about to receive a damage, you may redirect it to another Minion",
-      "cost": "2",
+      "description": "When this Minion is about to receive a damage, you may redirect it to another Minion",
+      "cost": "1",
       "code": "symbiosis"
     },
     {
@@ -436,7 +436,7 @@
       "element": "Earth",
       "count": "2",
       "description": "T: Put a Minion in play back in your hand. Put another Minion with the same cost into play",
-      "cost": "4",
+      "cost": "3",
       "code": "rest_hollow",
       "life": "4"
     }
@@ -455,9 +455,9 @@
       "name": "Gathering Storm",
       "type": "Spell",
       "element": "Air",
-      "count": "2",
+      "count": "3",
       "description": "Reduce energy cost of Spells by 1. Draw a card.",
-      "cost": "1",
+      "cost": "2",
       "code": "gathering_storm"
     },
     {
@@ -466,14 +466,14 @@
       "element": "Air",
       "count": "2",
       "description": "Draw X cards, tap X cards, where X is the number of spells you have in play.",
-      "cost": "4",
+      "cost": "2",
       "code": "electric_shock"
     },
     {
       "name": "Shock",
       "type": "Spell",
       "element": "Air",
-      "count": "3",
+      "count": "4",
       "description": "Draw a card. Tap a card",
       "cost": "1",
       "code": "shock"
@@ -488,20 +488,11 @@
       "code": "demoralize"
     },
     {
-      "name": "Hallucinate",
-      "type": "Spell",
-      "element": "Air",
-      "count": "2",
-      "description": "Name a type. While this spell is in play, all cards of that type are also considered a spell",
-      "cost": "2",
-      "code": "hallucinate"
-    },
-    {
       "name": "Reset",
       "type": "Spell",
       "element": "Air",
       "count": "2",
-      "description": "Shuffle your discard pile into your deck.",
+      "description": "Shuffle your discard pile into your deck. Draw a card.",
       "cost": "2",
       "code": "reset"
     },
@@ -511,7 +502,7 @@
       "element": "Air",
       "count": "2",
       "description": "Draw X cards. Pick a player. Pick X cards to discard from that player's hand, where X is the number of spells you have in play.",
-      "cost": "3",
+      "cost": "2",
       "code": "putrid_smoke"
     },
     {
@@ -520,7 +511,7 @@
       "element": "Air",
       "count": "2",
       "description": "When you play a Spell, you may deal 1 damage to a target",
-      "cost": "3",
+      "cost": "2",
       "code": "intimidate"
     },
     {
@@ -529,7 +520,7 @@
       "element": "Air",
       "count": "3",
       "description": "This Minion is Flying",
-      "cost": "2",
+      "cost": "1",
       "code": "flight"
     },
     {
@@ -538,7 +529,7 @@
       "element": "Air",
       "count": "2",
       "description": "When you play a Spell, draw a card",
-      "cost": "5",
+      "cost": "3",
       "code": "intelligence"
     },
     {
@@ -546,8 +537,8 @@
       "type": "Enchantment",
       "element": "Air",
       "count": "2",
-      "description": "When this Minion defends or attacks, tap a Minion or Device",
-      "cost": "3",
+      "description": "When you play a Spell, tap a card",
+      "cost": "4",
       "code": "gust"
     },
     {
@@ -556,7 +547,7 @@
       "element": "Air",
       "count": "3",
       "description": "When you play a Spell, pick a player. That player discards a card you pick.",
-      "cost": "4",
+      "cost": "3",
       "code": "mind_devourer",
       "life": "2",
       "attack": "1",
@@ -580,20 +571,20 @@
       "element": "Air",
       "count": "2",
       "description": "When this minion attacks, it deals damage equal to the number of spells you have in play.",
-      "cost": "3",
+      "cost": "2",
       "code": "psyche_mage",
       "life": "3",
-      "attack": "2.469135802",
+      "attack": "1.57",
       "armor": "0"
     },
     {
-      "name": "Oppressive Air",
+      "name": "Crystal Ball",
       "type": "Device",
       "element": "Air",
       "count": "2",
-      "description": "T: Every opponent player discards down to the number of cards you have in hand.",
-      "cost": "2",
-      "code": "oppressive_air",
+      "description": "T: Reveal the top card of your deck. If it is a spell, put it into play for free. Otherwise, put it in your hand.",
+      "cost": "3",
+      "code": "crystal_ball",
       "life": "4"
     },
     {
@@ -602,7 +593,7 @@
       "element": "Air",
       "count": "2",
       "description": "T: Take control a Minion with the same summoning cost as the number of Spell you have in play until the end of your turn.",
-      "cost": "5",
+      "cost": "3",
       "code": "mind_controller",
       "life": "3"
     },
@@ -622,7 +613,7 @@
       "element": "Air",
       "count": "2",
       "description": "T: Redirect an attack causing up to X damage, where X is the number of Spells in play, to a target of your choice.",
-      "cost": "5",
+      "cost": "3",
       "code": "redirection_chamber",
       "life": "2"
     },
@@ -632,9 +623,9 @@
       "element": "Air",
       "count": "3",
       "description": "T: You may play a spell from the draft deck, paying its cost",
-      "cost": "5",
+      "cost": "4",
       "code": "air_dart",
-      "life": "4"
+      "life": "3"
     }
   ],
   "Water": [
@@ -653,7 +644,7 @@
       "element": "Water",
       "count": "2",
       "description": "Pick a Minion. Untap that Minion. Draw X cards, where X is the number of Enchantments on that Minion.",
-      "cost": "1",
+      "cost": "2",
       "code": "flood"
     },
     {
@@ -716,7 +707,7 @@
       "element": "Water",
       "count": "3",
       "description": "At the beginning of the turn, draw X cards, where X is the number of Enchantments on this Minion",
-      "cost": "3",
+      "cost": "2",
       "code": "clarity"
     },
     {
@@ -725,10 +716,10 @@
       "element": "Water",
       "count": "3",
       "description": "",
-      "cost": "7",
+      "cost": "6",
       "code": "ice_golem",
-      "life": "5",
-      "attack": "1",
+      "life": "3",
+      "attack": "2",
       "armor": "2"
     },
     {
@@ -761,7 +752,7 @@
       "element": "Water",
       "count": "2",
       "description": "At any time, you may discard an Enchantment from play or from hand to untap a Minion.",
-      "cost": "4",
+      "cost": "5",
       "code": "mist_folk",
       "life": "5",
       "attack": "0",
@@ -815,7 +806,7 @@
       "element": "Water",
       "count": "2",
       "description": "T: Untap a Minion",
-      "cost": "4",
+      "cost": "5",
       "code": "refreshing_jar",
       "life": "5"
     }

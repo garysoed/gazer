@@ -116,8 +116,32 @@
       ui.getRiftChoiceDecks().forEach(function(deck) {
         var movedElement = riftDeck.lastElementChild;
         deck.appendChild(movedElement);
-        $i.$(movedElement).attr('flip-active', 'true');
       });
+    });
+  }
+
+  function setupAutoFlipFront(ui) {
+    var mutationObserver = new MutationObserver(function(records) {
+      records.forEach(function(record) {
+        $i.Utils.toArray(record.addedNodes).forEach(function(addedNode) {
+          $i.$(addedNode).attr('flip-active', 'true');
+        });
+      });
+    });
+
+    var observeChildList = function(deck) {
+      mutationObserver.observe(deck, { childList: true });
+    };
+
+    ui.getRiftChoiceDecks().forEach(observeChildList);
+    return Promise.all([
+      ui.getPlayerHandAsync('player1'),
+      ui.getPlayerHandAsync('player2'),
+      ui.getPlayerDiscardAsync('player1'),
+      ui.getPlayerDiscardAsync('player2')
+    ])
+    .then(function(hands) {
+      hands.forEach(observeChildList);
     });
   }
 
@@ -133,7 +157,8 @@
     postBootstrap: function(document) {
       var ui = $i.ui(document);
 
-      shuffleDecksAsync(ui)
+      setupAutoFlipFront(ui)
+          .then(shuffleDecksAsync.bind(null, ui))
           .then(initRiftChoicesAsync.bind(null, ui));
 
       processPlayerButtons(ui);
