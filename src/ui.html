@@ -14,6 +14,7 @@
   var UI = function(document) {
     this.document = document;
     this.playerAreaPromises = {};
+    this.playerPlayAreaPromises = {};
     this.riftDeckPromise = null;
     this.switcherPromise = null;
   };
@@ -56,6 +57,17 @@
         .then(function(area) {
           return area.querySelector('.discard');
         });
+  };
+
+  UI.prototype.getPlayerPlayAreaAsync = function(playerName) {
+    if (!this.playerPlayAreaPromises[playerName]) {
+      this.playerPlayAreaPromises[playerName] = this.getElementAsync('#playsection')
+          .then(function(playsection) {
+            return playsection.querySelector('#' + playerName + 'rectarea');
+          });
+    }
+
+    return this.playerPlayAreaPromises[playerName];
   };
 
   UI.prototype.getElementAsync = function(selector) {

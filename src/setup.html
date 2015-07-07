@@ -36,6 +36,14 @@
           },
           function($i) {
 
+  function createChildAddedObserver(handler) {
+    return new MutationObserver(function(records) {
+      records.forEach(function(record) {
+        $i.Utils.toArray(record.addedNodes).forEach(handler);
+      });
+    });
+  }
+
   function disableInputClickPropagation(document, ui) {
     Promise
         .all([
@@ -119,12 +127,8 @@
   }
 
   function setupAutoFlipFront(ui) {
-    var mutationObserver = new MutationObserver(function(records) {
-      records.forEach(function(record) {
-        $i.Utils.toArray(record.addedNodes).forEach(function(addedNode) {
-          $i.$(addedNode).attr('flip-active', 'true');
-        });
-      });
+    var mutationObserver = createChildAddedObserver(function(addedNode) {
+      $i.$(addedNode).attr('flip-active', 'true');
     });
 
     var observeChildList = function(deck) {
@@ -143,6 +147,35 @@
     });
   }
 
+  function setupAutoLifeAsync(ui) {
+    var mutationObserver = createChildAddedObserver(function(addedNode) {
+      if (addedNode.nodeName !== 'PB-C-CARD') {
+        return;
+      }
+
+      if ($i.$(addedNode).attr('flip-active') !== 'true') {
+        return;
+      }
+
+      var inputEl = addedNode.querySelector('input[placeholder]');
+      if (!inputEl) {
+        return;
+      }
+
+      inputEl.value = inputEl.placeholder;
+    });
+
+    return Promise.all([
+      ui.getPlayerPlayAreaAsync('player1'),
+      ui.getPlayerPlayAreaAsync('player2')
+    ])
+    .then(function(areas) {
+      areas.forEach(function(area) {
+        mutationObserver.observe(area, { childList: true });
+      })
+    });
+  }
+
   return {
     preBootstrap: function() {
       $i.card();
@@ -158,6 +191,8 @@
       setupAutoFlipFront(ui)
           .then(shuffleDecksAsync.bind(null, ui))
           .then(initRiftChoicesAsync.bind(null, ui));
+
+      setupAutoLifeAsync(ui);
 
       processPlayerButtons(ui);
       processTabs(document);

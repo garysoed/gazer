@@ -8,7 +8,7 @@
 
 <template>
   {{#pb-for 0 count 1}}
-  <pb-c-card class="{{element}}" flip-active="{{showfront}}">
+  <pb-c-card class="{{element}}" flip-active="{{showfront}}" pb-id="{{code}}">
     <div pb-back></div>
     <div pb-front>
       <div>{{name}}</div>
@@ -42,26 +42,22 @@
           function($i) {
 
   var PLAYER_CARDS = {
-    'Energy Orb': 2,
-    'Mind Link': 2,
-    'Bot': 2,
-    'Meditate': 2
+    'energy_orb': 2,
+    'mind_link': 2,
+    'bot': 2,
+    'meditate': 2
   };
 
-  var RIFT_CARDS = $i.data.Fire
-      .concat($i.data.Earth)
-      .concat($i.data.Air)
-      .concat($i.data.Water);
+  var RIFT_CARDS = $i.data.find({
+    'element': {
+      '$ne': 'base'
+    }
+  });
 
   function initPlayerCards() {
     var playerCards = [];
     for (var name in PLAYER_CARDS) {
-      var card = null;
-      $i.data.Base.forEach(function(candidate) {
-        if (candidate.name === name) {
-          card = candidate;
-        }
-      });
+      var card = $i.data.find({ 'code': name })[0];
       if (!card) {
         throw name + ' cannot be found';
       }
@@ -79,7 +75,7 @@
 
     $i.Template
         .addData('riftCards', RIFT_CARDS)
-        .addData('stapleCards', $i.data.Base)
+        .addData('stapleCards', $i.data.find({ 'element': 'base' }))
         .addPartial('gz-card', $i.cardTemplate);
   };
 });

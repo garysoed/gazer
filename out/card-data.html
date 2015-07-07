@@ -1,814 +1,793 @@
-<base href=".."><link rel="import" href="src/dijs.html"><script>DI.prefix("gz").bind("data", {}, function() { return {
-  "": [
-    {
-      "name": "",
-      "type": "",
-      "element": "",
-      "count": "",
-      "description": "",
-      "cost": "",
-      "code": ""
-    }
-  ],
-  "Base": [
-    {
-      "name": "Energy Orb",
-      "type": "Device",
-      "element": "Base",
-      "count": "10",
-      "description": "Tap: +1 Energy",
-      "cost": "3",
-      "code": "energy_orb",
-      "life": "5"
-    },
-    {
-      "name": "Bot",
-      "type": "Minion",
-      "element": "Base",
-      "count": "10",
-      "description": "",
-      "cost": "3",
-      "code": "bot",
-      "life": "3",
-      "attack": "2",
-      "armor": "0"
-    },
-    {
-      "name": "Mind Link",
-      "type": "Enchantment",
-      "element": "Base",
-      "count": "10",
-      "description": "At the beginning of the turn, draw a card",
-      "cost": "1",
-      "code": "mind_link"
-    },
-    {
-      "name": "Meditate",
-      "type": "Spell",
-      "element": "Base",
-      "count": "10",
-      "description": "Replace any number of cards in the Rift area. Draft a card",
-      "cost": "1",
-      "code": "meditate"
-    }
-  ],
-  "Fire": [
-    {
-      "name": "Fire Ball",
-      "type": "Spell",
-      "element": "Fire",
-      "count": "3",
-      "description": "Damage up to 3 Minions by 1",
-      "cost": "1",
-      "code": "fire_ball"
-    },
-    {
-      "name": "Magma Ball",
-      "type": "Spell",
-      "element": "Fire",
-      "count": "2",
-      "description": "Damage up to 3 Minions by 2",
-      "cost": "3",
-      "code": "magma_ball"
-    },
-    {
-      "name": "Overheat",
-      "type": "Spell",
-      "element": "Fire",
-      "count": "2",
-      "description": "Take up to 4 damage. Gain the same amount of energy as the amount of damage you have taken. Draw 2 cards",
-      "cost": "1",
-      "code": "overheat"
-    },
-    {
-      "name": "Hot Recharge",
-      "type": "Spell",
-      "element": "Fire",
-      "count": "2",
-      "description": "Untap all your Devices",
-      "cost": "3",
-      "code": "hot_recharge"
-    },
-    {
-      "name": "Recharge",
-      "type": "Spell",
-      "element": "Fire",
-      "count": "3",
-      "description": "Untap 2 Devices",
-      "cost": "1",
-      "code": "recharge"
-    },
-    {
-      "name": "Pyrophillic",
-      "type": "Enchantment",
-      "element": "Fire",
-      "count": "2",
-      "description": "When this Minion is damaged, damage up to 2 Minions by 1",
-      "cost": "1",
-      "code": "pyrophillic"
-    },
-    {
-      "name": "Burn",
-      "type": "Enchantment",
-      "element": "Fire",
-      "count": "2",
-      "description": "When this Minion is damaged, draw 2 cards",
-      "cost": "2",
-      "code": "burn"
-    },
-    {
-      "name": "Warm Up",
-      "type": "Enchantment",
-      "element": "Fire",
-      "count": "2",
-      "description": "When this Minion is damaged, untap 1 Device",
-      "cost": "1",
-      "code": "warm_up"
-    },
-    {
-      "name": "Fire Spirit",
-      "type": "Minion",
-      "element": "Fire",
-      "count": "3",
-      "description": "",
-      "cost": "3",
-      "code": "fire_spirit",
-      "life": "2",
-      "attack": "3",
-      "armor": "0"
-    },
-    {
-      "name": "Inferno Spirit",
-      "type": "Minion",
-      "element": "Fire",
-      "count": "2",
-      "description": "",
-      "cost": "4",
-      "code": "inferno_spirit",
-      "life": "3",
-      "attack": "3",
-      "armor": "0"
-    },
-    {
-      "name": "Fire Goblin",
-      "type": "Minion",
-      "element": "Fire",
-      "count": "3",
-      "description": "When this minion takes a damage, draw a card",
-      "cost": "3",
-      "code": "fire_goblin",
-      "life": "5",
-      "attack": "1",
-      "armor": "0"
-    },
-    {
-      "name": "Salamander",
-      "type": "Minion",
-      "element": "Fire",
-      "count": "1",
-      "description": "When this minion takes a damage, damage all opponent Minions by 1",
-      "cost": "4",
-      "code": "salamander",
-      "life": "3",
-      "attack": "2",
-      "armor": "0"
-    },
-    {
-      "name": "Fire Battery",
-      "type": "Device",
-      "element": "Fire",
-      "count": "2",
-      "description": "T: Damage a non Device you control by 2. Until the end of the turn, increase all damage you do or any cards you control by 1.",
-      "cost": "2",
-      "code": "fire_battery",
-      "life": "5"
-    },
-    {
-      "name": "Fire Turret",
-      "type": "Device",
-      "element": "Fire",
-      "count": "3",
-      "description": "T: Damage up to 2 Minions by 1",
-      "cost": "3",
-      "code": "fire_turret",
-      "life": "3"
-    },
-    {
-      "name": "Heat Engine",
-      "type": "Device",
-      "element": "Fire",
-      "count": "2",
-      "description": "T: Damage a non Device you control by 2. If you do, +3 Energy",
-      "cost": "4",
-      "code": "heat_engine",
-      "life": "4"
-    },
-    {
-      "name": "Blast Furnace",
-      "type": "Device",
-      "element": "Fire",
-      "count": "3",
-      "description": "T: Damage a non Device you control by 2. If you do, draw 3 cards",
-      "cost": "4",
-      "code": "blast_furnace",
-      "life": "4"
-    },
-    {
-      "name": "Thermo Cycle",
-      "type": "Device",
-      "element": "Fire",
-      "count": "3",
-      "description": "T: Damage a non Device you control by 2. If you do, untap 2 devices",
-      "cost": "2",
-      "code": "thermo_cycle",
-      "life": "3"
-    },
-    {
-      "name": "Magma Turret",
-      "type": "Device",
-      "element": "Fire",
-      "count": "2",
-      "description": "T: Damage a non Device you control by 2. If you do, damage up to 2 Minions or Devices by 2",
-      "cost": "5",
-      "code": "magma_turret",
-      "life": "5"
-    },
-    {
-      "name": "Fire Orb",
-      "type": "Device",
-      "element": "Fire",
-      "count": "3",
-      "description": "T: +2 Energy",
-      "cost": "5",
-      "code": "fire_orb",
-      "life": "4"
-    }
-  ],
-  "Earth": [
-    {
-      "name": "Purify",
-      "type": "Spell",
-      "element": "Earth",
-      "count": "3",
-      "description": "Reveal the top 4 cards of the deck. Put any Minions in hand, discard the rest. Draw a card",
-      "cost": "1",
-      "code": "purify"
-    },
-    {
-      "name": "Pottery",
-      "type": "Spell",
-      "element": "Earth",
-      "count": "2",
-      "description": "Draft a bot into hand",
-      "cost": "1",
-      "code": "pottery"
-    },
-    {
-      "name": "Evolution",
-      "type": "Spell",
-      "element": "Earth",
-      "count": "2",
-      "description": "Put a Minion in play back in your hand. Put a Minion in your discard pile with summoning cost at most one more of the summoning cost of that minion into play.",
-      "cost": "2",
-      "code": "evolution"
-    },
-    {
-      "name": "Call to Rise",
-      "type": "Spell",
-      "element": "Earth",
-      "count": "2",
-      "description": "Draw a card from your discard pile",
-      "cost": "1",
-      "code": "call_to rise"
-    },
-    {
-      "name": "Alpha Minion",
-      "type": "Enchantment",
-      "element": "Earth",
-      "count": "2",
-      "description": "At the beginning of the turn, you may draft a Bot",
-      "cost": "1",
-      "code": "alpha_minion"
-    },
-    {
-      "name": "Earth Reinforcement",
-      "type": "Enchantment",
-      "element": "Earth",
-      "count": "3",
-      "description": "At the beginning of the turn, take a Minion from your discard pile and put it in your hand",
-      "cost": "3",
-      "code": "earth_reinforcement"
-    },
-    {
-      "name": "Natural Selection",
-      "type": "Enchantment",
-      "element": "Earth",
-      "count": "2",
-      "description": "At the beginning of the turn, reveal the top 4 cards of your deck. Discard any of them and put the rest back in any order.",
-      "cost": "1",
-      "code": "natural_selection"
-    },
-    {
-      "name": "Symbiosis",
-      "type": "Enchantment",
-      "element": "Earth",
-      "count": "2",
-      "description": "When this Minion is about to receive a damage, you may redirect it to another Minion",
-      "cost": "1",
-      "code": "symbiosis"
-    },
-    {
-      "name": "Group Spirit",
-      "type": "Enchantment",
-      "element": "Earth",
-      "count": "3",
-      "description": "When a Minion enters play, untap this Minion",
-      "cost": "2",
-      "code": "group_spirit"
-    },
-    {
-      "name": "Sun Squirrel",
-      "type": "Minion",
-      "element": "Earth",
-      "count": "3",
-      "description": "When a Minion comes into play, put a Bot in your discard pile on top of your deck.",
-      "cost": "3",
-      "code": "sun_squirrel",
-      "life": "3",
-      "attack": "1",
-      "armor": "0"
-    },
-    {
-      "name": "Leader of the Pack",
-      "type": "Minion",
-      "element": "Earth",
-      "count": "2",
-      "description": "When a Minion comes into play, draw a card",
-      "cost": "3",
-      "code": "leader_of the pack",
-      "life": "3",
-      "attack": "1",
-      "armor": "0"
-    },
-    {
-      "name": "Bot Leader",
-      "type": "Minion",
-      "element": "Earth",
-      "count": "2",
-      "description": "When a Minion comes into play, you may draft a Minion",
-      "cost": "3",
-      "code": "bot_leader",
-      "life": "2",
-      "attack": "2",
-      "armor": "0"
-    },
-    {
-      "name": "Jungle Vines",
-      "type": "Minion",
-      "element": "Earth",
-      "count": "2",
-      "description": "You may put this Minion into play from your discard pile",
-      "cost": "2",
-      "code": "jungle_vines",
-      "life": "1",
-      "attack": "1",
-      "armor": "1"
-    },
-    {
-      "name": "Thorny Vines",
-      "type": "Minion",
-      "element": "Earth",
-      "count": "3",
-      "description": "You may put this Minion into play from your discard pile",
-      "cost": "2",
-      "code": "thorny_vines",
-      "life": "1",
-      "attack": "2",
-      "armor": "0"
-    },
-    {
-      "name": "Bark Vines",
-      "type": "Minion",
-      "element": "Earth",
-      "count": "3",
-      "description": "You may put this Minion into play from your discard pile",
-      "cost": "2",
-      "code": "bark_vines",
-      "life": "1",
-      "attack": "0",
-      "armor": "2"
-    },
-    {
-      "name": "Earth Spirit",
-      "type": "Minion",
-      "element": "Earth",
-      "count": "3",
-      "description": "When a Minion comes into play, untap a Minion",
-      "cost": "4",
-      "code": "earth_spirit",
-      "life": "3",
-      "attack": "1",
-      "armor": "0"
-    },
-    {
-      "name": "Composting Staff",
-      "type": "Device",
-      "element": "Earth",
-      "count": "2",
-      "description": "T: Draw a card. Every player discards the top 4 cards of their deck",
-      "cost": "3",
-      "code": "composting_staff",
-      "life": "5"
-    },
-    {
-      "name": "Revival Pendant",
-      "type": "Device",
-      "element": "Earth",
-      "count": "2",
-      "description": "T: Play a Minion in your discard pile, paying its energy cost",
-      "cost": "3",
-      "code": "revival_pendant",
-      "life": "5"
-    },
-    {
-      "name": "Rest Hollow",
-      "type": "Device",
-      "element": "Earth",
-      "count": "2",
-      "description": "T: Put a Minion in play back in your hand. Put another Minion with the same cost into play",
-      "cost": "3",
-      "code": "rest_hollow",
-      "life": "4"
-    }
-  ],
-  "Air": [
-    {
-      "name": "Bird's Eye View",
-      "type": "Spell",
-      "element": "Air",
-      "count": "3",
-      "description": "Draw a card. Pick a player. That player reveals their hand and discards a card you pick.",
-      "cost": "1",
-      "code": "bird's_eye view"
-    },
-    {
-      "name": "Gathering Storm",
-      "type": "Spell",
-      "element": "Air",
-      "count": "3",
-      "description": "Reduce energy cost of Spells by 1. Draw a card.",
-      "cost": "2",
-      "code": "gathering_storm"
-    },
-    {
-      "name": "Electric Shock",
-      "type": "Spell",
-      "element": "Air",
-      "count": "2",
-      "description": "Draw X cards, tap X cards, where X is the number of spells you have in play.",
-      "cost": "2",
-      "code": "electric_shock"
-    },
-    {
-      "name": "Shock",
-      "type": "Spell",
-      "element": "Air",
-      "count": "4",
-      "description": "Draw a card. Tap a card",
-      "cost": "1",
-      "code": "shock"
-    },
-    {
-      "name": "Demoralize",
-      "type": "Spell",
-      "element": "Air",
-      "count": "2",
-      "description": "Move a Minion you control back to the owner's hand. The owner gains the same amount of energy used to summon the Minion.",
-      "cost": "1",
-      "code": "demoralize"
-    },
-    {
-      "name": "Reset",
-      "type": "Spell",
-      "element": "Air",
-      "count": "2",
-      "description": "Shuffle your discard pile into your deck. Draw a card.",
-      "cost": "2",
-      "code": "reset"
-    },
-    {
-      "name": "Putrid Smoke",
-      "type": "Spell",
-      "element": "Air",
-      "count": "2",
-      "description": "Draw X cards. Pick a player. Pick X cards to discard from that player's hand, where X is the number of spells you have in play.",
-      "cost": "2",
-      "code": "putrid_smoke"
-    },
-    {
-      "name": "Intimidate",
-      "type": "Enchantment",
-      "element": "Air",
-      "count": "2",
-      "description": "When you play a Spell, you may deal 1 damage to a target",
-      "cost": "2",
-      "code": "intimidate"
-    },
-    {
-      "name": "Flight",
-      "type": "Enchantment",
-      "element": "Air",
-      "count": "3",
-      "description": "This Minion is Flying",
-      "cost": "1",
-      "code": "flight"
-    },
-    {
-      "name": "Intelligence",
-      "type": "Enchantment",
-      "element": "Air",
-      "count": "2",
-      "description": "When you play a Spell, draw a card",
-      "cost": "3",
-      "code": "intelligence"
-    },
-    {
-      "name": "Gust",
-      "type": "Enchantment",
-      "element": "Air",
-      "count": "2",
-      "description": "When you play a Spell, tap a card",
-      "cost": "4",
-      "code": "gust"
-    },
-    {
-      "name": "Mind Devourer",
-      "type": "Minion",
-      "element": "Air",
-      "count": "3",
-      "description": "When you play a Spell, pick a player. That player discards a card you pick.",
-      "cost": "3",
-      "code": "mind_devourer",
-      "life": "2",
-      "attack": "1",
-      "armor": "0"
-    },
-    {
-      "name": "Winged Terror",
-      "type": "Minion",
-      "element": "Air",
-      "count": "1",
-      "description": "Flying",
-      "cost": "3",
-      "code": "winged_terror",
-      "life": "2",
-      "attack": "2",
-      "armor": "0"
-    },
-    {
-      "name": "Psyche Mage",
-      "type": "Minion",
-      "element": "Air",
-      "count": "2",
-      "description": "When this minion attacks, it deals damage equal to the number of spells you have in play.",
-      "cost": "2",
-      "code": "psyche_mage",
-      "life": "3",
-      "attack": "1.57",
-      "armor": "0"
-    },
-    {
-      "name": "Crystal Ball",
-      "type": "Device",
-      "element": "Air",
-      "count": "2",
-      "description": "T: Reveal the top card of your deck. If it is a spell, put it into play for free. Otherwise, put it in your hand.",
-      "cost": "3",
-      "code": "crystal_ball",
-      "life": "4"
-    },
-    {
-      "name": "Mind Controller",
-      "type": "Device",
-      "element": "Air",
-      "count": "2",
-      "description": "T: Take control a Minion with the same summoning cost as the number of Spell you have in play until the end of your turn.",
-      "cost": "3",
-      "code": "mind_controller",
-      "life": "3"
-    },
-    {
-      "name": "Dust Devil",
-      "type": "Device",
-      "element": "Air",
-      "count": "3",
-      "description": "T: Draw a Card. Pick a player. Both you and that player take a card from hand and put it on top of the other player’s deck.",
-      "cost": "3",
-      "code": "dust_devil",
-      "life": "5"
-    },
-    {
-      "name": "Redirection Chamber",
-      "type": "Device",
-      "element": "Air",
-      "count": "2",
-      "description": "T: Redirect an attack causing up to X damage, where X is the number of Spells in play, to a target of your choice.",
-      "cost": "3",
-      "code": "redirection_chamber",
-      "life": "2"
-    },
-    {
-      "name": "Air Dart",
-      "type": "Device",
-      "element": "Air",
-      "count": "3",
-      "description": "T: You may play a spell from the draft deck, paying its cost",
-      "cost": "4",
-      "code": "air_dart",
-      "life": "3"
-    }
-  ],
-  "Water": [
-    {
-      "name": "Healing Stream",
-      "type": "Spell",
-      "element": "Water",
-      "count": "4",
-      "description": "Untap a Minion, fully heal that Minion",
-      "cost": "1",
-      "code": "healing_stream"
-    },
-    {
-      "name": "Flood",
-      "type": "Spell",
-      "element": "Water",
-      "count": "2",
-      "description": "Pick a Minion. Untap that Minion. Draw X cards, where X is the number of Enchantments on that Minion.",
-      "cost": "2",
-      "code": "flood"
-    },
-    {
-      "name": "Ice Armor",
-      "type": "Enchantment",
-      "element": "Water",
-      "count": "2",
-      "description": "Armor + 1",
-      "cost": "1",
-      "code": "ice_armor"
-    },
-    {
-      "name": "Everlasting Water",
-      "type": "Enchantment",
-      "element": "Water",
-      "count": "3",
-      "description": "Life + X, where X is the number of Enchantments on this Minion.",
-      "cost": "2",
-      "code": "everlasting_water"
-    },
-    {
-      "name": "Piercing Icicle",
-      "type": "Enchantment",
-      "element": "Water",
-      "count": "2",
-      "description": "This Minion may attack without tapping",
-      "cost": "2",
-      "code": "piercing_icicle"
-    },
-    {
-      "name": "Icy Spear",
-      "type": "Enchantment",
-      "element": "Water",
-      "count": "3",
-      "description": "Attack + X, where X is the number of Enchantments on this Minion.",
-      "cost": "2",
-      "code": "icy_spear"
-    },
-    {
-      "name": "Healing Water",
-      "type": "Enchantment",
-      "element": "Water",
-      "count": "3",
-      "description": "At the beginning of the turn, this Minion heals one life",
-      "cost": "1",
-      "code": "healing_water"
-    },
-    {
-      "name": "Shiny Crystal",
-      "type": "Enchantment",
-      "element": "Water",
-      "count": "2",
-      "description": "At the beginning of the turn, pick an Enchantment on this Minion. This Enchantment gains all the abilities of that Enchantment.",
-      "cost": "2",
-      "code": "shiny_crystal"
-    },
-    {
-      "name": "Clarity",
-      "type": "Enchantment",
-      "element": "Water",
-      "count": "3",
-      "description": "At the beginning of the turn, draw X cards, where X is the number of Enchantments on this Minion",
-      "cost": "2",
-      "code": "clarity"
-    },
-    {
-      "name": "Ice Golem",
-      "type": "Minion",
-      "element": "Water",
-      "count": "3",
-      "description": "",
-      "cost": "6",
-      "code": "ice_golem",
-      "life": "3",
-      "attack": "2",
-      "armor": "2"
-    },
-    {
-      "name": "Rain Sprite",
-      "type": "Minion",
-      "element": "Water",
-      "count": "3",
-      "description": "At any time, you may discard an Enchantment from play or from hand to draw 2 cards.",
-      "cost": "6",
-      "code": "rain_sprite",
-      "life": "3",
-      "attack": "2",
-      "armor": "1"
-    },
-    {
-      "name": "Water Blob",
-      "type": "Minion",
-      "element": "Water",
-      "count": "2",
-      "description": "At any time, you may discard an Enchantment from play or from hand to recover this Minion by 2.",
-      "cost": "5",
-      "code": "water_blob",
-      "life": "5",
-      "attack": "1",
-      "armor": "1"
-    },
-    {
-      "name": "Mist Folk",
-      "type": "Minion",
-      "element": "Water",
-      "count": "2",
-      "description": "At any time, you may discard an Enchantment from play or from hand to untap a Minion.",
-      "cost": "5",
-      "code": "mist_folk",
-      "life": "5",
-      "attack": "0",
-      "armor": "3"
-    },
-    {
-      "name": "Wave Maker",
-      "type": "Minion",
-      "element": "Water",
-      "count": "2",
-      "description": "At any time, you may discard an Enchantment from play or from hand to increase this Minion's next attack by 2.",
-      "cost": "5",
-      "code": "wave_maker",
-      "life": "5",
-      "attack": "0",
-      "armor": "2"
-    },
-    {
-      "name": "Aqua Morph",
-      "type": "Device",
-      "element": "Water",
-      "count": "2",
-      "description": "T: Put one Enchantment into play from hand for free.",
-      "cost": "3",
-      "code": "aqua_morph",
-      "life": "3"
-    },
-    {
-      "name": "Water Bearer",
-      "type": "Device",
-      "element": "Water",
-      "count": "3",
-      "description": "T: Heal a Minion by the number of Enchantments on that Minion",
-      "cost": "3",
-      "code": "water_bearer",
-      "life": "4"
-    },
-    {
-      "name": "Steam Engine",
-      "type": "Device",
-      "element": "Water",
-      "count": "2",
-      "description": "T: Pick a Minion. Draw until you have X cards in hand, where X is the number of Enchantments on that Minion.",
-      "cost": "3",
-      "code": "steam_engine",
-      "life": "3"
-    },
-    {
-      "name": "Refreshing Jar",
-      "type": "Device",
-      "element": "Water",
-      "count": "2",
-      "description": "T: Untap a Minion",
-      "cost": "5",
-      "code": "refreshing_jar",
-      "life": "5"
-    }
-  ]
-};});</script>
+<base href=".."><link rel="import" href="src/dijs.html"><script src="bower_components/lokijs/src/lokijs.js"></script><script>DI.prefix("gz").bind("data", {}, function() { var raw = [
+  {
+    "name": "Energy Orb",
+    "type": "device",
+    "element": "base",
+    "count": "10",
+    "description": "Tap: +1 Energy",
+    "cost": "3",
+    "code": "energy_orb",
+    "life": "5"
+  },
+  {
+    "name": "Bot",
+    "type": "minion",
+    "element": "base",
+    "count": "10",
+    "description": "",
+    "cost": "3",
+    "code": "bot",
+    "life": "3",
+    "attack": "2",
+    "armor": "0"
+  },
+  {
+    "name": "Mind Link",
+    "type": "enchantment",
+    "element": "base",
+    "count": "10",
+    "description": "At the beginning of the turn, draw a card",
+    "cost": "1",
+    "code": "mind_link"
+  },
+  {
+    "name": "Meditate",
+    "type": "spell",
+    "element": "base",
+    "count": "10",
+    "description": "Replace any number of cards in the Rift area. Draft a card",
+    "cost": "1",
+    "code": "meditate"
+  },
+  {
+    "name": "Fire Ball",
+    "type": "spell",
+    "element": "fire",
+    "count": "3",
+    "description": "Damage up to 3 Minions by 1",
+    "cost": "1",
+    "code": "fire_ball"
+  },
+  {
+    "name": "Magma Ball",
+    "type": "spell",
+    "element": "fire",
+    "count": "2",
+    "description": "Damage up to 3 Minions by 2",
+    "cost": "3",
+    "code": "magma_ball"
+  },
+  {
+    "name": "Overheat",
+    "type": "spell",
+    "element": "fire",
+    "count": "2",
+    "description": "Take up to 4 damage. Gain the same amount of energy as the amount of damage you have taken. Draw 2 cards",
+    "cost": "1",
+    "code": "overheat"
+  },
+  {
+    "name": "Hot Recharge",
+    "type": "spell",
+    "element": "fire",
+    "count": "2",
+    "description": "Untap all your Devices",
+    "cost": "3",
+    "code": "hot_recharge"
+  },
+  {
+    "name": "Recharge",
+    "type": "spell",
+    "element": "fire",
+    "count": "3",
+    "description": "Untap 2 Devices",
+    "cost": "1",
+    "code": "recharge"
+  },
+  {
+    "name": "Pyrophillic",
+    "type": "enchantment",
+    "element": "fire",
+    "count": "2",
+    "description": "When this Minion is damaged, damage up to 2 Minions by 1",
+    "cost": "1",
+    "code": "pyrophillic"
+  },
+  {
+    "name": "Burn",
+    "type": "enchantment",
+    "element": "fire",
+    "count": "2",
+    "description": "When this Minion is damaged, draw 2 cards",
+    "cost": "2",
+    "code": "burn"
+  },
+  {
+    "name": "Warm Up",
+    "type": "enchantment",
+    "element": "fire",
+    "count": "2",
+    "description": "When this Minion is damaged, untap 1 Device",
+    "cost": "1",
+    "code": "warm_up"
+  },
+  {
+    "name": "Fire Spirit",
+    "type": "minion",
+    "element": "fire",
+    "count": "3",
+    "description": "",
+    "cost": "3",
+    "code": "fire_spirit",
+    "life": "2",
+    "attack": "3",
+    "armor": "0"
+  },
+  {
+    "name": "Inferno Spirit",
+    "type": "minion",
+    "element": "fire",
+    "count": "2",
+    "description": "",
+    "cost": "4",
+    "code": "inferno_spirit",
+    "life": "3",
+    "attack": "3",
+    "armor": "0"
+  },
+  {
+    "name": "Fire Goblin",
+    "type": "minion",
+    "element": "fire",
+    "count": "3",
+    "description": "When this minion takes a damage, draw a card",
+    "cost": "3",
+    "code": "fire_goblin",
+    "life": "5",
+    "attack": "1",
+    "armor": "0"
+  },
+  {
+    "name": "Salamander",
+    "type": "minion",
+    "element": "fire",
+    "count": "1",
+    "description": "When this minion takes a damage, damage all opponent Minions by 1",
+    "cost": "4",
+    "code": "salamander",
+    "life": "3",
+    "attack": "2",
+    "armor": "0"
+  },
+  {
+    "name": "Fire Battery",
+    "type": "device",
+    "element": "fire",
+    "count": "2",
+    "description": "T: Damage a non Device you control by 2. Until the end of the turn, increase all damage you do or any cards you control by 1.",
+    "cost": "2",
+    "code": "fire_battery",
+    "life": "5"
+  },
+  {
+    "name": "Fire Turret",
+    "type": "device",
+    "element": "fire",
+    "count": "3",
+    "description": "T: Damage up to 2 Minions by 1",
+    "cost": "3",
+    "code": "fire_turret",
+    "life": "3"
+  },
+  {
+    "name": "Heat Engine",
+    "type": "device",
+    "element": "fire",
+    "count": "2",
+    "description": "T: Damage a non Device you control by 2. If you do, +3 Energy",
+    "cost": "4",
+    "code": "heat_engine",
+    "life": "4"
+  },
+  {
+    "name": "Blast Furnace",
+    "type": "device",
+    "element": "fire",
+    "count": "3",
+    "description": "T: Damage a non Device you control by 2. If you do, draw 3 cards",
+    "cost": "4",
+    "code": "blast_furnace",
+    "life": "4"
+  },
+  {
+    "name": "Thermo Cycle",
+    "type": "device",
+    "element": "fire",
+    "count": "3",
+    "description": "T: Damage a non Device you control by 2. If you do, untap 2 devices",
+    "cost": "2",
+    "code": "thermo_cycle",
+    "life": "3"
+  },
+  {
+    "name": "Magma Turret",
+    "type": "device",
+    "element": "fire",
+    "count": "2",
+    "description": "T: Damage a non Device you control by 2. If you do, damage up to 2 Minions or Devices by 2",
+    "cost": "5",
+    "code": "magma_turret",
+    "life": "5"
+  },
+  {
+    "name": "Fire Orb",
+    "type": "device",
+    "element": "fire",
+    "count": "3",
+    "description": "T: +2 Energy",
+    "cost": "5",
+    "code": "fire_orb",
+    "life": "4"
+  },
+  {
+    "name": "Purify",
+    "type": "spell",
+    "element": "earth",
+    "count": "3",
+    "description": "Reveal the top 4 cards of the deck. Put any Minions in hand, discard the rest. Draw a card",
+    "cost": "1",
+    "code": "purify"
+  },
+  {
+    "name": "Pottery",
+    "type": "spell",
+    "element": "earth",
+    "count": "2",
+    "description": "Draft a bot into hand",
+    "cost": "1",
+    "code": "pottery"
+  },
+  {
+    "name": "Evolution",
+    "type": "spell",
+    "element": "earth",
+    "count": "2",
+    "description": "Put a Minion in play back in your hand. Put a Minion in your discard pile with summoning cost at most one more of the summoning cost of that minion into play.",
+    "cost": "2",
+    "code": "evolution"
+  },
+  {
+    "name": "Call to Rise",
+    "type": "spell",
+    "element": "earth",
+    "count": "2",
+    "description": "Draw a card from your discard pile",
+    "cost": "1",
+    "code": "call_to rise"
+  },
+  {
+    "name": "Alpha Minion",
+    "type": "enchantment",
+    "element": "earth",
+    "count": "2",
+    "description": "At the beginning of the turn, you may draft a Bot",
+    "cost": "1",
+    "code": "alpha_minion"
+  },
+  {
+    "name": "Earth Reinforcement",
+    "type": "enchantment",
+    "element": "earth",
+    "count": "3",
+    "description": "At the beginning of the turn, take a Minion from your discard pile and put it in your hand",
+    "cost": "3",
+    "code": "earth_reinforcement"
+  },
+  {
+    "name": "Natural Selection",
+    "type": "enchantment",
+    "element": "earth",
+    "count": "2",
+    "description": "At the beginning of the turn, reveal the top 4 cards of your deck. Discard any of them and put the rest back in any order.",
+    "cost": "1",
+    "code": "natural_selection"
+  },
+  {
+    "name": "Symbiosis",
+    "type": "enchantment",
+    "element": "earth",
+    "count": "2",
+    "description": "When this Minion is about to receive a damage, you may redirect it to another Minion",
+    "cost": "1",
+    "code": "symbiosis"
+  },
+  {
+    "name": "Group Spirit",
+    "type": "enchantment",
+    "element": "earth",
+    "count": "3",
+    "description": "When a Minion enters play, untap this Minion",
+    "cost": "2",
+    "code": "group_spirit"
+  },
+  {
+    "name": "Sun Squirrel",
+    "type": "minion",
+    "element": "earth",
+    "count": "3",
+    "description": "When a Minion comes into play, put a Bot in your discard pile on top of your deck.",
+    "cost": "3",
+    "code": "sun_squirrel",
+    "life": "3",
+    "attack": "1",
+    "armor": "0"
+  },
+  {
+    "name": "Leader of the Pack",
+    "type": "minion",
+    "element": "earth",
+    "count": "2",
+    "description": "When a Minion comes into play, draw a card",
+    "cost": "3",
+    "code": "leader_of the pack",
+    "life": "3",
+    "attack": "1",
+    "armor": "0"
+  },
+  {
+    "name": "Bot Leader",
+    "type": "minion",
+    "element": "earth",
+    "count": "2",
+    "description": "When a Minion comes into play, you may draft a Minion",
+    "cost": "3",
+    "code": "bot_leader",
+    "life": "2",
+    "attack": "2",
+    "armor": "0"
+  },
+  {
+    "name": "Jungle Vines",
+    "type": "minion",
+    "element": "earth",
+    "count": "2",
+    "description": "You may put this Minion into play from your discard pile",
+    "cost": "2",
+    "code": "jungle_vines",
+    "life": "1",
+    "attack": "1",
+    "armor": "1"
+  },
+  {
+    "name": "Thorny Vines",
+    "type": "minion",
+    "element": "earth",
+    "count": "3",
+    "description": "You may put this Minion into play from your discard pile",
+    "cost": "2",
+    "code": "thorny_vines",
+    "life": "1",
+    "attack": "2",
+    "armor": "0"
+  },
+  {
+    "name": "Bark Vines",
+    "type": "minion",
+    "element": "earth",
+    "count": "3",
+    "description": "You may put this Minion into play from your discard pile",
+    "cost": "2",
+    "code": "bark_vines",
+    "life": "1",
+    "attack": "0",
+    "armor": "2"
+  },
+  {
+    "name": "Earth Spirit",
+    "type": "minion",
+    "element": "earth",
+    "count": "3",
+    "description": "When a Minion comes into play, untap a Minion",
+    "cost": "4",
+    "code": "earth_spirit",
+    "life": "3",
+    "attack": "1",
+    "armor": "0"
+  },
+  {
+    "name": "Composting Staff",
+    "type": "device",
+    "element": "earth",
+    "count": "2",
+    "description": "T: Draw a card. Every player discards the top 4 cards of their deck",
+    "cost": "3",
+    "code": "composting_staff",
+    "life": "5"
+  },
+  {
+    "name": "Revival Pendant",
+    "type": "device",
+    "element": "earth",
+    "count": "2",
+    "description": "T: Play a Minion in your discard pile, paying its energy cost",
+    "cost": "3",
+    "code": "revival_pendant",
+    "life": "5"
+  },
+  {
+    "name": "Rest Hollow",
+    "type": "device",
+    "element": "earth",
+    "count": "2",
+    "description": "T: Put a Minion in play back in your hand. Put another Minion with the same cost into play",
+    "cost": "3",
+    "code": "rest_hollow",
+    "life": "4"
+  },
+  {
+    "name": "Bird's Eye View",
+    "type": "spell",
+    "element": "air",
+    "count": "3",
+    "description": "Draw a card. Pick a player. That player reveals their hand and discards a card you pick.",
+    "cost": "1",
+    "code": "bird's_eye view"
+  },
+  {
+    "name": "Gathering Storm",
+    "type": "spell",
+    "element": "air",
+    "count": "3",
+    "description": "Reduce energy cost of Spells by 1. Draw a card.",
+    "cost": "2",
+    "code": "gathering_storm"
+  },
+  {
+    "name": "Electric Shock",
+    "type": "spell",
+    "element": "air",
+    "count": "2",
+    "description": "Draw X cards, tap X cards, where X is the number of spells you have in play.",
+    "cost": "2",
+    "code": "electric_shock"
+  },
+  {
+    "name": "Shock",
+    "type": "spell",
+    "element": "air",
+    "count": "4",
+    "description": "Draw a card. Tap a card",
+    "cost": "1",
+    "code": "shock"
+  },
+  {
+    "name": "Demoralize",
+    "type": "spell",
+    "element": "air",
+    "count": "2",
+    "description": "Move a Minion you control back to the owner's hand. The owner gains the same amount of energy used to summon the Minion.",
+    "cost": "1",
+    "code": "demoralize"
+  },
+  {
+    "name": "Reset",
+    "type": "spell",
+    "element": "air",
+    "count": "2",
+    "description": "Shuffle your discard pile into your deck. Draw a card.",
+    "cost": "2",
+    "code": "reset"
+  },
+  {
+    "name": "Putrid Smoke",
+    "type": "spell",
+    "element": "air",
+    "count": "2",
+    "description": "Draw X cards. Pick a player. Pick X cards to discard from that player's hand, where X is the number of spells you have in play.",
+    "cost": "2",
+    "code": "putrid_smoke"
+  },
+  {
+    "name": "Intimidate",
+    "type": "enchantment",
+    "element": "air",
+    "count": "2",
+    "description": "When you play a Spell, you may deal 1 damage to a target",
+    "cost": "2",
+    "code": "intimidate"
+  },
+  {
+    "name": "Flight",
+    "type": "enchantment",
+    "element": "air",
+    "count": "3",
+    "description": "This Minion is Flying",
+    "cost": "1",
+    "code": "flight"
+  },
+  {
+    "name": "Intelligence",
+    "type": "enchantment",
+    "element": "air",
+    "count": "2",
+    "description": "When you play a Spell, draw a card",
+    "cost": "3",
+    "code": "intelligence"
+  },
+  {
+    "name": "Gust",
+    "type": "enchantment",
+    "element": "air",
+    "count": "2",
+    "description": "When you play a Spell, tap a card",
+    "cost": "4",
+    "code": "gust"
+  },
+  {
+    "name": "Mind Devourer",
+    "type": "minion",
+    "element": "air",
+    "count": "3",
+    "description": "When you play a Spell, pick a player. That player discards a card you pick.",
+    "cost": "3",
+    "code": "mind_devourer",
+    "life": "2",
+    "attack": "1",
+    "armor": "0"
+  },
+  {
+    "name": "Winged Terror",
+    "type": "minion",
+    "element": "air",
+    "count": "1",
+    "description": "Flying",
+    "cost": "3",
+    "code": "winged_terror",
+    "life": "2",
+    "attack": "2",
+    "armor": "0"
+  },
+  {
+    "name": "Psyche Mage",
+    "type": "minion",
+    "element": "air",
+    "count": "2",
+    "description": "When this minion attacks, it deals damage equal to the number of spells you have in play.",
+    "cost": "2",
+    "code": "psyche_mage",
+    "life": "3",
+    "attack": "1.57",
+    "armor": "0"
+  },
+  {
+    "name": "Crystal Ball",
+    "type": "device",
+    "element": "air",
+    "count": "2",
+    "description": "T: Reveal the top card of your deck. If it is a spell, put it into play for free. Otherwise, put it in your hand.",
+    "cost": "3",
+    "code": "crystal_ball",
+    "life": "4"
+  },
+  {
+    "name": "Mind Controller",
+    "type": "device",
+    "element": "air",
+    "count": "2",
+    "description": "T: Take control a Minion with the same summoning cost as the number of Spell you have in play until the end of your turn.",
+    "cost": "3",
+    "code": "mind_controller",
+    "life": "3"
+  },
+  {
+    "name": "Dust Devil",
+    "type": "device",
+    "element": "air",
+    "count": "3",
+    "description": "T: Draw a Card. Pick a player. Both you and that player take a card from hand and put it on top of the other player’s deck.",
+    "cost": "3",
+    "code": "dust_devil",
+    "life": "5"
+  },
+  {
+    "name": "Redirection Chamber",
+    "type": "device",
+    "element": "air",
+    "count": "2",
+    "description": "T: Redirect an attack causing up to X damage, where X is the number of Spells in play, to a target of your choice.",
+    "cost": "3",
+    "code": "redirection_chamber",
+    "life": "2"
+  },
+  {
+    "name": "Air Dart",
+    "type": "device",
+    "element": "air",
+    "count": "3",
+    "description": "T: You may play a spell from the draft deck, paying its cost",
+    "cost": "4",
+    "code": "air_dart",
+    "life": "3"
+  },
+  {
+    "name": "Healing Stream",
+    "type": "spell",
+    "element": "water",
+    "count": "4",
+    "description": "Untap a Minion, fully heal that Minion",
+    "cost": "1",
+    "code": "healing_stream"
+  },
+  {
+    "name": "Flood",
+    "type": "spell",
+    "element": "water",
+    "count": "2",
+    "description": "Pick a Minion. Untap that Minion. Draw X cards, where X is the number of Enchantments on that Minion.",
+    "cost": "2",
+    "code": "flood"
+  },
+  {
+    "name": "Ice Armor",
+    "type": "enchantment",
+    "element": "water",
+    "count": "2",
+    "description": "Armor + 1",
+    "cost": "1",
+    "code": "ice_armor"
+  },
+  {
+    "name": "Everlasting Water",
+    "type": "enchantment",
+    "element": "water",
+    "count": "3",
+    "description": "Life + X, where X is the number of Enchantments on this Minion.",
+    "cost": "2",
+    "code": "everlasting_water"
+  },
+  {
+    "name": "Piercing Icicle",
+    "type": "enchantment",
+    "element": "water",
+    "count": "2",
+    "description": "This Minion may attack without tapping",
+    "cost": "2",
+    "code": "piercing_icicle"
+  },
+  {
+    "name": "Icy Spear",
+    "type": "enchantment",
+    "element": "water",
+    "count": "3",
+    "description": "Attack + X, where X is the number of Enchantments on this Minion.",
+    "cost": "2",
+    "code": "icy_spear"
+  },
+  {
+    "name": "Healing Water",
+    "type": "enchantment",
+    "element": "water",
+    "count": "3",
+    "description": "At the beginning of the turn, this Minion heals one life",
+    "cost": "1",
+    "code": "healing_water"
+  },
+  {
+    "name": "Shiny Crystal",
+    "type": "enchantment",
+    "element": "water",
+    "count": "2",
+    "description": "At the beginning of the turn, pick an Enchantment on this Minion. This Enchantment gains all the abilities of that Enchantment.",
+    "cost": "2",
+    "code": "shiny_crystal"
+  },
+  {
+    "name": "Clarity",
+    "type": "enchantment",
+    "element": "water",
+    "count": "3",
+    "description": "At the beginning of the turn, draw X cards, where X is the number of Enchantments on this Minion",
+    "cost": "2",
+    "code": "clarity"
+  },
+  {
+    "name": "Ice Golem",
+    "type": "minion",
+    "element": "water",
+    "count": "3",
+    "description": "",
+    "cost": "6",
+    "code": "ice_golem",
+    "life": "3",
+    "attack": "2",
+    "armor": "2"
+  },
+  {
+    "name": "Rain Sprite",
+    "type": "minion",
+    "element": "water",
+    "count": "3",
+    "description": "At any time, you may discard an Enchantment from play or from hand to draw 2 cards.",
+    "cost": "6",
+    "code": "rain_sprite",
+    "life": "3",
+    "attack": "2",
+    "armor": "1"
+  },
+  {
+    "name": "Water Blob",
+    "type": "minion",
+    "element": "water",
+    "count": "2",
+    "description": "At any time, you may discard an Enchantment from play or from hand to recover this Minion by 2.",
+    "cost": "5",
+    "code": "water_blob",
+    "life": "5",
+    "attack": "1",
+    "armor": "1"
+  },
+  {
+    "name": "Mist Folk",
+    "type": "minion",
+    "element": "water",
+    "count": "2",
+    "description": "At any time, you may discard an Enchantment from play or from hand to untap a Minion.",
+    "cost": "5",
+    "code": "mist_folk",
+    "life": "5",
+    "attack": "0",
+    "armor": "3"
+  },
+  {
+    "name": "Wave Maker",
+    "type": "minion",
+    "element": "water",
+    "count": "2",
+    "description": "At any time, you may discard an Enchantment from play or from hand to increase this Minion's next attack by 2.",
+    "cost": "5",
+    "code": "wave_maker",
+    "life": "5",
+    "attack": "0",
+    "armor": "2"
+  },
+  {
+    "name": "Aqua Morph",
+    "type": "device",
+    "element": "water",
+    "count": "2",
+    "description": "T: Put one Enchantment into play from hand for free.",
+    "cost": "3",
+    "code": "aqua_morph",
+    "life": "3"
+  },
+  {
+    "name": "Water Bearer",
+    "type": "device",
+    "element": "water",
+    "count": "3",
+    "description": "T: Heal a Minion by the number of Enchantments on that Minion",
+    "cost": "3",
+    "code": "water_bearer",
+    "life": "4"
+  },
+  {
+    "name": "Steam Engine",
+    "type": "device",
+    "element": "water",
+    "count": "2",
+    "description": "T: Pick a Minion. Draw until you have X cards in hand, where X is the number of Enchantments on that Minion.",
+    "cost": "3",
+    "code": "steam_engine",
+    "life": "3"
+  },
+  {
+    "name": "Refreshing Jar",
+    "type": "device",
+    "element": "water",
+    "count": "2",
+    "description": "T: Untap a Minion",
+    "cost": "5",
+    "code": "refreshing_jar",
+    "life": "5"
+  }
+];var db = new loki("gazer");var cards = db.addCollection("cards");raw.forEach(function(data) { cards.insert(data); });return cards;});</script>

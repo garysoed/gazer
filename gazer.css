@@ -96,23 +96,23 @@ pb-u-previewer::shadow #root {
   width: 100%;
 }
 
-pb-c-card.Base [pb-front] {
+pb-c-card.base [pb-front] {
   background-color: #ffaaff;
 }
 
-pb-c-card.Air [pb-front] {
+pb-c-card.air [pb-front] {
   background-color: #aaaaaa;
 }
 
-pb-c-card.Earth [pb-front] {
+pb-c-card.earth [pb-front] {
   background-color: #aaffaa;
 }
 
-pb-c-card.Fire [pb-front] {
+pb-c-card.fire [pb-front] {
   background-color: #ffaaaa;
 }
 
-pb-c-card.Water [pb-front] {
+pb-c-card.water [pb-front] {
   background-color: #aaaaff;
 }
 
@@ -187,4 +187,8 @@ pb-c-card.Water [pb-front] {
 
 .playerarea .buttons {
   margin-top: 15px;
+}
+
+pb-u-previewer h2 {
+  text-transform: capitalize;
 }
