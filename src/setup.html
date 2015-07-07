@@ -104,10 +104,8 @@
       ui.getRiftDeckAsync(),
       ui.getPlayerDeckAsync('player1'),
       ui.getPlayerDeckAsync('player2')
-    ]).then(function(values) {
-      values.forEach(function(value) {
-        shuffle(value);
-      })
+    ]).then(function(els) {
+      els.forEach(shuffle)
     });
   }
 
@@ -140,8 +138,8 @@
       ui.getPlayerDiscardAsync('player1'),
       ui.getPlayerDiscardAsync('player2')
     ])
-    .then(function(hands) {
-      hands.forEach(observeChildList);
+    .then(function(els) {
+      els.forEach(observeChildList);
     });
   }
 

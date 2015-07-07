@@ -73,13 +73,17 @@ pb-u-previewer::shadow #root {
   display: flex;
 }
 
-#playarea {
+#playsection {
+  display: flex;
   flex: 1;
-  position: relative;
-
 }
 
-#playarea pb-r-rect {
+.playarea {
+  flex: 1;
+  position: relative;
+}
+
+.playarea pb-r-rect {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -87,7 +91,7 @@ pb-u-previewer::shadow #root {
   right: 0;
 }
 
-#playarea pb-r-rect::shadow #root {
+.playarea pb-r-rect::shadow #root {
   height: 100%;
   width: 100%;
 }
