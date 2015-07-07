@@ -62,7 +62,7 @@
     return this;
   };
 
-  Batch.prototype.getDeck = function(playerName) {
+  Batch.prototype.getDeck = function() {
     this[__collect__](this[__getArea__]().map(function(areaPromise) {
       return areaPromise.then(function(area) {
         return area.querySelector('.deck');
@@ -71,7 +71,23 @@
     return this;
   };
 
-  Batch.prototype.getArea = function(playerName) {
+  Batch.prototype.getPlayArea = function() {
+    this[__collect__](this[__players__].map(function(playerName) {
+      if (!this[__ui__].playerPlayAreaPromises[playerName]) {
+        this[__ui__].playerPlayAreaPromises[playerName] = this[__ui__]
+            .getElementAsync('#playsection')
+            .then(function(playsection) {
+              return playsection.querySelector('#' + playerName + 'rectarea');
+            });
+      }
+
+      return this[__ui__].playerPlayAreaPromises[playerName];
+    }.bind(this)));
+
+    return this;
+  };
+
+  Batch.prototype.getArea = function() {
     this[__collect__](this[__getArea__]());
     return this;
   };
@@ -105,17 +121,6 @@
     }
 
     return this.riftDeckPromise;
-  };
-
-  UI.prototype.getPlayerPlayAreaAsync = function(playerName) {
-    if (!this.playerPlayAreaPromises[playerName]) {
-      this.playerPlayAreaPromises[playerName] = this.getElementAsync('#playsection')
-          .then(function(playsection) {
-            return playsection.querySelector('#' + playerName + 'rectarea');
-          });
-    }
-
-    return this.playerPlayAreaPromises[playerName];
   };
 
   UI.prototype.getElementAsync = function(selector) {

@@ -161,15 +161,14 @@
       inputEl.value = inputEl.placeholder;
     });
 
-    return Promise.all([
-      ui.getPlayerPlayAreaAsync('player1'),
-      ui.getPlayerPlayAreaAsync('player2')
-    ])
-    .then(function(areas) {
-      areas.forEach(function(area) {
-        mutationObserver.observe(area, { childList: true });
-      })
-    });
+    return ui.forPlayers()
+        .getPlayArea()
+        .async()
+        .then(function(areas) {
+          areas.forEach(function(area) {
+            mutationObserver.observe(area, { childList: true });
+          })
+        });
   }
 
   return {
