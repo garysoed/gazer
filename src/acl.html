@@ -19,11 +19,10 @@
           function($i) {
     return function(document) {
       var ui = $i.ui(document);
-      Promise
-          .all([
-            ui.getPlayerAreaAsync('player1'),
-            ui.getPlayerAreaAsync('player2')
-          ])
+      ui
+          .forPlayers()
+          .getArea()
+          .async()
           .then(function(playerAreas) {
             playerAreas.forEach(function(area) {
               $i.Acl.registerElement(area);

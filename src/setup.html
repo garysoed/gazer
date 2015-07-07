@@ -45,13 +45,12 @@
   }
 
   function disableInputClickPropagation(document, ui) {
-    Promise
-        .all([
-          ui.getRiftDeckAsync(),
-          ui.getPlayerAreaAsync('player1'),
-          ui.getPlayerAreaAsync('player2'),
-          ui.getSwitcherAsync()
-        ])
+    ui
+        .forPlayers()
+        .getRiftDeck()
+        .getArea()
+        .getSwitcher()
+        .async()
         .then(function() {
           // Process all the input elements to not propagate click.
           $i.Utils.toArray(document.querySelectorAll('input')).forEach(function(el) {
@@ -66,12 +65,11 @@
   }
 
   function processPlayerButtons(ui) {
-    Promise
-        .all([
-          ui.getPlayerAreaAsync('player1'),
-          ui.getPlayerAreaAsync('player2'),
-        ]).
-        then(function(playerAreas) {
+    ui
+        .forPlayers()
+        .getArea()
+        .async()
+        .then(function(playerAreas) {
           playerAreas.forEach(function(area) {
             var deck = area.querySelector('.deck');
 
@@ -108,13 +106,13 @@
   }
 
   function shuffleDecksAsync(ui) {
-    return Promise.all([
-      ui.getRiftDeckAsync(),
-      ui.getPlayerDeckAsync('player1'),
-      ui.getPlayerDeckAsync('player2')
-    ]).then(function(els) {
-      els.forEach(shuffle)
-    });
+    return ui.forPlayers()
+        .getRiftDeck()
+        .getDeck()
+        .async()
+        .then(function(els) {
+          els.forEach(shuffle)
+        });
   }
 
   function initRiftChoicesAsync(ui) {
@@ -136,15 +134,13 @@
     };
 
     ui.getRiftChoiceDecks().forEach(observeChildList);
-    return Promise.all([
-      ui.getPlayerHandAsync('player1'),
-      ui.getPlayerHandAsync('player2'),
-      ui.getPlayerDiscardAsync('player1'),
-      ui.getPlayerDiscardAsync('player2')
-    ])
-    .then(function(els) {
-      els.forEach(observeChildList);
-    });
+    return ui.forPlayers()
+        .getHand()
+        .getDiscard()
+        .async()
+        .then(function(els) {
+          els.forEach(observeChildList);
+        });
   }
 
   function setupAutoLifeAsync(ui) {

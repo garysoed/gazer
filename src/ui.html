@@ -11,6 +11,82 @@
 
   var INSTANCE = null;
 
+  var __collect__ = Symbol();
+  var __getArea__ = Symbol();
+  var __players__ = Symbol();
+  var __promises__ = Symbol();
+  var __ui__ = Symbol();
+
+  var Batch = function(ui, players) {
+    this[__players__] = players;
+    this[__promises__] = [];
+    this[__ui__] = ui;
+  };
+
+  Batch.prototype.async = function() {
+    return Promise.all(this[__promises__]);
+  };
+
+  Batch.prototype[__collect__] = function(promises) {
+    Array.prototype.push.apply(this[__promises__], promises);
+  };
+
+  Batch.prototype[__getArea__] = function() {
+    return this[__players__].map(function(playerName) {
+      if (!this[__ui__].playerAreaPromises[playerName]) {
+        this[__ui__].playerAreaPromises[playerName] = this[__ui__].getSwitcherAsync()
+            .then(function(switcher) {
+              return switcher.querySelector('#' + playerName + 'area');
+            });
+      }
+
+      return this[__ui__].playerAreaPromises[playerName];
+    }.bind(this));
+  };
+
+  Batch.prototype.getHand = function() {
+    this[__collect__](this[__getArea__]().map(function(areaPromise) {
+      return areaPromise.then(function(area) {
+        return area.querySelector('pb-r-hand');
+      });
+    }));
+    return this;
+  };
+
+  Batch.prototype.getDiscard = function() {
+    this[__collect__](this[__getArea__]().map(function(areaPromise) {
+      return areaPromise.then(function(area) {
+        return area.querySelector('.discard');
+      });
+    }));
+    return this;
+  };
+
+  Batch.prototype.getDeck = function(playerName) {
+    this[__collect__](this[__getArea__]().map(function(areaPromise) {
+      return areaPromise.then(function(area) {
+        return area.querySelector('.deck');
+      });
+    }));
+    return this;
+  };
+
+  Batch.prototype.getArea = function(playerName) {
+    this[__collect__](this[__getArea__]());
+    return this;
+  };
+
+  Batch.prototype.getRiftDeck = function() {
+    this[__collect__]([this[__ui__].getRiftDeckAsync()]);
+    return this;
+  };
+
+  Batch.prototype.getSwitcher = function() {
+    this[__collect__]([this[__ui__].getSwitcherAsync()]);
+    return this;
+  };
+
+
   var UI = function(document) {
     this.document = document;
     this.playerAreaPromises = {};
@@ -19,44 +95,16 @@
     this.switcherPromise = null;
   };
 
+  UI.prototype.forPlayers = function() {
+    return new Batch(this, ['player1', 'player2']);
+  };
+
   UI.prototype.getRiftDeckAsync = function() {
     if (!this.riftDeckPromise) {
       this.riftDeckPromise = this.getElementAsync('#riftdeck');
     }
 
     return this.riftDeckPromise;
-  };
-
-  UI.prototype.getPlayerAreaAsync = function(playerName) {
-    if (!this.playerAreaPromises[playerName]) {
-      this.playerAreaPromises[playerName] = this.getSwitcherAsync()
-          .then(function(switcher) {
-            return switcher.querySelector('#' + playerName + 'area');
-          });
-    }
-
-    return this.playerAreaPromises[playerName];
-  };
-
-  UI.prototype.getPlayerDeckAsync = function(playerName) {
-    return this.getPlayerAreaAsync(playerName)
-        .then(function(area) {
-          return area.querySelector('.deck');
-        });
-  };
-
-  UI.prototype.getPlayerHandAsync = function(playerName) {
-    return this.getPlayerAreaAsync(playerName)
-        .then(function(area) {
-          return area.querySelector('pb-r-hand');
-        });
-  };
-
-  UI.prototype.getPlayerDiscardAsync = function(playerName) {
-    return this.getPlayerAreaAsync(playerName)
-        .then(function(area) {
-          return area.querySelector('.discard');
-        });
   };
 
   UI.prototype.getPlayerPlayAreaAsync = function(playerName) {
