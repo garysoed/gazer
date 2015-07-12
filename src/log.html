@@ -5,6 +5,7 @@
 <link rel="import" href="bower_components/protoboard/out/service/state.html">
 <link rel="import" href="bower_components/protoboard/out/third_party/jquery.html">
 
+<link rel="import" href="src/card.html">
 <link rel="import" href="src/dijs.html">
 <link rel="import" href="src/ui.html">
 
@@ -15,6 +16,7 @@
           'log',
           {
             $: '/=',
+            card: '=',
             Log: '/pb.service.=',
             Move: '/pb.service.=',
             seed: '/pb.=',
@@ -24,30 +26,95 @@
           function($i) {
 
   var __moveFrom__ = Symbol();
+  var stats = null;
+
+  // Helpers
+  function getEl(id) {
+    return document.querySelector('[pb-id="' + id + '"]');
+  }
+
+  function getId(el) {
+    return $i.$(el).attr('pb-id');
+  }
+
+  function printEl(el) {
+    return getId(el);
+  }
+
+  function isMoveEntry(entry) {
+    return entry.moveFrom && entry.moveTo && entry.movedEl;
+  }
+
+  function isCardPlay(entry) {
+    if (!isMoveEntry(entry)) {
+      return false;
+    }
+
+    return entry.moveTo.id.split('_')[1] === 'rectarea';
+  }
+
+  // Preprocessors
+
+  // TODO(gs): Move to stats.html, listen to events from Move service.
+  function preprocessTurn(entry) {
+    if (entry.category === 'turn') {
+      // Dump the stats from the previous turn.
+      if (stats) {
+        $i.Log.log('stats', stats);
+      }
+
+      // New turn, so create a new stat entry.
+      stats = {
+        enchantments_played: 0,
+        minions_played: 0
+      };
+    }
+  }
 
   function preprocessMove(entry) {
     if (entry.category === 'pick' && entry.phase === 'before') {
-      var el = document.querySelector('[pb-id="' + entry.value + '"]');
+      var el = getEl(entry.value);
       el[__moveFrom__] = el.parentElement;
     } else if (entry.category === 'drop' && entry.phase === 'before') {
       var el = $i.Move.nextElement;
 
       if (el[__moveFrom__]) {
         entry.set('moveFrom', el[__moveFrom__]);
-        entry.set('moveTo',  document.querySelector('[pb-id="' + entry.value + '"]'));
+        entry.set('moveTo',  getEl(entry.value));
         entry.set('movedEl', el);
         el[__moveFrom__] = null;
       }
     }
   }
 
-  function printEl(el) {
-    return $i.$(el).attr('pb-id');
+  // Printers
+  function preprocessMinionPlay(entry) {
+    if (isCardPlay(entry)) {
+      var card = $i.card.get(getId(entry.movedEl));
+      if (card.type !== 'minion') {
+        return;
+      }
+
+      var playerPlayArea = entry.moveTo.id.split('_')[0];
+      stats['minions_played']++;
+    }
+  }
+
+  function preprocessEnchantmentPlay(entry) {
+    if (isCardPlay(entry)) {
+      var card = $i.card.get(getId(entry.movedEl));
+      if (card.type !== 'enchantment') {
+        return;
+      }
+
+      var playerPlayArea = entry.moveTo.id.split('_')[0];
+      stats['enchantments_played']++;
+    }
   }
 
   function printMove(entry) {
-    if (entry.moveFrom && entry.moveTo) {
-      return 'move ' + entry.value
+    if (isMoveEntry(entry)) {
+      return 'move ' + printEl(entry.movedEl)
           + ' from ' + printEl(entry.moveFrom)
           + ' to ' + printEl(entry.moveTo);
     }
@@ -55,7 +122,34 @@
 
   function printTurn(entry) {
     if (entry.category === 'turn') {
-      return 'turn ' + entry.value + ' at ' + entry.timestamp.toLocaleString();
+      return '\nturn ' + entry.value + ' at ' + entry.timestamp.toLocaleString();
+    }
+  }
+
+  function flattenJSON(json) {
+    var out = {};
+    for (var key in json) {
+      var value = json[key];
+      if (typeof value === 'object') {
+        var childJson = flattenJSON(value);
+        for (var childKey in childJson) {
+          out[key + '_' + childKey] = childJson[childKey];
+        }
+      } else {
+        out[key] = value;
+      }
+    }
+    return out;
+  }
+
+  function printStats(entry) {
+    if (entry.category === 'stats') {
+      var flatJson = flattenJSON(entry.value);
+      var entries = [];
+      for (var key in flatJson) {
+        entries.push(['stats', key, flatJson[key]].join(' '));
+      }
+      return entries.join('\n');
     }
   }
 
@@ -76,10 +170,14 @@
     });
 
     $i.Log
+        .addPreprocessor(preprocessTurn)
         .addPreprocessor(preprocessMove)
+        .addPreprocessor(preprocessMinionPlay)
+        .addPreprocessor(preprocessEnchantmentPlay)
         .addPrinter(printMove)
         .addPrinter(printTurn)
-        .addProcessor($i.Log.defaultProcessor);
+        .addPrinter(printStats)
+        .addPrinter($i.Log.defaultPrinter);
   };
 });
 </script>

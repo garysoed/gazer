@@ -70,13 +70,20 @@
     $i.Template.addData('playerCards', playerCards);
   }
 
-  return function() {
-    initPlayerCards();
+  return {
+    get: function(id) {
+      var card = $i.data.find({ 'code': id.split('-')[0] });
+      return card ? card[0] : null;
+    },
 
-    $i.Template
-        .addData('riftCards', RIFT_CARDS)
-        .addData('stapleCards', $i.data.find({ 'element': 'base' }))
-        .addPartial('gz-card', $i.cardTemplate);
+    init: function() {
+      initPlayerCards();
+
+      $i.Template
+          .addData('riftCards', RIFT_CARDS)
+          .addData('stapleCards', $i.data.find({ 'element': 'base' }))
+          .addPartial('gz-card', $i.cardTemplate);
+    }
   };
 });
 </script>

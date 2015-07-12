@@ -24,7 +24,7 @@
           },
           function($i) {
 
-    function nextTurn() {
+    function nextTurn(ui) {
       // Change the turn
       var turn = $i.Check($i.State.get('turn')).isInt().orThrows() + 1;
       $i.Log.log('turn', turn);
@@ -53,7 +53,7 @@
           .async()
           .then(function(els) {
             els.forEach(function(el) {
-              el.addEventListener('click', nextTurn);
+              el.addEventListener('click', nextTurn.bind(null, ui));
             });
           });
     };

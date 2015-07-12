@@ -95,7 +95,7 @@
         this[__ui__].playerPlayAreaPromises[playerName] = this[__ui__]
             .getElementAsync('#playsection')
             .then(function(playsection) {
-              return playsection.querySelector('#' + playerName + 'rectarea');
+              return playsection.querySelector('#' + playerName + '_rectarea');
             });
       }
 
@@ -129,8 +129,8 @@
     this.switcherPromise = null;
   };
 
-  UI.prototype.forPlayers = function() {
-    return new Batch(this, ['player1', 'player2']);
+  UI.prototype.forPlayers = function(players) {
+    return new Batch(this, players || ['player1', 'player2']);
   };
 
   UI.prototype.getRiftDeckAsync = function() {
