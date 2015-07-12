@@ -20,7 +20,7 @@
     <link rel="import" href="src/setup.html">
   </head>
   <body>
-    <pb-state currentPlayer="player1"></pb-state>
+    <pb-state turn="0"></pb-state>
     <section id="top-section">
       <section id="active-area">
         <section id="draft">
@@ -83,7 +83,6 @@
             <li>Play / Attack</li>
           </ol>
         </section>
-        <button id="nextturn">Next Turn (Player 1)</button>
         <button id="log">Download Log</button>
       </section>
     </section>
@@ -130,8 +129,11 @@
             },
             function($i) {
         $i.setup.preBootstrap();
-        $i.Bootstrap.run(document);
-        $i.setup.postBootstrap(document);
+        $i.Bootstrap
+            .run(document)
+            .then(function() {
+              $i.setup.postBootstrap(document);
+            });
       });
     </script>
   </body>

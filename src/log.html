@@ -1,6 +1,12 @@
 <base href="..">
 
+<link rel="import" href="bower_components/protoboard/out/service/log.html">
+<link rel="import" href="bower_components/protoboard/out/service/move.html">
+<link rel="import" href="bower_components/protoboard/out/service/state.html">
+<link rel="import" href="bower_components/protoboard/out/third_party/jquery.html">
+
 <link rel="import" href="src/dijs.html">
+<link rel="import" href="src/ui.html">
 
 <script type="text/javascript">
   DI
@@ -8,17 +14,48 @@
       .bind(
           'log',
           {
+            $: '/=',
             Log: '/pb.service.=',
+            Move: '/pb.service.=',
             seed: '/pb.=',
+            State: '/pb.service.=',
+            ui: '=',
           },
           function($i) {
-  var elements = [];
 
-  function processPick(timestamp, category, value) {
-    if (category === 'pick') {
-      elements.push()
-    } else {
-      return null;
+  var __moveFrom__ = Symbol();
+
+  function preprocessMove(entry) {
+    if (entry.category === 'pick' && entry.phase === 'before') {
+      var el = document.querySelector('[pb-id="' + entry.value + '"]');
+      el[__moveFrom__] = el.parentElement;
+    } else if (entry.category === 'drop' && entry.phase === 'before') {
+      var el = $i.Move.nextElement;
+
+      if (el[__moveFrom__]) {
+        entry.set('moveFrom', el[__moveFrom__]);
+        entry.set('moveTo',  document.querySelector('[pb-id="' + entry.value + '"]'));
+        entry.set('movedEl', el);
+        el[__moveFrom__] = null;
+      }
+    }
+  }
+
+  function printEl(el) {
+    return $i.$(el).attr('pb-id');
+  }
+
+  function printMove(entry) {
+    if (entry.moveFrom && entry.moveTo) {
+      return 'move ' + entry.value
+          + ' from ' + printEl(entry.moveFrom)
+          + ' to ' + printEl(entry.moveTo);
+    }
+  }
+
+  function printTurn(entry) {
+    if (entry.category === 'turn') {
+      return 'turn ' + entry.value + ' at ' + entry.timestamp.toLocaleString();
     }
   }
 
@@ -32,19 +69,16 @@
       var url = window.URL.createObjectURL($i.Log.blob);
       var a = document.createElement('a');
       a.href = url;
-      a.download = 'gazer.log';
+      a.target = '_blank';
+      // a.download = 'gazer.log';
       a.click();
       window.URL.revokeObjectURL(url);
     });
 
     $i.Log
-        .addProcessor(function(timestamp, category, value) {
-          if (category !== 'seed') {
-            return timestamp.toLocaleString() + ': ' + category + ' on ' + value;
-          } else {
-            return null;
-          }
-        })
+        .addPreprocessor(preprocessMove)
+        .addPrinter(printMove)
+        .addPrinter(printTurn)
         .addProcessor($i.Log.defaultProcessor);
   };
 });

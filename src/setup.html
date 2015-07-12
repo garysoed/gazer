@@ -7,11 +7,11 @@
 <link rel="import" href="bower_components/protoboard/out/trigger/key.html">
 <link rel="import" href="bower_components/protoboard/out/utils.html">
 
-<link rel="import" href="src/acl.html">
 <link rel="import" href="src/card.html">
 <link rel="import" href="src/dijs.html">
 <link rel="import" href="src/drawinto.html">
 <link rel="import" href="src/log.html">
+<link rel="import" href="src/logic.html">
 <link rel="import" href="src/shuffleinto.html">
 <link rel="import" href="src/ui.html">
 
@@ -23,12 +23,12 @@
           {
             $: '/=',
             Abilities: '/pb.ability.=',
-            acl: '=',
             Config: '/pb.service.=',
             card: '=',
             DrawInto: '=',
             Key: '/pb.trigger.=',
             log: '=',
+            logic: '=',
             ShuffleInto: '=',
             Template: '/pb.service.=',
             ui: '=',
@@ -193,7 +193,7 @@
       processTabs(document);
 
       disableInputClickPropagation(document, ui);
-      $i.acl(document);
+      $i.logic(document);
       $i.log(document);
     }
   };

@@ -1,0 +1,61 @@
+<base href="..">
+
+<link rel="import" href="bower_components/protoboard/out/check.html">
+<link rel="import" href="bower_components/protoboard/out/service/acl.html">
+<link rel="import" href="bower_components/protoboard/out/service/log.html">
+<link rel="import" href="bower_components/protoboard/out/service/state.html">
+<link rel="import" href="bower_components/protoboard/out/utils.html">
+
+<link rel="import" href="src/dijs.html">
+<link rel="import" href="src/ui.html">
+
+<script type="text/javascript">
+  DI
+      .prefix('gz')
+      .bind(
+          'logic',
+          {
+            Acl: '/pb.service.=',
+            Check: '/pb.=',
+            Log: '/pb.service.=',
+            State: '/pb.service.=',
+            ui: '=',
+            Utils: '/pb.=',
+          },
+          function($i) {
+
+    function nextTurn() {
+      // Change the turn
+      var turn = $i.Check($i.State.get('turn')).isInt().orThrows() + 1;
+      $i.Log.log('turn', turn);
+      $i.State.put('turn', turn);
+
+      // Switch the current player
+      if ($i.Acl.currentPlayer === 'player1') {
+        $i.Acl.currentPlayer = 'player2';
+      } else {
+        $i.Acl.currentPlayer = 'player1';
+      }
+    }
+
+    return function(document) {
+      var ui = $i.ui(document);
+      ui.forPlayers().getArea().async()
+          .then(function(playerAreas) {
+            playerAreas.forEach(function(area) {
+              $i.Acl.registerElement(area);
+            });
+          });
+
+      ui.forPlayers()
+          .getDraw4Button()
+          .getShuffleIntoDeckButton()
+          .async()
+          .then(function(els) {
+            els.forEach(function(el) {
+              el.addEventListener('click', nextTurn);
+            });
+          });
+    };
+  });
+</script>

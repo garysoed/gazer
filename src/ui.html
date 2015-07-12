@@ -9,7 +9,7 @@
       .prefix('gz')
       .bind('ui', { Utils: '/pb.=' }, function($i) {
 
-  var INSTANCE = null;
+  var __instance__ = Symbol();
 
   var __collect__ = Symbol();
   var __getArea__ = Symbol();
@@ -66,6 +66,24 @@
     this[__collect__](this[__getArea__]().map(function(areaPromise) {
       return areaPromise.then(function(area) {
         return area.querySelector('.deck');
+      });
+    }));
+    return this;
+  };
+
+  Batch.prototype.getDraw4Button = function() {
+    this[__collect__](this[__getArea__]().map(function(areaPromise) {
+      return areaPromise.then(function(area) {
+        return area.querySelector('button.draw');
+      });
+    }));
+    return this;
+  };
+
+  Batch.prototype.getShuffleIntoDeckButton = function() {
+    this[__collect__](this[__getArea__]().map(function(areaPromise) {
+      return areaPromise.then(function(area) {
+        return area.querySelector('button.shuffle');
       });
     }));
     return this;
@@ -144,10 +162,10 @@
   }
 
   return function(document) {
-    if (!INSTANCE) {
-      INSTANCE = new UI(document);
+    if (!document[__instance__]) {
+      document[__instance__] = new UI(document);
     }
-    return INSTANCE;
+    return document[__instance__];
   };
 });
 </script>
