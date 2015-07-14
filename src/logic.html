@@ -36,6 +36,11 @@
       } else {
         $i.Acl.currentPlayer = 'player1';
       }
+
+      var o = new MutationObserver(function(records) {
+
+      });
+      o.observe(document.querySelector('pb-s-move'), { childList: true });
     }
 
     return function(document) {

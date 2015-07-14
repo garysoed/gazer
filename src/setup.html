@@ -3,6 +3,7 @@
 <link rel="import" href="bower_components/protoboard/out/ability/abilities.html">
 <link rel="import" href="bower_components/protoboard/out/service/config.html">
 <link rel="import" href="bower_components/protoboard/out/service/template.html">
+<link rel="import" href="bower_components/protoboard/out/third_party/events.html">
 <link rel="import" href="bower_components/protoboard/out/third_party/jquery.html">
 <link rel="import" href="bower_components/protoboard/out/trigger/key.html">
 <link rel="import" href="bower_components/protoboard/out/utils.html">
@@ -26,6 +27,7 @@
             Config: '/pb.service.=',
             card: '=',
             DrawInto: '=',
+            Events: '/pb.=',
             Key: '/pb.trigger.=',
             log: '=',
             logic: '=',
@@ -120,26 +122,28 @@
       ui.getRiftChoiceDecks().forEach(function(deck) {
         var movedElement = riftDeck.lastElementChild;
         deck.appendChild(movedElement);
+        $i.$(movedElement).attr('flip-active', 'true');
       });
     });
   }
 
   function setupAutoFlipFront(ui) {
-    var mutationObserver = createChildAddedObserver(function(addedNode) {
-      $i.$(addedNode).attr('flip-active', 'true');
-    });
-
-    var observeChildList = function(deck) {
-      mutationObserver.observe(deck, { childList: true });
+    var observeDrop = function(el) {
+      $i.Events.of(el, el)
+          .on('dom', 'drop', function() {
+            $i.Utils.toArray(el.children).forEach(function(addedEl) {
+              $i.$(addedEl).attr('flip-active', 'true');
+            });
+          });
     };
 
-    ui.getRiftChoiceDecks().forEach(observeChildList);
+    ui.getRiftChoiceDecks().forEach(observeDrop);
     return ui.forPlayers()
         .getHand()
         .getDiscard()
         .async()
         .then(function(els) {
-          els.forEach(observeChildList);
+          els.forEach(observeDrop);
         });
   }
 
