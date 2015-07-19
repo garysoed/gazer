@@ -78,7 +78,7 @@
     } else if (entry.category === 'drop' && entry.phase === 'before') {
       var el = $i.Move.nextElement;
 
-      if (el[__moveFrom__]) {
+      if (el && el[__moveFrom__]) {
         entry.set('moveFrom', el[__moveFrom__]);
         entry.set('moveTo',  getEl(entry.value));
         entry.set('movedEl', el);
