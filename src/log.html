@@ -7,6 +7,7 @@
 
 <link rel="import" href="src/card.html">
 <link rel="import" href="src/dijs.html">
+<link rel="import" href="src/helper.html">
 <link rel="import" href="src/ui.html">
 
 <script type="text/javascript">
@@ -17,6 +18,7 @@
           {
             $: '/=',
             card: '=',
+            helper: '=',
             Log: '/pb.service.=',
             Move: '/pb.service.=',
             seed: '/pb.=',
@@ -55,7 +57,6 @@
 
   // Preprocessors
 
-  // TODO(gs): Move to stats.html, listen to events from Move service.
   function preprocessTurn(entry) {
     if (entry.category === 'turn') {
       // Dump the stats from the previous turn.
@@ -71,23 +72,15 @@
     }
   }
 
-  function preprocessMove(entry) {
-    if (entry.category === 'pick' && entry.phase === 'before') {
-      var el = getEl(entry.value);
-      el[__moveFrom__] = el.parentElement;
-    } else if (entry.category === 'drop' && entry.phase === 'before') {
-      var el = $i.Move.nextElement;
-
-      if (el && el[__moveFrom__]) {
-        entry.set('moveFrom', el[__moveFrom__]);
-        entry.set('moveTo',  getEl(entry.value));
-        entry.set('movedEl', el);
-        el[__moveFrom__] = null;
+  function preprocessBlacklist(entry) {
+    if (entry.category === 'flip') {
+      var card = getEl(entry.value);
+      if ($i.helper.isPlayerHand(card.parentElement)) {
+        entry.set('blacklisted', true);
       }
     }
   }
 
-  // Printers
   function preprocessMinionPlay(entry) {
     if (isCardPlay(entry)) {
       var card = $i.card.get(getId(entry.movedEl));
@@ -112,14 +105,7 @@
     }
   }
 
-  function printMove(entry) {
-    if (isMoveEntry(entry)) {
-      return 'move ' + printEl(entry.movedEl)
-          + ' from ' + printEl(entry.moveFrom)
-          + ' to ' + printEl(entry.moveTo);
-    }
-  }
-
+  // Printers
   function printTurn(entry) {
     if (entry.category === 'turn') {
       return '\nturn ' + entry.value + ' at ' + entry.timestamp.toLocaleString();
@@ -127,13 +113,24 @@
   }
 
   var CUSTOM_CATEGORIES = new Set([
-    'draw',
     'draft',
-    'transmute'
+    'draw',
+    'replace',
+    'transmute',
   ]);
   function printCustom(entry) {
     if (CUSTOM_CATEGORIES.has(entry.category)) {
       return entry.category + ' ' + entry.value;
+    }
+  }
+
+  var BLACKLIST_CATEGORIES = new Set([
+    'drop',
+    'pick',
+  ]);
+  function printBlacklist(entry) {
+    if (BLACKLIST_CATEGORIES.has(entry.category) || entry.blacklisted) {
+      return '';
     }
   }
 
@@ -182,9 +179,11 @@
 
     $i.Log
         .addPreprocessor(preprocessTurn)
+        .addPreprocessor(preprocessBlacklist)
         .addPrinter(printTurn)
         .addPrinter(printCustom)
         .addPrinter(printStats)
+        .addPrinter(printBlacklist)
         .addPrinter($i.Log.defaultPrinter);
   };
 });

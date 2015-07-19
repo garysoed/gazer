@@ -1,0 +1,41 @@
+<base href="..">
+
+<link rel="import" href="src/dijs.html">
+
+<script type="text/javascript">
+  DI
+      .prefix('gz')
+      .bind('helper', { $: '/=' }, function($i) {
+
+    return {
+      isDraftDeck: function(el) {
+        var pbId = $i.$(el).attr('pb-id');
+        return pbId.startsWith('riftdeck') || pbId.startsWith('stapledeck');
+      },
+
+      isPlayerDeck: function(el) {
+        return $i.$(el).attr('pb-id').startsWith('playerdeck');
+      },
+
+      isPlayerDiscard: function(el) {
+        return $i.$(el).attr('pb-id').startsWith('playerdiscard');
+      },
+
+      isPlayerHand: function(el) {
+        return el.nodeName === 'PB-R-HAND';
+      },
+
+      isFlipped: function(el) {
+        return $i.$(el).attr('flip-active') === 'false';
+      },
+
+      isPlayArea: function(el) {
+        return el.nodeName === 'PB-R-RECT';
+      },
+
+      isDraftDiscard: function(el) {
+        return el.id === 'riftdiscard';
+      }
+    };
+  });
+</script>

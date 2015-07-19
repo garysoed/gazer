@@ -10,6 +10,7 @@
 <link rel="import" href="bower_components/protoboard/out/utils.html">
 
 <link rel="import" href="src/dijs.html">
+<link rel="import" href="src/helper.html">
 <link rel="import" href="src/ui.html">
 
 <script type="text/javascript">
@@ -22,6 +23,7 @@
             Acl: '/pb.service.=',
             Check: '/pb.=',
             Events: '/pb.=',
+            helper: '=',
             Log: '/pb.service.=',
             Move: '/pb.service.=',
             State: '/pb.service.=',
@@ -44,43 +46,22 @@
       }
     }
 
-    function isDraftDeck(el) {
-      var pbId = $i.$(el).attr('pb-id');
-      return pbId.startsWith('riftdeck') || pbId.startsWith('stapledeck');
-    }
-
-    function isPlayerDeck(el) {
-      return $i.$(el).attr('pb-id').startsWith('playerdeck');
-    }
-
-    function isPlayerDiscard(el) {
-      return $i.$(el).attr('pb-id').startsWith('playerdiscard');
-    }
-
-    function isPlayerHand(el) {
-      return el.nodeName === 'PB-R-HAND';
-    }
-
-    function isFlipped(el) {
-      return $i.$(el).attr('flip-active') === 'false';
-    }
-
-    function isPlayArea(el) {
-      return el.nodeName === 'PB-R-RECT';
-    }
-
     function onMove(event, details) {
       var fromEl = details.from;
       var toEl = details.to;
       var movedEl = details.moved;
       var movedId = $i.$(movedEl).attr('pb-id');
 
-      if (isPlayerDeck(fromEl) && isPlayerHand(toEl)) {
+      if ($i.helper.isPlayerDeck(fromEl) && $i.helper.isPlayerHand(toEl)) {
         $i.Log.log('draw', movedId);
-      } else if (isDraftDeck(fromEl) && isPlayerDiscard(toEl)) {
+      } else if ($i.helper.isDraftDeck(fromEl) && $i.helper.isPlayerDiscard(toEl)) {
         $i.Log.log('draft', movedId);
-      } else if (isPlayerHand(fromEl) && isPlayArea(toEl) && isFlipped(movedEl)) {
+      } else if ($i.helper.isPlayerHand(fromEl)
+          && $i.helper.isPlayArea(toEl)
+          && $i.helper.isFlipped(movedEl)) {
         $i.Log.log('transmute', movedId);
+      } else if ($i.helper.isDraftDeck(fromEl) && $i.helper.isDraftDiscard(toEl)) {
+        $i.Log.log('replace', movedId);
       }
     }
 
