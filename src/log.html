@@ -126,6 +126,17 @@
     }
   }
 
+  var CUSTOM_CATEGORIES = new Set([
+    'draw',
+    'draft',
+    'transmute'
+  ]);
+  function printCustom(entry) {
+    if (CUSTOM_CATEGORIES.has(entry.category)) {
+      return entry.category + ' ' + entry.value;
+    }
+  }
+
   function flattenJSON(json) {
     var out = {};
     for (var key in json) {
@@ -171,11 +182,8 @@
 
     $i.Log
         .addPreprocessor(preprocessTurn)
-        .addPreprocessor(preprocessMove)
-        .addPreprocessor(preprocessMinionPlay)
-        .addPreprocessor(preprocessEnchantmentPlay)
-        .addPrinter(printMove)
         .addPrinter(printTurn)
+        .addPrinter(printCustom)
         .addPrinter(printStats)
         .addPrinter($i.Log.defaultPrinter);
   };

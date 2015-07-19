@@ -3,7 +3,10 @@
 <link rel="import" href="bower_components/protoboard/out/check.html">
 <link rel="import" href="bower_components/protoboard/out/service/acl.html">
 <link rel="import" href="bower_components/protoboard/out/service/log.html">
+<link rel="import" href="bower_components/protoboard/out/service/move.html">
 <link rel="import" href="bower_components/protoboard/out/service/state.html">
+<link rel="import" href="bower_components/protoboard/out/third_party/events.html">
+<link rel="import" href="bower_components/protoboard/out/third_party/jquery.html">
 <link rel="import" href="bower_components/protoboard/out/utils.html">
 
 <link rel="import" href="src/dijs.html">
@@ -15,9 +18,12 @@
       .bind(
           'logic',
           {
+            $: '/=',
             Acl: '/pb.service.=',
             Check: '/pb.=',
+            Events: '/pb.=',
             Log: '/pb.service.=',
+            Move: '/pb.service.=',
             State: '/pb.service.=',
             ui: '=',
             Utils: '/pb.=',
@@ -36,11 +42,46 @@
       } else {
         $i.Acl.currentPlayer = 'player1';
       }
+    }
 
-      var o = new MutationObserver(function(records) {
+    function isDraftDeck(el) {
+      var pbId = $i.$(el).attr('pb-id');
+      return pbId.startsWith('riftdeck') || pbId.startsWith('stapledeck');
+    }
 
-      });
-      o.observe(document.querySelector('pb-s-move'), { childList: true });
+    function isPlayerDeck(el) {
+      return $i.$(el).attr('pb-id').startsWith('playerdeck');
+    }
+
+    function isPlayerDiscard(el) {
+      return $i.$(el).attr('pb-id').startsWith('playerdiscard');
+    }
+
+    function isPlayerHand(el) {
+      return el.nodeName === 'PB-R-HAND';
+    }
+
+    function isFlipped(el) {
+      return $i.$(el).attr('flip-active') === 'false';
+    }
+
+    function isPlayArea(el) {
+      return el.nodeName === 'PB-R-RECT';
+    }
+
+    function onMove(event, details) {
+      var fromEl = details.from;
+      var toEl = details.to;
+      var movedEl = details.moved;
+      var movedId = $i.$(movedEl).attr('pb-id');
+
+      if (isPlayerDeck(fromEl) && isPlayerHand(toEl)) {
+        $i.Log.log('draw', movedId);
+      } else if (isDraftDeck(fromEl) && isPlayerDiscard(toEl)) {
+        $i.Log.log('draft', movedId);
+      } else if (isPlayerHand(fromEl) && isPlayArea(toEl) && isFlipped(movedEl)) {
+        $i.Log.log('transmute', movedId);
+      }
     }
 
     return function(document) {
@@ -61,6 +102,9 @@
               el.addEventListener('click', nextTurn.bind(null, ui));
             });
           });
+
+      $i.Events.of($i.Move)
+          .on('jquery', $i.Move.Events.MOVE, onMove);
     };
   });
 </script>

@@ -25,7 +25,7 @@
       <section id="active-area">
         <section id="draft">
           <section id="rift">
-            <pb-r-deck id="riftdeck">
+            <pb-r-deck id="riftdeck" pb-id="riftdeck">
               <pb-u-generate input="riftCards">
                 <template>
                   {{#each riftCards}}
@@ -36,10 +36,10 @@
             </pb-r-deck>
 
             <section id="riftchoice">
-              <pb-r-deck shuffle="false"></pb-r-deck>
-              <pb-r-deck shuffle="false"></pb-r-deck>
-              <pb-r-deck shuffle="false"></pb-r-deck>
-              <pb-r-deck shuffle="false"></pb-r-deck>
+              <pb-r-deck shuffle="false" pb-id="riftdeck"></pb-r-deck>
+              <pb-r-deck shuffle="false" pb-id="riftdeck"></pb-r-deck>
+              <pb-r-deck shuffle="false" pb-id="riftdeck"></pb-r-deck>
+              <pb-r-deck shuffle="false" pb-id="riftdeck"></pb-r-deck>
             </section>
           </section>
 
@@ -48,7 +48,7 @@
               <pb-u-generate input="stapleCards">
                 <template>
                   {{#each stapleCards}}
-                    <pb-r-deck shuffles="false">
+                    <pb-r-deck pb-id="stapledeck" shuffles="false">
                       {{> gz-card showfront='true'}}
                     </pb-r-deck>
                   {{/each}}
@@ -98,8 +98,10 @@
             {{#each players}}
               <section class="playerarea" id="player{{this}}area" pb-acl-readable="player{{this}}">
                 <section class="hand">
-                  <pb-r-deck class="discard"></pb-r-deck>
-                  <pb-r-deck class="deck" show-count="true" data-count="5">
+                  <pb-r-deck class="discard" pb-id="playerdiscard{{this}}"></pb-r-deck>
+                  <pb-r-deck class="deck"
+                             show-child-count="true"
+                             pb-id="playerdeck{{this}}">
                     {{#each ../playerCards}}
                       {{> gz-card showfront='false'}}
                     {{/each}}
