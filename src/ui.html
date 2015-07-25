@@ -5,9 +5,11 @@
 <link rel="import" href="src/dijs.html">
 
 <script type="text/javascript">
-  DI
+  DIJS
       .prefix('gz')
-      .bind('ui', { Utils: '/pb.=' }, function($i) {
+      .bind('ui', function(require) {
+
+  var Utils = require('/pb.Utils');
 
   var __instance__ = Symbol();
 
@@ -142,7 +144,7 @@
   };
 
   UI.prototype.getElementAsync = function(selector) {
-    return $i.Utils.watch(function() {
+    return Utils.watch(function() {
       return this.document.querySelector(selector + ' pb-u-generate') === null;
     }).then(function() {
       return this.document.querySelector(selector);
@@ -158,7 +160,7 @@
   }
 
   UI.prototype.getRiftChoiceDecks = function() {
-    return $i.Utils.toArray(this.document.querySelectorAll('#riftchoice pb-r-deck'));
+    return Utils.toArray(this.document.querySelectorAll('#riftchoice pb-r-deck'));
   }
 
   return function(document) {

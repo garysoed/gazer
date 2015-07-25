@@ -14,35 +14,32 @@
 <link rel="import" href="src/ui.html">
 
 <script type="text/javascript">
-  DI
+  DIJS
       .prefix('gz')
-      .bind(
-          'logic',
-          {
-            $: '/=',
-            Acl: '/pb.service.=',
-            Check: '/pb.=',
-            Events: '/pb.=',
-            helper: '=',
-            Log: '/pb.service.=',
-            Move: '/pb.service.=',
-            State: '/pb.service.=',
-            ui: '=',
-            Utils: '/pb.=',
-          },
-          function($i) {
+      .bind('logic', function(require) {
+
+    var $ = require('/$');
+    var Acl = require('/pb.service.Acl');
+    var Check = require('/pb.Check');
+    var Events = require('/pb.Events');
+    var helper = require('helper');
+    var Log = require('/pb.service.Log');
+    var Move = require('/pb.service.Move');
+    var State = require('/pb.service.State');
+    var UI = require('ui');
+    var Utils = require('/pb.Utils');
 
     function nextTurn(ui) {
       // Change the turn
-      var turn = $i.Check($i.State.get('turn')).isInt().orThrows() + 1;
-      $i.Log.log('turn', turn);
-      $i.State.put('turn', turn);
+      var turn = Check(State.get('turn')).isInt().orThrows() + 1;
+      Log.log('turn', turn);
+      State.put('turn', turn);
 
       // Switch the current player
-      if ($i.Acl.currentPlayer === 'player1') {
-        $i.Acl.currentPlayer = 'player2';
+      if (Acl.currentPlayer === 'player1') {
+        Acl.currentPlayer = 'player2';
       } else {
-        $i.Acl.currentPlayer = 'player1';
+        Acl.currentPlayer = 'player1';
       }
     }
 
@@ -50,27 +47,27 @@
       var fromEl = details.from;
       var toEl = details.to;
       var movedEl = details.moved;
-      var movedId = $i.$(movedEl).attr('pb-id');
+      var movedId = $(movedEl).attr('pb-id');
 
-      if ($i.helper.isPlayerDeck(fromEl) && $i.helper.isPlayerHand(toEl)) {
-        $i.Log.log('draw', movedId);
-      } else if ($i.helper.isDraftDeck(fromEl) && $i.helper.isPlayerDiscard(toEl)) {
-        $i.Log.log('draft', movedId);
-      } else if ($i.helper.isPlayerHand(fromEl)
-          && $i.helper.isPlayArea(toEl)
-          && $i.helper.isFlipped(movedEl)) {
-        $i.Log.log('transmute', movedId);
-      } else if ($i.helper.isDraftDeck(fromEl) && $i.helper.isDraftDiscard(toEl)) {
-        $i.Log.log('replace', movedId);
+      if (helper.isPlayerDeck(fromEl) && helper.isPlayerHand(toEl)) {
+        Log.log('draw', movedId);
+      } else if (helper.isDraftDeck(fromEl) && helper.isPlayerDiscard(toEl)) {
+        Log.log('draft', movedId);
+      } else if (helper.isPlayerHand(fromEl)
+          && helper.isPlayArea(toEl)
+          && helper.isFlipped(movedEl)) {
+        Log.log('transmute', movedId);
+      } else if (helper.isDraftDeck(fromEl) && helper.isDraftDiscard(toEl)) {
+        Log.log('replace', movedId);
       }
     }
 
     return function(document) {
-      var ui = $i.ui(document);
+      var ui = UI(document);
       ui.forPlayers().getArea().async()
           .then(function(playerAreas) {
             playerAreas.forEach(function(area) {
-              $i.Acl.registerElement(area);
+              Acl.registerElement(area);
             });
           });
 
@@ -84,8 +81,8 @@
             });
           });
 
-      $i.Events.of($i.Move)
-          .on('jquery', $i.Move.Events.MOVE, onMove);
+      Events.of(Move)
+          .on('jquery', Move.Events.MOVE, onMove);
     };
   });
 </script>

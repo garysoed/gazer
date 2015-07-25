@@ -17,31 +17,28 @@
 <link rel="import" href="src/ui.html">
 
 <script>
-  DI
+  DIJS
       .prefix('gz')
-      .bind(
-          'setup',
-          {
-            $: '/=',
-            Abilities: '/pb.ability.=',
-            Config: '/pb.service.=',
-            card: '=',
-            DrawInto: '=',
-            Events: '/pb.=',
-            Key: '/pb.trigger.=',
-            log: '=',
-            logic: '=',
-            ShuffleInto: '=',
-            Template: '/pb.service.=',
-            ui: '=',
-            Utils: '/pb.=',
-          },
-          function($i) {
+      .bind('setup', function(require) {
+
+  var $ = require('/$');
+  var Abilities = require('/pb.ability.Abilities');
+  var card = require('card');
+  var Config = require('/pb.service.Config');
+  var DrawInto = require('DrawInto');
+  var Events = require('/pb.Events');
+  var Key = require('/pb.trigger.Key');
+  var logic = require('logic');
+  var log = require('log');
+  var ShuffleInto = require('ShuffleInto');
+  var Template = require('/pb.service.Template');
+  var UI = require('ui');
+  var Utils = require('/pb.Utils');
 
   function createChildAddedObserver(handler) {
     return new MutationObserver(function(records) {
       records.forEach(function(record) {
-        $i.Utils.toArray(record.addedNodes).forEach(handler);
+        Utils.toArray(record.addedNodes).forEach(handler);
       });
     });
   }
@@ -55,7 +52,7 @@
         .async()
         .then(function() {
           // Process all the input elements to not propagate click.
-          $i.Utils.toArray(document.querySelectorAll('input')).forEach(function(el) {
+          Utils.toArray(document.querySelectorAll('input')).forEach(function(el) {
             el.addEventListener('click', function(e) {
               e.stopPropagation();
             });
@@ -76,13 +73,13 @@
             var deck = area.querySelector('.deck');
 
             // Process the shuffle discard pile into deck button.
-            var shuffleInto = new $i.ShuffleInto(deck);
+            var shuffleInto = new ShuffleInto(deck);
             area.querySelector('button.shuffle').addEventListener(
                 'click',
                 shuffleInto.trigger.bind(shuffleInto, area.querySelector('.discard')));
 
             // Process the draw 4 button.
-            var drawInto = new $i.DrawInto(area.querySelector('pb-r-hand'));
+            var drawInto = new DrawInto(area.querySelector('pb-r-hand'));
             area.querySelector('button.draw').addEventListener(
                 'click',
                 drawInto.trigger.bind(drawInto, deck));
@@ -104,7 +101,7 @@
   }
 
   function shuffle(el) {
-    $i.Abilities.of(el).trigger('shuffle');
+    Abilities.trigger(el, 'shuffle');
   }
 
   function shuffleDecksAsync(ui) {
@@ -122,17 +119,17 @@
       ui.getRiftChoiceDecks().forEach(function(deck) {
         var movedElement = riftDeck.lastElementChild;
         deck.appendChild(movedElement);
-        $i.$(movedElement).attr('flip-active', 'true');
+        $(movedElement).attr('flip-active', 'true');
       });
     });
   }
 
   function setupAutoFlipFront(ui) {
     var observeDrop = function(el) {
-      $i.Events.of(el, el)
+      Events.of(el, el)
           .on('dom', 'drop', function() {
-            $i.Utils.toArray(el.children).forEach(function(addedEl) {
-              $i.$(addedEl).attr('flip-active', 'true');
+            Utils.toArray(el.children).forEach(function(addedEl) {
+              $(addedEl).attr('flip-active', 'true');
             });
           });
     };
@@ -153,7 +150,7 @@
         return;
       }
 
-      if ($i.$(addedNode).attr('flip-active') !== 'true') {
+      if ($(addedNode).attr('flip-active') !== 'true') {
         return;
       }
 
@@ -177,15 +174,15 @@
 
   return {
     preBootstrap: function() {
-      $i.card.init();
+      card.init();
 
       // Misc setup script
-      $i.Template.addData('players', [1, 2]);
-      $i.Config.setDefaultTrigger(new $i.Key('f'), 'flip', 'pb-c-card');
+      Template.addData('players', [1, 2]);
+      Config.setDefaultTrigger(new Key('f'), 'flip', 'pb-c-card');
     },
 
     postBootstrap: function(document) {
-      var ui = $i.ui(document);
+      var ui = UI(document);
 
       setupAutoFlipFront(ui)
           .then(shuffleDecksAsync.bind(null, ui))
@@ -197,8 +194,8 @@
       processTabs(document);
 
       disableInputClickPropagation(document, ui);
-      $i.logic(document);
-      $i.log(document);
+      logic(document);
+      log(document);
     }
   };
 });

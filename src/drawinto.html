@@ -7,36 +7,33 @@
 <link rel="import" href="src/dijs.html">
 
 <script type="text/javascript">
-DI
-		.prefix('gz')
-		.bind(
-				'DrawInto',
-				{
-					$: '/=',
-					Ability: '/pb.ability.=',
-					Click: '/pb.trigger.=',
-				},
-				function($i) {
+DIJS
+    .prefix('gz')
+    .bind('DrawInto', function(require) {
 
-	var DrawInto = function(toEl) {
-		$i.Ability.call(this, 'drawinto', new $i.Click());
-		this.toEl = toEl;
-	};
+  var $ = require('/$');
+  var Ability = require('/pb.ability.Ability');
+  var Click = require('/pb.trigger.Click');
 
-	DrawInto.prototype = Object.create($i.Ability.prototype);
+  var DrawInto = function(toEl) {
+    Ability.call(this, 'drawinto', new Click());
+    this.toEl = toEl;
+  };
 
-	DrawInto.prototype.doTrigger = function(el) {
-		for (var i = 0; i < 4 && el.childElementCount > 0; i++) {
-			var child = el.lastElementChild;
-			this.toEl.appendChild(child);
+  DrawInto.prototype = Object.create(Ability.prototype);
 
-			// Make the drawn card show its front side.
-			$i.$(child).attr('flip-active', true);
-		}
-	};
+  DrawInto.prototype.doTrigger = function(el) {
+    for (var i = 0; i < 4 && el.childElementCount > 0; i++) {
+      var child = el.lastElementChild;
+      this.toEl.appendChild(child);
 
-	DrawInto.prototype.isEnabled = function() { return true; };
+      // Make the drawn card show its front side.
+      $(child).attr('flip-active', true);
+    }
+  };
 
-	return DrawInto;
+  DrawInto.prototype.isEnabled = function() { return true; };
+
+  return DrawInto;
 });
 </script>

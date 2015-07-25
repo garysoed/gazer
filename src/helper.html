@@ -3,22 +3,24 @@
 <link rel="import" href="src/dijs.html">
 
 <script type="text/javascript">
-  DI
+  DIJS
       .prefix('gz')
-      .bind('helper', { $: '/=' }, function($i) {
+      .bind('helper', function(require) {
+
+    var $ = require('/$');
 
     return {
       isDraftDeck: function(el) {
-        var pbId = $i.$(el).attr('pb-id');
+        var pbId = $(el).attr('pb-id');
         return pbId.startsWith('riftdeck') || pbId.startsWith('stapledeck');
       },
 
       isPlayerDeck: function(el) {
-        return $i.$(el).attr('pb-id').startsWith('playerdeck');
+        return $(el).attr('pb-id').startsWith('playerdeck');
       },
 
       isPlayerDiscard: function(el) {
-        return $i.$(el).attr('pb-id').startsWith('playerdiscard');
+        return $(el).attr('pb-id').startsWith('playerdiscard');
       },
 
       isPlayerHand: function(el) {
@@ -26,7 +28,7 @@
       },
 
       isFlipped: function(el) {
-        return $i.$(el).attr('flip-active') === 'false';
+        return $(el).attr('flip-active') === 'false';
       },
 
       isPlayArea: function(el) {

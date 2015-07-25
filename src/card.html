@@ -29,17 +29,14 @@
 </template>
 
 <script>
-  DI
+  DIJS
       .prefix('gz')
       .constant('cardTemplate', document.currentScript.ownerDocument.querySelector('template'))
-      .bind(
-          'card',
-          {
-            cardTemplate: '=',
-            data: '=',
-            Template: '/pb.service.='
-          },
-          function($i) {
+      .bind('card', function(require) {
+
+  var cardTemplate = require('cardTemplate');
+  var data = require('data');
+  var Template = require('/pb.service.Template');
 
   var PLAYER_CARDS = {
     'energy_orb': 2,
@@ -48,7 +45,7 @@
     'meditate': 2
   };
 
-  var RIFT_CARDS = $i.data.find({
+  var RIFT_CARDS = data.find({
     'element': {
       '$ne': 'base'
     }
@@ -57,7 +54,7 @@
   function initPlayerCards() {
     var playerCards = [];
     for (var name in PLAYER_CARDS) {
-      var card = $i.data.find({ 'code': name })[0];
+      var card = data.find({ 'code': name })[0];
       if (!card) {
         throw name + ' cannot be found';
       }
@@ -67,22 +64,22 @@
       playerCards.push(clone);
     }
 
-    $i.Template.addData('playerCards', playerCards);
+    Template.addData('playerCards', playerCards);
   }
 
   return {
     get: function(id) {
-      var card = $i.data.find({ 'code': id.split('-')[0] });
+      var card = data.find({ 'code': id.split('-')[0] });
       return card ? card[0] : null;
     },
 
     init: function() {
       initPlayerCards();
 
-      $i.Template
+      Template
           .addData('riftCards', RIFT_CARDS)
-          .addData('stapleCards', $i.data.find({ 'element': 'base' }))
-          .addPartial('gz-card', $i.cardTemplate);
+          .addData('stapleCards', data.find({ 'element': 'base' }))
+          .addPartial('gz-card', cardTemplate);
     }
   };
 });

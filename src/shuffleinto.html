@@ -9,33 +9,30 @@
 <link rel="import" href="src/dijs.html">
 
 <script type="text/javascript">
-DI
+DIJS
     .prefix('gz')
-    .bind(
-        'ShuffleInto',
-        {
-          $: '/=',
-          Abilities: '/pb.ability.=',
-          Ability: '/pb.ability.=',
-          Click: '/pb.trigger.=',
-          Utils: '/pb.='
-        },
-        function($i) {
+    .bind('ShuffleInto', function(require) {
+
+  var $ = require('/$');
+  var Abilities = require('/pb.ability.Abilities');
+  var Ability = require('/pb.ability.Ability');
+  var Click = require('/pb.trigger.Click');
+  var Utils = require('/pb.Utils');
 
   var ShuffleInto = function(toEl) {
-    $i.Ability.call(this, 'shuffleinto', new $i.Click())
+    Ability.call(this, 'shuffleinto', new Click())
     this.toEl = toEl;
   };
 
-  ShuffleInto.prototype = Object.create($i.Ability.prototype);
+  ShuffleInto.prototype = Object.create(Ability.prototype);
 
   ShuffleInto.prototype.doTrigger = function(el) {
-    $i.Abilities.of(el).trigger('shuffle');
+    Abilities.of(el).trigger('shuffle');
 
     // Flip all the children and move them to the bottom of the deck.
-    $i.Utils.toArray(el.children).forEach(function(child) {
+    Utils.toArray(el.children).forEach(function(child) {
       this.toEl.insertBefore(child, this.toEl.firstElementChild);
-      $i.$(child).attr('flip-active', false);
+      $(child).attr('flip-active', false);
     }.bind(this));
   };
 
