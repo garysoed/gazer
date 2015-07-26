@@ -1,0 +1,508 @@
+Player 1: Earth, build up on Bark Vines, outnumber by Minions. Controlled Player 2 by destroying
+Energy Orbs
+Player 2: Air with Fire Spells, built on Wave Maker, switched to massing Enchantments
+Winner: Player 1
+
+Card names:
+- Bark Vines (M): 1/0/2 - Can cast from discard pile
+- Wave Maker (M): 5/0/2 - Discard enchantment to +2 attack on next attack
+- Redirection Chamber (D): Redirect up to X damage, X = # of spells in play.
+
+Changes:
+- Player starting life 40 -> 30
+- Can attack multiple times
+
+Notes:
+- First player had a lot of advantage. Was able to lock down player 2. Maybe start Player 2 with 2
+cards in hand.
+- Redirection Chamber is too weak, reliant on built deck
+- Gust is too expensive to cast
+? Water and Air are very risky. Difficult to switch out of mass Spell / mass Enchantment deck
+? Minion count is so powerful since it offers a lot of flexibility. Maybe +1 to cost?
++ Air is vulnerable to Earth destroying Devices
++ Player 2 had no clue what he's doing. Rightfully, he lost badly. Should've gone defensive and
+spammed Minions.
++ Game ends in 15 turns, took 30 mins. Perfect length.
+
+
+7/25/2015, 10:01:52 PM seed - 1437886912331
+7/25/2015, 10:01:53 PM shuffle - riftdeck-0
+7/25/2015, 10:01:53 PM shuffle - playerdeck1-0
+7/25/2015, 10:01:53 PM shuffle - playerdeck2-0
+7/25/2015, 10:01:58 PM drawinto - playerdeck1-0
+
+turn 1 at 7/25/2015, 10:01:58 PM
+draft heat_engine-1
+7/25/2015, 10:02:45 PM drawinto - playerdeck2-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 2 at 7/25/2015, 10:02:45 PM
+draft fire_ball-2
+transmute energy_orb-13
+transmute bot-13
+7/25/2015, 10:03:14 PM tap - energy_orb-12
+replace redirection_chamber-1
+replace water_pump-0
+replace fire_turret-2
+draft redirection_chamber-1
+7/25/2015, 10:04:21 PM drawinto - playerdeck1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 3 at 7/25/2015, 10:04:21 PM
+draft bark_vines-0
+transmute mind_link-11
+transmute mind_link-10
+7/25/2015, 10:04:51 PM tap - energy_orb-11
+transmute bot-10
+7/25/2015, 10:04:59 PM tap - energy_orb-10
+transmute meditate-10
+transmute meditate-11
+7/25/2015, 10:05:06 PM tap - bot-11
+7/25/2015, 10:05:29 PM tap - energy_orb-12
+7/25/2015, 10:05:31 PM drawinto - playerdeck2-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 4 at 7/25/2015, 10:05:31 PM
+draft gust-0
+7/25/2015, 10:05:47 PM tap - energy_orb-12
+transmute meditate-12
+transmute mind_link-12
+7/25/2015, 10:06:01 PM tap - energy_orb-10
+7/25/2015, 10:06:02 PM tap - energy_orb-11
+7/25/2015, 10:06:02 PM tap - bot-11
+7/25/2015, 10:06:08 PM shuffle - playerdiscard1-0
+7/25/2015, 10:06:08 PM shuffleinto - playerdiscard1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 5 at 7/25/2015, 10:06:08 PM
+draft group_spirit-2
+7/25/2015, 10:06:26 PM tap - energy_orb-11
+7/25/2015, 10:06:26 PM tap - energy_orb-10
+7/25/2015, 10:06:27 PM tap - energy_orb-10
+7/25/2015, 10:06:28 PM tap - energy_orb-11
+7/25/2015, 10:06:30 PM tap - bot-11
+7/25/2015, 10:06:37 PM tap - bot-12
+7/25/2015, 10:06:42 PM shuffle - playerdiscard2-0
+7/25/2015, 10:06:42 PM shuffleinto - playerdiscard2-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 6 at 7/25/2015, 10:06:42 PM
+draft magma_ball-0
+7/25/2015, 10:07:07 PM tap - energy_orb-12
+7/25/2015, 10:07:07 PM tap - bot-12
+7/25/2015, 10:07:11 PM shuffle - playerdeck2-0
+7/25/2015, 10:07:20 PM tap - energy_orb-12
+7/25/2015, 10:07:22 PM tap - bot-12
+7/25/2015, 10:07:40 PM tap - bot-11
+7/25/2015, 10:07:42 PM drawinto - playerdeck1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 7 at 7/25/2015, 10:07:42 PM
+draft magma_ball-1
+7/25/2015, 10:08:07 PM tap - energy_orb-11
+7/25/2015, 10:08:07 PM tap - energy_orb-10
+7/25/2015, 10:08:33 PM tap - bot-11
+7/25/2015, 10:08:38 PM tap - energy_orb-12
+7/25/2015, 10:08:38 PM flip - energy_orb-12
+draw redirection_chamber-1
+7/25/2015, 10:08:46 PM tap - energy_orb-12
+7/25/2015, 10:08:47 PM tap - energy_orb-12
+7/25/2015, 10:08:48 PM tap - bot-12
+7/25/2015, 10:08:51 PM drawinto - playerdeck2-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 8 at 7/25/2015, 10:08:51 PM
+transmute meditate-13
+replace redirection_chamber-0
+replace piercing_icicle-3
+replace composting_staff-1
+replace looking_glass-0
+draft wave_maker-2
+7/25/2015, 10:10:25 PM tap - energy_orb-10
+7/25/2015, 10:10:25 PM tap - energy_orb-11
+7/25/2015, 10:10:26 PM tap - bot-11
+7/25/2015, 10:10:31 PM shuffle - playerdiscard1-0
+7/25/2015, 10:10:31 PM shuffleinto - playerdiscard1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 9 at 7/25/2015, 10:10:31 PM
+draft evolution-1
+7/25/2015, 10:11:03 PM tap - energy_orb-11
+7/25/2015, 10:11:08 PM tap - energy_orb-10
+7/25/2015, 10:11:12 PM tap - bot-11
+7/25/2015, 10:11:32 PM shuffle - playerdiscard2-0
+7/25/2015, 10:11:32 PM shuffleinto - playerdiscard2-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 10 at 7/25/2015, 10:11:32 PM
+draft dust_devil-0
+draw gust-0
+7/25/2015, 10:12:16 PM tap - bot-11
+7/25/2015, 10:12:17 PM tap - energy_orb-11
+7/25/2015, 10:12:17 PM tap - energy_orb-10
+draw heat_engine-1
+draw meditate-10
+7/25/2015, 10:12:24 PM shuffle - playerdiscard1-0
+7/25/2015, 10:12:24 PM shuffleinto - playerdiscard1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 11 at 7/25/2015, 10:12:24 PM
+7/25/2015, 10:12:42 PM tap - energy_orb-10
+7/25/2015, 10:12:48 PM flip - bot_leader-1
+7/25/2015, 10:12:49 PM flip - bot_leader-1
+replace pyrophillic-1
+replace sun_squirrel-1
+replace bot_leader-1
+draft fire_battery-1
+7/25/2015, 10:13:17 PM tap - bot-11
+draw fire_ball-2
+7/25/2015, 10:13:26 PM drawinto - playerdeck2-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 12 at 7/25/2015, 10:13:26 PM
+draft intimidate-0
+transmute redirection_chamber-1
+transmute bot-13
+transmute mind_link-12
+transmute energy_orb-13
+transmute meditate-12
+7/25/2015, 10:14:22 PM tap - bot-11
+7/25/2015, 10:14:23 PM flip - bot-11
+7/25/2015, 10:14:23 PM flip - mind_link-11
+7/25/2015, 10:14:27 PM tap - bark_vines-0
+7/25/2015, 10:14:29 PM tap - bot-12
+7/25/2015, 10:14:30 PM flip - energy_orb-11
+draw meditate-11
+7/25/2015, 10:14:49 PM tap - energy_orb-10
+7/25/2015, 10:14:53 PM tap - bark_vines-0
+7/25/2015, 10:14:57 PM shuffle - playerdiscard1-0
+7/25/2015, 10:14:57 PM shuffleinto - playerdiscard1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 13 at 7/25/2015, 10:14:57 PM
+draft icy_spear-0
+7/25/2015, 10:15:21 PM tap - energy_orb-10
+replace reset-0
+replace gust-1
+replace mind_controller-1
+draft gathering_storm-1
+draw energy_orb-12
+7/25/2015, 10:15:54 PM tap - bot-12
+7/25/2015, 10:16:06 PM shuffle - playerdiscard2-0
+7/25/2015, 10:16:06 PM shuffleinto - playerdiscard2-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 14 at 7/25/2015, 10:16:06 PM
+draft thorny_vines-0
+transmute energy_orb-12
+transmute meditate-13
+7/25/2015, 10:16:31 PM tap - thorny_vines-0
+7/25/2015, 10:16:32 PM tap - bot-12
+7/25/2015, 10:16:38 PM tap - bark_vines-0
+draw magma_ball-1
+7/25/2015, 10:16:55 PM tap - bark_vines-0
+7/25/2015, 10:16:55 PM tap - energy_orb-10
+7/25/2015, 10:17:01 PM drawinto - playerdeck1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 15 at 7/25/2015, 10:17:01 PM
+7/25/2015, 10:19:10 PM tap - energy_orb-10
+transmute heat_engine-1
+transmute group_spirit-2
+7/25/2015, 10:19:39 PM tap - bot-12
+7/25/2015, 10:19:40 PM flip - bot-12
+7/25/2015, 10:19:40 PM flip - mind_link-13
+7/25/2015, 10:19:41 PM flip - gust-0
+7/25/2015, 10:19:41 PM tap - thorny_vines-0
+7/25/2015, 10:19:42 PM flip - thorny_vines-0
+7/25/2015, 10:19:55 PM drawinto - playerdeck2-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 16 at 7/25/2015, 10:19:55 PM
+draft shock-2
+7/25/2015, 10:20:33 PM tap - energy_orb-10
+7/25/2015, 10:20:37 PM shuffle - playerdiscard1-0
+7/25/2015, 10:20:37 PM shuffleinto - playerdiscard1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 17 at 7/25/2015, 10:20:37 PM
+draft leader_of the pack-1
+7/25/2015, 10:21:28 PM tap - energy_orb-10
+transmute evolution-1
+draw mind_link-11
+7/25/2015, 10:21:53 PM drawinto - playerdeck2-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 18 at 7/25/2015, 10:21:53 PM
+draft mind_link-9
+transmute meditate-12
+transmute magma_ball-0
+7/25/2015, 10:22:54 PM tap - energy_orb-13
+transmute dust_devil-0
+transmute redirection_chamber-1
+transmute fire_ball-2
+transmute intimidate-0
+draw bot-11
+7/25/2015, 10:23:19 PM tap - energy_orb-10
+7/25/2015, 10:23:24 PM drawinto - playerdeck1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 19 at 7/25/2015, 10:23:24 PM
+draft bot-9
+7/25/2015, 10:23:49 PM tap - energy_orb-10
+7/25/2015, 10:23:50 PM tap - energy_orb-11
+transmute fire_battery-1
+transmute magma_ball-1
+transmute meditate-10
+transmute meditate-11
+transmute magma_ball-1
+7/25/2015, 10:24:49 PM tap - bot-10
+7/25/2015, 10:24:51 PM tap - bark_vines-0
+7/25/2015, 10:24:58 PM tap - wave_maker-2
+7/25/2015, 10:25:10 PM tap - energy_orb-13
+7/25/2015, 10:25:11 PM tap - wave_maker-2
+7/25/2015, 10:25:18 PM shuffle - playerdiscard2-0
+7/25/2015, 10:25:18 PM shuffleinto - playerdiscard2-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 20 at 7/25/2015, 10:25:18 PM
+draft intimidate-1
+7/25/2015, 10:25:34 PM tap - energy_orb-13
+7/25/2015, 10:25:43 PM tap - energy_orb-11
+7/25/2015, 10:25:44 PM tap - energy_orb-11
+draw gathering_storm-1
+draw heat_engine-1
+7/25/2015, 10:25:47 PM tap - energy_orb-11
+7/25/2015, 10:25:48 PM tap - energy_orb-10
+7/25/2015, 10:25:48 PM tap - bot-10
+7/25/2015, 10:25:48 PM tap - bark_vines-0
+7/25/2015, 10:25:54 PM shuffle - playerdiscard1-0
+7/25/2015, 10:25:54 PM shuffleinto - playerdiscard1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 21 at 7/25/2015, 10:25:54 PM
+draft bot-8
+7/25/2015, 10:26:16 PM tap - energy_orb-11
+7/25/2015, 10:26:16 PM tap - energy_orb-10
+transmute gathering_storm-1
+7/25/2015, 10:26:22 PM tap - bot-11
+7/25/2015, 10:26:22 PM tap - bot-11
+7/25/2015, 10:26:23 PM tap - bot-11
+7/25/2015, 10:26:23 PM tap - bark_vines-0
+7/25/2015, 10:26:25 PM tap - bark_vines-0
+7/25/2015, 10:26:25 PM tap - bot-11
+7/25/2015, 10:26:26 PM tap - bark_vines-0
+7/25/2015, 10:26:26 PM tap - bot-11
+7/25/2015, 10:26:29 PM tap - energy_orb-13
+7/25/2015, 10:26:30 PM flip - energy_orb-13
+7/25/2015, 10:26:32 PM tap - wave_maker-2
+7/25/2015, 10:26:34 PM tap - bot-10
+draw bot-13
+7/25/2015, 10:26:45 PM drawinto - playerdeck2-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 22 at 7/25/2015, 10:26:45 PM
+7/25/2015, 10:26:47 PM tap - wave_maker-2
+draft mind_link-8
+draw fire_battery-1
+draw group_spirit-2
+7/25/2015, 10:27:38 PM tap - energy_orb-11
+7/25/2015, 10:27:39 PM tap - energy_orb-10
+7/25/2015, 10:27:39 PM tap - bot-10
+7/25/2015, 10:27:39 PM tap - bark_vines-0
+7/25/2015, 10:27:40 PM tap - bot-11
+7/25/2015, 10:27:44 PM drawinto - playerdeck1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 23 at 7/25/2015, 10:27:44 PM
+replace fire_goblin-0
+replace fire_turret-1
+replace redirection_chamber-2
+replace rest_hollow-0
+draft purify-2
+7/25/2015, 10:28:19 PM tap - energy_orb-10
+7/25/2015, 10:28:21 PM tap - energy_orb-10
+7/25/2015, 10:28:25 PM tap - energy_orb-10
+7/25/2015, 10:28:26 PM tap - energy_orb-11
+transmute meditate-11
+transmute heat_engine-1
+transmute fire_battery-1
+transmute magma_ball-1
+draw meditate-10
+7/25/2015, 10:29:05 PM tap - bot-10
+7/25/2015, 10:29:05 PM tap - bark_vines-0
+7/25/2015, 10:29:07 PM tap - bot-11
+7/25/2015, 10:29:08 PM tap - bot-9
+7/25/2015, 10:29:09 PM tap - leader_of the pack-1
+7/25/2015, 10:29:11 PM tap - wave_maker-2
+7/25/2015, 10:29:23 PM drawinto - playerdeck2-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 24 at 7/25/2015, 10:29:23 PM
+7/25/2015, 10:29:25 PM tap - wave_maker-2
+draw meditate-12
+draft mind_link-7
+transmute meditate-12
+transmute mind_link-9
+draw evolution-1
+7/25/2015, 10:30:36 PM tap - bot-11
+7/25/2015, 10:30:36 PM tap - bark_vines-0
+7/25/2015, 10:30:37 PM tap - bot-10
+7/25/2015, 10:30:37 PM tap - energy_orb-10
+7/25/2015, 10:30:37 PM tap - energy_orb-11
+7/25/2015, 10:30:38 PM tap - bot-9
+7/25/2015, 10:30:39 PM shuffle - playerdiscard1-0
+7/25/2015, 10:30:39 PM shuffleinto - playerdiscard1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 25 at 7/25/2015, 10:30:39 PM
+draft overheat-0
+7/25/2015, 10:30:57 PM tap - leader_of the pack-1
+7/25/2015, 10:31:05 PM tap - bot-10
+7/25/2015, 10:31:05 PM tap - bark_vines-0
+7/25/2015, 10:31:06 PM tap - bot-11
+7/25/2015, 10:31:06 PM tap - bot-9
+7/25/2015, 10:31:07 PM tap - leader_of the pack-1
+7/25/2015, 10:31:09 PM tap - wave_maker-2
+7/25/2015, 10:31:17 PM tap - wave_maker-2
+7/25/2015, 10:31:18 PM tap - energy_orb-12
+7/25/2015, 10:31:22 PM tap - bark_vines-0
+7/25/2015, 10:31:22 PM tap - bot-10
+7/25/2015, 10:31:23 PM tap - bot-11
+7/25/2015, 10:31:23 PM tap - bot-9
+7/25/2015, 10:31:24 PM tap - leader_of the pack-1
+7/25/2015, 10:31:25 PM tap - bot-9
+draw meditate-13
+7/25/2015, 10:31:48 PM tap - wave_maker-2
+7/25/2015, 10:31:57 PM tap - bot-11
+7/25/2015, 10:31:58 PM tap - bark_vines-0
+7/25/2015, 10:31:58 PM tap - bot-10
+7/25/2015, 10:31:59 PM tap - leader_of the pack-1
+7/25/2015, 10:32:06 PM tap - wave_maker-2
+7/25/2015, 10:32:06 PM tap - energy_orb-12
+draw thorny_vines-0
+7/25/2015, 10:32:17 PM shuffle - playerdiscard2-0
+7/25/2015, 10:32:17 PM shuffleinto - playerdiscard2-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 26 at 7/25/2015, 10:32:17 PM
+draft burn-0
+7/25/2015, 10:32:39 PM tap - energy_orb-12
+transmute thorny_vines-0
+transmute meditate-13
+transmute bot-12
+transmute bot-13
+7/25/2015, 10:33:22 PM tap - bot-10
+7/25/2015, 10:33:23 PM flip - bot-10
+7/25/2015, 10:33:23 PM flip - mind_link-11
+7/25/2015, 10:33:31 PM tap - energy_orb-12
+7/25/2015, 10:33:35 PM flip - gust-0
+7/25/2015, 10:33:44 PM tap - energy_orb-12
+7/25/2015, 10:33:52 PM tap - bot-11
+7/25/2015, 10:33:53 PM flip - bot-11
+7/25/2015, 10:33:53 PM tap - bot-9
+7/25/2015, 10:33:54 PM flip - bot-9
+draw heat_engine-1
+7/25/2015, 10:34:28 PM tap - energy_orb-10
+7/25/2015, 10:34:28 PM tap - energy_orb-11
+7/25/2015, 10:34:52 PM tap - energy_orb-11
+7/25/2015, 10:34:52 PM tap - energy_orb-10
+7/25/2015, 10:34:57 PM tap - bark_vines-0
+7/25/2015, 10:34:58 PM tap - leader_of the pack-1
+7/25/2015, 10:35:02 PM drawinto - playerdeck1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 27 at 7/25/2015, 10:35:02 PM
+draft alpha_minion-0
+7/25/2015, 10:35:18 PM tap - energy_orb-11
+7/25/2015, 10:35:18 PM tap - energy_orb-10
+7/25/2015, 10:35:25 PM tap - energy_orb-10
+7/25/2015, 10:35:25 PM tap - energy_orb-11
+7/25/2015, 10:35:33 PM tap - bark_vines-0
+7/25/2015, 10:35:40 PM tap - wave_maker-2
+7/25/2015, 10:35:46 PM tap - leader_of the pack-1
+7/25/2015, 10:35:54 PM tap - energy_orb-11
+7/25/2015, 10:35:54 PM tap - energy_orb-10
+7/25/2015, 10:35:56 PM tap - leader_of the pack-1
+7/25/2015, 10:36:07 PM tap - bark_vines-0
+transmute meditate-10
+transmute gathering_storm-1
+transmute magma_ball-1
+7/25/2015, 10:36:28 PM tap - bot-10
+7/25/2015, 10:36:29 PM tap - bark_vines-0
+7/25/2015, 10:36:30 PM tap - leader_of the pack-1
+draw dust_devil-0
+7/25/2015, 10:36:41 PM tap - energy_orb-12
+7/25/2015, 10:36:42 PM tap - wave_maker-2
+7/25/2015, 10:36:48 PM drawinto - playerdeck2-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 28 at 7/25/2015, 10:36:48 PM
+draft mind_link-6
+7/25/2015, 10:38:11 PM tap - energy_orb-12
+transmute redirection_chamber-1
+7/25/2015, 10:38:29 PM tap - energy_orb-11
+7/25/2015, 10:38:29 PM tap - energy_orb-10
+7/25/2015, 10:38:30 PM tap - bot-10
+7/25/2015, 10:38:30 PM tap - leader_of the pack-1
+7/25/2015, 10:38:31 PM tap - bark_vines-0
+draw purify-2
+7/25/2015, 10:38:38 PM shuffle - playerdiscard1-0
+7/25/2015, 10:38:38 PM shuffleinto - playerdiscard1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 29 at 7/25/2015, 10:38:38 PM
+draft leader_of the pack-0
+7/25/2015, 10:38:48 PM tap - energy_orb-10
+draw gathering_storm-1
+draw mind_link-11
+draw meditate-10
+draw bot-8
+draw bot-9
+7/25/2015, 10:39:11 PM tap - energy_orb-11
+transmute fire_battery-1
+transmute meditate-11
+draw bot-11
+7/25/2015, 10:39:35 PM tap - leader_of the pack-1
+7/25/2015, 10:39:35 PM tap - bot-10
+7/25/2015, 10:39:36 PM tap - bark_vines-0
+7/25/2015, 10:39:37 PM tap - bot-9
+7/25/2015, 10:40:03 PM tap - bark_vines-0
+7/25/2015, 10:40:03 PM flip - bark_vines-0
+7/25/2015, 10:40:04 PM flip - mind_link-10
+7/25/2015, 10:40:04 PM flip - icy_spear-0
+7/25/2015, 10:40:04 PM flip - group_spirit-2
+7/25/2015, 10:40:05 PM tap - wave_maker-2
+7/25/2015, 10:40:15 PM drawinto - playerdeck2-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 30 at 7/25/2015, 10:40:15 PM

@@ -27,7 +27,7 @@ DIJS
   ShuffleInto.prototype = Object.create(Ability.prototype);
 
   ShuffleInto.prototype.doTrigger = function(el) {
-    Abilities.of(el).trigger('shuffle');
+    Abilities.trigger(el, 'shuffle');
 
     // Flip all the children and move them to the bottom of the deck.
     Utils.toArray(el.children).forEach(function(child) {
