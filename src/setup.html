@@ -18,22 +18,21 @@
 
 <script>
   DIJS
-      .prefix('gz')
-      .bind('setup', function(require) {
+      .bind('gz.setup', function(require) {
 
-  var $ = require('/$');
-  var Abilities = require('/pb.ability.Abilities');
-  var card = require('card');
-  var Config = require('/pb.service.Config');
-  var DrawInto = require('DrawInto');
-  var Events = require('/pb.Events');
-  var Key = require('/pb.trigger.Key');
-  var logic = require('logic');
-  var log = require('log');
-  var ShuffleInto = require('ShuffleInto');
-  var Template = require('/pb.service.Template');
-  var UI = require('ui');
-  var Utils = require('/pb.Utils');
+  var $ = require('pb.$');
+  var Abilities = require('pb.ability.Abilities');
+  var card = require('gz.card');
+  var Config = require('pb.service.Config');
+  var DrawInto = require('gz.DrawInto');
+  var Events = require('pb.Events');
+  var Key = require('pb.trigger.Key');
+  var logic = require('gz.logic');
+  var log = require('gz.log');
+  var ShuffleInto = require('gz.ShuffleInto');
+  var Template = require('pb.service.Template');
+  var UI = require('gz.ui');
+  var Utils = require('pb.Utils');
 
   function createChildAddedObserver(handler) {
     return new MutationObserver(function(records) {

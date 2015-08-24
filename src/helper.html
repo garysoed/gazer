@@ -4,10 +4,9 @@
 
 <script type="text/javascript">
   DIJS
-      .prefix('gz')
-      .bind('helper', function(require) {
+      .bind('gz.helper', function(require) {
 
-    var $ = require('/$');
+    var $ = require('pb.$');
 
     return {
       isDraftDeck: function(el) {

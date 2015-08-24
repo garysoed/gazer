@@ -8,12 +8,11 @@
 
 <script type="text/javascript">
 DIJS
-    .prefix('gz')
-    .bind('DrawInto', function(require) {
+    .bind('gz.DrawInto', function(require) {
 
-  var $ = require('/$');
-  var Ability = require('/pb.ability.Ability');
-  var Click = require('/pb.trigger.Click');
+  var $ = require('pb.$');
+  var Ability = require('pb.ability.Ability');
+  var Click = require('pb.trigger.Click');
 
   var DrawInto = function(toEl) {
     Ability.call(this, 'drawinto', new Click());

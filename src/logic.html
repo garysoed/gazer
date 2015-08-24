@@ -15,19 +15,20 @@
 
 <script type="text/javascript">
   DIJS
-      .prefix('gz')
-      .bind('logic', function(require) {
+      .bind('gz.logic', function(require) {
 
-    var $ = require('/$');
-    var Acl = require('/pb.service.Acl');
-    var Check = require('/pb.Check');
-    var Events = require('/pb.Events');
-    var helper = require('helper');
-    var Log = require('/pb.service.Log');
-    var Move = require('/pb.service.Move');
-    var State = require('/pb.service.State');
-    var UI = require('ui');
-    var Utils = require('/pb.Utils');
+    var $ = require('pb.$');
+    var Acl = require('pb.service.Acl');
+    var Check = require('pb.Check');
+    var Events = require('pb.Events');
+    var helper = require('gz.helper');
+    var Log = require('pb.service.Log');
+    var Move = require('pb.service.Move');
+    var State = require('pb.service.State');
+    var UI = require('gz.ui');
+    var Utils = require('pb.Utils');
+
+    Move.Events = require('pb.service.Move.__ctor__').Events;
 
     function nextTurn(ui) {
       // Change the turn

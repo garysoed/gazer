@@ -30,13 +30,12 @@
 
 <script>
   DIJS
-      .prefix('gz')
-      .constant('cardTemplate', document.currentScript.ownerDocument.querySelector('template'))
-      .bind('card', function(require) {
+      .constant('gz.cardTemplate', document.currentScript.ownerDocument.querySelector('template'))
+      .bind('gz.card', function(require) {
 
-  var cardTemplate = require('cardTemplate');
-  var data = require('data');
-  var Template = require('/pb.service.Template');
+  var cardTemplate = require('gz.cardTemplate');
+  var data = require('gz.data');
+  var Template = require('pb.service.Template');
 
   var PLAYER_CARDS = {
     'energy_orb': 2,

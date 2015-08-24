@@ -10,14 +10,13 @@
 
 <script type="text/javascript">
 DIJS
-    .prefix('gz')
-    .bind('ShuffleInto', function(require) {
+    .bind('gz.ShuffleInto', function(require) {
 
-  var $ = require('/$');
-  var Abilities = require('/pb.ability.Abilities');
-  var Ability = require('/pb.ability.Ability');
-  var Click = require('/pb.trigger.Click');
-  var Utils = require('/pb.Utils');
+  var $ = require('pb.$');
+  var Abilities = require('pb.ability.Abilities');
+  var Ability = require('pb.ability.Ability');
+  var Click = require('pb.trigger.Click');
+  var Utils = require('pb.Utils');
 
   var ShuffleInto = function(toEl) {
     Ability.call(this, 'shuffleinto', new Click())

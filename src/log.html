@@ -12,17 +12,16 @@
 
 <script type="text/javascript">
   DIJS
-      .prefix('gz')
-      .bind('log', function(require) {
+      .bind('gz.log', function(require) {
 
-  var $ = require('/$');
-  var card = require('card');
-  var helper = require('helper');
-  var Log = require('/pb.service.Log');
-  var Move = require('/pb.service.Move');
-  var seed = require('/pb.seed');
-  var State = require('/pb.service.State');
-  var ui = require('ui');
+  var $ = require('pb.$');
+  var card = require('gz.card');
+  var helper = require('gz.helper');
+  var Log = require('pb.service.Log');
+  var Move = require('pb.service.Move');
+  var seed = require('pb.seed');
+  var State = require('pb.service.State');
+  var ui = require('gz.ui');
 
   var __moveFrom__ = Symbol();
   var stats = null;
@@ -159,9 +158,7 @@
   }
 
   return function(document) {
-    Log
-        .clear()
-        .log('seed', seed);
+    Log.log('seed', seed);
 
     // Log button
     document.querySelector('#log').addEventListener('click', function() {

@@ -41,7 +41,7 @@ module.exports = function() {
         + '<link rel="import" href="src/dijs.html">'
         + '<script src="bower_components/lokijs/src/lokijs.js"></script>'
         + '<script>'
-          + 'DIJS.prefix("gz").bind("data", function() { '
+          + 'DIJS.bind("gz.data", function() { '
             + 'var raw = ' + JSON.stringify(cards, null, 2) + ';'
             + 'var db = new loki("gazer");'
             + 'var cards = db.addCollection("cards");'
