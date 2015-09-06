@@ -37,10 +37,10 @@
       State.put('turn', turn);
 
       // Switch the current player
-      if (Acl.currentPlayer === 'player1') {
-        Acl.currentPlayer = 'player2';
-      } else {
+      if (Acl.currentPlayer === 'player0') {
         Acl.currentPlayer = 'player1';
+      } else {
+        Acl.currentPlayer = 'player0';
       }
     }
 

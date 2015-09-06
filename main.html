@@ -61,11 +61,11 @@
         </section>
 
         <section id="playsection">
-          <pb-u-generate input="players">
+          <pb-u-generate input="pb_players">
             <template>
-              {{#each players}}
+              {{#each pb_players}}
                 <section class="playarea">
-                  <pb-r-rect id="player{{this}}_rectarea"></pb-r-rect>
+                  <pb-r-rect id="player{{@key}}_rectarea"></pb-r-rect>
                 </section>
               {{/each}}
             </template>
@@ -90,19 +90,19 @@
 
     <section id="bottom-section" class="player1">
       <ul>
-        <li class="player1">Player 1 <input type="number" value="30"></li>
-        <li class="player2">Player 2 <input type="number" value="30"></li>
+        <li class="player0">Player 1 <input type="number" value="30"></li>
+        <li class="player1">Player 2 <input type="number" value="30"></li>
       </ul>
       <section id="switcher">
-        <pb-u-generate input="players playerCards">
+        <pb-u-generate input="pb_players playerCards">
           <template>
-            {{#each players}}
-              <section class="playerarea" id="player{{this}}area" pb-acl-readable="player{{this}}">
+            {{#each pb_players}}
+              <section class="playerarea" id="player{{@key}}area" pb-acl-readable="player{{@key}}">
                 <section class="hand">
-                  <pb-r-deck class="discard" pb-id="playerdiscard{{this}}"></pb-r-deck>
+                  <pb-r-deck class="discard" pb-id="playerdiscard{{@key}}"></pb-r-deck>
                   <pb-r-deck class="deck"
                              show-child-count="true"
-                             pb-id="playerdeck{{this}}">
+                             pb-id="playerdeck{{@key}}">
                     {{#each ../playerCards}}
                       {{> gz-card showfront='false'}}
                     {{/each}}
@@ -123,7 +123,9 @@
 
     <script>
       Protoboard
-          .forNewGame()
+          .forNewGame(0, {})
+          .join('player1', {})
+          .join('player2', {})
           .setup(function(require) {
             var setup = require('gz.setup');
             setup.preBootstrap();

@@ -145,11 +145,11 @@ pb-c-card.water [pb-front] {
   height: 100px;
 }
 
-#bottom-section.player1 li.player1 {
-  background-color: var(--color-background-accent);
+#bottom-section.player0 li.player0 {
+  background-color: var(--color-light-primary);
 }
 
-#bottom-section.player1 #player1area {
+#bottom-section.player0 #player0area {
   display: block;
 }
 
@@ -157,11 +157,11 @@ pb-c-card.water [pb-front] {
   height: 135px;
 }
 
-#bottom-section.player2 li.player2 {
-  background-color: var(--color-background-accent);
+#bottom-section.player1 li.player1 {
+  background-color: var(--color-light-primary);
 }
 
-#bottom-section.player2 #player2area {
+#bottom-section.player1 #player1area {
   display: block;
 }
 

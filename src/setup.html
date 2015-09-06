@@ -89,13 +89,13 @@
   function processTabs(document) {
     // Make the tabs
     var bottom = document.querySelector('#bottom-section');
+    document.querySelector('#bottom-section li.player0').addEventListener('click', function() {
+      bottom.classList.toggle('player0');
+      bottom.classList.remove('player1');
+    });
     document.querySelector('#bottom-section li.player1').addEventListener('click', function() {
       bottom.classList.toggle('player1');
-      bottom.classList.remove('player2');
-    });
-    document.querySelector('#bottom-section li.player2').addEventListener('click', function() {
-      bottom.classList.toggle('player2');
-      bottom.classList.remove('player1');
+      bottom.classList.remove('player0');
     });
   }
 

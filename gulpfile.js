@@ -6,7 +6,7 @@ var loadtheme = require('./bower_components/protoboard/loadtheme');
 var extractcard = require('./extractcard');
 
 gulp.task('myth', function() {
-  var theme = loadtheme(__dirname + '/bower_components/protoboard/themes/grey.json');
+  var theme = loadtheme(__dirname + '/bower_components/protoboard/themes/base.json');
   return gulp.src('gazer.css')
       .pipe(myth({
         'variables': theme
