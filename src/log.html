@@ -1,8 +1,8 @@
 <base href="..">
 
-<link rel="import" href="bower_components/protoboard/out/service/log.html">
-<link rel="import" href="bower_components/protoboard/out/service/move.html">
-<link rel="import" href="bower_components/protoboard/out/service/state.html">
+<link rel="import" href="bower_components/protoboard/out/data/logservice.html">
+<link rel="import" href="bower_components/protoboard/out/ui/moveservice.html">
+<link rel="import" href="bower_components/protoboard/out/data/stateservice.html">
 <link rel="import" href="bower_components/protoboard/out/third_party/jquery.html">
 
 <link rel="import" href="src/card.html">
@@ -14,13 +14,13 @@
   DIJS
       .bind('gz.log', function(require) {
 
-  var $ = require('pb.$');
+  var $ = require('pb.JQuery');
   var card = require('gz.card');
   var helper = require('gz.helper');
-  var Log = require('pb.service.Log');
-  var Move = require('pb.service.Move');
+  var Log = require('pb.data.LogService');
+  var Move = require('pb.ui.MoveService');
   var seed = require('pb.seed');
-  var State = require('pb.service.State');
+  var State = require('pb.data.StateService');
   var ui = require('gz.ui');
 
   var __moveFrom__ = Symbol();

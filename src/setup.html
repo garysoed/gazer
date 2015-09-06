@@ -1,8 +1,8 @@
 <base href="..">
 
 <link rel="import" href="bower_components/protoboard/out/ability/abilities.html">
-<link rel="import" href="bower_components/protoboard/out/service/config.html">
-<link rel="import" href="bower_components/protoboard/out/service/template.html">
+<link rel="import" href="bower_components/protoboard/out/data/configservice.html">
+<link rel="import" href="bower_components/protoboard/out/ui/templateservice.html">
 <link rel="import" href="bower_components/protoboard/out/third_party/events.html">
 <link rel="import" href="bower_components/protoboard/out/third_party/jquery.html">
 <link rel="import" href="bower_components/protoboard/out/trigger/key.html">
@@ -20,17 +20,17 @@
   DIJS
       .bind('gz.setup', function(require) {
 
-  var $ = require('pb.$');
+  var $ = require('pb.JQuery');
   var Abilities = require('pb.ability.Abilities');
   var card = require('gz.card');
-  var Config = require('pb.service.Config');
+  var Config = require('pb.data.ConfigService');
   var DrawInto = require('gz.DrawInto');
   var Events = require('pb.Events');
   var Key = require('pb.trigger.Key');
   var logic = require('gz.logic');
   var log = require('gz.log');
   var ShuffleInto = require('gz.ShuffleInto');
-  var Template = require('pb.service.Template');
+  var Template = require('pb.ui.TemplateService');
   var UI = require('gz.ui');
   var Utils = require('pb.Utils');
 
