@@ -43,3 +43,11 @@
 1.  Take control of a Minion
 1.  Unsummon Minion (put Minion in play back in hand, gain energy used to summon)
 1.  Untap Device (all, #)
+
+# Factions
+
+1.  Vines: Weak, but very persistent. Keep coming back from the dead.
+
+Card drawing / + Energy: Elemental (M); Orb (D)
+Damage: Ball / Missile (S); Turret / Spear / Sword (D)
+Drafting: Faerie / Sprite (M); Thinking / Meditate / Brainstorm (S); Headgear (D)

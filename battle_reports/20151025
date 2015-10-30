@@ -1,0 +1,575 @@
+Player 1: Defensive Fire relying on Fire Elemental and Ice Armor, while accumulating Energy Orbs,
+then switched to spell heavy with Hellhound, Magma Ball, Thermo Cycle, Recharge.
+Player 2: Earth build trying to switch to water, building on Bot and Water Orb. But the Bot got
+killed by Magma Ball.
+Winner: Player 1
+
+Changes:
+- Some card changes
+
+Card names:
+* Fire Elemental: 5/1/0 When damaged, draw 1 card
+* Ice Armor: Armor + 1
+* Hellhound: 2/3/0
+* Magma Ball: Damage 2 Minions by 2
+* Thermo Cycle: TAP: Damage a non device by 2, untap all devices.
+* Recharge: Untap all Devices
+* Water Orb: Pick a Minion, Draw X cards, X = number of enchantments.
+* Water Bearer: TAP: Heal Minion by X, X = number of enchantments on that Minion.
+
+Notes:
++ Game took 40 mins, 13 turns.
+? 20 is definitely too low, 30 is probably right.
+- Thermo Cycle + Water Bearer = Infinite Loop.
+
+10/25/2015, 5:24:14 PM seed - 1445819053908
+10/25/2015, 5:24:14 PM shuffle - riftdeck-0
+10/25/2015, 5:24:14 PM shuffle - playerdeck0-0
+10/25/2015, 5:24:14 PM shuffle - playerdeck1-0
+10/25/2015, 5:24:21 PM drawinto - playerdeck0-0
+
+turn 1 at 10/25/2015, 5:24:21 PM
+draft fire_elemental-1
+transmute mind_link-11
+10/25/2015, 5:25:01 PM flip - air_blade-2
+10/25/2015, 5:25:02 PM flip - ice_armor-0
+10/25/2015, 5:25:03 PM flip - hellhound-1
+replace ice_armor-0
+replace air_blade-2
+replace kitsune-1
+draft ice_armor-1
+draw mind_link-12
+draw energy_orb-13
+10/25/2015, 5:25:33 PM drawinto - playerdeck1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 2 at 10/25/2015, 5:25:33 PM
+draft jungle_vines-1
+transmute mind_link-13
+transmute meditate-13
+transmute mind_link-12
+10/25/2015, 5:25:55 PM tap - energy_orb-13
+transmute meditate-12
+10/25/2015, 5:26:31 PM drawinto - playerdeck0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 3 at 10/25/2015, 5:26:31 PM
+draft hellhound-1
+transmute mind_link-10
+transmute bot-10
+transmute energy_orb-11
+10/25/2015, 5:27:10 PM tap - energy_orb-10
+10/25/2015, 5:27:21 PM flip - water_elemental-0
+10/25/2015, 5:27:22 PM flip - poltergeist-1
+10/25/2015, 5:27:23 PM flip - thermo_cycle-1
+replace poltergeist-1
+replace water_elemental-0
+replace flora_secret-0
+draft thermo_cycle-1
+10/25/2015, 5:27:44 PM tap - energy_orb-13
+10/25/2015, 5:27:46 PM shuffle - playerdiscard1-0
+10/25/2015, 5:27:46 PM shuffleinto - playerdiscard1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 4 at 10/25/2015, 5:27:46 PM
+draft water_orb-1
+10/25/2015, 5:28:08 PM shuffle - playerdiscard0-0
+10/25/2015, 5:28:08 PM shuffleinto - playerdiscard0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 5 at 10/25/2015, 5:28:08 PM
+10/25/2015, 5:28:09 PM tap - energy_orb-10
+draft charged-0
+10/25/2015, 5:28:47 PM drawinto - playerdeck1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 6 at 10/25/2015, 5:28:47 PM
+draft kitsune-2
+10/25/2015, 5:29:06 PM tap - energy_orb-13
+10/25/2015, 5:29:07 PM tap - energy_orb-13
+10/25/2015, 5:29:10 PM tap - energy_orb-13
+10/25/2015, 5:29:12 PM tap - energy_orb-13
+10/25/2015, 5:29:14 PM tap - energy_orb-13
+transmute bot-13
+transmute meditate-12
+10/25/2015, 5:29:24 PM tap - jungle_vines-1
+10/25/2015, 5:29:25 PM tap - jungle_vines-1
+10/25/2015, 5:29:27 PM tap - jungle_vines-1
+10/25/2015, 5:29:29 PM tap - bot-12
+10/25/2015, 5:29:35 PM flip - energy_orb-10
+10/25/2015, 5:29:50 PM drawinto - playerdeck0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 7 at 10/25/2015, 5:29:50 PM
+draft gnome-2
+transmute bot-11
+transmute meditate-11
+transmute ice_armor-1
+transmute energy_orb-11
+10/25/2015, 5:30:32 PM tap - energy_orb-13
+10/25/2015, 5:30:32 PM tap - jungle_vines-1
+10/25/2015, 5:30:32 PM tap - bot-12
+10/25/2015, 5:30:38 PM shuffle - playerdiscard1-0
+10/25/2015, 5:30:38 PM shuffleinto - playerdiscard1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 8 at 10/25/2015, 5:30:38 PM
+draft thorny_vines-0
+10/25/2015, 5:30:51 PM tap - energy_orb-13
+transmute energy_orb-12
+10/25/2015, 5:30:57 PM tap - jungle_vines-1
+10/25/2015, 5:30:57 PM tap - bot-12
+draw mind_link-11
+10/25/2015, 5:31:28 PM drawinto - playerdeck0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 9 at 10/25/2015, 5:31:28 PM
+draft energy_orb-9
+transmute mind_link-10
+transmute thermo_cycle-1
+transmute bot-10
+10/25/2015, 5:32:08 PM tap - hellhound-1
+10/25/2015, 5:32:09 PM tap - energy_orb-13
+10/25/2015, 5:32:10 PM flip - energy_orb-13
+draw meditate-13
+10/25/2015, 5:32:23 PM tap - bot-12
+10/25/2015, 5:32:24 PM tap - jungle_vines-1
+10/25/2015, 5:32:26 PM drawinto - playerdeck1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 10 at 10/25/2015, 5:32:26 PM
+draft symbiosis-0
+transmute meditate-12
+transmute mind_link-13
+transmute meditate-13
+10/25/2015, 5:32:58 PM tap - water_orb-1
+draw kitsune-2
+10/25/2015, 5:33:14 PM tap - bot-12
+10/25/2015, 5:33:41 PM shuffle - playerdiscard0-0
+10/25/2015, 5:33:41 PM shuffleinto - playerdiscard0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 11 at 10/25/2015, 5:33:41 PM
+10/25/2015, 5:33:42 PM tap - hellhound-1
+draft energy_orb-8
+10/25/2015, 5:34:02 PM tap - hellhound-1
+10/25/2015, 5:34:08 PM flip - jungle_vines-1
+10/25/2015, 5:34:08 PM flip - jungle_vines-1
+10/25/2015, 5:34:09 PM flip - jungle_vines-1
+10/25/2015, 5:34:32 PM tap - bot-12
+10/25/2015, 5:34:33 PM tap - water_orb-1
+10/25/2015, 5:34:35 PM shuffle - playerdiscard1-0
+10/25/2015, 5:34:35 PM shuffleinto - playerdiscard1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 12 at 10/25/2015, 5:34:35 PM
+draft circle_of life-1
+10/25/2015, 5:34:48 PM tap - water_orb-1
+draw meditate-13
+10/25/2015, 5:35:04 PM tap - bot-12
+draw thermo_cycle-1
+draw meditate-10
+10/25/2015, 5:35:26 PM flip - thermo_cycle-1
+10/25/2015, 5:35:28 PM tap - bot-12
+10/25/2015, 5:35:35 PM tap - hellhound-1
+10/25/2015, 5:35:36 PM drawinto - playerdeck0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 13 at 10/25/2015, 5:35:36 PM
+draft recharge-0
+transmute mind_link-11
+transmute meditate-10
+transmute thermo_cycle-1
+10/25/2015, 5:36:01 PM tap - energy_orb-11
+10/25/2015, 5:36:15 PM tap - fire_elemental-1
+10/25/2015, 5:36:15 PM tap - hellhound-1
+10/25/2015, 5:36:19 PM tap - hellhound-1
+10/25/2015, 5:36:19 PM tap - fire_elemental-1
+10/25/2015, 5:36:24 PM tap - fire_elemental-1
+draw energy_orb-12
+10/25/2015, 5:36:42 PM tap - water_orb-1
+10/25/2015, 5:36:44 PM drawinto - playerdeck1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 14 at 10/25/2015, 5:36:44 PM
+draft shiny_crystal-1
+transmute meditate-12
+transmute meditate-13
+10/25/2015, 5:37:12 PM tap - water_orb-1
+draw energy_orb-13
+draw thorny_vines-0
+transmute jungle_vines-1
+transmute thorny_vines-0
+transmute bot-13
+transmute mind_link-13
+transmute energy_orb-12
+10/25/2015, 5:38:18 PM tap - energy_orb-11
+10/25/2015, 5:38:19 PM tap - fire_elemental-1
+10/25/2015, 5:38:24 PM drawinto - playerdeck0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 15 at 10/25/2015, 5:38:24 PM
+draft intelligence-0
+10/25/2015, 5:38:51 PM tap - energy_orb-11
+transmute bot-11
+10/25/2015, 5:39:10 PM tap - energy_orb-10
+10/25/2015, 5:39:22 PM flip - intimidation-1
+10/25/2015, 5:39:23 PM flip - piercing_icicle-1
+10/25/2015, 5:39:24 PM flip - crystal_ball-1
+10/25/2015, 5:39:25 PM flip - crown_of thrall-0
+10/25/2015, 5:39:26 PM flip - ice_sword-0
+10/25/2015, 5:39:27 PM flip - sylph-2
+10/25/2015, 5:39:28 PM flip - magma_ball-1
+replace sylph-2
+replace ice_sword-0
+replace crown_of thrall-0
+replace crystal_ball-1
+replace piercing_icicle-1
+replace intimidation-1
+replace gnome-0
+draft magma_ball-1
+10/25/2015, 5:39:55 PM tap - hellhound-1
+10/25/2015, 5:39:55 PM tap - fire_elemental-1
+10/25/2015, 5:40:14 PM tap - hellhound-1
+10/25/2015, 5:40:15 PM flip - hellhound-1
+10/25/2015, 5:40:19 PM tap - kitsune-2
+draw charged-0
+10/25/2015, 5:40:34 PM tap - water_orb-1
+10/25/2015, 5:40:34 PM tap - kitsune-2
+10/25/2015, 5:40:41 PM shuffle - playerdiscard1-0
+10/25/2015, 5:40:41 PM shuffleinto - playerdiscard1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 16 at 10/25/2015, 5:40:41 PM
+draft revival_pendant-0
+10/25/2015, 5:41:02 PM tap - water_orb-1
+draw mind_link-13
+draw meditate-12
+10/25/2015, 5:41:14 PM tap - energy_orb-13
+10/25/2015, 5:41:45 PM flip - thorny_vines-2
+10/25/2015, 5:41:47 PM flip - ice_golem-1
+replace thorny_vines-2
+replace salamander-0
+draft ice_golem-1
+10/25/2015, 5:42:03 PM tap - bot-12
+10/25/2015, 5:42:20 PM tap - energy_orb-11
+10/25/2015, 5:42:20 PM tap - energy_orb-10
+10/25/2015, 5:42:21 PM tap - fire_elemental-1
+10/25/2015, 5:42:23 PM shuffle - playerdiscard0-0
+10/25/2015, 5:42:23 PM shuffleinto - playerdiscard0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 17 at 10/25/2015, 5:42:23 PM
+draft construct-1
+10/25/2015, 5:42:36 PM tap - energy_orb-10
+10/25/2015, 5:42:37 PM tap - energy_orb-11
+10/25/2015, 5:42:48 PM tap - water_orb-1
+10/25/2015, 5:42:49 PM tap - energy_orb-13
+10/25/2015, 5:42:49 PM tap - bot-12
+10/25/2015, 5:42:53 PM drawinto - playerdeck1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 18 at 10/25/2015, 5:42:53 PM
+draft piercing_icicle-0
+transmute meditate-13
+transmute mind_link-13
+10/25/2015, 5:43:33 PM tap - water_orb-1
+draw jungle_vines-1
+draw thorny_vines-0
+draw energy_orb-12
+10/25/2015, 5:43:44 PM tap - energy_orb-13
+transmute bot-13
+10/25/2015, 5:43:51 PM flip - bot-13
+10/25/2015, 5:43:52 PM flip - bot-13
+transmute jungle_vines-1
+10/25/2015, 5:44:02 PM tap - energy_orb-12
+draw energy_orb-9
+10/25/2015, 5:44:23 PM tap - energy_orb-10
+10/25/2015, 5:44:23 PM tap - energy_orb-11
+10/25/2015, 5:44:29 PM drawinto - playerdeck0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 19 at 10/25/2015, 5:44:29 PM
+draft gathering_storm-1
+transmute gnome-2
+transmute bot-10
+10/25/2015, 5:45:13 PM tap - energy_orb-11
+10/25/2015, 5:45:13 PM tap - energy_orb-10
+10/25/2015, 5:45:19 PM tap - energy_orb-9
+transmute energy_orb-8
+10/25/2015, 5:45:29 PM tap - energy_orb-9
+10/25/2015, 5:45:34 PM tap - energy_orb-9
+10/25/2015, 5:45:34 PM tap - energy_orb-9
+10/25/2015, 5:45:36 PM flip - energy_orb-8
+10/25/2015, 5:45:41 PM flip - energy_orb-8
+10/25/2015, 5:45:44 PM tap - energy_orb-9
+10/25/2015, 5:46:05 PM tap - energy_orb-13
+10/25/2015, 5:46:05 PM tap - water_orb-1
+10/25/2015, 5:46:06 PM tap - energy_orb-12
+10/25/2015, 5:46:34 PM shuffle - playerdiscard1-0
+10/25/2015, 5:46:34 PM shuffleinto - playerdiscard1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 20 at 10/25/2015, 5:46:34 PM
+draft bot-9
+10/25/2015, 5:46:48 PM tap - water_orb-1
+draw piercing_icicle-0
+draw meditate-12
+draw bot-13
+draw revival_pendant-0
+10/25/2015, 5:47:03 PM tap - energy_orb-13
+10/25/2015, 5:47:04 PM tap - energy_orb-12
+10/25/2015, 5:47:10 PM flip - bot-9
+10/25/2015, 5:47:10 PM tap - revival_pendant-0
+10/25/2015, 5:47:25 PM tap - energy_orb-11
+10/25/2015, 5:47:25 PM tap - energy_orb-10
+10/25/2015, 5:47:26 PM tap - energy_orb-9
+10/25/2015, 5:47:30 PM drawinto - playerdeck0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 21 at 10/25/2015, 5:47:30 PM
+draft bot-8
+replace redirection_chamber-1
+replace gathering_storm-0
+replace resting_sack-0
+replace earth_elemental-1
+10/25/2015, 5:48:09 PM tap - energy_orb-11
+10/25/2015, 5:48:30 PM flip - absolute_zero-0
+10/25/2015, 5:48:32 PM flip - absolute_zero-0
+10/25/2015, 5:48:33 PM flip - djinn-1
+replace water_clone-1
+draft absolute_zero-1
+10/25/2015, 5:48:42 PM tap - energy_orb-10
+transmute mind_link-11
+10/25/2015, 5:49:09 PM flip - water_clone-2
+10/25/2015, 5:49:12 PM flip - nature_orb-0
+10/25/2015, 5:49:13 PM flip - bird's_eye view-0
+10/25/2015, 5:49:14 PM flip - reset-1
+10/25/2015, 5:49:15 PM flip - fire_orb-1
+replace reset-1
+replace bird's_eye view-0
+replace nature_orb-0
+replace water_clone-2
+replace absolute_zero-0
+draft water_bearer-2
+10/25/2015, 5:49:37 PM tap - energy_orb-9
+10/25/2015, 5:49:40 PM tap - energy_orb-11
+10/25/2015, 5:49:40 PM tap - energy_orb-10
+10/25/2015, 5:49:40 PM tap - energy_orb-9
+draw thermo_cycle-1
+draw hellhound-1
+draw bot-11
+10/25/2015, 5:50:00 PM flip - bot-12
+10/25/2015, 5:50:00 PM flip - mind_link-12
+10/25/2015, 5:50:01 PM flip - symbiosis-0
+10/25/2015, 5:50:01 PM flip - shiny_crystal-1
+10/25/2015, 5:50:01 PM flip - circle_of life-1
+10/25/2015, 5:50:10 PM tap - energy_orb-11
+10/25/2015, 5:50:10 PM tap - energy_orb-10
+10/25/2015, 5:50:11 PM tap - energy_orb-9
+10/25/2015, 5:50:21 PM tap - energy_orb-13
+10/25/2015, 5:50:21 PM flip - energy_orb-13
+10/25/2015, 5:50:26 PM tap - hellhound-1
+10/25/2015, 5:50:42 PM tap - water_orb-1
+10/25/2015, 5:50:42 PM tap - energy_orb-12
+10/25/2015, 5:50:42 PM tap - revival_pendant-0
+10/25/2015, 5:50:52 PM drawinto - playerdeck1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 22 at 10/25/2015, 5:50:52 PM
+draft fire_orb-1
+10/25/2015, 5:51:13 PM tap - revival_pendant-0
+10/25/2015, 5:51:15 PM flip - fire_orb-1
+10/25/2015, 5:51:19 PM tap - energy_orb-12
+transmute piercing_icicle-0
+10/25/2015, 5:51:43 PM flip - flame_whip-0
+10/25/2015, 5:51:44 PM flip - demoralize-1
+10/25/2015, 5:51:45 PM flip - crown_of thrall-1
+10/25/2015, 5:51:45 PM flip - healing_water-0
+replace crown_of thrall-1
+replace demoralize-1
+replace flame_whip-0
+replace djinn-1
+draft fire_ward-1
+10/25/2015, 5:52:09 PM tap - energy_orb-11
+10/25/2015, 5:52:10 PM tap - energy_orb-10
+10/25/2015, 5:52:10 PM tap - energy_orb-9
+10/25/2015, 5:52:12 PM tap - hellhound-1
+10/25/2015, 5:52:15 PM shuffle - playerdiscard0-0
+10/25/2015, 5:52:15 PM shuffleinto - playerdiscard0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 23 at 10/25/2015, 5:52:15 PM
+draft bird's_eye view-2
+10/25/2015, 5:52:33 PM tap - hellhound-1
+10/25/2015, 5:52:53 PM tap - energy_orb-12
+10/25/2015, 5:52:53 PM tap - revival_pendant-0
+10/25/2015, 5:53:02 PM shuffle - playerdiscard1-0
+10/25/2015, 5:53:02 PM shuffleinto - playerdiscard1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 24 at 10/25/2015, 5:53:02 PM
+draft naga-1
+10/25/2015, 5:53:08 PM tap - revival_pendant-0
+10/25/2015, 5:53:13 PM tap - revival_pendant-0
+transmute jungle_vines-1
+transmute thorny_vines-0
+transmute piercing_icicle-0
+10/25/2015, 5:53:36 PM tap - energy_orb-12
+transmute mind_link-13
+draft healing_water-0
+10/25/2015, 5:53:48 PM tap - revival_pendant-0
+10/25/2015, 5:53:50 PM flip - healing_water-0
+10/25/2015, 5:53:58 PM tap - energy_orb-11
+10/25/2015, 5:53:58 PM tap - energy_orb-10
+10/25/2015, 5:53:58 PM tap - energy_orb-9
+10/25/2015, 5:54:02 PM tap - energy_orb-9
+10/25/2015, 5:54:02 PM tap - energy_orb-10
+10/25/2015, 5:54:03 PM tap - energy_orb-11
+10/25/2015, 5:54:06 PM tap - energy_orb-11
+10/25/2015, 5:54:08 PM tap - energy_orb-10
+10/25/2015, 5:54:15 PM tap - thermo_cycle-1
+draw water_bearer-2
+10/25/2015, 5:54:23 PM tap - energy_orb-10
+10/25/2015, 5:54:23 PM tap - energy_orb-11
+10/25/2015, 5:54:25 PM tap - energy_orb-11
+10/25/2015, 5:54:26 PM tap - energy_orb-10
+10/25/2015, 5:54:26 PM tap - energy_orb-9
+10/25/2015, 5:54:29 PM tap - thermo_cycle-1
+10/25/2015, 5:54:41 PM drawinto - playerdeck0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 25 at 10/25/2015, 5:54:41 PM
+draft magma_ball-0
+10/25/2015, 5:54:56 PM tap - hellhound-1
+10/25/2015, 5:55:02 PM tap - energy_orb-9
+10/25/2015, 5:55:03 PM tap - energy_orb-10
+10/25/2015, 5:55:03 PM tap - energy_orb-11
+10/25/2015, 5:55:11 PM tap - energy_orb-11
+10/25/2015, 5:55:12 PM tap - energy_orb-10
+10/25/2015, 5:55:13 PM tap - energy_orb-10
+10/25/2015, 5:55:14 PM tap - energy_orb-11
+10/25/2015, 5:55:18 PM tap - energy_orb-11
+10/25/2015, 5:55:18 PM tap - energy_orb-10
+10/25/2015, 5:55:37 PM tap - energy_orb-9
+10/25/2015, 5:55:44 PM tap - energy_orb-9
+10/25/2015, 5:55:51 PM tap - thermo_cycle-1
+10/25/2015, 5:56:02 PM flip - fire_ball-2
+replace hive_mind-0
+draft fire_ball-2
+draw absolute_zero-1
+10/25/2015, 5:56:19 PM tap - energy_orb-9
+10/25/2015, 5:56:22 PM tap - thermo_cycle-1
+10/25/2015, 5:56:30 PM tap - thermo_cycle-1
+draw energy_orb-8
+10/25/2015, 5:56:35 PM tap - energy_orb-9
+10/25/2015, 5:56:36 PM tap - energy_orb-10
+10/25/2015, 5:56:36 PM tap - energy_orb-11
+10/25/2015, 5:56:36 PM tap - thermo_cycle-1
+10/25/2015, 5:56:38 PM tap - water_bearer-2
+10/25/2015, 5:57:03 PM tap - energy_orb-11
+10/25/2015, 5:57:04 PM tap - energy_orb-10
+10/25/2015, 5:57:07 PM flip - bot-13
+draw bot-10
+10/25/2015, 5:59:08 PM tap - thermo_cycle-1
+draw gathering_storm-1
+transmute bot-10
+10/25/2015, 5:59:22 PM tap - energy_orb-9
+draw bot-8
+draw meditate-10
+10/25/2015, 5:59:48 PM tap - energy_orb-9
+10/25/2015, 5:59:48 PM tap - thermo_cycle-1
+10/25/2015, 5:59:48 PM tap - water_bearer-2
+10/25/2015, 5:59:49 PM tap - energy_orb-10
+10/25/2015, 5:59:49 PM tap - energy_orb-11
+transmute mind_link-11
+10/25/2015, 6:00:14 PM tap - energy_orb-8
+10/25/2015, 6:00:15 PM tap - energy_orb-8
+10/25/2015, 6:00:21 PM tap - energy_orb-8
+10/25/2015, 6:00:21 PM tap - energy_orb-11
+10/25/2015, 6:00:44 PM tap - thermo_cycle-1
+10/25/2015, 6:00:46 PM tap - energy_orb-11
+10/25/2015, 6:00:50 PM tap - energy_orb-11
+10/25/2015, 6:00:50 PM tap - energy_orb-10
+10/25/2015, 6:00:50 PM tap - energy_orb-9
+10/25/2015, 6:00:57 PM tap - water_bearer-2
+10/25/2015, 6:01:01 PM tap - hellhound-1
+10/25/2015, 6:01:02 PM tap - bot-11
+10/25/2015, 6:01:03 PM tap - gnome-2
+10/25/2015, 6:01:05 PM tap - fire_elemental-1
+10/25/2015, 6:01:23 PM tap - energy_orb-12
+10/25/2015, 6:01:23 PM tap - revival_pendant-0
+10/25/2015, 6:01:29 PM drawinto - playerdeck1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 26 at 10/25/2015, 6:01:29 PM
+draft pottery-0
+10/25/2015, 6:01:49 PM tap - energy_orb-8
+10/25/2015, 6:01:49 PM tap - energy_orb-11
+10/25/2015, 6:01:50 PM tap - energy_orb-10
+10/25/2015, 6:01:50 PM tap - energy_orb-9
+10/25/2015, 6:01:51 PM tap - energy_orb-9
+10/25/2015, 6:01:51 PM tap - energy_orb-10
+10/25/2015, 6:01:51 PM tap - energy_orb-11
+10/25/2015, 6:01:52 PM tap - energy_orb-8
+10/25/2015, 6:01:54 PM tap - energy_orb-8
+10/25/2015, 6:01:55 PM tap - energy_orb-11
+10/25/2015, 6:01:55 PM tap - energy_orb-10
+10/25/2015, 6:01:55 PM tap - energy_orb-9
+10/25/2015, 6:01:56 PM tap - thermo_cycle-1
+10/25/2015, 6:01:56 PM tap - water_bearer-2
+10/25/2015, 6:01:57 PM tap - fire_elemental-1
+10/25/2015, 6:01:57 PM tap - hellhound-1
+10/25/2015, 6:01:58 PM tap - bot-11
+10/25/2015, 6:01:58 PM tap - gnome-2
+10/25/2015, 6:02:04 PM shuffle - playerdiscard0-0
+10/25/2015, 6:02:04 PM shuffleinto - playerdiscard0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 27 at 10/25/2015, 6:02:04 PM
+draft construct-0
+10/25/2015, 6:02:20 PM tap - energy_orb-8
+10/25/2015, 6:02:21 PM tap - energy_orb-11
+10/25/2015, 6:02:22 PM tap - energy_orb-11
+draw fire_ball-2
+10/25/2015, 6:02:30 PM tap - energy_orb-11
+draw mind_link-11
+10/25/2015, 6:02:41 PM tap - thermo_cycle-1
+draw magma_ball-0
+10/25/2015, 6:02:47 PM tap - energy_orb-11
+10/25/2015, 6:02:48 PM tap - energy_orb-11
+10/25/2015, 6:02:48 PM tap - energy_orb-10
+10/25/2015, 6:02:49 PM tap - energy_orb-9
+10/25/2015, 6:02:51 PM tap - energy_orb-9
+10/25/2015, 6:02:56 PM tap - energy_orb-9
+10/25/2015, 6:02:59 PM tap - fire_elemental-1
+10/25/2015, 6:03:00 PM tap - hellhound-1
+10/25/2015, 6:03:01 PM tap - bot-11
+10/25/2015, 6:03:02 PM tap - gnome-2
+10/25/2015, 6:03:02 PM tap - bot-10

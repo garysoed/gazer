@@ -10,6 +10,7 @@
     <link rel="import" href="bower_components/protoboard/out/region/rect.html">
     <link rel="import" href="bower_components/protoboard/out/data/aclservice.html">
     <link rel="import" href="bower_components/protoboard/out/data/stateservice.html">
+    <link rel="import" href="bower_components/protoboard/out/net/localstorageio.html">
     <link rel="import" href="bower_components/protoboard/out/third_party/chance.html">
     <link rel="import" href="bower_components/protoboard/out/third_party/di.html">
     <link rel="import" href="bower_components/protoboard/out/ui/preview.html">
@@ -88,7 +89,7 @@
       </section>
     </section>
 
-    <section id="bottom-section" class="player1">
+    <section id="bottom-section" class="player0">
       <ul>
         <li class="player0">Player 1 <input type="number" value="30"></li>
         <li class="player1">Player 2 <input type="number" value="30"></li>
@@ -122,10 +123,40 @@
     </section>
 
     <script>
-      Protoboard
-          .forNewGame(0, {})
-          .join('player1', {})
-          .join('player2', {})
+    DIJS.run(function(require) {
+      var LocalStorageIO = require('pb.net.LocalStorageIO');
+
+      var search = window.location.search.substring(1);
+      var gameId;
+      var local = true;
+      var playerDisplayName = 'Player ' + Math.random();
+      search.split('&').forEach(function(param) {
+        var parts = param.split('=');
+        switch (parts[0]) {
+          case 'g':
+            gameId = parts[1];
+            break;
+          case 'p':
+            playerDisplayName = parts[1];
+            break;
+          case 'l':
+            local = !(parts[1].toLowerCase() === 'false');
+            break;
+        }
+      });
+
+      var pb = local ? Protoboard : Protoboard.withIo(new LocalStorageIO());
+
+      var runner = gameId ? Protoboard.forExistingGame(gameId) : Protoboard.forNewGame(2);
+      if (local) {
+        runner = runner
+            .join('player0')
+            .join('player1');
+      } else {
+        runner.join(playerDisplayName);
+      }
+
+      runner
           .setup(function(require) {
             var setup = require('gz.setup');
             setup.preBootstrap();
@@ -134,7 +165,9 @@
           .then(function(require) {
             var setup = require('gz.setup');
             setup.postBootstrap(document);
+            console.log('START');
           });
+    });
     </script>
   </body>
 </html>

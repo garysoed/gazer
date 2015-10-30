@@ -1,81 +1,81 @@
-Name	Element	Type	#	L	A	D	Description	Cost	_override	@ cast	@ turn	@ tap						max tap	_cost	_lifetime	_adjustment	_hasEntrance
-												tap 1	tap 2	tap 3	innate	attack	armor					
-Energy Orb	Base	Device	10	3			Tap: +1 Energy	2				1						1.00	2.06	2.057356608	0	FALSE
-Bot	Base	Minion	10	3	2	0		3							1.50	1.5	0.00	1.50	3.09	2.057356608	0	FALSE
-Mind Link	Base	Enchantment	10				At the beginning of the turn, draw a card	1			1.00							0.00	1.99	1.99	0	FALSE
-Meditate	Base	Spell	10				Replace any number of cards in the Rift area. Draft a card	1		2.00								0.00	1.00	0	-1	FALSE
-Fire Ball	Fire	Spell	3				Damage up to 3 Minions by 1	1		2.25								0.00	1.25	0	-1	FALSE
-Magma Ball	Fire	Spell	2				Damage up to 3 Minions by 2	3		4.50								0.00	3.50	0	-1	FALSE
-Overheat	Fire	Spell	2				While this card is in play, increase all damage you, or any cards you control do, by 1	1		2.25								0.00	1.25	0	-1	FALSE
-Hot Recharge	Fire	Spell	2				Untap all your Devices	2		3.60								0.00	2.60	0	-1	FALSE
-Recharge	Fire	Spell	3				Untap 2 Devices	1		2.40								0.00	1.40	0	-1	FALSE
-Pyrophillic	Fire	Enchantment	2				When this Minion is damaged, damage up to 2 Minions by 1	1			0.75							0.00	1.49	1.99	0	FALSE
-Burn	Fire	Enchantment	2				When this Minion is damaged, draw 2 cards	2			1.25							0.00	2.49	1.99	0	
-Warm Up	Fire	Enchantment	2				When this Minion is damaged, untap 2 Devices	3			1.65							0.00	3.28	1.99	0	FALSE
-Fire Spirit	Fire	Minion	3	2	3	0		3							2.25	2.25	0.00	2.25	3.09	1.371571072	0	FALSE
-Inferno Spirit	Fire	Minion	2	3	3	0		4							2.25	2.25	0.00	2.25	4.63	2.057356608	0	FALSE
-Fire Goblin	Fire	Minion	3	5	1	0	When this minion takes a damage, draw a card	3			0.25				0.75	0.75	0.00	0.75	3.43	3.428927681	0	FALSE
-Salamander	Fire	Minion	1	3	2	0	When this minion takes a damage, damage all opponent Minions by 1	4			0.75				1.50	1.5	0.00	1.50	4.63	2.057356608	0	FALSE
-Fire Battery	Fire	Device	3	3			T: Damage a non Device you control by 1. Until the end of the turn, increase all damage you or any cards you control do by 1.	3				1.5						1.50	3.09	2.057356608	0	FALSE
-Fire Turret	Fire	Device	3	3			T: Damage up to 2 Minions by 1	3				1.5						1.50	3.09	2.057356608	0	FALSE
-Heat Engine	Fire	Device	2	3			T: Damage a non Device you control by 1. If the target receives damage, you may draft up to 2 cards	2				1.25						1.25	2.57	2.057356608	0	FALSE
-Blast Furnace	Fire	Device	3	3			T: Damage a non Device you control by 2. If the target receives damage, draw 3 cards	3				1.5						1.50	3.09	2.057356608	0	FALSE
-Thermo Cycle	Fire	Device	2	3			T: Damage a non Device you control by 3. If the target receives damage, untap all your Devices	2				1.35						1.35	2.78	2.057356608	0	FALSE
-Magma Turret	Fire	Device	2	3			T: Damage a non Device you control by 2. If the target receives damage, damage up to 2 Minions by 2	3				1.5						1.50	3.09	2.057356608	0	FALSE
-Fire Orb	Fire	Device	3	3			T: Damage a non Device you control by 1. If the target receives damage, you may replace any number of cards in the Rift area and draft a card	2				1.25						1.25	2.57	2.057356608	0	FALSE
-Purify	Earth	Spell	3				Reveal the top 4 cards of the deck. Put any Minions in hand, discard the rest. Draw a card	1		2.20								0.00	1.20	0	-1	FALSE
-Pottery	Earth	Spell	2				Draft a Minion into hand	1		2.00								0.00	1.00	0	-1	FALSE
-Evolution	Earth	Spell	2				Put a Minion in play back in your hand. Put a Minion in your discard pile with summoning cost at most one more of the summoning cost of that minion into play.	2		3.00								0.00	2.00	0	-1	FALSE
-Call to Rise	Earth	Spell	2				Draw a card from your discard pile	1		2.00								0.00	1.00	0	-1	FALSE
-Alpha Minion	Earth	Enchantment	2				At the beginning of the turn, you may draft a Minion	1			1.00							0.00	1.99	1.99	0	FALSE
-Earth Reinforcement	Earth	Enchantment	3				At the beginning of the turn, you may take a Minion from your discard pile and put it on top of your deck	1			1.00							0.00	1.99	1.99	0	FALSE
-Natural Selection	Earth	Enchantment	2				At the beginning of the turn, reveal the top 4 cards of your deck. Discard any of them and put the rest back in any order.	1			1.00							0.00	1.99	1.99	0	FALSE
-Symbiosis	Earth	Enchantment	2				When this Minion is about to receive a damage, you may redirect it to another Minion you control	1			1.00							0.00	1.99	1.99	0	FALSE
-Group Spirit	Earth	Enchantment	3				When a Minion you control enters play, untap this Minion	2			1.50							0.00	2.98	1.99	0	FALSE
-Sun Squirrel	Earth	Minion	3	3	1	0	When a Minion you control enters play, put a Bot in your discard pile on top of your deck.	3			1.00				0.75	0.75	0.00	0.75	3.60	2.057356608	0	FALSE
-Leader of the Pack	Earth	Minion	2	3	1	0	When a Minion you control enters play, draw a card	3			1.00				0.75	0.75	0.00	0.75	3.60	2.057356608	0	FALSE
-Bot Leader	Earth	Minion	2	2	2	0	When a Minion you control enters play, you may draft a Minion	3			1.00				1.50	1.5	0.00	1.50	3.43	1.371571072	0	FALSE
-Jungle Vines	Earth	Minion	2	1	1	1	You may put this Minion into play from your discard pile	2		1.00					1.75	0.75	1.00	1.75	2.20	0.6857855362	0	TRUE
-Thorny Vines	Earth	Minion	3	1	2	0	You may put this Minion into play from your discard pile	2		1.00					1.50	1.5	0.00	1.50	2.03	0.6857855362	0	TRUE
-Bark Vines	Earth	Minion	3	1	0	2	You may put this Minion into play from your discard pile	2		1.00					1.46	0	1.46	1.46	2.00	0.6857855362	0	TRUE
-Earth Spirit	Earth	Minion	3	3	1	0	When a Minion you control enters play, untap a Minion	4			1.50				0.75	0.75	0.00	0.75	4.63	2.057356608	0	FALSE
-Composting Staff	Earth	Device	2	3			T: Draw a card. Every player discards the top 4 cards of their deck	2				1.00						1.00	2.06	2.057356608	0	FALSE
-Revival Pendant	Earth	Device	2	3			T: Put a card from your discard pile on top of the deck	2				1.00						1.00	2.06	2.057356608	0	FALSE
-Rest Hollow	Earth	Device	2	3			T: Put a Minion in play back in your hand. Put another Minion with the same cost into play	2				1.43						1.43	2.93	2.057356608	0	FALSE
-Bird's Eye View	Air	Spell	3				Pick a player. That player reveals their hand and discards a card you pick. Draw a card.	1		2.00								0.00	1.00	0	-1	FALSE
-Gathering Storm	Air	Spell	3				Reduce energy cost of Spells by 1. Draw a card.	2	2	2.60								0.00	1.60	0	-1	FALSE
-Electric Shock	Air	Spell	2				For every spell you have in play, you may tap a card and draw a card.	3		4.00								0.00	3.00	0	-1	FALSE
-Shock	Air	Spell	4				Tap a card. Draw a card.	1		2.50								0.00	1.50	0	-1	FALSE
-Demoralize	Air	Spell	2				Move a Minion you control back to the owner's hand. The owner gains the same amount of energy used to summon the Minion.	1		2.40								0.00	1.40	0	-1	FALSE
-Reset	Air	Spell	2				Shuffle your discard pile and put it on top of your deck. Draw a card.	2		3.00								0.00	2.00	0	-1	FALSE
-Putrid Smoke	Air	Spell	2				Pick a player. Reveal that player's hand. For every spell you have in play, discard a card you pick from that player's hand and draw a card.	2		3.20								0.00	2.20	0	-1	FALSE
-Intimidate	Air	Enchantment	2				When you play a Spell, you may deal 1 damage to a target	2			1.20							0.00	2.39	1.99	0	FALSE
-Flight	Air	Enchantment	3				This Minion is Flying	1			1.00							0.00	1.99	1.99	0	FALSE
-Intelligence	Air	Enchantment	2				When you play a Spell, draw a card	3			1.60							0.00	3.18	1.99	0	FALSE
-Gust	Air	Enchantment	2				When you play a Spell, tap a card	4			2.16							0.00	4.30	1.99	0	FALSE
-Mind Devourer	Air	Minion	3	2	1	0	When you play a Spell, pick a player. That player discards a card you pick.	3			1.60				0.75	0.75	0.00	0.75	3.22	1.371571072	0	FALSE
-Winged Terror	Air	Minion	1	2	2	0	Flying	3			1.00				1.50	1.5	0.00	1.50	3.43	1.371571072	0	FALSE
-Psyche Mage	Air	Minion	2	3	1.60	0	This Minion's attack power is equal to the number of Spells you have in play	2							1.20	1.2	0.00	1.20	2.47	2.057356608	0	FALSE
-Crystal Ball	Air	Device	2	3			T: Reveal the top card of your deck. If it is a spell, put it into play for free. Otherwise, put it in your hand.	2			1.125							0.00	2.31	2.057356608	0	FALSE
-Mind Controller	Air	Device	3	3			T: Take control a Minion with the same summoning cost as the number of Spell you have in play until the end of your turn.	3				1.60						1.60	3.29	2.057356608	0	FALSE
-Dust Devil	Air	Device	2	3			T: Draw a Card. Pick a player. Both you and that player take a card from hand and put it on top of the other player’s deck.	2				1.00						1.00	2.06	2.057356608	0	FALSE
-Redirection Chamber	Air	Device	3	3			T: Redirect an attack causing up to X damage, where X is the number of Spells in play, to a target of your choice.	4				2.40						2.40	4.94	2.057356608	0	FALSE
-Looking Glass	Air	Device	2	3			T: Look at the top 4 cards of a deck. You may put any of them at the bottom of the deck in any order. Replace the rest of them.	2				1.00						1.00	2.06	2.057356608	0	FALSE
-Healing Stream	Water	Spell	3				Fully heal a Minion. While this card is in play, whenever this Minion attacks, you may omit tapping it.	1		2.93								0.00	1.93	0	-1	FALSE
-Flood	Water	Spell	3				Pick a Minion. While this card is in play, increase its attack by X, where X is the number of Enchantments on that Minion. Whenever that Minion attacks, you may omit tapping it.	1		2.625								0.00	1.63	0	-1	FALSE
-Ice Armor	Water	Enchantment	2				Armor + 1	1			0.75							0.00	1.49	1.99	0	FALSE
-Everlasting Water	Water	Enchantment	3				Life + X, where X is the number of Enchantments on this Minion.	2			1.13							0.00	2.24	1.99	0	FALSE
-Piercing Icicle	Water	Enchantment	4				When this Minion attacks, you may omit tapping it	2			1.50							0.00	2.98	1.99	0	FALSE
-Icy Spear	Water	Enchantment	3				Attack + X, where X is the number of Enchantments on this Minion.	2			1.13							0.00	2.24	1.99	0	FALSE
-Healing Water	Water	Enchantment	2				At the beginning of the turn, this Minion heals one life	1			0.75							0.00	1.49	1.99	0	FALSE
-Shiny Crystal	Water	Enchantment	2				At the beginning of the turn, pick an Enchantment on this Minion. This Enchantment gains all the abilities of that Enchantment.	2			1.20							0.00	2.39	1.99	0	FALSE
-Clarity	Water	Enchantment	2				At the beginning of the turn, draw X cards, where X is the number of Enchantments on this Minion	2			1.50							0.00	2.98	1.99	0	FALSE
-Ice Golem	Water	Minion	2	3	2	2	At any time, you may discard an Enchantment from play or from hand to redirect damage to this Minion.	6			0.00				2.96	1.5	1.46	2.96	6.09	2.057356608	0	FALSE
-Rain Sprite	Water	Minion	3	3	2	1	At any time, you may discard an Enchantment from play or from hand to draw 2 cards.	6			0.50				2.50	1.5	1.00	2.50	6.17	2.057356608	0	FALSE
-Water Blob	Water	Minion	2	5	1	1	At any time, you may discard an Enchantment from play or from hand to heal this Minion by 2.	6			0.00				1.75	0.75	1.00	1.75	6.00	3.428927681	0	FALSE
-Mist Folk	Water	Minion	2	5	0	3	At any time, you may discard an Enchantment from play or from hand to untap a Minion.	5			0.00				1.46	0	1.46	1.46	5.00	3.428927681	0	FALSE
-Wave Maker	Water	Minion	3	5	0	2	At any time, you may discard an Enchantment from play or from hand to increase this Minion's next attack by 2.	5			0.00				1.46	0	1.46	1.46	5.00	3.428927681	0	FALSE
-Steam Engine	Water	Device	2	3			T: Pick a Minion. Draw X cards, where X is the number of Enchantments on that Minion.	3				1.5						1.50	3.09	2.057356608	0	FALSE
-Water Bearer	Water	Device	3	3			T: Heal a Minion by the number of Enchantments on that Minion	2				1.125						1.13	2.31	2.057356608	0	FALSE
-Water Pump	Water	Device	2	3			T: Pick a Minion. Increase that Minion's next attack by X, where X is the number of Enchantments on that Minion.	2				1.125						1.13	2.31	2.057356608	0	FALSE
-Refreshing Jar	Water	Device	2	3			T: Untap a Minion	3				1.5						1.50	3.09	2.057356608	0	FALSE
+Name	Element	Type	#	L	A	D	Description	Cost	Mech	Flav	Art	_override	@ cast	@ turn	@ tap						max tap	_cost	_lifetime	_adjustment	_hasEntrance
+									92.41%	75.95%	13.92%				tap 1	tap 2	tap 3	innate	attack	armor					
+Meditate	Base	Spell	10				Name an element. Replace a card in the draft slot until you reveal a card of the named element. Draft a card.	1	2	2			2.00								0.00	1.00	0	-1	FALSE
+Mind Link	Base	Enchantment	10				At the beginning of the turn, draw a card	2	2	1				1.00							0.00	2.00	2.00	0	FALSE
+Bot	Base	Minion	10	3	2	0		3	2	2	2							1.50	1.5	0.00	1.50	3.21	2.142857143	0	FALSE
+Energy Orb	Base	Device	10	3			{{>T}}: +1 Energy	2	2	2	2				1						1.00	2.14	2.142857143	0	FALSE
+Fire Ball	Fire	Spell	3				Damage up to 3 Minions by 1	1	2	2			2.25								0.00	1.25	0	-1	FALSE
+Magma Ball	Fire	Spell	2				Damage up to 2 Minions by 2	2	1	1			3.00								0.00	2.00	0	-1	FALSE
+Overheat	Fire	Spell	2				While this card is in play, increase all damage you, or any cards you control do, by 1	1	2	2			2.25								0.00	1.25	0	-1	FALSE
+Recharge	Fire	Spell	3				Untap all your Devices	1	2	2			2.40								0.00	1.40	0	-1	FALSE
+Construct	Fire	Spell	2				Put a Device into play for free	2	1	2			2.50								0.00	1.50	0	-1	FALSE
+Burning Aura	Fire	Enchantment	2				When this Minion is damaged, damage up to 2 Minions by 1	2	2	2				0.75							0.00	1.50	2.00	0	FALSE
+Combust	Fire	Enchantment	2				When this Minion is damaged, draw 2 cards	3	2	1				1.25							0.00	2.50	2.00	0	
+Warm Up	Fire	Enchantment	2				When this Minion is damaged, untap a device	1	1					0.45							0.00	0.90	2.00	0	FALSE
+Hellhound	Fire	Minion	3	2	3	0		3	2	2	2							2.25	2.25	0.00	2.25	3.21	1.428571429	0	FALSE
+Djinn	Fire	Minion	2	3	3	0		5	2	2								2.25	2.25	0.00	2.25	4.82	2.142857143	0	FALSE
+Fire Elemental	Fire	Minion	2	5	1	0	When this Minion takes a damage, draw a card	4	2	2				0.25				0.75	0.75	0.00	0.75	3.57	3.571428571	0	FALSE
+Salamander	Fire	Minion	2	3	2	0	When this Minion takes a damage, damage all opponent Minions by 1	5	2	2				0.75				1.50	1.5	0.00	1.50	4.82	2.142857143	0	FALSE
+Flame Whip	Fire	Device	3	3			{{>T}}: Damage a non Device you control by 1. If the target receives damage, increase all damage you or any cards you control do by 1 until the end of your turn.	3	2	2					1.5						1.50	3.21	2.142857143	0	FALSE
+Fire Ward	Fire	Device	3	3			{{>T}}: Damage up to 2 Minions by 1	3	2	2	2				1.5						1.50	3.21	2.142857143	0	FALSE
+Flame Mask	Fire	Device	2	3			{{>T}}: Damage a non Device you control by 1. If the target receives damage, you may draft up to 2 cards	3	1						1.25						1.25	2.68	2.142857143	0	FALSE
+Fire Orb	Fire	Device	3	3			{{>T}}: Damage a non Device you control by 2. If the target receives damage, draw 3 cards	3	2	2					1.5						1.50	3.21	2.142857143	0	FALSE
+Thermo Cycle	Fire	Device	2	3			{{>T}}: Damage a non Device you control by 2. If the target receives damage, untap all your Devices	2	2						0.90						0.90	1.93	2.142857143	0	FALSE
+Magma Tower	Fire	Device	2	3			{{>T}}: Damage a non Device you control by 2. If the target receives damage, damage up to 2 Minions by 2	3	2	2					1.5						1.50	3.21	2.142857143	0	FALSE
+Solar Orb	Fire	Device	3	3			{{>T}}: Damage a non Device you control by 2. If the target receives damage, +3 Energy	3	2	2					1.5						1.50	3.21	2.142857143	0	FALSE
+Purify	Earth	Spell	3				Reveal the top 4 cards of the deck. Put any Minions in hand, discard the rest or replace them in any order. Draw a card.	1	1				2.20								0.00	1.20	0	-1	FALSE
+Pottery	Earth	Spell	2				Draft a Minion into hand	1	1				2.00								0.00	1.00	0	-1	FALSE
+Evolve	Earth	Spell	2				Put a Minion in play back in your hand. Put a Minion in your discard pile with summoning cost at most one more of the summoning cost of that minion into play.	2	2	2			3.00								0.00	2.00	0	-1	FALSE
+Revive	Earth	Spell	2				Draw a card from your discard pile	1	2	2			2.00								0.00	1.00	0	-1	FALSE
+Circle of Life	Earth	Enchantment	3				When a Minion you control enters play, you may take a card from your discard pile and put it on top of your deck	2	2	2				1.00							0.00	2.00	2.00	0	FALSE
+Adaptation	Earth	Enchantment	3				At the beginning of the turn, reveal the top 4 cards of your deck. Discard any of them and put the rest back in any order.	2	2	2				1.00							0.00	2.00	2.00	0	FALSE
+Symbiosis	Earth	Enchantment	2				When this Minion is about to receive a damage, you may redirect it to another Minion you control	2	2	2				1.00							0.00	2.00	2.00	0	FALSE
+Flora Secret	Earth	Enchantment	2				When a Minion you control enters play, you may draft a card.	2	1					1.00							0.00	2.00	2.00	0	FALSE
+Hive Mind	Earth	Enchantment	2				When a Minion you control enters play, draw a card	2	2	2				1.00							0.00	2.00	2	0	FALSE
+Gnome	Earth	Minion	3	2	1	0	When a Minion you control enters play, put a card in your discard pile on top of your deck.	3	2	2				1.00				0.75	0.75	0.00	0.75	2.50	1.428571429	0	FALSE
+Earth Elemental	Earth	Minion	2	3	0	0	When a Minion you control enters play, draw a card	2	2	2				1.00				0.00	0	0.00	0.00	2.14	2.142857143	0	FALSE
+Forest Elf	Earth	Minion	2	2	0	1	When a Minion you control enters play, you may draft a card	3	2	1				1.00				1.00	0	1.00	1.00	2.86	1.428571429	0	FALSE
+Jungle Vines	Earth	Minion	2	1	1	1	You may put this Minion into play from your discard pile	2	2	2			1.00					1.75	0.75	1.00	1.75	2.25	0.7142857143	0	TRUE
+Thorny Vines	Earth	Minion	3	1	2	0	You may put this Minion into play from your discard pile	2	2	2	2		1.00					1.50	1.5	0.00	1.50	2.07	0.7142857143	0	TRUE
+Bark Vines	Earth	Minion	3	1	0	2	You may put this Minion into play from your discard pile	2	2	2			1.00					1.40	0	1.40	1.40	2.00	0.7142857143	0	TRUE
+Kitsune	Earth	Minion	3	2	1	1	When a Minion you control enters play, look at the top 2 cards of your deck. Replace them in any order. Every player discards the top card of their deck	3	2	2								1.75	0.75	1.00	1.75	2.50	1.428571429	0	FALSE
+Nature Orb	Earth	Device	2	3			{{>T}}: Draw a card. Every player discards the top card of their deck	2	2	2	2				1.00						1.00	2.14	2.142857143	0	FALSE
+Revival Pendant	Earth	Device	2	3			{{>T}}: Put a card from your discard pile on top of the deck	2	2	2					1.00						1.00	2.14	2.142857143	0	FALSE
+Resting Sack	Earth	Device	2	3			{{>T}}: Put a Minion in play back in your hand. Put another Minion with the same cost into play	3	2	2					1.35						1.35	2.89	2.142857143	0	FALSE
+Gathering Storm	Air	Spell	3				Reduce energy cost of Spells by 1. Draw a card.	2	2	2		2	2.00								0.00	1.00	0	-1	FALSE
+Bird's Eye View	Air	Spell	3				Pick a player. Reveal that player's hand. For every spell you have in play, discard a card you pick from that player's hand. Draw a card.	1	1				2.00								0.00	1.00	0	-1	FALSE
+Air Blade	Air	Spell	3				Damage a target by X, where X is the number of spells you have in play. Draw a card.	1	1	2			2.00								0.00	1.00	0	-1	FALSE
+Shock	Air	Spell	3				For every spell you have in play, tap a card. Draw a card.	1	1				2.35								0.00	1.35	0	-1	FALSE
+Demoralize	Air	Spell	2				Move a Minion you control back to the owner's hand. The owner gains the same amount of energy used to summon the Minion. Draw a card.	1	2	2			2.35								0.00	1.35	0	-1	FALSE
+Reset	Air	Spell	2				Shuffle your discard pile and put it on top of your deck. Draw a card.	2	2				3.00								0.00	2.00	0	-1	FALSE
+Putrid Smoke	Air	Spell	2				Draw X cards, where X is the number of spells you have in play. Draw a card.	1	1				2.00								0.00	1.00	0	-1	FALSE
+Charged	Air	Enchantment	2				When you play a Spell, you may deal 1 damage to a target	2	2	2				0.75							0.00	1.50	2.00	0	FALSE
+Flight	Air	Enchantment	3				This Minion is Flying	2	2	2				1.00							0.00	2.00	2.00	0	FALSE
+Intelligence	Air	Enchantment	2				When you play a Spell, draw a card	2	2	2				1.00							0.00	2.00	2.00	0	FALSE
+Intimidation	Air	Enchantment	2				When you play a Spell, tap a card	3	2	2				1.50							0.00	3.00	2.00	0	FALSE
+Sylph	Air	Minion	3	2	1	0	When you play a Spell, pick a player. That player discards a card you pick.	3	2	2				1.00				0.75	0.75	0.00	0.75	2.50	1.428571429	0	FALSE
+Garuda	Air	Minion	1	2	2	0	Flying	4	2	2				1.00				1.50	1.5	0.00	1.50	3.57	1.428571429	0	FALSE
+Poltergeist	Air	Minion	2	3	1.00	0	This Minion's attack power is equal to the number of Spells you have in play	2	2	2	2							0.75	0.75	0.00	0.75	1.61	2.142857143	0	FALSE
+Crystal Ball	Air	Device	3	3			{{>T}}: Reveal the top card of your deck. If it is a spell, put it into play for free. Otherwise, put it in your hand.	2	1	2				1.1							0.00	2.36	2.142857143	0	FALSE
+Crown of Thrall	Air	Device	2	3			{{>T}}: Take control a Minion with the same summoning cost as the number of Spell you have in play until the end of your turn.	2	2	2					1.00						1.00	2.14	2.142857143	0	FALSE
+Mind Orb	Air	Device	2	3			{{>T}}: Draw a Card. Pick a player. Both you and that player take a card from hand and put it on top of the other player’s deck.	2	2	2					1.00						1.00	2.14	2.142857143	0	FALSE
+Redirection Chamber	Air	Device	2	3			{{>T}}: Pick a Minion. Redirect that Minion's next attack causing up to X damage, where X is the number of Spells in play, to a target of your choice.	3	2						1.50						1.50	3.21	2.142857143	0	FALSE
+Looking Glass	Air	Device	3	3			{{>T}}: Look at the top 4 cards of a deck. You may put any of them at the bottom of the deck in any order. Replace the rest of them in any order.	2	2	2	2				1.00						1.00	2.14	2.142857143	0	FALSE
+Healing Rain	Water	Spell	3				Fully heal a Minion. Untap that Minion.	2	2	2			2.85								0.00	1.85	0	-1	FALSE
+Water Clone	Water	Spell	3				Pick a Minion. While this card is in play, increase its attack by X, where X is the number of Enchantments on that Minion. Untap that Minion.	2	2	2			2.625								0.00	1.63	0	-1	FALSE
+Ice Armor	Water	Enchantment	3				Armor + 1	2	2	2				0.75							0.00	1.50	2.00	0	FALSE
+Everlasting Water	Water	Enchantment	3				Life + X, where X is the number of Enchantments on this Minion.	2	2					1.13							0.00	2.25	2.00	0	FALSE
+Piercing Icicle	Water	Enchantment	3				When this Minion destroys a Device, you may untap it.	3	2					1.50							0.00	3.00	2.00	0	FALSE
+Absolute Zero	Water	Enchantment	3				Attack + X, where X is the number of Enchantments on this Minion.	2	2	2				1.13							0.00	2.25	2.00	0	FALSE
+Healing Water	Water	Enchantment	2				At the beginning of the turn, this Minion heals one life	2	2					0.75							0.00	1.50	2.00	0	FALSE
+Shiny Crystal	Water	Enchantment	2				At the beginning of the turn, pick an Enchantment on this Minion. This Enchantment gains all the abilities of that Enchantment.	2	2					1.10							0.00	2.20	2.00	0	FALSE
+Clarity	Water	Enchantment	2				At the beginning of the turn, draw X cards, where X is the number of Enchantments on this Minion	3	2					1.50							0.00	3.00	2.00	0	FALSE
+Ice Golem	Water	Minion	2	3	2	2	Discard an Enchantment from play or from hand to redirect damage to this Minion.	6	2	2				0.00				2.90	1.5	1.40	2.90	6.21	2.142857143	0	FALSE
+Water Elemental	Water	Minion	3	3	2	1	Discard an Enchantment from play or from hand to draw 2 cards.	6	2	2	2			0.50				2.50	1.5	1.00	2.50	6.43	2.142857143	0	FALSE
+Water Blob	Water	Minion	2	5	1	1	Discard an Enchantment from play or from hand to fully heal a Minion.	6	2	2				-0.15				1.75	0.75	1.00	1.75	5.71	3.571428571	0	FALSE
+Apsara	Water	Minion	2	5	0	3	Discard an Enchantment from play or from hand to untap a Minion.	5	2	2	2			0.00				1.40	0	1.40	1.40	5.00	3.571428571	0	FALSE
+Naga	Water	Minion	3	5	1	1	Discard an Enchantment from play or from hand to increase this Minion's attack by 2 until the end of your turn.	6	2	2				0.00				1.75	0.75	1.00	1.75	6.25	3.571428571	0	FALSE
+Water Orb	Water	Device	2	3			{{>T}}: Pick a Minion. Draw X cards, where X is the number of Enchantments on that Minion.	3	2	2	2				1.5						1.50	3.21	2.142857143	0	FALSE
+Water Bearer	Water	Device	3	3			{{>T}}: Heal a Minion by the number of Enchantments on that Minion	2	2						1.125						1.13	2.41	2.142857143	0	FALSE
+Ice Sword	Water	Device	2	3			{{>T}}: Pick a Minion. Increase that Minion's attack by X until the end of your turn, where X is the number of Enchantments on that Minion.	2	2	2					1.125						1.13	2.41	2.142857143	0	FALSE
+Refreshing Jar	Water	Device	2	3			{{>T}}: Untap a Minion	3	2	2					1.5						1.50	3.21	2.142857143	0	FALSE

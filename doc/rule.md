@@ -7,12 +7,14 @@
 
 ## Setup
 
--   Every player starts with 30 life
+-   Every player starts with 20 life
 -   Give every player their starting deck:
     -   2 Bots
     -   2 Energy Orbs
     -   2 Meditates
     -   2 Mind Links
+
+The second player starts by drawing two cards into their hand.
 
 ## Turn order
 
@@ -65,7 +67,7 @@ Attacking involves 3 subphases:
     -   Activate abilities
     -   Assign Minions to defend each attacking target. One Minion may only defend against one
         target, and no two Minions can defend against the same target. Only untapped Minions can
-        defend.
+        defend. Tap the Minion.
 1.  Resolve: For every attacking Minion, if the Minion is untapped, do the following:
     1.  Tap the Minion.
     1.  Damage the defending Minion if any, or the declared attack target.
