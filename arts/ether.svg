@@ -28,15 +28,15 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="4.0926943"
-     inkscape:cx="95.059724"
-     inkscape:cy="53.26662"
+     inkscape:cx="5.6933074"
+     inkscape:cy="52.835"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer11"
      showgrid="false"
      inkscape:window-width="1440"
      inkscape:window-height="851"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="1"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -328,8 +328,9 @@
      inkscape:label="Background"
      inkscape:groupmode="layer"
      id="layer1"
-     style="display:inline"
-     transform="translate(-166.52356,-106.01711)">
+     style="display:none"
+     transform="translate(-166.52356,-106.01711)"
+     sodipodi:insensitive="true">
     <path
        sodipodi:nodetypes="sssssssss"
        style="display:inline;fill:#c6afe9;stroke:none;stroke-dasharray:1.44"
@@ -342,7 +343,8 @@
      id="layer2"
      inkscape:label="Energy Orb"
      transform="translate(-166.52356,-106.01711)"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <path
        inkscape:connector-curvature="0"
        id="path10069"
@@ -620,8 +622,7 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Bot"
-     style="display:none"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <g
        inkscape:groupmode="layer"
        id="layer10"
@@ -860,7 +861,8 @@
      inkscape:groupmode="layer"
      id="layer22"
      inkscape:label="Frame"
-     sodipodi:insensitive="true">
+     sodipodi:insensitive="true"
+     style="display:none">
     <g
        style="display:inline"
        transform="matrix(0.66664978,0,0,0.66664978,-75.56477,-344.95492)"

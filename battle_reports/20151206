@@ -1,0 +1,698 @@
+Player 1: Fire build, couldn't get enough cards to start anything.
+Player 2: Defensive Air - Relied on Crystal Balls to play spells and Air Blade and Charged to do
+damage. Minion summoned only for hosting Charged, never attacked.
+
+Winner: Player 2
+
+Card names:
+* Crystal Ball: T: Reveal top card, put into play if it is a spell, draw otherwise
+* Air Blade: Damage by X, X is number of spells in play.
+* Charged: At the beginning of turn, damage a target by X, X is number of spells in play.
+* Mist Orb: T: Draw card, take a player, swap cards to the top of the deck.
+
+Notes:
++ Game took 45 mins, 15 turns. Good length for defensive game.
++ 3 Crystal Balls is insane. Though the chance of playing Gathering Storm or spells at the wrong
+time makes it more balanced.
++ Mist Orb is excellent for cleaning up the deck. Combos nicely with Crystal Ball.
++ Fire had no way to damage own Minion, since Air never attacks. By the time Fire gets a build
+going, Air is already way too strong.
+
+12/6/2015, 2:58:39 PM seed - 1449442718953
+12/6/2015, 2:58:39 PM shuffle - riftdeck-0
+12/6/2015, 2:58:39 PM shuffle - playerdeck0-0
+12/6/2015, 2:58:39 PM shuffle - playerdeck1-0
+12/6/2015, 2:58:46 PM drawinto - playerdeck0-0
+
+turn 1 at 12/6/2015, 2:58:46 PM
+draft fire_ball-1
+draw meditate-13
+draw bot-12
+12/6/2015, 2:59:38 PM drawinto - playerdeck1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 2 at 12/6/2015, 2:59:38 PM
+draft mist_orb-1
+transmute meditate-12
+transmute bot-13
+12/6/2015, 3:00:19 PM tap - energy_orb-12
+transmute mind_link-13
+transmute meditate-13
+12/6/2015, 3:00:34 PM drawinto - playerdeck0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 3 at 12/6/2015, 3:00:34 PM
+draft flame_whip-0
+transmute mind_link-10
+transmute bot-11
+12/6/2015, 3:00:57 PM tap - energy_orb-10
+transmute mind_link-11
+12/6/2015, 3:01:09 PM tap - energy_orb-11
+transmute meditate-10
+transmute meditate-11
+12/6/2015, 3:01:23 PM tap - energy_orb-12
+12/6/2015, 3:01:30 PM shuffle - playerdiscard1-0
+12/6/2015, 3:01:30 PM shuffleinto - playerdiscard1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 4 at 12/6/2015, 3:01:30 PM
+draft crystal_ball-0
+12/6/2015, 3:01:49 PM tap - energy_orb-10
+12/6/2015, 3:01:49 PM tap - energy_orb-11
+12/6/2015, 3:01:50 PM shuffle - playerdiscard0-0
+12/6/2015, 3:01:50 PM shuffleinto - playerdiscard0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 5 at 12/6/2015, 3:01:50 PM
+draft energy_orb-9
+draft charged-0
+12/6/2015, 3:06:14 PM drawinto - playerdeck1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 6 at 12/6/2015, 3:06:14 PM
+12/6/2015, 3:06:29 PM tap - energy_orb-12
+transmute mind_link-13
+12/6/2015, 3:06:36 PM tap - energy_orb-13
+transmute mind_link-12
+draw meditate-13
+12/6/2015, 3:06:53 PM flip - meditate-13
+draft energy_orb-8
+12/6/2015, 3:07:17 PM drawinto - playerdeck0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 7 at 12/6/2015, 3:07:17 PM
+12/6/2015, 3:07:25 PM tap - energy_orb-10
+12/6/2015, 3:07:33 PM flip - looking_glass-0
+12/6/2015, 3:07:34 PM flip - ice_armor-1
+12/6/2015, 3:07:35 PM flip - earth_elemental-0
+12/6/2015, 3:07:36 PM flip - water_elemental-2
+12/6/2015, 3:07:37 PM flip - jungle_vines-1
+12/6/2015, 3:07:38 PM flip - curative_salve-0
+12/6/2015, 3:07:39 PM flip - garuda-0
+12/6/2015, 3:07:40 PM flip - combust-1
+replace garuda-0
+replace curative_salve-0
+replace jungle_vines-1
+replace water_elemental-2
+replace earth_elemental-0
+replace ice_armor-1
+replace looking_glass-0
+replace apsara-1
+draft combust-1
+12/6/2015, 3:08:09 PM tap - energy_orb-13
+12/6/2015, 3:08:09 PM tap - energy_orb-12
+12/6/2015, 3:08:14 PM shuffle - playerdiscard1-0
+12/6/2015, 3:08:14 PM shuffleinto - playerdiscard1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 8 at 12/6/2015, 3:08:14 PM
+draft gathering_storm-1
+12/6/2015, 3:08:28 PM tap - energy_orb-10
+12/6/2015, 3:08:34 PM shuffle - playerdiscard0-0
+12/6/2015, 3:08:34 PM shuffleinto - playerdiscard0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 9 at 12/6/2015, 3:08:34 PM
+draft fire_ball-2
+12/6/2015, 3:08:39 PM tap - energy_orb-10
+12/6/2015, 3:08:39 PM tap - energy_orb-11
+12/6/2015, 3:08:51 PM drawinto - playerdeck1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 10 at 12/6/2015, 3:08:51 PM
+12/6/2015, 3:09:09 PM tap - energy_orb-12
+12/6/2015, 3:09:15 PM flip - symbiosis-1
+12/6/2015, 3:09:16 PM flip - crystal_ball-1
+replace symbiosis-1
+replace morph_proxy-1
+draft air_blade-0
+12/6/2015, 3:09:30 PM tap - energy_orb-13
+12/6/2015, 3:09:35 PM flip - gnome-0
+12/6/2015, 3:09:36 PM flip - absolute_zero-0
+12/6/2015, 3:09:37 PM flip - water_blob-0
+12/6/2015, 3:09:38 PM flip - air_blade-1
+12/6/2015, 3:09:39 PM flip - air_blade-1
+12/6/2015, 3:09:40 PM flip - air_blade-1
+replace water_blob-0
+replace absolute_zero-0
+replace gnome-0
+replace everlasting_water-2
+draft gathering_storm-2
+12/6/2015, 3:10:01 PM tap - mist_orb-1
+draw mind_link-13
+transmute mind_link-13
+transmute bot-11
+draw mind_link-13
+12/6/2015, 3:10:38 PM tap - energy_orb-11
+12/6/2015, 3:10:38 PM tap - energy_orb-10
+12/6/2015, 3:10:44 PM drawinto - playerdeck0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 11 at 12/6/2015, 3:10:44 PM
+draft bot-9
+12/6/2015, 3:11:08 PM tap - energy_orb-10
+12/6/2015, 3:11:11 PM flip - burning_aura-0
+replace ice_trident-0
+draft burning_aura-0
+transmute mind_link-13
+transmute mind_link-11
+transmute meditate-11
+12/6/2015, 3:12:02 PM tap - energy_orb-12
+12/6/2015, 3:12:03 PM tap - energy_orb-13
+12/6/2015, 3:12:03 PM tap - mist_orb-1
+12/6/2015, 3:12:07 PM shuffle - playerdiscard1-0
+12/6/2015, 3:12:07 PM shuffleinto - playerdiscard1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 12 at 12/6/2015, 3:12:07 PM
+draft air_blade-1
+12/6/2015, 3:12:21 PM tap - mist_orb-1
+draw bot-11
+transmute bot-11
+transmute fire_ball-1
+12/6/2015, 3:12:52 PM tap - energy_orb-13
+12/6/2015, 3:12:52 PM tap - energy_orb-12
+12/6/2015, 3:12:56 PM tap - crystal_ball-0
+12/6/2015, 3:12:57 PM flip - bot-11
+12/6/2015, 3:13:00 PM flip - bot-11
+12/6/2015, 3:13:02 PM flip - fire_ball-1
+12/6/2015, 3:13:02 PM flip - fire_ball-1
+12/6/2015, 3:13:09 PM flip - fire_ball-1
+draw bot-11
+12/6/2015, 3:13:40 PM shuffle - playerdiscard0-0
+12/6/2015, 3:13:40 PM shuffleinto - playerdiscard0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 13 at 12/6/2015, 3:13:40 PM
+draft bot-8
+12/6/2015, 3:13:47 PM tap - energy_orb-10
+12/6/2015, 3:13:59 PM tap - flame_whip-0
+12/6/2015, 3:14:05 PM tap - bot-10
+12/6/2015, 3:14:07 PM flip - bot-12
+12/6/2015, 3:14:08 PM tap - bot-10
+12/6/2015, 3:14:09 PM flip - bot-10
+12/6/2015, 3:14:09 PM flip - mind_link-10
+12/6/2015, 3:14:18 PM tap - energy_orb-12
+12/6/2015, 3:14:18 PM tap - energy_orb-13
+12/6/2015, 3:14:19 PM tap - mist_orb-1
+12/6/2015, 3:14:19 PM tap - crystal_ball-0
+12/6/2015, 3:14:24 PM drawinto - playerdeck1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 14 at 12/6/2015, 3:14:24 PM
+draft crystal_ball-1
+12/6/2015, 3:14:36 PM tap - energy_orb-12
+12/6/2015, 3:14:36 PM tap - energy_orb-13
+12/6/2015, 3:14:39 PM tap - energy_orb-12
+12/6/2015, 3:14:40 PM tap - energy_orb-13
+12/6/2015, 3:14:44 PM tap - mist_orb-1
+draw gathering_storm-1
+transmute mind_link-12
+transmute bot-11
+12/6/2015, 3:15:06 PM tap - crystal_ball-0
+draw bot-11
+12/6/2015, 3:15:16 PM tap - energy_orb-12
+12/6/2015, 3:15:16 PM tap - energy_orb-13
+transmute bot-11
+12/6/2015, 3:15:32 PM drawinto - playerdeck0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 15 at 12/6/2015, 3:15:32 PM
+12/6/2015, 3:15:34 PM tap - flame_whip-0
+12/6/2015, 3:15:40 PM tap - energy_orb-10
+12/6/2015, 3:15:41 PM tap - energy_orb-11
+12/6/2015, 3:15:42 PM tap - energy_orb-11
+12/6/2015, 3:15:43 PM tap - energy_orb-10
+draft bot-7
+12/6/2015, 3:15:46 PM tap - energy_orb-10
+12/6/2015, 3:15:46 PM tap - energy_orb-11
+12/6/2015, 3:15:56 PM tap - energy_orb-8
+transmute mind_link-12
+12/6/2015, 3:16:04 PM tap - energy_orb-13
+12/6/2015, 3:16:05 PM tap - energy_orb-13
+12/6/2015, 3:16:06 PM tap - energy_orb-12
+12/6/2015, 3:16:06 PM tap - energy_orb-13
+12/6/2015, 3:16:07 PM tap - mist_orb-1
+12/6/2015, 3:16:07 PM tap - crystal_ball-0
+12/6/2015, 3:16:18 PM shuffle - playerdiscard1-0
+12/6/2015, 3:16:18 PM shuffleinto - playerdiscard1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 16 at 12/6/2015, 3:16:18 PM
+draft hologram-0
+12/6/2015, 3:16:42 PM tap - crystal_ball-0
+12/6/2015, 3:16:44 PM flip - meditate-12
+12/6/2015, 3:16:50 PM flip - hypnocube-0
+replace circle_of life-2
+draft crystal_ball-2
+12/6/2015, 3:17:11 PM tap - energy_orb-12
+12/6/2015, 3:17:11 PM tap - energy_orb-13
+draw meditate-13
+12/6/2015, 3:17:21 PM flip - blast_cannon-0
+12/6/2015, 3:17:22 PM flip - combust-2
+12/6/2015, 3:17:23 PM flip - flight-2
+replace combust-2
+replace ice_armor-2
+replace blast_cannon-0
+draft flight-2
+draw bot-12
+12/6/2015, 3:17:49 PM tap - mist_orb-1
+draw bot-11
+transmute bot-11
+transmute combust-1
+12/6/2015, 3:18:18 PM tap - energy_orb-11
+12/6/2015, 3:18:18 PM tap - energy_orb-10
+12/6/2015, 3:18:19 PM tap - energy_orb-8
+12/6/2015, 3:18:19 PM tap - energy_orb-9
+12/6/2015, 3:18:20 PM tap - energy_orb-9
+12/6/2015, 3:18:28 PM drawinto - playerdeck0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 17 at 12/6/2015, 3:18:28 PM
+draft solar_orb-2
+12/6/2015, 3:18:36 PM tap - energy_orb-10
+12/6/2015, 3:18:40 PM flip - shiny_crystal-1
+12/6/2015, 3:18:41 PM flip - piercing_icicle-2
+12/6/2015, 3:18:41 PM flip - poltergeist-0
+12/6/2015, 3:18:42 PM flip - sylph-0
+12/6/2015, 3:18:43 PM flip - bird's_eye view-0
+12/6/2015, 3:18:44 PM flip - water_clone-1
+12/6/2015, 3:18:45 PM flip - fire_ward-1
+replace water_clone-1
+replace bird's_eye view-0
+replace sylph-0
+replace poltergeist-0
+replace piercing_icicle-2
+replace shiny_crystal-1
+replace everlasting_water-1
+draft fire_elemental-1
+12/6/2015, 3:18:55 PM tap - energy_orb-11
+12/6/2015, 3:19:00 PM flip - thorny_vines-2
+12/6/2015, 3:19:01 PM flip - healing_water-0
+12/6/2015, 3:19:02 PM flip - overheat-1
+replace healing_water-0
+replace thorny_vines-2
+replace naga-0
+draft fire_ward-1
+12/6/2015, 3:19:14 PM tap - energy_orb-8
+12/6/2015, 3:19:14 PM tap - energy_orb-9
+transmute mind_link-11
+12/6/2015, 3:19:32 PM tap - energy_orb-12
+12/6/2015, 3:19:32 PM tap - energy_orb-13
+12/6/2015, 3:19:33 PM tap - mist_orb-1
+12/6/2015, 3:19:33 PM tap - crystal_ball-0
+12/6/2015, 3:19:56 PM drawinto - playerdeck1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 18 at 12/6/2015, 3:19:56 PM
+draft hypnocube-0
+12/6/2015, 3:20:14 PM tap - energy_orb-13
+12/6/2015, 3:20:15 PM tap - energy_orb-13
+transmute bot-12
+transmute combust-1
+12/6/2015, 3:20:37 PM tap - energy_orb-11
+12/6/2015, 3:20:38 PM tap - energy_orb-10
+12/6/2015, 3:20:38 PM tap - energy_orb-8
+12/6/2015, 3:20:39 PM tap - energy_orb-9
+12/6/2015, 3:20:46 PM drawinto - playerdeck0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 19 at 12/6/2015, 3:20:46 PM
+draft overheat-1
+12/6/2015, 3:20:55 PM tap - energy_orb-10
+12/6/2015, 3:21:05 PM tap - energy_orb-11
+12/6/2015, 3:21:05 PM tap - energy_orb-8
+12/6/2015, 3:21:06 PM tap - energy_orb-9
+12/6/2015, 3:21:16 PM tap - flame_whip-0
+12/6/2015, 3:21:34 PM tap - bot-9
+12/6/2015, 3:22:19 PM shuffle - playerdiscard1-0
+12/6/2015, 3:22:19 PM shuffleinto - playerdiscard1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 20 at 12/6/2015, 3:22:19 PM
+draft demoralize-0
+12/6/2015, 3:22:51 PM tap - crystal_ball-0
+draw combust-1
+12/6/2015, 3:22:55 PM tap - crystal_ball-1
+draw meditate-13
+12/6/2015, 3:23:03 PM flip - spark-0
+12/6/2015, 3:23:04 PM flip - bird's_eye view-2
+replace spark-0
+replace water_elemental-1
+draft bird's_eye view-3
+12/6/2015, 3:23:48 PM tap - bot-9
+12/6/2015, 3:23:48 PM tap - energy_orb-10
+12/6/2015, 3:23:49 PM tap - energy_orb-11
+12/6/2015, 3:23:49 PM tap - flame_whip-0
+12/6/2015, 3:23:49 PM tap - energy_orb-8
+12/6/2015, 3:23:50 PM tap - energy_orb-9
+12/6/2015, 3:23:54 PM shuffle - playerdiscard0-0
+12/6/2015, 3:23:54 PM shuffleinto - playerdiscard0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 21 at 12/6/2015, 3:23:54 PM
+12/6/2015, 3:24:34 PM tap - energy_orb-10
+12/6/2015, 3:24:35 PM tap - energy_orb-11
+12/6/2015, 3:24:41 PM flip - bot-13
+12/6/2015, 3:24:42 PM flip - charged-0
+12/6/2015, 3:24:46 PM tap - bot-11
+12/6/2015, 3:24:47 PM tap - bot-9
+12/6/2015, 3:24:51 PM tap - crystal_ball-0
+12/6/2015, 3:24:52 PM flip - crystal_ball-0
+draft bird's_eye view-2
+12/6/2015, 3:25:40 PM tap - bot-11
+12/6/2015, 3:25:41 PM tap - bot-9
+12/6/2015, 3:25:43 PM tap - bot-11
+12/6/2015, 3:25:43 PM tap - bot-9
+12/6/2015, 3:25:55 PM tap - crystal_ball-0
+12/6/2015, 3:25:59 PM tap - crystal_ball-0
+12/6/2015, 3:26:00 PM tap - crystal_ball-0
+12/6/2015, 3:26:03 PM tap - energy_orb-13
+12/6/2015, 3:26:04 PM tap - energy_orb-12
+draw gathering_storm-2
+12/6/2015, 3:26:39 PM tap - mist_orb-1
+draw hologram-0
+12/6/2015, 3:26:44 PM flip - combust-1
+12/6/2015, 3:26:46 PM flip - mind_link-13
+12/6/2015, 3:27:06 PM flip - energy_orb-8
+12/6/2015, 3:27:09 PM flip - energy_orb-8
+12/6/2015, 3:27:37 PM tap - energy_orb-12
+12/6/2015, 3:27:38 PM tap - energy_orb-13
+12/6/2015, 3:27:38 PM tap - mist_orb-1
+12/6/2015, 3:27:39 PM tap - crystal_ball-1
+12/6/2015, 3:27:39 PM tap - crystal_ball-1
+12/6/2015, 3:27:50 PM tap - bot-9
+12/6/2015, 3:27:50 PM flip - bot-9
+12/6/2015, 3:28:01 PM tap - crystal_ball-1
+12/6/2015, 3:28:02 PM tap - crystal_ball-0
+12/6/2015, 3:28:07 PM drawinto - playerdeck1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 22 at 12/6/2015, 3:28:07 PM
+draft bird's_eye view-2
+12/6/2015, 3:28:33 PM tap - energy_orb-12
+12/6/2015, 3:28:34 PM tap - energy_orb-12
+12/6/2015, 3:28:55 PM tap - crystal_ball-1
+12/6/2015, 3:28:57 PM tap - crystal_ball-1
+12/6/2015, 3:28:58 PM tap - crystal_ball-1
+draw meditate-12
+12/6/2015, 3:29:05 PM flip - refreshing_jar-0
+12/6/2015, 3:29:05 PM flip - water_elemental-0
+12/6/2015, 3:29:09 PM flip - naga-1
+12/6/2015, 3:29:10 PM flip - kitsune-0
+12/6/2015, 3:29:12 PM flip - air_blade-2
+replace kitsune-0
+replace naga-1
+replace water_elemental-0
+replace refreshing_jar-0
+replace circle_of life-3
+draft air_blade-2
+12/6/2015, 3:29:24 PM tap - crystal_ball-0
+draw bot-12
+transmute mind_link-13
+transmute bot-12
+draw hypnocube-0
+12/6/2015, 3:30:09 PM flip - bot-12
+12/6/2015, 3:30:10 PM flip - mind_link-13
+12/6/2015, 3:30:13 PM flip - mind_link-13
+12/6/2015, 3:30:21 PM tap - bot-11
+12/6/2015, 3:30:23 PM flip - bot-11
+12/6/2015, 3:30:23 PM flip - burning_aura-0
+transmute bot-12
+transmute flight-2
+12/6/2015, 3:30:53 PM tap - energy_orb-11
+12/6/2015, 3:30:53 PM tap - energy_orb-10
+12/6/2015, 3:31:00 PM drawinto - playerdeck0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 23 at 12/6/2015, 3:31:00 PM
+draft burning_aura-2
+12/6/2015, 3:31:07 PM tap - energy_orb-10
+12/6/2015, 3:31:08 PM tap - energy_orb-11
+12/6/2015, 3:31:09 PM tap - energy_orb-8
+12/6/2015, 3:31:21 PM tap - energy_orb-9
+12/6/2015, 3:31:35 PM tap - energy_orb-9
+12/6/2015, 3:31:38 PM tap - energy_orb-9
+12/6/2015, 3:31:43 PM tap - energy_orb-8
+12/6/2015, 3:31:43 PM tap - energy_orb-9
+12/6/2015, 3:31:44 PM tap - energy_orb-8
+transmute overheat-1
+transmute mind_link-11
+12/6/2015, 3:31:51 PM tap - energy_orb-9
+12/6/2015, 3:32:03 PM tap - flame_whip-0
+12/6/2015, 3:32:08 PM tap - flame_whip-0
+12/6/2015, 3:32:15 PM tap - crystal_ball-0
+12/6/2015, 3:32:16 PM tap - crystal_ball-1
+12/6/2015, 3:32:29 PM shuffle - playerdiscard1-0
+12/6/2015, 3:32:29 PM shuffleinto - playerdiscard1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 24 at 12/6/2015, 3:32:29 PM
+draft sylph-1
+12/6/2015, 3:32:45 PM tap - crystal_ball-1
+draw charged-0
+12/6/2015, 3:32:49 PM tap - crystal_ball-0
+draw bot-12
+12/6/2015, 3:32:53 PM tap - crystal_ball-2
+draw meditate-13
+12/6/2015, 3:33:00 PM flip - water_clone-2
+12/6/2015, 3:33:01 PM flip - earth_elemental-2
+12/6/2015, 3:33:02 PM flip - third_eye-0
+replace earth_elemental-2
+replace water_clone-2
+replace water_blob-1
+draft third_eye-0
+transmute hologram-0
+transmute bot-12
+12/6/2015, 3:34:00 PM tap - energy_orb-8
+12/6/2015, 3:34:01 PM tap - energy_orb-9
+12/6/2015, 3:34:01 PM tap - energy_orb-11
+12/6/2015, 3:34:02 PM tap - energy_orb-10
+12/6/2015, 3:34:27 PM drawinto - playerdeck0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 25 at 12/6/2015, 3:34:27 PM
+draft salamander-0
+12/6/2015, 3:34:50 PM tap - energy_orb-10
+12/6/2015, 3:34:50 PM tap - energy_orb-11
+12/6/2015, 3:34:51 PM tap - energy_orb-8
+12/6/2015, 3:35:05 PM tap - energy_orb-9
+12/6/2015, 3:35:10 PM tap - meditate-10
+12/6/2015, 3:35:11 PM tap - meditate-10
+draft fire_ward-2
+12/6/2015, 3:35:46 PM tap - bot-10
+12/6/2015, 3:35:46 PM tap - bot-8
+12/6/2015, 3:35:53 PM tap - bot-10
+12/6/2015, 3:35:53 PM tap - bot-8
+12/6/2015, 3:36:09 PM tap - flame_whip-0
+12/6/2015, 3:36:19 PM tap - bot-8
+12/6/2015, 3:36:20 PM tap - bot-10
+12/6/2015, 3:36:21 PM tap - bot-10
+12/6/2015, 3:36:21 PM tap - bot-8
+12/6/2015, 3:36:35 PM tap - crystal_ball-2
+12/6/2015, 3:36:35 PM flip - crystal_ball-2
+12/6/2015, 3:36:39 PM flip - crystal_ball-2
+12/6/2015, 3:36:41 PM tap - crystal_ball-2
+12/6/2015, 3:36:48 PM tap - energy_orb-13
+12/6/2015, 3:36:48 PM tap - energy_orb-12
+draw flight-2
+12/6/2015, 3:37:00 PM tap - mist_orb-1
+draw air_blade-0
+transmute flight-2
+transmute solar_orb-2
+12/6/2015, 3:37:27 PM flip - bot-8
+12/6/2015, 3:37:28 PM tap - hypnocube-0
+12/6/2015, 3:38:03 PM tap - bot-10
+12/6/2015, 3:38:10 PM tap - energy_orb-12
+12/6/2015, 3:38:11 PM tap - energy_orb-13
+12/6/2015, 3:38:11 PM tap - mist_orb-1
+12/6/2015, 3:38:11 PM tap - crystal_ball-1
+12/6/2015, 3:38:12 PM tap - crystal_ball-0
+12/6/2015, 3:38:12 PM tap - crystal_ball-2
+12/6/2015, 3:38:13 PM tap - hypnocube-0
+draft energy_orb-7
+12/6/2015, 3:38:24 PM drawinto - playerdeck1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 26 at 12/6/2015, 3:38:24 PM
+12/6/2015, 3:38:41 PM tap - crystal_ball-1
+12/6/2015, 3:38:43 PM flip - meditate-12
+12/6/2015, 3:38:56 PM flip - demoralize-1
+replace adaptation-1
+draft demoralize-1
+12/6/2015, 3:39:05 PM tap - crystal_ball-0
+draw demoralize-0
+draw bot-13
+12/6/2015, 3:39:16 PM tap - crystal_ball-2
+draw mind_link-13
+12/6/2015, 3:39:32 PM tap - mist_orb-1
+draw bird's_eye view-3
+transmute mind_link-13
+transmute fire_ward-1
+transmute solar_orb-2
+transmute fire_ball-1
+transmute bird's_eye view-2
+transmute bird's_eye view-3
+12/6/2015, 3:40:24 PM tap - energy_orb-13
+draw fire_ward-1
+draw air_blade-2
+12/6/2015, 3:40:41 PM tap - energy_orb-12
+draw gathering_storm-1
+12/6/2015, 3:40:55 PM tap - energy_orb-10
+12/6/2015, 3:40:55 PM tap - energy_orb-11
+12/6/2015, 3:40:56 PM tap - flame_whip-0
+12/6/2015, 3:40:56 PM tap - energy_orb-8
+12/6/2015, 3:40:57 PM tap - energy_orb-9
+12/6/2015, 3:40:58 PM tap - bot-10
+12/6/2015, 3:41:06 PM drawinto - playerdeck0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 27 at 12/6/2015, 3:41:06 PM
+draft fire_orb-3
+12/6/2015, 3:41:58 PM tap - energy_orb-10
+12/6/2015, 3:41:58 PM tap - energy_orb-11
+12/6/2015, 3:42:06 PM tap - energy_orb-8
+12/6/2015, 3:42:07 PM tap - energy_orb-9
+transmute meditate-11
+12/6/2015, 3:42:25 PM tap - bot-7
+12/6/2015, 3:42:25 PM tap - bot-7
+12/6/2015, 3:42:26 PM tap - bot-7
+12/6/2015, 3:42:29 PM tap - bot-7
+12/6/2015, 3:42:42 PM tap - flame_whip-0
+12/6/2015, 3:42:45 PM tap - energy_orb-9
+12/6/2015, 3:42:51 PM tap - bot-7
+12/6/2015, 3:42:52 PM tap - bot-7
+12/6/2015, 3:42:57 PM tap - hypnocube-0
+12/6/2015, 3:42:58 PM tap - bot-7
+12/6/2015, 3:43:04 PM tap - bot-10
+12/6/2015, 3:43:17 PM tap - crystal_ball-2
+12/6/2015, 3:43:17 PM flip - crystal_ball-2
+12/6/2015, 3:43:30 PM tap - energy_orb-12
+12/6/2015, 3:43:30 PM tap - energy_orb-13
+12/6/2015, 3:43:30 PM tap - mist_orb-1
+12/6/2015, 3:43:31 PM tap - crystal_ball-1
+12/6/2015, 3:43:31 PM tap - crystal_ball-0
+12/6/2015, 3:43:32 PM tap - crystal_ball-0
+12/6/2015, 3:43:33 PM tap - crystal_ball-1
+12/6/2015, 3:43:33 PM tap - mist_orb-1
+12/6/2015, 3:43:33 PM tap - energy_orb-13
+12/6/2015, 3:43:34 PM tap - energy_orb-12
+12/6/2015, 3:43:40 PM tap - energy_orb-12
+12/6/2015, 3:43:40 PM tap - energy_orb-13
+12/6/2015, 3:43:41 PM tap - mist_orb-1
+12/6/2015, 3:43:41 PM tap - crystal_ball-1
+12/6/2015, 3:43:50 PM tap - hypnocube-0
+12/6/2015, 3:43:53 PM shuffle - playerdiscard1-0
+12/6/2015, 3:43:53 PM shuffleinto - playerdiscard1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 28 at 12/6/2015, 3:43:53 PM
+draft energy_orb-6
+12/6/2015, 3:44:11 PM tap - crystal_ball-0
+12/6/2015, 3:44:12 PM tap - crystal_ball-0
+draw air_blade-0
+draw meditate-13
+12/6/2015, 3:44:25 PM tap - crystal_ball-1
+draw hologram-0
+12/6/2015, 3:44:30 PM tap - mist_orb-1
+draw bird's_eye view-2
+12/6/2015, 3:44:38 PM tap - mist_orb-1
+12/6/2015, 3:44:40 PM flip - bird's_eye view-2
+12/6/2015, 3:44:41 PM tap - energy_orb-12
+12/6/2015, 3:44:41 PM tap - energy_orb-13
+draw bird's_eye view-2
+12/6/2015, 3:44:57 PM flip - burning_gear-0
+12/6/2015, 3:44:58 PM flip - curative_salve-1
+12/6/2015, 3:44:59 PM flip - spark-1
+12/6/2015, 3:45:00 PM flip - spark-1
+12/6/2015, 3:45:01 PM flip - spark-1
+12/6/2015, 3:45:02 PM flip - water_clone-0
+12/6/2015, 3:45:03 PM flip - thorny_vines-1
+12/6/2015, 3:45:04 PM flip - blast_cannon-2
+12/6/2015, 3:45:05 PM flip - revive-0
+12/6/2015, 3:45:06 PM flip - garuda-1
+replace revive-0
+replace blast_cannon-2
+replace thorny_vines-1
+replace water_clone-0
+replace spark-1
+replace curative_salve-1
+replace burning_gear-0
+replace gnome-1
+draft garuda-1
+draw crystal_ball-2
+transmute hologram-0
+transmute fire_ward-1
+12/6/2015, 3:46:02 PM tap - crystal_ball-2
+draw gathering_storm-2
+draw meditate-12
+draft intimidation-0
+12/6/2015, 3:46:31 PM tap - energy_orb-10
+12/6/2015, 3:46:32 PM tap - energy_orb-11
+12/6/2015, 3:46:32 PM tap - flame_whip-0
+12/6/2015, 3:46:32 PM tap - energy_orb-8
+12/6/2015, 3:46:34 PM tap - bot-10
+12/6/2015, 3:46:34 PM tap - bot-7
+12/6/2015, 3:46:39 PM shuffle - playerdiscard0-0
+12/6/2015, 3:46:39 PM shuffleinto - playerdiscard0-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 29 at 12/6/2015, 3:46:39 PM
+draft solar_orb-1
+12/6/2015, 3:47:09 PM tap - energy_orb-12
+12/6/2015, 3:47:10 PM tap - energy_orb-13
+12/6/2015, 3:47:13 PM tap - energy_orb-12
+12/6/2015, 3:47:13 PM tap - energy_orb-13
+12/6/2015, 3:47:21 PM tap - energy_orb-13
+12/6/2015, 3:47:21 PM tap - energy_orb-12
+12/6/2015, 3:47:28 PM tap - crystal_ball-1
+12/6/2015, 3:47:28 PM tap - crystal_ball-0
+12/6/2015, 3:47:28 PM tap - crystal_ball-2
+12/6/2015, 3:47:30 PM drawinto - playerdeck1-0
+stats enchantments_played 0
+stats minions_played 0
+
+turn 30 at 12/6/2015, 3:47:30 PM
+draft third_eye-1
+12/6/2015, 3:48:00 PM tap - crystal_ball-1
+draw bird's_eye view-3
+draw bot-12
+12/6/2015, 3:48:11 PM tap - crystal_ball-0
+draw fire_ball-1
+12/6/2015, 3:48:27 PM tap - crystal_ball-2
+draw third_eye-0
+transmute bot-12
+transmute solar_orb-2
+12/6/2015, 3:48:44 PM tap - energy_orb-12
+draw air_blade-1
+draw demoralize-0
+12/6/2015, 3:49:02 PM tap - energy_orb-13
+draw demoralize-1
