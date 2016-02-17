@@ -1,0 +1,748 @@
+{
+  "_type": "Asset",
+  "data": {
+    "_type": "File",
+    "type": 1,
+    "content": "Name\tElement\tType\t#\tL\tA\tD\tDescription\tCost\tMech\tFlav\tArt\tPass 1\tPass 2\tOrdering\t_override\t@ cast\t@ turn\t@ tap\t\t\t\t\t\tmax tap\t_cost\t_lifetime\t_adjustment\t_hasEntrance\r\n\t\t\t\t\t\t\t\t\t100.00%\t100.00%\t100.00%\t5.56%\t0.00%\t5\t\t\t\ttap 1\ttap 2\ttap 3\tinnate\tattack\tarmor\t\t\t\t\t\r\nMeditate\tBase\tSpell\t10\t\t\t\tName an element other than Æther (Fire, Earth, Air, Water). Replace a card in the draft slot until you reveal a card of the named element.//Draft a card.\t1\t1\t1\t1\t\t\t67\t\t2.00\t\t\t\t\t\t\t\t0.00\t1.00\t0\t-1\tFALSE\r\nMind Link\tBase\tEnchantment\t10\t\t\t\tAt the beginning of the turn, draw a card.\t2\t1\t1\t1\t\t\t48\t\t\t1.00\t\t\t\t\t\t\t0.00\t2.00\t2.00\t0\tFALSE\r\nBot\tBase\tMinion\t10\t3\t2\t0\t\t3\t1\t1\t1\t\t\t68\t\t\t\t\t\t\t1.50\t1.5\t0.00\t1.50\t3.17\t2.115384615\t0\tFALSE\r\nEnergy Orb\tBase\tDevice\t10\t3\t\t\tT: +1 Energy.\t2\t1\t1\t1\t\t\t24\t\t\t\t1\t\t\t\t\t\t1.00\t2.12\t2.115384615\t0\tFALSE\r\nFire Ball\tFire\tSpell\t3\t\t\t\tDamage up to 3 Minions by 1.\t2\t1\t1\t1\t1\t\t\t\t3.45\t\t\t\t\t\t\t\t0.00\t2.45\t0\t-1\tFALSE\r\nFury\tFire\tSpell\t2\t\t\t\tWhile this card is in play, increase all damage you do by 1.\t1\t1\t1\t1\t\t\t7\t\t2.25\t\t\t\t\t\t\t\t0.00\t1.25\t0\t-1\tFALSE\r\nSpark\tFire\tSpell\t3\t\t\t\tRefresh all your Devices.\t1\t1\t1\t1\t\t\t70\t\t2.40\t\t\t\t\t\t\t\t0.00\t1.40\t0\t-1\tFALSE\r\nExplode\tFire\tSpell\t2\t\t\t\tDestroy up to 2 Minions with at most 1 life.\t1\t1\t1\t1\t\t\t26\t\t2.35\t\t\t\t\t\t\t\t0.00\t1.35\t0\t-1\tFALSE\r\nConstruct\tFire\tSpell\t2\t\t\t\tPut a Device from hand into play for free.\t1\t1\t1\t1\t\t\t71\t\t1.50\t\t\t\t\t\t\t\t0.00\t0.50\t0\t-1\tFALSE\r\nImmolation Aura\tFire\tEnchantment\t3\t\t\t\tWhen this Minion is damaged, damage up to 2 Minions by 1.\t2\t1\t1\t1\t\t\t6\t\t\t0.75\t\t\t\t\t\t\t0.00\t1.50\t2.00\t0\tFALSE\r\nCatalyst\tFire\tEnchantment\t3\t\t\t\tWhen this Minion is damaged, you may untap one Device.\t3\t1\t1\t1\t\t\t32\t\t\t1.65\t\t\t\t\t\t\t0.00\t3.31\t2.00\t0\t\r\nHellhound\tFire\tMinion\t3\t2\t3\t0\t\t3\t1\t1\t1\t\t\t41\t\t\t\t\t\t\t2.25\t2.25\t0.00\t2.25\t3.17\t1.41025641\t0\tFALSE\r\nDjinn\tFire\tMinion\t2\t3\t3\t0\t\t5\t1\t1\t1\t\t\t56\t\t\t\t\t\t\t2.25\t2.25\t0.00\t2.25\t4.76\t2.115384615\t0\tFALSE\r\nFire Elemental\tFire\tMinion\t2\t5\t1\t0\tWhen this Minion takes a damage, draw a card.\t4\t1\t1\t1\t\t\t8\t\t\t0.25\t\t\t\t0.75\t0.75\t0.00\t0.75\t3.53\t3.525641026\t0\tFALSE\r\nSalamander\tFire\tMinion\t2\t3\t2\t0\tWhen this Minion takes a damage, damage all opponent Minions by 1.\t5\t1\t1\t1\t\t\t45\t\t\t0.75\t\t\t\t1.50\t1.5\t0.00\t1.50\t4.76\t2.115384615\t0\tFALSE\r\nFlame Whip\tFire\tDevice\t3\t3\t\t\tT: Damage a non Device you control by 1. If the target receives damage, increase any damage you do by 1 until the end of the current turn.\t3\t1\t1\t1\t\t\t72\t\t\t\t1.5\t\t\t\t\t\t1.50\t3.17\t2.115384615\t0\tFALSE\r\nFire Ward\tFire\tDevice\t3\t3\t\t\tT: Damage up to 2 Minions by 1.\t3\t1\t1\t1\t\t\t23\t\t\t\t1.5\t\t\t\t\t\t1.50\t3.17\t2.115384615\t0\tFALSE\r\nBlast Cannon\tFire\tDevice\t3\t3\t\t\tT: Damage a non Device you control by 1. If the target receives damage, you may destroy up to 2 Minions with at most 1 life.\t3\t1\t1\t1\t\t\t51\t\t\t\t1.595454545\t\t\t\t\t\t1.60\t3.38\t2.115384615\t0\tFALSE\r\nBurning Gear\tFire\tDevice\t2\t3\t\t\tT: Damage a non Device you control by 1. If the target receives damage, you may put a device from hand into play for free.\t2\t1\t1\t1\t\t\t37\t\t\t\t0.75\t\t\t\t\t\t0.75\t1.59\t2.115384615\t0\tFALSE\r\nFire Orb\tFire\tDevice\t4\t3\t\t\tT: Damage a non Device you control by 2. If the target receives damage, draw 3 cards.\t3\t1\t1\t1\t\t\t55\t\t\t\t1.5\t\t\t\t\t\t1.50\t3.17\t2.115384615\t0\tFALSE\r\nSolar Orb\tFire\tDevice\t3\t3\t\t\tT: Damage a non Device you control by 2. If the target receives damage, +3 Energy.\t3\t1\t1\t1\t\t\t34\t\t\t\t1.5\t\t\t\t\t\t1.50\t3.17\t2.115384615\t0\tFALSE\r\nCall of the Wild\tEarth\tSpell\t3\t\t\t\tReveal the top 4 cards of the deck. Put any Minions in hand, discard the rest or replace them in any order. Draw a card.\t1\t1\t1\t1\t\t\t42\t\t2.20\t\t\t\t\t\t\t\t0.00\t1.20\t0\t-1\tFALSE\r\nEvolve\tEarth\tSpell\t2\t\t\t\tPut a Minion in play back in your hand. Put another Minion in your discard pile costing at most one more into play.\t2\t1\t1\t1\t\t\t65\t\t3.00\t\t\t\t\t\t\t\t0.00\t2.00\t0\t-1\tFALSE\r\nRevive\tEarth\tSpell\t4\t\t\t\tDraw a card from your discard pile.\t1\t1\t1\t1\t\t\t40\t\t2.00\t\t\t\t\t\t\t\t0.00\t1.00\t0\t-1\tFALSE\r\nCircle of Life\tEarth\tEnchantment\t4\t\t\t\tWhen your Minion enters play, you may take a card from your discard pile and put it on top of your deck.\t2\t1\t1\t1\t\t\t18\t\t\t1.00\t\t\t\t\t\t\t0.00\t2.00\t2.00\t0\tFALSE\r\nAdaptation\tEarth\tEnchantment\t3\t\t\t\tAt the beginning of the turn, reveal the top 4 cards of your deck. Discard any of them and put the rest back in any order.\t2\t1\t1\t1\t\t\t46\t\t\t1.00\t\t\t\t\t\t\t0.00\t2.00\t2.00\t0\tFALSE\r\nSymbiosis\tEarth\tEnchantment\t3\t\t\t\tWhen this Minion is about to receive a damage, you may redirect it to another Minion you control.\t2\t1\t1\t1\t\t\t16\t\t\t1.00\t\t\t\t\t\t\t0.00\t2.00\t2.00\t0\tFALSE\r\nHive Mind\tEarth\tEnchantment\t2\t\t\t\tWhen your Minion enters play, draw a card.\t2\t1\t1\t1\t\t\t36\t\t\t1.00\t\t\t\t\t\t\t0.00\t2.00\t2.00\t0\tFALSE\r\nGnome\tEarth\tMinion\t3\t2\t1\t0\tWhen your Minion enters play, put a card in your discard pile on top of your deck.\t2\t1\t1\t1\t\t\t38\t\t\t1.00\t\t\t\t0.75\t0.75\t0.00\t0.75\t2.47\t1.41025641\t0\tFALSE\r\nEarth Elemental\tEarth\tMinion\t3\t3\t0\t0\tWhen your Minion enters play, draw a card.\t2\t1\t1\t1\t\t\t15\t\t\t1.00\t\t\t\t0.00\t0\t0.00\t0.00\t2.12\t2.115384615\t0\tFALSE\r\nJungle Vines\tEarth\tMinion\t3\t1\t1\t1\tYou may put this Minion into play from your discard pile.\t2\t1\t1\t1\t\t\t5\t\t1.00\t\t\t\t\t1.75\t0.75\t1.00\t1.75\t2.23\t0.7051282051\t0\tTRUE\r\nThorny Vines\tEarth\tMinion\t3\t1\t2\t0\tYou may put this Minion into play from your discard pile.\t2\t1\t1\t1\t\t\t62\t\t1.00\t\t\t\t\t1.50\t1.5\t0.00\t1.50\t2.06\t0.7051282051\t0\tTRUE\r\nBark Vines\tEarth\tMinion\t3\t1\t0\t2\tYou may put this Minion into play from your discard pile.\t2\t1\t1\t1\t\t\t17\t\t1.00\t\t\t\t\t1.42\t0\t1.42\t1.42\t2.00\t0.7051282051\t0\tTRUE\r\nKitsune\tEarth\tMinion\t3\t2\t1\t1\tWhen your Minion enters play, look at the top 2 cards of your deck; replace them in any order. Each player discards the top card of their deck.\t2\t1\t1\t1\t\t\t25\t\t\t\t\t\t\t1.75\t0.75\t1.00\t1.75\t2.47\t1.41025641\t0\tFALSE\r\nNature Orb\tEarth\tDevice\t2\t3\t\t\tT: Draw a card. Every player discards the top card of their deck.\t2\t1\t1\t1\t\t\t53\t\t\t\t1.00\t\t\t\t\t\t1.00\t2.12\t2.115384615\t0\tFALSE\r\nRevival Pendant\tEarth\tDevice\t2\t3\t\t\tT: Put a card in your discard pile on top of your deck.\t2\t1\t1\t1\t1\t\t\t\t\t\t1.00\t\t\t\t\t\t1.00\t2.12\t2.115384615\t0\tFALSE\r\nMorph Proxy\tEarth\tDevice\t2\t3\t\t\tT: Put a Minion in play back in your hand. Put another Minion with the same cost into play.\t3\t1\t1\t1\t\t\t31\t\t\t\t1.38\t\t\t\t\t\t1.38\t2.92\t2.115384615\t0\tFALSE\r\nGathering Storm\tAir\tSpell\t3\t\t\t\tReduce energy cost of Spells by 1. Draw a card.\t2\t1\t1\t1\t\t\t69\t2\t2.00\t\t\t\t\t\t\t\t0.00\t1.00\t0\t-1\tFALSE\r\nBird's Eye View\tAir\tSpell\t4\t\t\t\tPick a player. For every Spell you have in play, discard a card you pick from that player's hand. Draw a card.\t1\t1\t1\t1\t\t\t64\t\t2.00\t\t\t\t\t\t\t\t0.00\t1.00\t0\t-1\tFALSE\r\nSonic Boom\tAir\tSpell\t3\t\t\t\tDamage a target by X, where X is the number of spells you have in play. Draw a card.\t1\t1\t1\t1\t\t\t33\t\t2.00\t\t\t\t\t\t\t\t0.00\t1.00\t0\t-1\tFALSE\r\nShock\tAir\tSpell\t4\t\t\t\tDisable a card. Draw a card.\t1\t1\t1\t1\t\t\t30\t\t2.35\t\t\t\t\t\t\t\t0.00\t1.35\t0\t-1\tFALSE\r\nFear\tAir\tSpell\t2\t\t\t\tMove a Minion you control back to the owner's hand. The owner gains the same amount of energy used to summon the Minion. Draw a card.\t1\t1\t1\t1\t\t\t28\t\t2.38\t\t\t\t\t\t\t\t0.00\t1.38\t0\t-1\tFALSE\r\nDeja Vu\tAir\tSpell\t2\t\t\t\tShuffle your discard pile and put it on top of your deck. Draw a card.\t2\t1\t1\t1\t\t\t27\t\t3.00\t\t\t\t\t\t\t\t0.00\t2.00\t0\t-1\tFALSE\r\nMind Splinter\tAir\tEnchantment\t3\t\t\t\tAt the beginning of the turn, you may deal X damage to a target, where X is the number of Spells in play.\t2\t1\t1\t1\t\t\t14\t\t\t0.75\t\t\t\t\t\t\t0.00\t1.50\t2.00\t0\tFALSE\r\nFlight\tAir\tEnchantment\t4\t\t\t\tThis Minion is Flying. (This Minion's attack cannot be blocked.)\t2\t1\t1\t1\t\t\t19\t\t\t1.00\t\t\t\t\t\t\t0.00\t2.00\t2.00\t0\tFALSE\r\nThird Eye\tAir\tEnchantment\t2\t\t\t\tAt the beginning of the turn, you may draw X cards, where X is the number of Spells in play.\t2\t1\t1\t1\t\t\t59\t\t\t1.00\t\t\t\t\t\t\t0.00\t2.00\t2.00\t0\tFALSE\r\nSylph\tAir\tMinion\t2\t2\t1\t0\tFlying. (This Minion's attack cannot be blocked.)\t2\t1\t1\t1\t1\t\t\t\t\t1.00\t\t\t\t0.75\t0.75\t0.00\t0.75\t2.47\t1.41025641\t0\tFALSE\r\nGaruda\tAir\tMinion\t2\t2\t2\t0\tFlying. (This Minion's attack cannot be blocked.)\t4\t1\t1\t1\t\t\t20\t\t\t1.00\t\t\t\t1.50\t1.5\t0.00\t1.50\t3.53\t1.41025641\t0\tFALSE\r\nPoltergeist\tAir\tMinion\t2\t3\t1.00\t0\tThis Minion's attack power is equal to the number of Spells you have in play.\t2\t1\t1\t1\t\t\t54\t\t\t\t\t\t\t0.75\t0.75\t0.00\t0.75\t1.59\t2.115384615\t0\tFALSE\r\nSpell Node\tAir\tDevice\t3\t3\t\t\tT: Reveal the top card of your deck. If it is a spell, put it into play for free. Otherwise, put it in your hand.\t2\t1\t1\t1\t\t\t61\t\t\t1.075\t\t\t\t\t\t\t0.00\t2.27\t2.115384615\t0\tFALSE\r\nHypnocube\tAir\tDevice\t2\t3\t\t\tT: Take control of a Minion with the same summoning cost as the number of Spell you have in play until the end of the current turn.\t2\t1\t1\t1\t\t\t22\t\t\t\t1.00\t\t\t\t\t\t1.00\t2.12\t2.115384615\t0\tFALSE\r\nMist Orb\tAir\tDevice\t2\t3\t\t\tT: Draw a card. Pick a player. Both you and that player take a card from hand and put it on top of the other player’s deck.\t2\t1\t1\t1\t\t\t47\t\t\t\t1.00\t\t\t\t\t\t1.00\t2.12\t2.115384615\t0\tFALSE\r\nHologram\tAir\tDevice\t2\t3\t\t\tT: Pick a Minion. Redirect that Minion's next attack causing up to X damage, where X is the number of Spells in play, to a target of your choice.\t3\t1\t1\t1\t\t\t39\t\t\t\t1.50\t\t\t\t\t\t1.50\t3.17\t2.115384615\t0\tFALSE\r\nLooking Glass\tAir\tDevice\t3\t3\t\t\tT: Look at the top 4 cards of a deck. You may put any of them at the bottom of the deck in any order. Replace the rest of them in any order.\t2\t1\t1\t1\t\t\t49\t\t\t\t1.00\t\t\t\t\t\t1.00\t2.12\t2.115384615\t0\tFALSE\r\nHealing Rain\tWater\tSpell\t3\t\t\t\tFully heal a Minion. Refresh that Minion.\t2\t1\t1\t1\t\t\t12\t\t2.88\t\t\t\t\t\t\t\t0.00\t1.88\t0\t-1\tFALSE\r\nWater Clone\tWater\tSpell\t3\t\t\t\tPick a Minion. While this card is in play, increase its attack by X, where X is the number of Enchants on that Minion. Refresh that Minion.\t2\t1\t1\t1\t\t\t66\t\t2.625\t\t\t\t\t\t\t\t0.00\t1.63\t0\t-1\tFALSE\r\nIce Shield\tWater\tEnchantment\t3\t\t\t\tArmor +1.\t2\t1\t1\t1\t\t\t57\t\t\t0.75\t\t\t\t\t\t\t0.00\t1.50\t2.00\t0\tFALSE\r\nLongevity\tWater\tEnchantment\t3\t\t\t\tLife +X, where X is the number of Enchants on this Minion.\t2\t1\t1\t1\t\t\t50\t\t\t1.13\t\t\t\t\t\t\t0.00\t2.25\t2.00\t0\tFALSE\r\nMomentum\tWater\tEnchantment\t3\t\t\t\tWhen this Minion destroys a Device, you may refresh it.\t3\t1\t1\t1\t\t\t29\t\t\t1.50\t\t\t\t\t\t\t0.00\t3.01\t2.00\t0\tFALSE\r\nChilling Aura\tWater\tEnchantment\t3\t\t\t\tAttack +X, where X is the number of Enchants on this Minion.\t2\t1\t1\t1\t\t\t58\t\t\t1.13\t\t\t\t\t\t\t0.00\t2.25\t2.00\t0\tFALSE\r\nRegeneration\tWater\tEnchantment\t2\t\t\t\tAt the beginning of the turn, this Minion heals one life.\t2\t1\t1\t1\t\t\t9\t\t\t0.75\t\t\t\t\t\t\t0.00\t1.50\t2.00\t0\tFALSE\r\nReflection\tWater\tEnchantment\t2\t\t\t\tAt the beginning of the turn, pick an Enchant on this Minion. This Enchant gains all the abilities of that Enchant.\t2\t1\t1\t1\t\t\t44\t\t\t1.10\t\t\t\t\t\t\t0.00\t2.20\t2.00\t0\tFALSE\r\nClarity\tWater\tEnchantment\t2\t\t\t\tAt the beginning of the turn, draw a card for every Enchant on this Minion.\t3\t1\t1\t1\t\t\t35\t\t\t1.50\t\t\t\t\t\t\t0.00\t3.01\t2.00\t0\tFALSE\r\nIce Golem\tWater\tMinion\t2\t3\t2\t2\tDiscard an Enchant from play or from hand to redirect damage to this Minion.\t6\t1\t1\t1\t\t\t21\t\t\t0.00\t\t\t\t2.92\t1.5\t1.42\t2.92\t6.17\t2.115384615\t0\tFALSE\r\nWater Elemental\tWater\tMinion\t3\t3\t1\t2\tDiscard an Enchant from play or from hand to draw 2 cards.\t6\t1\t1\t1\t1\t\t\t\t\t0.50\t\t\t\t2.17\t0.75\t1.42\t2.17\t5.64\t2.115384615\t0\tFALSE\r\nWater Blob\tWater\tMinion\t2\t5\t2\t0\tDiscard an Enchant from play or from hand to fully heal a Minion.\t5\t1\t1\t1\t\t\t60\t\t\t-0.12\t\t\t\t1.50\t1.5\t0.00\t1.50\t4.87\t3.525641026\t0\tFALSE\r\nApsara\tWater\tMinion\t2\t5\t0\t3\tDiscard an Enchant from play or from hand to refresh a Minion.\t5\t1\t1\t1\t\t\t52\t\t\t0.00\t\t\t\t1.42\t0\t1.42\t1.42\t5.00\t3.525641026\t0\tFALSE\r\nNaga\tWater\tMinion\t3\t5\t1\t1\tDiscard an Enchant from play or from hand to increase this Minion's attack by 2 until the end of the current turn.\t6\t1\t1\t1\t\t\t43\t\t\t0.00\t\t\t\t1.75\t0.75\t1.00\t1.75\t6.17\t3.525641026\t0\tFALSE\r\nAqua Orb\tWater\tDevice\t2\t3\t\t\tT: Pick a Minion. Draw a card for every Enchant on that Minion.\t3\t1\t1\t1\t\t\t10\t\t\t\t1.5\t\t\t\t\t\t1.50\t3.17\t2.115384615\t0\tFALSE\r\nCurative Salve\tWater\tDevice\t3\t3\t\t\tT: Heal a Minion by 1 for every Enchant on that Minion.\t2\t1\t1\t1\t\t\t63\t\t\t\t1.125\t\t\t\t\t\t1.13\t2.38\t2.115384615\t0\tFALSE\r\nIce Trident\tWater\tDevice\t2\t3\t\t\tT: Pick a Minion. Increase that Minion's attack by 1 for every Enchant on that Minion, until the end of the current turn.\t2\t1\t1\t1\t\t\t13\t\t\t\t1.125\t\t\t\t\t\t1.13\t2.38\t2.115384615\t0\tFALSE\r\nRefreshing Jar\tWater\tDevice\t2\t3\t\t\tT: Refresh a Minion.\t3\t1\t1\t1\t\t\t11\t\t\t\t1.5\t\t\t\t\t\t1.50\t3.17\t2.115384615\t0\tFALSE"
+  },
+  "dataProcessor": {
+    "_type": "FunctionObject",
+    "fnString": "return function(lineData, index) {\n  if (index < 2) {\n    return null;\n  }\n  \n  var type = lineData[2].toLowerCase();\n  var card = {\n    'name': lineData[0],\n    'cost': lineData[8],\n    'element': '{{element.' + lineData[1].toLowerCase() + '}}',\n    'type': '{{type.' + type.substr(0, 1) + '}}',\n    'count': lineData[3],\n    'tap': lineData[7].startsWith('T: ')\n  };\n  \n  card['description'] = card['tap'] ? lineData[7].substring(3) : lineData[7]\n  \n  if (type === 'device' || type === 'minion') {\n    card['life'] = lineData[4] || 0;\n  }\n  \n  if (type === 'minion') {\n    card['attack'] = lineData[5] || 0;\n    card['armor'] = lineData[6] || 0;\n  }\n  \n  if (lineData[0] === 'Poltergeist') {\n    card['attack'] = '?';\n  }\n  \n  return card;\n};"
+  },
+  "globals": "{\n  \"element\": {\n    \"air\": \"air\",\n    \"earth\": \"earth\",\n    \"base\": \"ether\",\n    \"fire\": \"fire\",\n    \"water\": \"water\"\n  },\n  \"type\": {\n    \"d\": \"device\",\n    \"e\": \"enchant\",\n    \"m\": \"minion\",\n    \"s\": \"spell\"\n  }\n}",
+  "helpers": {
+    "bg": {
+      "_type": "FunctionObject",
+      "fnString": "return function(type, element) {\n  return Handlebars.helpers._imgUrl(element + '_' + type + '.png');\n};"
+    },
+    "frame": {
+      "_type": "FunctionObject",
+      "fnString": "return function(element) { \n return Handlebars.helpers._imgUrl(element + '_frame.png');\n}"
+    },
+    "stats": {
+      "_type": "FunctionObject",
+      "fnString": "return function(element, type) { \n return Handlebars.helpers._imgUrl(element + '_' + type + '_stats.png');\n}"
+    },
+    "art": {
+      "_type": "FunctionObject",
+      "fnString": "return function(name) { \n return Handlebars.helpers._imgUrl(\n Handlebars.helpers._lowercase(name) + '.png');\n}"
+    },
+    "capitalize": {
+      "_type": "FunctionObject",
+      "fnString": "return function(text) { \n return '<span class=\"first-letter\">' + text[0] + '</span>' \n + text.substring(1);\n}"
+    },
+    "desc": {
+      "_type": "FunctionObject",
+      "fnString": "return function(value) {\n  var replaced = value\n      .replace(/\\(/, '<i>(')\n      .replace(/\\)/, ')</i>')\n      .replace(/\\/\\//, '</p><p>');\n  return '<p>' + replaced + '</p>';\n}"
+    },
+    "elem": {
+      "_type": "FunctionObject",
+      "fnString": "return function(value) {\n  return value === 'ether' ? 'æther' : value;\n}"
+    }
+  },
+  "id": "asset.1447132557309",
+  "images": {
+    "ether_device_stats.png": {
+      "_type": "ImageResource",
+      "alias": "ether_device_stats.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/ether_device_stats.png",
+      "previewUrl": "https://lh4.googleusercontent.com/Zi1ey0OiYAo-ZAa_Rn0vOqS-z0cJ0L9eHu5vRxvOIgVrqSZuhQaDIZDuM5dAn3emA8LYDw=s220"
+    },
+    "earth_minion_stats.png": {
+      "_type": "ImageResource",
+      "alias": "earth_minion_stats.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/earth_minion_stats.png",
+      "previewUrl": "https://lh4.googleusercontent.com/IxvXfaihiDLOnDL4i8-HoWN6jNdTaCPFyA7q36OC63wUi-Xr-sc92hATtUtljst2DMDxYg=s220"
+    },
+    "water_minion.png": {
+      "_type": "ImageResource",
+      "alias": "water_minion.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/water_minion.png",
+      "previewUrl": "https://lh6.googleusercontent.com/6aCqvVh_3zO1GbkQvRMPoLaD0Wb2a7AJO2lIlFqESDZyysUUTq9zNS6Xn2g1dOHZxMfFsw=s220"
+    },
+    "earth_spell.png": {
+      "_type": "ImageResource",
+      "alias": "earth_spell.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/earth_spell.png",
+      "previewUrl": "https://lh5.googleusercontent.com/_w97Y2t-nzqLSixA6DFW4GTWzeTBNBDTla_OVSoHtYK3FYdl3F15jChWnqceEOCoDuebvg=s220"
+    },
+    "air_minion.png": {
+      "_type": "ImageResource",
+      "alias": "air_minion.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/air_minion.png",
+      "previewUrl": "https://lh6.googleusercontent.com/xjkGSD8W8rIU7BGYnmpFecEB88y8bHYjXtB8TtOISCU84mekIh9peHSK0EDTv1j2unUkzA=s220"
+    },
+    "fire_minion.png": {
+      "_type": "ImageResource",
+      "alias": "fire_minion.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/fire_minion.png",
+      "previewUrl": "https://lh5.googleusercontent.com/dqlGxXf2nrpR-DggdH--Bi5Gghs-eOIHdVxAnl8wBs07FLZnPjb6pZmDQobV3D3lN9Eelw=s220"
+    },
+    "air_frame.png": {
+      "_type": "ImageResource",
+      "alias": "air_frame.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/air_frame.png",
+      "previewUrl": "https://lh6.googleusercontent.com/pjFbTd3CouefcbPqXTT8Kri3MaitSQnr9s1j_W8EhWhyPEOXjHZLTlm71KuInze43wux0w=s220"
+    },
+    "fire_enchant.png": {
+      "_type": "ImageResource",
+      "alias": "fire_enchant.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/fire_enchant.png",
+      "previewUrl": "https://lh6.googleusercontent.com/ryy-Y30_c4C5wS45EIJZV4LKc6wtALVD4v45uoQLRNUrgQrfnmtm1X1n-1hUNmICZXAc1Q=s220"
+    },
+    "earth_enchant.png": {
+      "_type": "ImageResource",
+      "alias": "earth_enchant.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/earth_enchant.png",
+      "previewUrl": "https://lh5.googleusercontent.com/ddxur4W7IS4esxs0r5I-7zDcrcQc8pWz7YMOMhH57dfVzQrLX1VnJh7cXLBFyCgHiyX7bg=s220"
+    },
+    "air_spell.png": {
+      "_type": "ImageResource",
+      "alias": "air_spell.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/air_spell.png",
+      "previewUrl": "https://lh5.googleusercontent.com/OITUS6NxA6km4ezE5F6sBCuMRfoUqdIpHQWlPVb6Cl-HsgZQwAeelRf8Jr1yNCsU0AtRbA=s220"
+    },
+    "ether_enchant.png": {
+      "_type": "ImageResource",
+      "alias": "ether_enchant.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/ether_enchant.png",
+      "previewUrl": "https://lh3.googleusercontent.com/kmATLfroSUEljKFJ15xhdegQ2P2G0qwcxByiXoXHhUxJbpdbtepYTQhmIGgNDd2_k6fu2A=s220"
+    },
+    "fire_spell.png": {
+      "_type": "ImageResource",
+      "alias": "fire_spell.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/fire_spell.png",
+      "previewUrl": "https://lh5.googleusercontent.com/jqaQF-77yjyKAMaVqafZ0Ge1B7gN12Rp_JrcbWgLddG_50DORClv_uDG5OclTpamVGr4pA=s220"
+    },
+    "ether_device.png": {
+      "_type": "ImageResource",
+      "alias": "ether_device.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/ether_device.png",
+      "previewUrl": "https://lh5.googleusercontent.com/a2DnrPV2Alf9HyMwyAX1Z66LTYgnJeWgnuv600EE-0Po1Gl0oE-V84JdBQuoeXV6MizALQ=s220"
+    },
+    "earth_frame.png": {
+      "_type": "ImageResource",
+      "alias": "earth_frame.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/earth_frame.png",
+      "previewUrl": "https://lh4.googleusercontent.com/lZ_bzUBCuWf_8z9D7TIJ9czImS-WTtCHUugkARgWoaRlqK1FkDY0QM_L18SakFwQflYEGA=s220"
+    },
+    "air_device.png": {
+      "_type": "ImageResource",
+      "alias": "air_device.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/air_device.png",
+      "previewUrl": "https://lh3.googleusercontent.com/qr7vkqOVxj3l85VGIuJw9gbQ6uZ1SVZX8-RTgGs8WwWECWawzm_yN8WY0KhuhLnYLTAdng=s220"
+    },
+    "cost.png": {
+      "_type": "ImageResource",
+      "alias": "cost.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/cost.png",
+      "previewUrl": "https://lh6.googleusercontent.com/NfQwtlmVzp45gBXa-cN9MmgAZhmLpGdaupMUDHWujaVJy9_k5w8zZ1rbOIxP5ZVhcqzEbg=s220"
+    },
+    "earth_device.png": {
+      "_type": "ImageResource",
+      "alias": "earth_device.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/earth_device.png",
+      "previewUrl": "https://lh3.googleusercontent.com/XG7T0O7hUjybQQwCsBLyPyccYpFO-vWZiGXbLRyIUWifoZduLcN3VtrN9V6fSvjAgVuxXQ=s220"
+    },
+    "water_enchant.png": {
+      "_type": "ImageResource",
+      "alias": "water_enchant.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/water_enchant.png",
+      "previewUrl": "https://lh3.googleusercontent.com/01S5oN-ZO4e283JJcWUJdW32Hl-VCm7TIx9ACuJUq0AIxVhRB_ve4YBinqK3eHfv6HCWwg=s220"
+    },
+    "fire_minion_stats.png": {
+      "_type": "ImageResource",
+      "alias": "fire_minion_stats.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/fire_minion_stats.png",
+      "previewUrl": "https://lh4.googleusercontent.com/z7qE8EhYCzpC6syp1hKGyVGlBMvaYf0ki_QlBmkzDpET6rtinYW3GoQRspdqVMwvoId5QA=s220"
+    },
+    "ether_minion_stats.png": {
+      "_type": "ImageResource",
+      "alias": "ether_minion_stats.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/ether_minion_stats.png",
+      "previewUrl": "https://lh3.googleusercontent.com/E2v7Unec_NERFzPIFCdg5lTAlwkGCUNwZPV33SYc4HbDJh28A3YYV0oF2uOoytQQutFurw=s220"
+    },
+    "ether_minion.png": {
+      "_type": "ImageResource",
+      "alias": "ether_minion.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/ether_minion.png",
+      "previewUrl": "https://lh3.googleusercontent.com/FphWnahzLR829s-JRPcRGdI4XTnYn7-SB7pbqBtP7n6iV94aSDhqIzbViZdyL0udkyRFBw=s220"
+    },
+    "fire_frame.png": {
+      "_type": "ImageResource",
+      "alias": "fire_frame.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/fire_frame.png",
+      "previewUrl": "https://lh3.googleusercontent.com/1WbyfbbQDzwLYhIaneq64U1LHKj4iW0rcFnpruuX5lEyLHI2ELPROHBZcZl5u1cSz6a2KA=s220"
+    },
+    "earth_minion.png": {
+      "_type": "ImageResource",
+      "alias": "earth_minion.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/earth_minion.png",
+      "previewUrl": "https://lh3.googleusercontent.com/vQKdIQA9yKaFqX6DMHy1ZbavmFiLO_si5Ohk-7ua0cjj6G4-2wQpHTBnhSrBg2-ZFUkvig=s220"
+    },
+    "fire_device_stats.png": {
+      "_type": "ImageResource",
+      "alias": "fire_device_stats.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/fire_device_stats.png",
+      "previewUrl": "https://lh3.googleusercontent.com/gQeBBBUfw7dMgqDVNd6dhqCl5aofK7nxwLcasJKqDhzCp4bKsJZJoW1IQ5P1iR0T8rFyew=s220"
+    },
+    "water_minion_stats.png": {
+      "_type": "ImageResource",
+      "alias": "water_minion_stats.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/water_minion_stats.png",
+      "previewUrl": "https://lh5.googleusercontent.com/mupm5l4uI1zof9SBRCEcfsWbMV2N6lotuA3UFpPN9hwT7p_C88rT8jjiN5qcwWDGXNgYzA=s220"
+    },
+    "air_device_stats.png": {
+      "_type": "ImageResource",
+      "alias": "air_device_stats.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/air_device_stats.png",
+      "previewUrl": "https://lh3.googleusercontent.com/YQseFHy1CZKBXu8J-QFSYkMNo0CpLxt_P8McEsLlX6vUDmMIlWaO_wVG5JriU8OPMKSx9A=s220"
+    },
+    "fire_device.png": {
+      "_type": "ImageResource",
+      "alias": "fire_device.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/fire_device.png",
+      "previewUrl": "https://lh3.googleusercontent.com/VrX-XN-l68ecOWZRX-53H2Vy9hHeBWYq2k7e7mNFQp_rtqLACl6fRAqYTUpE7hX_MSD5jA=s220"
+    },
+    "water_spell.png": {
+      "_type": "ImageResource",
+      "alias": "water_spell.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/water_spell.png",
+      "previewUrl": "https://lh5.googleusercontent.com/nKiQMUd0FY1TIXUEXmld_lvkDxRsIvRp6J56nM_1THXx0EVym70np5lGD6otUO-a0TMkQw=s220"
+    },
+    "ether_spell.png": {
+      "_type": "ImageResource",
+      "alias": "ether_spell.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/ether_spell.png",
+      "previewUrl": "https://lh5.googleusercontent.com/491yTH2b0Kw3vwVnxgqgBoL1IGD39PHRExBzibtFG0GmbvFAaRjXKWCgG7--ByvunGOEVA=s220"
+    },
+    "ether_frame.png": {
+      "_type": "ImageResource",
+      "alias": "ether_frame.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/ether_frame.png",
+      "previewUrl": "https://lh6.googleusercontent.com/P7Lv5eTBft64NvQF8eggXIIgfGWTbRnDSO1aYYRgnfoJBkZL-mbQA-K8WZISV6aWsB16CA=s220"
+    },
+    "air_minion_stats.png": {
+      "_type": "ImageResource",
+      "alias": "air_minion_stats.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/air_minion_stats.png",
+      "previewUrl": "https://lh4.googleusercontent.com/Peq_4pMGx1ifZTDYVA6pB0RWw8ToHX_EL5fF5e7m1zkpYViPF1Z9Ie7T8JeZKNUahkX_UA=s220"
+    },
+    "air_enchant.png": {
+      "_type": "ImageResource",
+      "alias": "air_enchant.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/air_enchant.png",
+      "previewUrl": "https://lh5.googleusercontent.com/heu0xY_l9aDNcQc9rxIppuVw9rehEirz_o_9lKqG4s2maLNEV1xNn7Rij5NhIsX9PCJdxQ=s220"
+    },
+    "water_device.png": {
+      "_type": "ImageResource",
+      "alias": "water_device.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/water_device.png",
+      "previewUrl": "https://lh3.googleusercontent.com/xXHFsXl_UhG8W9-iehCUHYe8QTwFl8zaUa7m1-0rqsPWEqSvo0TPyAeIFBZe2yrszFfQ5A=s220"
+    },
+    "water_device_stats.png": {
+      "_type": "ImageResource",
+      "alias": "water_device_stats.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/water_device_stats.png",
+      "previewUrl": "https://lh6.googleusercontent.com/AqS7nDRxvT2VsCtnLMJGJ3GhH6mXkKT_SlsRTOZ4_RJ3fxzvAdK7heoXKiAmFUeKasAPEA=s220"
+    },
+    "water_frame.png": {
+      "_type": "ImageResource",
+      "alias": "water_frame.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/water_frame.png",
+      "previewUrl": "https://lh3.googleusercontent.com/wa0sHEgqYNqo8JooMdJ_-GY80kK9fMPEcNwwKZ9nVmR7W9TUCixRU4mUdOGMi3D3-b9EhA=s220"
+    },
+    "earth_device_stats.png": {
+      "_type": "ImageResource",
+      "alias": "earth_device_stats.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/earth_device_stats.png",
+      "previewUrl": "https://lh3.googleusercontent.com/PyCtN4Fx6B6uu4p8GYS-izDTL7aalErFV8u1g83Dothw8pkHMDqbYBYViKdrSlgKCjGHeQ=s220"
+    },
+    "tap.svg": {
+      "_type": "ImageResource",
+      "alias": "tap.svg",
+      "url": "https://1273e888df7537d35277cbcd9dab6d58920b6742.googledrive.com/host/0B-r1EfWCeeXFTVhtV1NlNC02RjQ/tap.svg",
+      "previewUrl": "https://lh3.googleusercontent.com/LUHEa6HJfUSckm7GAvAUZ8YorzaosjKEYplBBKdzpcxZgLTqHJUik3uutu0ATHlqKoFKHQ=s220"
+    },
+    "energy.svg": {
+      "_type": "ImageResource",
+      "alias": "energy.svg",
+      "url": "https://1273e888df7537d35277cbcd9dab6d58920b6742.googledrive.com/host/0B-r1EfWCeeXFTVhtV1NlNC02RjQ/energy.svg",
+      "previewUrl": "https://lh3.googleusercontent.com/3CVxlkZVg3_RKfsH21yni9r7Llq4z5k3_VUk6a6rQc_Dhf104CHRT0fgcbpvhT-i5rlQ9w=s220"
+    },
+    "bark-vines.png": {
+      "_type": "ImageResource",
+      "alias": "bark-vines.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/bark-vines.png",
+      "previewUrl": "https://lh6.googleusercontent.com/Y-HoS4y1BAENK8UE8RxidC1RgzzcEK8T2kojiYS9kjIk9VIc5u4qOCmu-dmESMiXAU1_WA=s220"
+    },
+    "thorny-vines.png": {
+      "_type": "ImageResource",
+      "alias": "thorny-vines.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/thorny-vines.png",
+      "previewUrl": "https://lh4.googleusercontent.com/1rWimn6KgwPplgKrSdfN3VdXOzKktDTfUh_bLz7yP50RmQTnbhJyt1zgf8YTjft866c0Bg=s220"
+    },
+    "jungle-vines.png": {
+      "_type": "ImageResource",
+      "alias": "jungle-vines.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/jungle-vines.png",
+      "previewUrl": "https://lh4.googleusercontent.com/MLmJxkxLmAnNSyG5M5fAWPd5ixYgClM5LqcxDfoDI-KtlKO0yaNVKtNTgwUAPvbnwhrFEw=s220"
+    },
+    "solar-orb.png": {
+      "_type": "ImageResource",
+      "alias": "solar-orb.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/solar-orb.png",
+      "previewUrl": "https://lh6.googleusercontent.com/mQ9xldu5AOE4M5v6s-eY_ToFwjDXi_HVZcz6F-SjRFwuDx5eXLPPOV1Cgy1TmFEZz0_3aw=s220"
+    },
+    "fire-elemental.png": {
+      "_type": "ImageResource",
+      "alias": "fire-elemental.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/fire-elemental.png",
+      "previewUrl": "https://lh6.googleusercontent.com/LBu-9DyVYKLXR6f2sLPBVKUjPENQFdSkCpffInG6Bbt0cpDutChucYqlq0Ghz0OAHR_LIA=s220"
+    },
+    "garuda.png": {
+      "_type": "ImageResource",
+      "alias": "garuda.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/garuda.png",
+      "previewUrl": "https://lh5.googleusercontent.com/6jg71BxuoKRh9Q90p5rC6iJJlfFyL6yz9fTZ-PfUlN6fTp6RiAf5kBy4b85rRqdPxBaYBQ=s220"
+    },
+    "djinn.png": {
+      "_type": "ImageResource",
+      "alias": "djinn.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/djinn.png",
+      "previewUrl": "https://lh3.googleusercontent.com/ha8BZuSEZQn7zYEhcYam7b6dzt7gokUZYkbC8qKgbbghAfl-rerz5znDqh1De3mJNvREkw=s220"
+    },
+    "sylph.png": {
+      "_type": "ImageResource",
+      "alias": "sylph.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/sylph.png",
+      "previewUrl": "https://lh4.googleusercontent.com/rODrrPwXJ6QCTzZ6hUQPxv3KedofjA9VJt13Y54vVsjpnEAEAf8UCGS20Eg-FQHh6Y6OsQ=s220"
+    },
+    "flame-whip.png": {
+      "_type": "ImageResource",
+      "alias": "flame-whip.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/flame-whip.png",
+      "previewUrl": "https://lh3.googleusercontent.com/W6PLVTa0tV8Y4CIZ3EZrKSvx2_sOSF3kDifDHtB6CKw4moPX7pf1izmw73t0WSXy0e9lPw=s220"
+    },
+    "apsara.png": {
+      "_type": "ImageResource",
+      "alias": "apsara.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/apsara.png",
+      "previewUrl": "https://lh3.googleusercontent.com/P8d7gu-BJCuwfXbf_5X3dWUL2OJXEoHmCsQRgkdBQv1TgAaSGqT0OCrcEbjya9U-soAsMg=s220"
+    },
+    "hellhound.png": {
+      "_type": "ImageResource",
+      "alias": "hellhound.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/hellhound.png",
+      "previewUrl": "https://lh4.googleusercontent.com/UMhWbvOAKfVpCzEls4zVGZ569GpsyxajUz9ujiNS3Om3rImcLR4jI1WJVb1A6L9Jrg2_9A=s220"
+    },
+    "nature-orb.png": {
+      "_type": "ImageResource",
+      "alias": "nature-orb.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/nature-orb.png",
+      "previewUrl": "https://lh5.googleusercontent.com/703h9hdeMFecmL6RRO4faPjxf8bJtGCeUStfdbN1zBvkoT1WBTwuiwJ51jI3IblgsThdsg=s220"
+    },
+    "water-blob.png": {
+      "_type": "ImageResource",
+      "alias": "water-blob.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/water-blob.png",
+      "previewUrl": "https://lh4.googleusercontent.com/yO3U5ULhTm6l8Oo97_pLmqNpNWAMZI_RMT1h_I61e8aXFtvAVGbyf_qQ4Acldh3kiE-GJg=s220"
+    },
+    "naga.png": {
+      "_type": "ImageResource",
+      "alias": "naga.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/naga.png",
+      "previewUrl": "https://lh5.googleusercontent.com/_Wdww0pooCsFgBa7YwahA-04xXfkc67rBJ__efxcvLBtByd4mpgJPLcBHBKTJIKnEoY5gw=s220"
+    },
+    "curative-salve.png": {
+      "_type": "ImageResource",
+      "alias": "curative-salve.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/curative-salve.png",
+      "previewUrl": "https://lh4.googleusercontent.com/F8YhnbA2wTsN5JEGHVqXaeUzLLGoN13onchqGCMhMsiPHcZ75T1cc1EdwPGYrCMJkPFe9g=s220"
+    },
+    "poltergeist.png": {
+      "_type": "ImageResource",
+      "alias": "poltergeist.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/poltergeist.png",
+      "previewUrl": "https://lh6.googleusercontent.com/A-IOtbpkwgVoStImbwV5jnizJ5JBViWlPLiRTyK-PVDISUObtBj39lOFi1DjDOl2u54WXA=s220"
+    },
+    "hypnocube.png": {
+      "_type": "ImageResource",
+      "alias": "hypnocube.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/hypnocube.png",
+      "previewUrl": "https://lh6.googleusercontent.com/i4nItUIHNcF6I1J2y5iAkh3SQlaLwKyGijG7CZyGiGevupJTvUhwq3acBVXYkHeR7xzBxA=s220"
+    },
+    "fire-ward.png": {
+      "_type": "ImageResource",
+      "alias": "fire-ward.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/fire-ward.png",
+      "previewUrl": "https://lh3.googleusercontent.com/dC0Fw-x1Xg-POA982LmFIvzkxIqkx1H3_ehDnCZ3XQH3QJu49pj7FaZ1ZwP4NEJPgwLw0w=s220"
+    },
+    "kitsune.png": {
+      "_type": "ImageResource",
+      "alias": "kitsune.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/kitsune.png",
+      "previewUrl": "https://lh4.googleusercontent.com/j5Xq8EqZcbHhXfulStAbRJe4jrP1QF8kU4SSGEKcNUeYfC5xY7x3SHe-xVt4LsZTncelPQ=s220"
+    },
+    "water-elemental.png": {
+      "_type": "ImageResource",
+      "alias": "water-elemental.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/water-elemental.png",
+      "previewUrl": "https://lh6.googleusercontent.com/3gxCZIwk1W0isPJwfSJm3j9PLw6zh8m5KyYA7GuwBDfz8dRG9hkNHF9ZYzZGjUmOnCH2vg=s220"
+    },
+    "revival-pendant.png": {
+      "_type": "ImageResource",
+      "alias": "revival-pendant.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/revival-pendant.png",
+      "previewUrl": "https://lh6.googleusercontent.com/to8JTJIf5iZAxyWbz1z-eBk_eqLxy9J4L66OtyzunnsZ-ZL3weajwIsvmjf50kf4KUxF2A=s220"
+    },
+    "hologram.png": {
+      "_type": "ImageResource",
+      "alias": "hologram.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/hologram.png",
+      "previewUrl": "https://lh3.googleusercontent.com/DvsQm_gqZMRtsu3UW9NtnJe2EYYx79QnKg3VZxFzLE-WFgt_-H3pWZhv9OZkdoQ6iKtzJw=s220"
+    },
+    "burning-gear.png": {
+      "_type": "ImageResource",
+      "alias": "burning-gear.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/burning-gear.png",
+      "previewUrl": "https://lh6.googleusercontent.com/tZJtm_C4HCKg1ilTSsjM-1Vdv1Rui0qdndYTJsL0UhWzM8fosSt_vXDwCFvAhSxFTOWDig=s220"
+    },
+    "ice-trident.png": {
+      "_type": "ImageResource",
+      "alias": "ice-trident.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/ice-trident.png",
+      "previewUrl": "https://lh5.googleusercontent.com/bE3_1lRP6hziR4XzBlLs8B93dCDGR7SZ4MH7otpfhM19uWUFkWTXAFOq-sm0UrSCSo4aQw=s220"
+    },
+    "earth-elemental.png": {
+      "_type": "ImageResource",
+      "alias": "earth-elemental.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/earth-elemental.png",
+      "previewUrl": "https://lh3.googleusercontent.com/ZeyUtuC9LvK8BzUAn_vDQk4_iegnplVFkA5GpCf5wICQfmpXNfuzKOjMkQDuRTJn2bdKcw=s220"
+    },
+    "refreshing-jar.png": {
+      "_type": "ImageResource",
+      "alias": "refreshing-jar.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/refreshing-jar.png",
+      "previewUrl": "https://lh3.googleusercontent.com/Skcv21Pe_o22H7QC9CBBe8DOoh3-16tBNkXsB3Av8mQmXuhDEpIeLgexBOO1Q7YOyzDOxw=s220"
+    },
+    "aqua-orb.png": {
+      "_type": "ImageResource",
+      "alias": "aqua-orb.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/aqua-orb.png",
+      "previewUrl": "https://lh5.googleusercontent.com/NcHX8G3NOr69aIy9OSE7-qIxFJd2vsEd2Hqv4XPF-cLOZzpg2LcCF_TbUMcu3GB_HGBNYw=s220"
+    },
+    "salamander.png": {
+      "_type": "ImageResource",
+      "alias": "salamander.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/salamander.png",
+      "previewUrl": "https://lh4.googleusercontent.com/lC-QhnE5yDSFmYErJmx4k7QS9p1y3HSp2FXrRBUv6bqGTq3WpLBD0rtGWQt2Nhg1Ja3B-g=s220"
+    },
+    "bot.png": {
+      "_type": "ImageResource",
+      "alias": "bot.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/bot.png",
+      "previewUrl": "https://lh6.googleusercontent.com/k8233VjTuGVv1upja-GxqXfkqJMa-V5YFZUBrq1e_jlD7GoY5fOkqEjzHDTTr8NOcqFhKg=s220"
+    },
+    "looking-glass.png": {
+      "_type": "ImageResource",
+      "alias": "looking-glass.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/looking-glass.png",
+      "previewUrl": "https://lh6.googleusercontent.com/ah6VBbV6oVwvR_lHuR-KrHhXAKO2BogNNBDbcCn0PyX0zYrJ_PKDg_a6P_PinYly6f-A2g=s220"
+    },
+    "energy-orb.png": {
+      "_type": "ImageResource",
+      "alias": "energy-orb.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/energy-orb.png",
+      "previewUrl": "https://lh3.googleusercontent.com/ynx2i71s2UpWA9JqslCk4oo8pqc32qdjcQjmHcq2Id2xFOAuQ2_gqDrckOPVFlGAWZ84YQ=s220"
+    },
+    "fire-orb.png": {
+      "_type": "ImageResource",
+      "alias": "fire-orb.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/fire-orb.png",
+      "previewUrl": "https://lh5.googleusercontent.com/sXIUJY_C_93Z4Hbyka8bYL8eg7RzGKsetfqNgjtt1MMugp49Tztz5Q4107jfGTsjw1F_xw=s220"
+    },
+    "morph-proxy.png": {
+      "_type": "ImageResource",
+      "alias": "morph-proxy.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/morph-proxy.png",
+      "previewUrl": "https://lh4.googleusercontent.com/3RNESayPJdD89c_I4csGGk4SRMOaXwBYInScJ8bNVPbUQY2xjUgrPUmyQEBVsy_Ygu9C5A=s220"
+    },
+    "blast-cannon.png": {
+      "_type": "ImageResource",
+      "alias": "blast-cannon.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/blast-cannon.png",
+      "previewUrl": "https://lh5.googleusercontent.com/vXSSjBKg9xLNocab4b-gK_YQ6ud9bQsPKwksPDR_3oIzHacrPDUnVktGVCVEYg-vOPvpqw=s220"
+    },
+    "ice-golem.png": {
+      "_type": "ImageResource",
+      "alias": "ice-golem.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/ice-golem.png",
+      "previewUrl": "https://lh6.googleusercontent.com/e8Yx7fKkdp9Fkf7ubDlzzdfGQSt24YsO3plHy6LDuF7AxzaTzTJCZvaV5A8F5wqfYrjKAg=s220"
+    },
+    "healing-rain.png": {
+      "_type": "ImageResource",
+      "alias": "healing-rain.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/healing-rain.png",
+      "previewUrl": "https://lh5.googleusercontent.com/zKVzx6_TO5E3vab3UYBvDi_cOyJTCI8K1SJk7jXovhn-m4MAs1RThyE9810OU-cDJnFDeQ=s220"
+    },
+    "ice-shield.png": {
+      "_type": "ImageResource",
+      "alias": "ice-shield.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/ice-shield.png",
+      "previewUrl": "https://lh5.googleusercontent.com/eFMX3Nm4vY4L3oJV7VVQYnbhc65Ys0Vh_C1W966-R-omePC7_qAeQlLCMNF-csgBJe_QAQ=s220"
+    },
+    "mist-orb.png": {
+      "_type": "ImageResource",
+      "alias": "mist-orb.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/mist-orb.png",
+      "previewUrl": "https://lh5.googleusercontent.com/wDpJL0q2NPf1Utk_L21K9ABYmlgXU4Q5n99tMXu9iEsYtnq15x-XH0BKzaBZL9bflPnv7Q=s220"
+    },
+    "minion.png": {
+      "_type": "ImageResource",
+      "alias": "minion.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/minion.png",
+      "previewUrl": "https://lh5.googleusercontent.com/sFokQwI71WOQ-1aF8XUK4ZW1jVqd30fL1v-XE79gQxa3HYolwYcVM04R26I9HRPP0wFizQ=s220"
+    },
+    "device.png": {
+      "_type": "ImageResource",
+      "alias": "device.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/device.png",
+      "previewUrl": "https://lh6.googleusercontent.com/9S74_T5Nv9dFJS13mhb1WhSDnbVuWWdXyKDLGoK1EvzdPfDubPYBHX8myxFeUyILkDXEgQ=s220"
+    },
+    "sonic-boom.png": {
+      "_type": "ImageResource",
+      "alias": "sonic-boom.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/sonic-boom.png",
+      "previewUrl": "https://lh4.googleusercontent.com/_JTHp9-roY4SQie2gzbXqcpYXt47I09SV9-EE9efDjoo5s4vvyu1Qsy1CjHFEZSY-wgp6A=s220"
+    },
+    "symbiosis.png": {
+      "_type": "ImageResource",
+      "alias": "symbiosis.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/symbiosis.png",
+      "previewUrl": "https://lh5.googleusercontent.com/TaCb1PcLLfPJwcY0IvLsEZ5J-qw9ZeS2FSQXhhNo0zuX34Nh8CjTz_CD_ljbYx1Hem7uXQ=s220"
+    },
+    "flight.png": {
+      "_type": "ImageResource",
+      "alias": "flight.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/flight.png",
+      "previewUrl": "https://lh3.googleusercontent.com/YiRb-UAPa58BB_nqeU3rnZemfM0qQLBxCJCk1ZKxkjl0NzD-_TUB01fIE8dRCdx5SIFJkw=s220"
+    },
+    "construct.png": {
+      "_type": "ImageResource",
+      "alias": "construct.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/construct.png",
+      "previewUrl": "https://lh6.googleusercontent.com/bBwv4-43yXzSG-NjbjnNr3c5tyYh-X6lR1yfmwNe4j5YbGGBXWlNXyNGFknxb92twDEYsA=s220"
+    },
+    "call-of-the-wild.png": {
+      "_type": "ImageResource",
+      "alias": "call-of-the-wild.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/call-of-the-wild.png",
+      "previewUrl": "https://lh3.googleusercontent.com/N9uwK16wM0jpwiOqJ_GsNnKDewXf8gMnwo-KPlt7d1OaKRXnsGepG6H2h6SRq06pcNUBGg=s220"
+    },
+    "mind-link.png": {
+      "_type": "ImageResource",
+      "alias": "mind-link.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/mind-link.png",
+      "previewUrl": "https://lh3.googleusercontent.com/fWTGNRUaag9kJcLQP90MRHuzOQrGjLdSvLVzQt2varNmAT033y2Z_sNl4L16Z-wcui2q1w=s220"
+    },
+    "immolation-aura.png": {
+      "_type": "ImageResource",
+      "alias": "immolation-aura.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/immolation-aura.png",
+      "previewUrl": "https://lh3.googleusercontent.com/emNGFcV-nMgN7BsL086PJRCYCMGIgfeFdQuwl-1pNCB23eqoxNMAM5NxivlKb5tZ1tx0kg=s220"
+    },
+    "evolve.png": {
+      "_type": "ImageResource",
+      "alias": "evolve.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/evolve.png",
+      "previewUrl": "https://lh5.googleusercontent.com/bNDVBGSWELiOro1AJ2RrgnrV4FJA8C78FzJ8bYVZhK_RaOSX1ck89gI-HnR0n2PY90Rl-Q=s220"
+    },
+    "gnome.png": {
+      "_type": "ImageResource",
+      "alias": "gnome.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/gnome.png",
+      "previewUrl": "https://lh4.googleusercontent.com/sJ8QcpNYlDyHsKLII_wJtzuC3F_j1AaKTMtel_d-JvkeUeL-jWiyZivVoSZf_YDe0BG7TA=s220"
+    },
+    "catalyst.png": {
+      "_type": "ImageResource",
+      "alias": "catalyst.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/catalyst.png",
+      "previewUrl": "https://lh4.googleusercontent.com/8XwMabx-NkqM-OxUSZK9H_9-oiTjkWYmU7xUWVrl-yhM9L8VUkH1Qhm5BnvJbR2NhZ2gJg=s220"
+    },
+    "spark.png": {
+      "_type": "ImageResource",
+      "alias": "spark.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/spark.png",
+      "previewUrl": "https://lh3.googleusercontent.com/4HOJPmvYPh0r0BxPfrFuSgDsTjR06DLXB44FfQJkPuPQYU2w-Xq5b5KP1al4FG3MZcF3TA=s220"
+    },
+    "player.svg": {
+      "_type": "ImageResource",
+      "alias": "player.svg",
+      "url": "https://1273e888df7537d35277cbcd9dab6d58920b6742.googledrive.com/host/0B-r1EfWCeeXFTVhtV1NlNC02RjQ/player.svg",
+      "previewUrl": "https://lh3.googleusercontent.com/n6EaDQMxknbtfHApQhVkCoaHdHCZlP6pFs7wFP5ebKDgDY5wOOVvhZEQlVGV13wcvN8R1w=s220"
+    },
+    "shock.png": {
+      "_type": "ImageResource",
+      "alias": "shock.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/shock.png",
+      "previewUrl": "https://lh5.googleusercontent.com/hp_038pbp4weru9s_y0KQr7iw6YlVfAXcRBg0sjc4tEd81wIATYaKQxmzuOGcM3LgCibTw=s220"
+    },
+    "chilling-aura.png": {
+      "_type": "ImageResource",
+      "alias": "chilling-aura.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/chilling-aura.png",
+      "previewUrl": "https://lh5.googleusercontent.com/0v4xcoXqrYRTKB9_cE9XtMYNQrHrSzjUt8-HkXo6DDkTqQXDfInTPzSK-6ZudAKurl0ULg=s220"
+    },
+    "water-clone.png": {
+      "_type": "ImageResource",
+      "alias": "water-clone.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/water-clone.png",
+      "previewUrl": "https://lh4.googleusercontent.com/1lhZKNLMpAGfyHdgrbKERDGKfrPE5Q_u85p-B_FDvpETu4aOd9f8rcUCV-Qix1l0aSsObA=s220"
+    },
+    "gathering-storm.png": {
+      "_type": "ImageResource",
+      "alias": "gathering-storm.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/gathering-storm.png",
+      "previewUrl": "https://lh5.googleusercontent.com/XjBTaNygu-ji6Y77tRYOoxqcRJ5ioAAEUU1sZyu7FkpVR3GU-zhhqGCA1SiNNofQKbBdig=s220"
+    },
+    "gale-orb.png": {
+      "_type": "ImageResource",
+      "alias": "gale-orb.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/gale-orb.png",
+      "previewUrl": "https://lh3.googleusercontent.com/4ZPabwc5zzJhBbVRZDwaxoRAmwNIkt4OOgg41rTLDiNFR05EjrG-eKP0TRlZ3zxr_n9AtA=s220"
+    },
+    "third-eye.png": {
+      "_type": "ImageResource",
+      "alias": "third-eye.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/third-eye.png",
+      "previewUrl": "https://lh5.googleusercontent.com/x-sX59k3pnY7Jsw7act2lAwf2LXHPz4YT9FU5AA3JmidjiwrCAG11ccEq_oB7klmdoVi4g=s220"
+    },
+    "hive-mind.png": {
+      "_type": "ImageResource",
+      "alias": "hive-mind.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/hive-mind.png",
+      "previewUrl": "https://lh6.googleusercontent.com/WVkbh2QtlOqVPPxMeAEAGcVbPvSb01KVy68Pc3Glj6zFpl_zWCjXqDqydNWThh7x7ek4yw=s220"
+    },
+    "revive.png": {
+      "_type": "ImageResource",
+      "alias": "revive.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/revive.png",
+      "previewUrl": "https://lh6.googleusercontent.com/nQlCzsOP9EZjda5kMn2QYMOfKoyH4trgGM8CAIgvU5sCKxeU3GDYoeolNOBigjkMzWg4tA=s220"
+    },
+    "longevity.png": {
+      "_type": "ImageResource",
+      "alias": "longevity.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/longevity.png",
+      "previewUrl": "https://lh3.googleusercontent.com/AwQWx1gRIC4Azhyn-a_gH9xEnOQm0CItd1uwvE7Ri5QA86zD7qF-cH1XYbjxdIaJug2CUw=s220"
+    },
+    "mind-splinter.png": {
+      "_type": "ImageResource",
+      "alias": "mind-splinter.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/mind-splinter.png",
+      "previewUrl": "https://lh6.googleusercontent.com/3LyZc4EuwkOskUo5PuzW5drKQyuscyKo9jqe9s4p6KwDh44mBjy-YdTSUAFy0WZOkieEyA=s220"
+    },
+    "momentum.png": {
+      "_type": "ImageResource",
+      "alias": "momentum.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/momentum.png",
+      "previewUrl": "https://lh5.googleusercontent.com/z7nVugVImvTy5h64x8rflGMEmHb9gkAn97_8sHkhWC8gRFqFb6_zwxHEMP1e23rDe-jM6g=s220"
+    },
+    "circle-of-life.png": {
+      "_type": "ImageResource",
+      "alias": "circle-of-life.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/circle-of-life.png",
+      "previewUrl": "https://lh4.googleusercontent.com/a6oTxIK7qSlfmNtKRYIHZDy0-a2q1ZgFWUGSEwGfvMfhHi3soNp1RoHqfBBZaaMeSEI-KA=s220"
+    },
+    "fire-ball.png": {
+      "_type": "ImageResource",
+      "alias": "fire-ball.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/fire-ball.png",
+      "previewUrl": "https://lh6.googleusercontent.com/xHPDE2rppP2MkSTjAohSjf2JkR4MbSoPWxqm_llYVAhJ53kaWc3nLmpuIk3RbH8mFbOA5w=s220"
+    },
+    "deja-vu.png": {
+      "_type": "ImageResource",
+      "alias": "deja-vu.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/deja-vu.png",
+      "previewUrl": "https://lh5.googleusercontent.com/XZoasZCv26nBH0GR-tmwxucZqwt9GBPeQhqSoeb_HV-e5dbp3QEyuuPzd8AF6w-9mTlkMg=s220"
+    },
+    "spell-node.png": {
+      "_type": "ImageResource",
+      "alias": "spell-node.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/spell-node.png",
+      "previewUrl": "https://lh5.googleusercontent.com/mV9a2OhsVlDaFIaYK2Vkqo5nbv1wy7ng7_xPQ660B1sFRjGM-SFTKSFxPq0G2EE-yLpugA=s220"
+    },
+    "meditate.png": {
+      "_type": "ImageResource",
+      "alias": "meditate.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/meditate.png",
+      "previewUrl": "https://lh6.googleusercontent.com/344QMt6iTZV8Hr0d07LIXPU9Zt_hDl0o3EfhYK-JsI7YBt3FTfxz79Gl8bhysd-16YdN8g=s220"
+    },
+    "bird_s-eye-view.png": {
+      "_type": "ImageResource",
+      "alias": "bird_s-eye-view.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/bird_s-eye-view.png",
+      "previewUrl": "https://lh6.googleusercontent.com/KeGbUuN1nv-1T76SUDEOs5O38kENjmUs7Gb-9FPZevsgx7xRgl9lBFz3_jdUXCUIq_IPJg=s220"
+    },
+    "fury.png": {
+      "_type": "ImageResource",
+      "alias": "fury.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/fury.png",
+      "previewUrl": "https://lh3.googleusercontent.com/v7Ik8d5jcD-E6V1LF5R8dqplSYunDS7ev80jxtgAxpjOveVR8t3p57sLAjMAb5jerGlKnA=s220"
+    },
+    "reflection.png": {
+      "_type": "ImageResource",
+      "alias": "reflection.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/reflection.png",
+      "previewUrl": "https://lh5.googleusercontent.com/gTZocwxiJT38ihhIf7mE31c5zeg-9GPwbBibUay12QdJXtbQEkejDOKOTrbTKv_4LPA0mQ=s220"
+    },
+    "adaptation.png": {
+      "_type": "ImageResource",
+      "alias": "adaptation.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/adaptation.png",
+      "previewUrl": "https://lh5.googleusercontent.com/rnb-xyuR9tmUvxrk-BcnfWtjJVYz278KhrSHha-XcHyuLvEA19ie2E5ilLdXy5E53uUBqA=s220"
+    },
+    "regeneration.png": {
+      "_type": "ImageResource",
+      "alias": "regeneration.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/regeneration.png",
+      "previewUrl": "https://lh5.googleusercontent.com/9n_eaNFYnnrQADmxp8-66Gbe11zmwq2KgmyJ5-3RsyjUT3lMGg0IXl9lR434uRwuOhwOQg=s220"
+    },
+    "fear.png": {
+      "_type": "ImageResource",
+      "alias": "fear.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/fear.png",
+      "previewUrl": "https://lh5.googleusercontent.com/aFk6horSKWAIoRD3Bep0d84TRh--EDpdERcosLjAtyukNCMNskIjWR-bSoGmfYa2aDzskA=s220"
+    },
+    "clarity.png": {
+      "_type": "ImageResource",
+      "alias": "clarity.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/clarity.png",
+      "previewUrl": "https://lh6.googleusercontent.com/bgxCbhBKfbRiYmoCdk4IdbBEQ2Jlr7rUQr7IbKC8mbB8XHO_203wNPoK5SfeI_b-gPbzNg=s220"
+    },
+    "explode.png": {
+      "_type": "ImageResource",
+      "alias": "explode.png",
+      "url": "https://3e970b1b90be9ee78280e18b41261a510aaa5aab.googledrive.com/host/0B-r1EfWCeeXFM2xTTURieUNuSlE/explode.png",
+      "previewUrl": "https://lh6.googleusercontent.com/raba5E8kFx5ZNvL1Xjhc6V7B52YsL9tsoXXV90XH2Xt9-zH9tNINnRslexKz0c5jzyUu4Q=s220"
+    },
+    "activate.svg": {
+      "_type": "ImageResource",
+      "alias": "activate.svg",
+      "url": "https://1273e888df7537d35277cbcd9dab6d58920b6742.googledrive.com/host/0B-r1EfWCeeXFTVhtV1NlNC02RjQ/activate.svg",
+      "previewUrl": "https://lh6.googleusercontent.com/N6V6GONDXSQqpkEIuvdXJ6_31h5TFSRmvQhiAz6MLbjr9ndA4hT5_4_lUX35RYBBOv35og=s220"
+    },
+    "cost_icon.png": {
+      "_type": "ImageResource",
+      "alias": "cost_icon.png",
+      "url": "https://06a4ee27a16bd5c2c8e7bf0e7bf5bdfaa470a9e1.googledrive.com/host/0B-r1EfWCeeXFb3QzR2JaTkl6MHc/cost_icon.png",
+      "previewUrl": "https://lh3.googleusercontent.com/M6Jp-GnCvV8gUCZS882OjY5mJkZh8P7bX9OQ2IB5D3YDHf3BA7Y_Xb_mHa5BUERzz4THew=s220"
+    }
+  },
+  "name": "Gazer Cards",
+  "partials": {
+    "T": "<img class=\"icon\" src=\"{{_imgUrl 'activate.svg'}}\">",
+    "E": "<img class=\"icon circled\" src=\"{{_imgUrl 'energy.svg'}}\">"
+  },
+  "templateString": "<style>\n  @import url(https://fonts.googleapis.com/css?family=Audiowide);\n  @import url(https://fonts.googleapis.com/css?family=Montserrat);\n  \n  .root {\n    display: flex;\n    position: relative;\n    width: {{_pc.size.width}};\n    height: {{_pc.size.height}};\n    box-sizing: border-box;\n    background: url(\"{{frame _.element}}\"),\n                url(\"{{bg _.type _.element}}\");\n    font-family: 'Montserrat', sans-serif;\n  }\n  \n  .name {\n    font-family: 'Audiowide', cursive;\n    font-size: 3.5rem;\n    text-align: left;\n    color: white;\n    text-shadow: 2px 2px black;\n    position: absolute;\n    left: 75px;\n    top: 75px;\n    width: 619px;\n  }\n  \n  .name .first-letter {\n    font-size: 4.5rem;\n  }\n  \n  .cost {\n    text-align: center;\n    font-size: 6rem;\n    position: absolute;\n    right: 25.5px;\n    top: 47.5px;\n    width: 150px;\n    height: 150px;\n    line-height: 150px;\n    background: url(\"{{_imgUrl \"cost_icon.png\"}}\") center;\n  }\n  \n  .art {\n    position: absolute;\n    left: 77px;\n    top: 172px;\n    width: 675px;\n    height: 392px;\n    background-image: url(\"{{art _.name}}\");\n    background-position: center;\n    background-size: auto 392px;\n    /** background-size: contain; */ /* TODO(gs): html2canvas doesn't support this */\n    background-repeat: no-repeat;\n    border-radius: 17px;\n  }\n  \n  .stats {\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n  }\n  \n  .life, .attack, .armor {\n    font-size: 4rem;\n    color: white;\n    width: 64px;\n    height: 63px;\n    text-align: center;\n    position: absolute;\n    top: 540px;\n    line-height: 63px;\n  }\n  \n  .life {\n    left: 196px;\n  }\n  \n  .attack {\n    left: 354px;\n  }\n  \n  .armor {\n    left: 522px;\n  }\n  \n  .type {\n    width: 320px;\n    height: 64px;\n    position: absolute;\n    right: 165px;\n    top: 985px;\n    line-height: 64px;\n    text-transform: uppercase;\n    text-align: center;\n    font-size: 2rem;\n    color: white;\n  }\n  \n  .description {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 64px;\n    position: absolute;\n    left: 77px;\n    top: 580px;\n    width: 544px;\n    height: 305px;\n  }\n  \n  .description-container {\n    display: flex;\n    align-items: flex-start;\n    flex: 1;\n    font-size: 1.75rem; /** TODO(gs): Use flowtype */\n    font-size: 2rem;\n    line-height: 46px;\n  }\n  \n  .text {\n    flex: 1;\n    text-align: justify;\n  }\n  \n  .template {\n    display: none;\n    width: {{_pc.size.width}};\n    height: {{_pc.size.height}};\n    position: absolute;\n    top: 0;\n    left: 0;\n    opacity: .1;\n  }\n  \n  /* Inline styles */\n  .icon {\n    width: 46px;\n    display: inline-block;\n    vertical-align: bottom;\n  }\n  \n  .tap .icon {\n    height: 46px;\n  }\n  \n  .tap {\n    margin-right: .75em;\n  }\n  \n  .icon.circled {\n    border: 3px solid black;\n    border-radius: 23px;\n  }\n  \n  .stats {\n    background-image: {{#_ifeq _.type \"device\"}}\n                        url(\"{{_imgUrl \"device.png\"}}\"),\n                        url(\"{{stats _.element \"device\"}}\");\n                      {{/_ifeq}}\n                      {{#_ifeq _.type \"minion\"}}\n                        url(\"{{_imgUrl \"minion.png\"}}\"),\n                        url(\"{{stats _.element \"minion\"}}\");\n                      {{/_ifeq}}\n  }\n  \n  .sigil {\n    font-size: 3em;\n    position: absolute;\n    left: 65px;\n    bottom: 67px;\n    text-align: center;\n    width: 83px;\n    height: 83px;\n    line-height: 83px;\n  }\n</style>\n\n<div class=\"root\">\n  <div class=\"name\">{{capitalize _.name}}</div>\n  <div class=\"art\"></div>\n  <div class=\"cost\">{{_.cost}}</div>\n  <div class=\"stats\"></div>\n  <div class=\"type\">{{elem _.element}} &bull; {{_.type}}</div>\n  <div class=\"description\">\n    <div class=\"description-container\">\n      {{#if _.tap}}\n        <p><img class=\"icon tap\" src=\"{{_imgUrl 'activate.svg'}}\"></p>\n      {{/if}}\n      <div class=\"text\">\n        {{{desc _.description}}}\n      </div>\n    </div>\n  </div>\n  <div class=\"sigil\">\n    {{#_ifeq _.element \"ether\"}}\n      <img src=\"{{_imgUrl 'player.svg'}}\">\n    {{else}}\n      {{_.count}}\n    {{/_ifeq}}\n  </div>\n  \n  {{#_ifeq _.type \"device\"}}\n    <div class=\"life\">{{_.life}}</div>\n  {{/_ifeq}}\n  {{#_ifeq _.type \"minion\"}}\n    <div class=\"life\">{{_.life}}</div>\n    <div class=\"attack\">{{_.attack}}</div>\n    <div class=\"armor\">{{_.armor}}</div>\n  {{/_ifeq}}\n</div>\n"
+}
