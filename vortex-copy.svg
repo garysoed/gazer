@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" height="120" id="svg4759" version="1.1" viewBox="0 0 120 120" width="120">
+  <defs id="defs4761" />
+  <metadata id="metadata4764">
+    <rdf:RDF>
+      <ns2:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </ns2:Work>
+    </rdf:RDF>
+  </metadata>
+  <g id="vowels">
+    <g id="layer4" style="display:none">
+      <path d="m 10,90 100,0 0,15 -100,0 z" id="i" style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <g id="layer5">
+      <path d="m 52.5,85 0,5 -42.5,0 0,15 42.5,0 0,5 15,0 0,-5 42.5,0 0,-15 -42.5,0 0,-5 -15,0 z" id="a" style="display:inline;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+  </g>
+  <g id="consonants" transform="translate(0,-932.36216)">
+    <g id="layer2" style="display:none">
+      <path d="m 37.5,942.36216 0,60.00004 -27.5,0 0,15 27.5,0 15,0 15,0 15,0 27.5,0 0,-15 -27.5,0 0,-60.00004 -15,0 0,60.00004 -15,0 0,-60.00004 -15,0 z" id="g" style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <g id="layer6">
+      <path d="m 52.5,10 0,60 -42.5,0 0,15 42.5,0 15,0 42.5,0 0,-15 -42.5,0 0,-60 -15,0 z" id="k" style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" transform="translate(0,932.36216)" />
+    </g>
+  </g>
+</svg>

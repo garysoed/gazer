@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="400"
+   height="400"
+   viewBox="0 0 400 400"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="colors.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="Shade_Accent_Yellow"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#ffff00;stop-opacity:0.25098041;"
+         offset="0"
+         id="stop4493" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4485">
+      <stop
+         style="stop-color:#ff6600;stop-opacity:1;"
+         offset="0"
+         id="stop4487" />
+    </linearGradient>
+    <linearGradient
+       id="Shade_Normal_Actionable"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4481" />
+    </linearGradient>
+    <linearGradient
+       id="Orange"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#ff6600;stop-opacity:1;"
+         offset="0"
+         id="stop4475" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#Orange"
+       id="linearGradient4477"
+       x1="61.121953"
+       y1="1027.3614"
+       x2="88.881953"
+       y2="1027.3614"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#Shade_Normal_Actionable"
+       id="linearGradient4483"
+       x1="6.0660044"
+       y1="414.47159"
+       x2="16.364964"
+       y2="414.47159"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4485"
+       id="linearGradient4489"
+       x1="61.121952"
+       y1="1027.3615"
+       x2="88.88195"
+       y2="1027.3615"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#Shade_Accent_Yellow"
+       id="linearGradient4495"
+       x1="61.121952"
+       y1="1027.3615"
+       x2="88.88195"
+       y2="1027.3615"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#808080"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.8265625"
+     inkscape:cx="115.66874"
+     inkscape:cy="89.118458"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     borderlayer="false"
+     inkscape:showpageshadow="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="851"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-652.36216)">
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4239"
+       width="50"
+       height="50"
+       x="0"
+       y="952.36218" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3336"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(-31.410144,599.44298)"><flowRegion
+         id="flowRegion3338"><rect
+           id="rect3340"
+           width="1044.5851"
+           height="1005.1668"
+           x="-687.63043"
+           y="-46.970558" /></flowRegion><flowPara
+         id="flowPara3344">normal</flowPara><flowPara
+         id="flowPara3348">normal - secondary</flowPara><flowPara
+         id="flowPara3350">inverted</flowPara><flowPara
+         id="flowPara3352">inverted - secondary</flowPara><flowPara
+         id="flowPara3354" /><flowPara
+         id="flowPara3356">text</flowPara><flowPara
+         id="flowPara3364">actionable - inactive</flowPara><flowPara
+         id="flowPara3368">actionable - focus / hover</flowPara><flowPara
+         id="flowPara3370">actionable - active</flowPara></flowRoot>    <rect
+       y="951.26172"
+       x="-51.548496"
+       height="50"
+       width="50"
+       id="rect4194"
+       style="opacity:1;fill:#ffcdd2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       y="898.83691"
+       x="-51.324455"
+       height="50"
+       width="50"
+       id="rect4194-0"
+       style="opacity:1;fill:#ef9a9a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4221"
+       width="50"
+       height="50"
+       x="-121.23087"
+       y="893.96735" />
+    <rect
+       y="893.96747"
+       x="-121.618"
+       height="50"
+       width="50"
+       id="rect4219"
+       style="opacity:1;fill:#ffff00;fill-opacity:0.25098039;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       y="1088.1364"
+       x="162.05304"
+       height="100"
+       width="50"
+       id="rect4223"
+       style="opacity:1;fill:#ff6701;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#ff9600;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4225"
+       width="50"
+       height="50"
+       x="-173.10553"
+       y="945.06775" />
+    <rect
+       style="opacity:1;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4227"
+       width="50"
+       height="100"
+       x="56.390076"
+       y="1052.3622" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4229"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(2.6954178,0,0,2.6954178,-5.2304164,-139.81194)"><flowRegion
+         id="flowRegion4231"><rect
+           id="rect4233"
+           width="174.64499"
+           height="141.7964"
+           x="6.0222411"
+           y="404.92728"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:Montserrat;-inkscape-font-specification:Montserrat" /></flowRegion><flowPara
+         id="flowPara4235"
+         style="font-size:14.84000015px">V</flowPara></flowRoot>    <rect
+       y="952.36218"
+       x="50"
+       height="50"
+       width="50"
+       id="rect4241"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <flowRoot
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.43126678px;line-height:125%;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient4477);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot4243"
+       xml:space="preserve"
+       transform="translate(2.4472656e-6,-49.999306)"><flowRegion
+         id="flowRegion4245"
+         style="fill-opacity:1;fill:url(#linearGradient4477)"><rect
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.43126678px;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:url(#linearGradient4477);fill-opacity:1"
+           y="1001.6363"
+           x="61.002041"
+           height="382.20053"
+           width="470.74121"
+           id="rect4247" /></flowRegion><flowPara
+         style="font-size:40px;fill:url(#linearGradient4477);fill-opacity:1"
+         id="flowPara4249">V</flowPara></flowRoot>    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4251"
+       width="50"
+       height="50"
+       x="100"
+       y="952.36218" />
+    <flowRoot
+       transform="translate(49.998053,-49.999306)"
+       xml:space="preserve"
+       id="flowRoot4253"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.43126678px;line-height:125%;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:0px;word-spacing:0px;fill:url(#Orange);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"><flowRegion
+         id="flowRegion4255"
+         style="fill-opacity:1.0;fill:url(#linearGradient4489)"><rect
+           id="rect4257"
+           width="470.74121"
+           height="382.20053"
+           x="61.002041"
+           y="1001.6363"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.43126678px;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:url(#Orange);fill-opacity:1;" /></flowRegion><flowPara
+         id="flowPara4259"
+         style="font-size:40px;fill:url(#Orange);fill-opacity:1;">V</flowPara></flowRoot>    <flowRoot
+       transform="matrix(2.6954178,0,0,2.6954178,94.769583,-139.81201)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:0px;word-spacing:0px;opacity:0.33000004;fill:url(#linearGradient4483);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot4261"
+       xml:space="preserve"><flowRegion
+         id="flowRegion4263"
+         style="fill-opacity:1;fill:url(#linearGradient4483)"><rect
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill-opacity:1;fill:url(#linearGradient4483)"
+           y="404.92728"
+           x="6.0222411"
+           height="141.7964"
+           width="174.64499"
+           id="rect4265" /></flowRegion><flowPara
+         style="font-size:14.84000015px;fill-opacity:1;fill:url(#linearGradient4483)"
+         id="flowPara4267">V</flowPara></flowRoot>    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4269"
+       width="50"
+       height="50"
+       x="150"
+       y="952.36218" />
+    <flowRoot
+       transform="translate(100,-49.999235)"
+       xml:space="preserve"
+       id="flowRoot4271"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.43126678px;line-height:125%;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:0px;word-spacing:0px;fill:url(#Orange);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"><flowRegion
+         id="flowRegion4273"><rect
+           id="rect4275"
+           width="470.74121"
+           height="382.20053"
+           x="61.002041"
+           y="1001.6363"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.43126678px;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:url(#Orange);fill-opacity:1;" /></flowRegion><flowPara
+         id="flowPara4277"
+         style="font-size:40px;fill:url(#Orange);fill-opacity:1;">V</flowPara></flowRoot>    <flowRoot
+       transform="translate(100,-49.999235)"
+       xml:space="preserve"
+       id="flowRoot4279"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.43126678px;line-height:125%;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient4495);fill-opacity:1.0;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><flowRegion
+         id="flowRegion4281"
+         style="fill-opacity:1.0;fill:url(#linearGradient4495)"><rect
+           id="rect4283"
+           width="470.74121"
+           height="382.20053"
+           x="61.002041"
+           y="1001.6363"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.43126678px;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:url(#linearGradient4495);fill-opacity:1.0" /></flowRegion><flowPara
+         id="flowPara4285"
+         style="font-size:40px;fill:url(#linearGradient4495);fill-opacity:1.0">V</flowPara></flowRoot>    <rect
+       y="952.36218"
+       x="200"
+       height="50"
+       width="50"
+       id="rect4287"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <flowRoot
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.43126678px;line-height:125%;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:0px;word-spacing:0px;fill:url(#Orange);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       id="flowRoot4289"
+       xml:space="preserve"
+       transform="translate(150,-49.999235)"><flowRegion
+         id="flowRegion4291"><rect
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.43126678px;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:url(#Orange);fill-opacity:1;"
+           y="1001.6363"
+           x="61.002041"
+           height="382.20053"
+           width="470.74121"
+           id="rect4293" /></flowRegion><flowPara
+         style="font-size:40px;fill:url(#Orange);fill-opacity:1;"
+         id="flowPara4295">V</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4305"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:125%;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:0px;word-spacing:0px;opacity:0.33000004;fill:url(#Shade_Normal_Actionable);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       transform="matrix(2.6954178,0,0,2.6954178,194.76958,-139.81194)"><flowRegion
+         id="flowRegion4307"><rect
+           id="rect4309"
+           width="174.64499"
+           height="141.7964"
+           x="6.0222411"
+           y="404.92728"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:url(#Shade_Normal_Actionable);" /></flowRegion><flowPara
+         id="flowPara4311"
+         style="font-size:14.84000015px;fill:url(#Shade_Normal_Actionable);">V</flowPara></flowRoot>    <flowRoot
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.43126678px;line-height:125%;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:0px;word-spacing:0px;fill:url(#Shade_Accent_Yellow);fill-opacity:0.25098039;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       id="flowRoot4297"
+       xml:space="preserve"
+       transform="translate(150,-49.999235)"><flowRegion
+         id="flowRegion4299"><rect
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.43126678px;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:url(#Shade_Accent_Yellow);fill-opacity:0.25098039;"
+           y="1001.6363"
+           x="61.002041"
+           height="382.20053"
+           width="470.74121"
+           id="rect4301" /></flowRegion><flowPara
+         style="font-size:40px;fill:url(#Shade_Accent_Yellow);fill-opacity:0.25098039;"
+         id="flowPara4303">V</flowPara></flowRoot>  </g>
+</svg>
