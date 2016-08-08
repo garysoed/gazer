@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" height="180" id="svg4759" version="1.1" viewBox="0 0 180 180" width="180">
+  <defs id="defs4761" />
+  <metadata id="metadata4764">
+    <rdf:RDF>
+      <ns2:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </ns2:Work>
+    </rdf:RDF>
+  </metadata>
+  <path d="M 90,37.5 A 35,35 0 0 0 55,72.5 35,35 0 0 0 90,107.5 35,35 0 0 0 125,72.5 35,35 0 0 0 90,37.5 Z M 90,57.5 A 15,15 0 0 1 105,72.5 15,15 0 0 1 90,87.5 15,15 0 0 1 75,72.5 15,15 0 0 1 90,57.5 Z M 40,7.5 40,26.821994 C 53.73258,33.679276 71.535647,37.481303 90.000003,37.500006 108.46261,37.483319 126.26546,33.683952 140,26.829336 L 140,7.514684 C 131.07908,16.425195 111.53738,22.14906 90.000003,22.159934 68.4551,22.14644 48.911377,16.416247 40,7.5 Z M 82.5,122.5 82.5,172.5 7.5,172.5 7.5,152.5 62.5,152.5 62.5,142.5 7.5,142.5 7.5,122.5 Z M 97.5,122.5 97.5,172.5 172.5,172.5 172.5,152.5 117.5,152.5 117.5,142.5 172.5,142.5 172.5,122.5 Z" id="h$o" style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:20;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </svg>

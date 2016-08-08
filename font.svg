@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<svg width="400px" height="300px" version="1.1"
+  xmlns = 'http://www.w3.org/2000/svg'>
+  <defs>
+    <font id="Font1" horiz-adv-x="1000">
+      <font-face font-family="Super Sans" font-weight="bold" font-style="normal"
+          units-per-em="1000" cap-height="600" x-height="400"
+          ascent="700" descent="300"
+          alphabetic="0" mathematical="350" ideographic="400" hanging="500">
+        <font-face-src>
+          <font-face-name name="Super Sans Bold"/>
+        </font-face-src>
+      </font-face>
+      <missing-glyph><path d="M0,0h200v200h-200z"/></missing-glyph>
+      <glyph unicode="!" d="M 42.5,75 A 10,10 0 0 1 32.5,85 L 32.5,100 A 25,25 0 0 0 50,92.8457 25,25 0 0 0 67.5,100 L 67.5,85 A 10,10 0 0 1 57.5,75 L 42.5,75 Z"><!-- Outline of exclam. pt. glyph --></glyph>
+      <glyph unicode="@"><!-- Outline of @ glyph --></glyph>
+      <!-- more glyphs -->
+    </font>
+  </defs>
+</svg>
