@@ -30,10 +30,10 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.8068102"
-     inkscape:cx="116.83225"
-     inkscape:cy="54.222205"
+     inkscape:cx="117.22628"
+     inkscape:cy="33.207236"
      inkscape:document-units="px"
-     inkscape:current-layer="svg2"
+     inkscape:current-layer="layer29"
      showgrid="false"
      inkscape:window-width="1440"
      inkscape:window-height="851"
@@ -3684,7 +3684,7 @@
      inkscape:groupmode="layer"
      id="layer19"
      inkscape:label="Meditate"
-     style="display:none"
+     style="display:inline"
      transform="translate(0,0.8061126)">
     <g
        inkscape:groupmode="layer"
@@ -7125,7 +7125,7 @@
     </g>
   </g>
   <g
-     style="display:inline"
+     style="display:none"
      transform="translate(-166.52356,-111.44899)"
      inkscape:label="Energy Orb"
      id="layer2"
