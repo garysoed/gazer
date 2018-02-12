@@ -25,22 +25,24 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="9.0151768"
-     inkscape:cx="-6.6582021"
-     inkscape:cy="12.867746"
+     inkscape:zoom="9.757377"
+     inkscape:cx="6.1477219"
+     inkscape:cy="4.3763202"
      inkscape:document-units="px"
      inkscape:current-layer="layer15"
      showgrid="false"
      inkscape:window-width="1440"
-     inkscape:window-height="851"
+     inkscape:window-height="852"
      inkscape:window-x="0"
-     inkscape:window-y="1"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     units="px" />
+     units="px"
+     showguides="true"
+     inkscape:guide-bbox="true" />
   <metadata
      id="metadata4459">
     <rdf:RDF>
@@ -58,9 +60,19 @@
      id="layer15"
      inkscape:label="Play"
      style="display:inline">
-    <path
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 12.078125 0 L 12.078125 5.3457031 L 13.322266 20.304688 L 16.636719 20.304688 L 17.878906 5.3457031 L 17.878906 0 L 12.078125 0 z M 14.978516 23.826172 C 14.149786 23.826172 13.431953 24.130547 12.824219 24.738281 C 12.216484 25.346017 11.912109 26.07724 11.912109 26.933594 C 11.912109 27.762323 12.216484 28.480156 12.824219 29.087891 C 13.431953 29.695625 14.149786 30 14.978516 30 C 15.83487 30 16.568047 29.695625 17.175781 29.087891 C 17.783516 28.480156 18.087891 27.762323 18.087891 26.933594 C 18.087891 26.07724 17.783516 25.346017 17.175781 24.738281 C 16.568047 24.130547 15.83487 23.826172 14.978516 23.826172 z "
-       id="path3338" />
+    <g
+       id="g3346"
+       transform="translate(4.8210048,0.26393731)">
+      <path
+         d="m 13.098573,24.700641 6.160842,0 0,5.139093 -6.160842,0 0,-5.139093 z m 0,-25.06825153 6.160842,0 0,13.25238553 -0.60698,7.223055 -4.916533,0 -0.637329,-7.223055 0,-13.25238553 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="path3338"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3342"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 1.0985734,24.700641 6.1608415,0 0,5.139093 -6.1608415,0 0,-5.139093 z m 0,-25.06825153 6.1608415,0 0,13.25238553 -0.6069795,7.223055 -4.9165335,0 -0.6373285,-7.223055 0,-13.25238553 z" />
+    </g>
   </g>
 </svg>

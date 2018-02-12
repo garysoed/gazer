@@ -3,7 +3,20 @@
   "data": {
     "_type": "File",
     "type": 1,
-    "content": "Name\tElement\tType\t#\tL\tA\tD\tDescription\tCost\tMech\tFlav\tArt\tPass 1\tPass 2\tOrdering\t_override\t@ cast\t@ turn\t@ tap\t\t\t\t\t\tmax tap\t_cost\t_lifetime\t_adjustment\t_hasEntrance\r\n\t\t\t\t\t\t\t\t\t100.00%\t100.00%\t100.00%\t5.56%\t0.00%\t5\t\t\t\ttap 1\ttap 2\ttap 3\tinnate\tattack\tarmor\t\t\t\t\t\r\nMeditate\tBase\tSpell\t10\t\t\t\tName an element other than Æther (Fire, Earth, Air, Water). Replace a card in the draft slot until you reveal a card of the named element.//Draft a card.\t1\t1\t1\t1\t\t\t67\t\t2.00\t\t\t\t\t\t\t\t0.00\t1.00\t0\t-1\tFALSE\r\nMind Link\tBase\tEnchantment\t10\t\t\t\tAt the beginning of the turn, draw a card.\t2\t1\t1\t1\t\t\t48\t\t\t1.00\t\t\t\t\t\t\t0.00\t2.00\t2.00\t0\tFALSE\r\nBot\tBase\tMinion\t10\t3\t2\t0\t\t3\t1\t1\t1\t\t\t68\t\t\t\t\t\t\t1.50\t1.5\t0.00\t1.50\t3.17\t2.115384615\t0\tFALSE\r\nEnergy Orb\tBase\tDevice\t10\t3\t\t\tT: +1 Energy.\t2\t1\t1\t1\t\t\t24\t\t\t\t1\t\t\t\t\t\t1.00\t2.12\t2.115384615\t0\tFALSE\r\nFire Ball\tFire\tSpell\t3\t\t\t\tDamage up to 3 Minions by 1.\t2\t1\t1\t1\t1\t\t\t\t3.45\t\t\t\t\t\t\t\t0.00\t2.45\t0\t-1\tFALSE\r\nFury\tFire\tSpell\t2\t\t\t\tWhile this card is in play, increase all damage you do by 1.\t1\t1\t1\t1\t\t\t7\t\t2.25\t\t\t\t\t\t\t\t0.00\t1.25\t0\t-1\tFALSE\r\nSpark\tFire\tSpell\t3\t\t\t\tRefresh all your Devices.\t1\t1\t1\t1\t\t\t70\t\t2.40\t\t\t\t\t\t\t\t0.00\t1.40\t0\t-1\tFALSE\r\nExplode\tFire\tSpell\t2\t\t\t\tDestroy up to 2 Minions with at most 1 life.\t1\t1\t1\t1\t\t\t26\t\t2.35\t\t\t\t\t\t\t\t0.00\t1.35\t0\t-1\tFALSE\r\nConstruct\tFire\tSpell\t2\t\t\t\tPut a Device from hand into play for free.\t1\t1\t1\t1\t\t\t71\t\t1.50\t\t\t\t\t\t\t\t0.00\t0.50\t0\t-1\tFALSE\r\nImmolation Aura\tFire\tEnchantment\t3\t\t\t\tWhen this Minion is damaged, damage up to 2 Minions by 1.\t2\t1\t1\t1\t\t\t6\t\t\t0.75\t\t\t\t\t\t\t0.00\t1.50\t2.00\t0\tFALSE\r\nCatalyst\tFire\tEnchantment\t3\t\t\t\tWhen this Minion is damaged, you may untap one Device.\t3\t1\t1\t1\t\t\t32\t\t\t1.65\t\t\t\t\t\t\t0.00\t3.31\t2.00\t0\t\r\nHellhound\tFire\tMinion\t3\t2\t3\t0\t\t3\t1\t1\t1\t\t\t41\t\t\t\t\t\t\t2.25\t2.25\t0.00\t2.25\t3.17\t1.41025641\t0\tFALSE\r\nDjinn\tFire\tMinion\t2\t3\t3\t0\t\t5\t1\t1\t1\t\t\t56\t\t\t\t\t\t\t2.25\t2.25\t0.00\t2.25\t4.76\t2.115384615\t0\tFALSE\r\nFire Elemental\tFire\tMinion\t2\t5\t1\t0\tWhen this Minion takes a damage, draw a card.\t4\t1\t1\t1\t\t\t8\t\t\t0.25\t\t\t\t0.75\t0.75\t0.00\t0.75\t3.53\t3.525641026\t0\tFALSE\r\nSalamander\tFire\tMinion\t2\t3\t2\t0\tWhen this Minion takes a damage, damage all opponent Minions by 1.\t5\t1\t1\t1\t\t\t45\t\t\t0.75\t\t\t\t1.50\t1.5\t0.00\t1.50\t4.76\t2.115384615\t0\tFALSE\r\nFlame Whip\tFire\tDevice\t3\t3\t\t\tT: Damage a non Device you control by 1. If the target receives damage, increase any damage you do by 1 until the end of the current turn.\t3\t1\t1\t1\t\t\t72\t\t\t\t1.5\t\t\t\t\t\t1.50\t3.17\t2.115384615\t0\tFALSE\r\nFire Ward\tFire\tDevice\t3\t3\t\t\tT: Damage up to 2 Minions by 1.\t3\t1\t1\t1\t\t\t23\t\t\t\t1.5\t\t\t\t\t\t1.50\t3.17\t2.115384615\t0\tFALSE\r\nBlast Cannon\tFire\tDevice\t3\t3\t\t\tT: Damage a non Device you control by 1. If the target receives damage, you may destroy up to 2 Minions with at most 1 life.\t3\t1\t1\t1\t\t\t51\t\t\t\t1.595454545\t\t\t\t\t\t1.60\t3.38\t2.115384615\t0\tFALSE\r\nBurning Gear\tFire\tDevice\t2\t3\t\t\tT: Damage a non Device you control by 1. If the target receives damage, you may put a device from hand into play for free.\t2\t1\t1\t1\t\t\t37\t\t\t\t0.75\t\t\t\t\t\t0.75\t1.59\t2.115384615\t0\tFALSE\r\nFire Orb\tFire\tDevice\t4\t3\t\t\tT: Damage a non Device you control by 2. If the target receives damage, draw 3 cards.\t3\t1\t1\t1\t\t\t55\t\t\t\t1.5\t\t\t\t\t\t1.50\t3.17\t2.115384615\t0\tFALSE\r\nSolar Orb\tFire\tDevice\t3\t3\t\t\tT: Damage a non Device you control by 2. If the target receives damage, +3 Energy.\t3\t1\t1\t1\t\t\t34\t\t\t\t1.5\t\t\t\t\t\t1.50\t3.17\t2.115384615\t0\tFALSE\r\nCall of the Wild\tEarth\tSpell\t3\t\t\t\tReveal the top 4 cards of the deck. Put any Minions in hand, discard the rest or replace them in any order. Draw a card.\t1\t1\t1\t1\t\t\t42\t\t2.20\t\t\t\t\t\t\t\t0.00\t1.20\t0\t-1\tFALSE\r\nEvolve\tEarth\tSpell\t2\t\t\t\tPut a Minion in play back in your hand. Put another Minion in your discard pile costing at most one more into play.\t2\t1\t1\t1\t\t\t65\t\t3.00\t\t\t\t\t\t\t\t0.00\t2.00\t0\t-1\tFALSE\r\nRevive\tEarth\tSpell\t4\t\t\t\tDraw a card from your discard pile.\t1\t1\t1\t1\t\t\t40\t\t2.00\t\t\t\t\t\t\t\t0.00\t1.00\t0\t-1\tFALSE\r\nCircle of Life\tEarth\tEnchantment\t4\t\t\t\tWhen your Minion enters play, you may take a card from your discard pile and put it on top of your deck.\t2\t1\t1\t1\t\t\t18\t\t\t1.00\t\t\t\t\t\t\t0.00\t2.00\t2.00\t0\tFALSE\r\nAdaptation\tEarth\tEnchantment\t3\t\t\t\tAt the beginning of the turn, reveal the top 4 cards of your deck. Discard any of them and put the rest back in any order.\t2\t1\t1\t1\t\t\t46\t\t\t1.00\t\t\t\t\t\t\t0.00\t2.00\t2.00\t0\tFALSE\r\nSymbiosis\tEarth\tEnchantment\t3\t\t\t\tWhen this Minion is about to receive a damage, you may redirect it to another Minion you control.\t2\t1\t1\t1\t\t\t16\t\t\t1.00\t\t\t\t\t\t\t0.00\t2.00\t2.00\t0\tFALSE\r\nHive Mind\tEarth\tEnchantment\t2\t\t\t\tWhen your Minion enters play, draw a card.\t2\t1\t1\t1\t\t\t36\t\t\t1.00\t\t\t\t\t\t\t0.00\t2.00\t2.00\t0\tFALSE\r\nGnome\tEarth\tMinion\t3\t2\t1\t0\tWhen your Minion enters play, put a card in your discard pile on top of your deck.\t2\t1\t1\t1\t\t\t38\t\t\t1.00\t\t\t\t0.75\t0.75\t0.00\t0.75\t2.47\t1.41025641\t0\tFALSE\r\nEarth Elemental\tEarth\tMinion\t3\t3\t0\t0\tWhen your Minion enters play, draw a card.\t2\t1\t1\t1\t\t\t15\t\t\t1.00\t\t\t\t0.00\t0\t0.00\t0.00\t2.12\t2.115384615\t0\tFALSE\r\nJungle Vines\tEarth\tMinion\t3\t1\t1\t1\tYou may put this Minion into play from your discard pile.\t2\t1\t1\t1\t\t\t5\t\t1.00\t\t\t\t\t1.75\t0.75\t1.00\t1.75\t2.23\t0.7051282051\t0\tTRUE\r\nThorny Vines\tEarth\tMinion\t3\t1\t2\t0\tYou may put this Minion into play from your discard pile.\t2\t1\t1\t1\t\t\t62\t\t1.00\t\t\t\t\t1.50\t1.5\t0.00\t1.50\t2.06\t0.7051282051\t0\tTRUE\r\nBark Vines\tEarth\tMinion\t3\t1\t0\t2\tYou may put this Minion into play from your discard pile.\t2\t1\t1\t1\t\t\t17\t\t1.00\t\t\t\t\t1.42\t0\t1.42\t1.42\t2.00\t0.7051282051\t0\tTRUE\r\nKitsune\tEarth\tMinion\t3\t2\t1\t1\tWhen your Minion enters play, look at the top 2 cards of your deck; replace them in any order. Each player discards the top card of their deck.\t2\t1\t1\t1\t\t\t25\t\t\t\t\t\t\t1.75\t0.75\t1.00\t1.75\t2.47\t1.41025641\t0\tFALSE\r\nNature Orb\tEarth\tDevice\t2\t3\t\t\tT: Draw a card. Every player discards the top card of their deck.\t2\t1\t1\t1\t\t\t53\t\t\t\t1.00\t\t\t\t\t\t1.00\t2.12\t2.115384615\t0\tFALSE\r\nRevival Pendant\tEarth\tDevice\t2\t3\t\t\tT: Put a card in your discard pile on top of your deck.\t2\t1\t1\t1\t1\t\t\t\t\t\t1.00\t\t\t\t\t\t1.00\t2.12\t2.115384615\t0\tFALSE\r\nMorph Proxy\tEarth\tDevice\t2\t3\t\t\tT: Put a Minion in play back in your hand. Put another Minion with the same cost into play.\t3\t1\t1\t1\t\t\t31\t\t\t\t1.38\t\t\t\t\t\t1.38\t2.92\t2.115384615\t0\tFALSE\r\nGathering Storm\tAir\tSpell\t3\t\t\t\tReduce energy cost of Spells by 1. Draw a card.\t2\t1\t1\t1\t\t\t69\t2\t2.00\t\t\t\t\t\t\t\t0.00\t1.00\t0\t-1\tFALSE\r\nBird's Eye View\tAir\tSpell\t4\t\t\t\tPick a player. For every Spell you have in play, discard a card you pick from that player's hand. Draw a card.\t1\t1\t1\t1\t\t\t64\t\t2.00\t\t\t\t\t\t\t\t0.00\t1.00\t0\t-1\tFALSE\r\nSonic Boom\tAir\tSpell\t3\t\t\t\tDamage a target by X, where X is the number of spells you have in play. Draw a card.\t1\t1\t1\t1\t\t\t33\t\t2.00\t\t\t\t\t\t\t\t0.00\t1.00\t0\t-1\tFALSE\r\nShock\tAir\tSpell\t4\t\t\t\tDisable a card. Draw a card.\t1\t1\t1\t1\t\t\t30\t\t2.35\t\t\t\t\t\t\t\t0.00\t1.35\t0\t-1\tFALSE\r\nFear\tAir\tSpell\t2\t\t\t\tMove a Minion you control back to the owner's hand. The owner gains the same amount of energy used to summon the Minion. Draw a card.\t1\t1\t1\t1\t\t\t28\t\t2.38\t\t\t\t\t\t\t\t0.00\t1.38\t0\t-1\tFALSE\r\nDeja Vu\tAir\tSpell\t2\t\t\t\tShuffle your discard pile and put it on top of your deck. Draw a card.\t2\t1\t1\t1\t\t\t27\t\t3.00\t\t\t\t\t\t\t\t0.00\t2.00\t0\t-1\tFALSE\r\nMind Splinter\tAir\tEnchantment\t3\t\t\t\tAt the beginning of the turn, you may deal X damage to a target, where X is the number of Spells in play.\t2\t1\t1\t1\t\t\t14\t\t\t0.75\t\t\t\t\t\t\t0.00\t1.50\t2.00\t0\tFALSE\r\nFlight\tAir\tEnchantment\t4\t\t\t\tThis Minion is Flying. (This Minion's attack cannot be blocked.)\t2\t1\t1\t1\t\t\t19\t\t\t1.00\t\t\t\t\t\t\t0.00\t2.00\t2.00\t0\tFALSE\r\nThird Eye\tAir\tEnchantment\t2\t\t\t\tAt the beginning of the turn, you may draw X cards, where X is the number of Spells in play.\t2\t1\t1\t1\t\t\t59\t\t\t1.00\t\t\t\t\t\t\t0.00\t2.00\t2.00\t0\tFALSE\r\nSylph\tAir\tMinion\t2\t2\t1\t0\tFlying. (This Minion's attack cannot be blocked.)\t2\t1\t1\t1\t1\t\t\t\t\t1.00\t\t\t\t0.75\t0.75\t0.00\t0.75\t2.47\t1.41025641\t0\tFALSE\r\nGaruda\tAir\tMinion\t2\t2\t2\t0\tFlying. (This Minion's attack cannot be blocked.)\t4\t1\t1\t1\t\t\t20\t\t\t1.00\t\t\t\t1.50\t1.5\t0.00\t1.50\t3.53\t1.41025641\t0\tFALSE\r\nPoltergeist\tAir\tMinion\t2\t3\t1.00\t0\tThis Minion's attack power is equal to the number of Spells you have in play.\t2\t1\t1\t1\t\t\t54\t\t\t\t\t\t\t0.75\t0.75\t0.00\t0.75\t1.59\t2.115384615\t0\tFALSE\r\nSpell Node\tAir\tDevice\t3\t3\t\t\tT: Reveal the top card of your deck. If it is a spell, put it into play for free. Otherwise, put it in your hand.\t2\t1\t1\t1\t\t\t61\t\t\t1.075\t\t\t\t\t\t\t0.00\t2.27\t2.115384615\t0\tFALSE\r\nHypnocube\tAir\tDevice\t2\t3\t\t\tT: Take control of a Minion with the same summoning cost as the number of Spell you have in play until the end of the current turn.\t2\t1\t1\t1\t\t\t22\t\t\t\t1.00\t\t\t\t\t\t1.00\t2.12\t2.115384615\t0\tFALSE\r\nMist Orb\tAir\tDevice\t2\t3\t\t\tT: Draw a card. Pick a player. Both you and that player take a card from hand and put it on top of the other player’s deck.\t2\t1\t1\t1\t\t\t47\t\t\t\t1.00\t\t\t\t\t\t1.00\t2.12\t2.115384615\t0\tFALSE\r\nHologram\tAir\tDevice\t2\t3\t\t\tT: Pick a Minion. Redirect that Minion's next attack causing up to X damage, where X is the number of Spells in play, to a target of your choice.\t3\t1\t1\t1\t\t\t39\t\t\t\t1.50\t\t\t\t\t\t1.50\t3.17\t2.115384615\t0\tFALSE\r\nLooking Glass\tAir\tDevice\t3\t3\t\t\tT: Look at the top 4 cards of a deck. You may put any of them at the bottom of the deck in any order. Replace the rest of them in any order.\t2\t1\t1\t1\t\t\t49\t\t\t\t1.00\t\t\t\t\t\t1.00\t2.12\t2.115384615\t0\tFALSE\r\nHealing Rain\tWater\tSpell\t3\t\t\t\tFully heal a Minion. Refresh that Minion.\t2\t1\t1\t1\t\t\t12\t\t2.88\t\t\t\t\t\t\t\t0.00\t1.88\t0\t-1\tFALSE\r\nWater Clone\tWater\tSpell\t3\t\t\t\tPick a Minion. While this card is in play, increase its attack by X, where X is the number of Enchants on that Minion. Refresh that Minion.\t2\t1\t1\t1\t\t\t66\t\t2.625\t\t\t\t\t\t\t\t0.00\t1.63\t0\t-1\tFALSE\r\nIce Shield\tWater\tEnchantment\t3\t\t\t\tArmor +1.\t2\t1\t1\t1\t\t\t57\t\t\t0.75\t\t\t\t\t\t\t0.00\t1.50\t2.00\t0\tFALSE\r\nLongevity\tWater\tEnchantment\t3\t\t\t\tLife +X, where X is the number of Enchants on this Minion.\t2\t1\t1\t1\t\t\t50\t\t\t1.13\t\t\t\t\t\t\t0.00\t2.25\t2.00\t0\tFALSE\r\nMomentum\tWater\tEnchantment\t3\t\t\t\tWhen this Minion destroys a Device, you may refresh it.\t3\t1\t1\t1\t\t\t29\t\t\t1.50\t\t\t\t\t\t\t0.00\t3.01\t2.00\t0\tFALSE\r\nChilling Aura\tWater\tEnchantment\t3\t\t\t\tAttack +X, where X is the number of Enchants on this Minion.\t2\t1\t1\t1\t\t\t58\t\t\t1.13\t\t\t\t\t\t\t0.00\t2.25\t2.00\t0\tFALSE\r\nRegeneration\tWater\tEnchantment\t2\t\t\t\tAt the beginning of the turn, this Minion heals one life.\t2\t1\t1\t1\t\t\t9\t\t\t0.75\t\t\t\t\t\t\t0.00\t1.50\t2.00\t0\tFALSE\r\nReflection\tWater\tEnchantment\t2\t\t\t\tAt the beginning of the turn, pick an Enchant on this Minion. This Enchant gains all the abilities of that Enchant.\t2\t1\t1\t1\t\t\t44\t\t\t1.10\t\t\t\t\t\t\t0.00\t2.20\t2.00\t0\tFALSE\r\nClarity\tWater\tEnchantment\t2\t\t\t\tAt the beginning of the turn, draw a card for every Enchant on this Minion.\t3\t1\t1\t1\t\t\t35\t\t\t1.50\t\t\t\t\t\t\t0.00\t3.01\t2.00\t0\tFALSE\r\nIce Golem\tWater\tMinion\t2\t3\t2\t2\tDiscard an Enchant from play or from hand to redirect damage to this Minion.\t6\t1\t1\t1\t\t\t21\t\t\t0.00\t\t\t\t2.92\t1.5\t1.42\t2.92\t6.17\t2.115384615\t0\tFALSE\r\nWater Elemental\tWater\tMinion\t3\t3\t1\t2\tDiscard an Enchant from play or from hand to draw 2 cards.\t6\t1\t1\t1\t1\t\t\t\t\t0.50\t\t\t\t2.17\t0.75\t1.42\t2.17\t5.64\t2.115384615\t0\tFALSE\r\nWater Blob\tWater\tMinion\t2\t5\t2\t0\tDiscard an Enchant from play or from hand to fully heal a Minion.\t5\t1\t1\t1\t\t\t60\t\t\t-0.12\t\t\t\t1.50\t1.5\t0.00\t1.50\t4.87\t3.525641026\t0\tFALSE\r\nApsara\tWater\tMinion\t2\t5\t0\t3\tDiscard an Enchant from play or from hand to refresh a Minion.\t5\t1\t1\t1\t\t\t52\t\t\t0.00\t\t\t\t1.42\t0\t1.42\t1.42\t5.00\t3.525641026\t0\tFALSE\r\nNaga\tWater\tMinion\t3\t5\t1\t1\tDiscard an Enchant from play or from hand to increase this Minion's attack by 2 until the end of the current turn.\t6\t1\t1\t1\t\t\t43\t\t\t0.00\t\t\t\t1.75\t0.75\t1.00\t1.75\t6.17\t3.525641026\t0\tFALSE\r\nAqua Orb\tWater\tDevice\t2\t3\t\t\tT: Pick a Minion. Draw a card for every Enchant on that Minion.\t3\t1\t1\t1\t\t\t10\t\t\t\t1.5\t\t\t\t\t\t1.50\t3.17\t2.115384615\t0\tFALSE\r\nCurative Salve\tWater\tDevice\t3\t3\t\t\tT: Heal a Minion by 1 for every Enchant on that Minion.\t2\t1\t1\t1\t\t\t63\t\t\t\t1.125\t\t\t\t\t\t1.13\t2.38\t2.115384615\t0\tFALSE\r\nIce Trident\tWater\tDevice\t2\t3\t\t\tT: Pick a Minion. Increase that Minion's attack by 1 for every Enchant on that Minion, until the end of the current turn.\t2\t1\t1\t1\t\t\t13\t\t\t\t1.125\t\t\t\t\t\t1.13\t2.38\t2.115384615\t0\tFALSE\r\nRefreshing Jar\tWater\tDevice\t2\t3\t\t\tT: Refresh a Minion.\t3\t1\t1\t1\t\t\t11\t\t\t\t1.5\t\t\t\t\t\t1.50\t3.17\t2.115384615\t0\tFALSE"
+    "content": "Name\tElement\tType\t#\tL\tA\tD\tDescription\tCost\tMech\tFlav\tArt\tPass 1\tPass 2\tOrdering\t_override\t@ cast\t@ turn\t@ tap\t\t\t\t\t\tmax tap\t_cost\t_lifetime\t_adjustment\t_hasEntrance\r
+    \t\t\t\t\t\t\t\t\t100.00%\t100.00%\t100.00%\t5.56%\t0.00%\t5\t\t\t\ttap 1\ttap 2\ttap 3\tinnate\tattack\tarmor\t\t\t\t\t\r
+    Meditate\tBase\tSpell\t10\t\t\t\tName an element other than Æther (Fire, Earth, Air, Water). Replace a card in the draft slot until you reveal a card of the named element.//Draft a card.\t1\t1\t1\t1\t\t\t67\t\t2.00\t\t\t\t\t\t\t\t0.00\t1.00\t0\t-1\tFALSE\r
+    Mind Link\tBase\tEnchantment\t10\t\t\t\tAt the beginning of the turn, draw a card.\t2\t1\t1\t1\t\t\t48\t\t\t1.00\t\t\t\t\t\t\t0.00\t2.00\t2.00\t0\tFALSE\r
+    Bot\tBase\tMinion\t10\t3\t2\t0\t\t3\t1\t1\t1\t\t\t68\t\t\t\t\t\t\t1.50\t1.5\t0.00\t1.50\t3.17\t2.115384615\t0\tFALSE\r
+    Energy Orb\tBase\tDevice\t10\t3\t\t\tT: +1 Energy.\t2\t1\t1\t1\t\t\t24\t\t\t\t1\t\t\t\t\t\t1.00\t2.12\t2.115384615\t0\tFALSE\r
+    Fire Ball\tFire\tSpell\t3\t\t\t\tDamage up to 3 Minions by 1.\t2\t1\t1\t1\t1\t\t\t\t3.45\t\t\t\t\t\t\t\t0.00\t2.45\t0\t-1\tFALSE\r
+    Fury\tFire\tSpell\t2\t\t\t\tWhile this card is in play, increase all damage you do by 1.\t1\t1\t1\t1\t\t\t7\t\t2.25\t\t\t\t\t\t\t\t0.00\t1.25\t0\t-1\tFALSE\r
+    Spark\tFire\tSpell\t3\t\t\t\tRefresh all your Devices.\t1\t1\t1\t1\t\t\t70\t\t2.40\t\t\t\t\t\t\t\t0.00\t1.40\t0\t-1\tFALSE\r
+    Explode\tFire\tSpell\t2\t\t\t\tDestroy up to 2 Minions with at most 1 life.\t1\t1\t1\t1\t\t\t26\t\t2.35\t\t\t\t\t\t\t\t0.00\t1.35\t0\t-1\tFALSE\r
+    Construct\tFire\tSpell\t2\t\t\t\tPut a Device from hand into play for free.\t1\t1\t1\t1\t\t\t71\t\t1.50\t\t\t\t\t\t\t\t0.00\t0.50\t0\t-1\tFALSE\r
+    Immolation Aura\tFire\tEnchantment\t3\t\t\t\tWhen this Minion is damaged, damage up to 2 Minions by 1.\t2\t1\t1\t1\t\t\t6\t\t\t0.75\t\t\t\t\t\t\t0.00\t1.50\t2.00\t0\tFALSE\r
+    Catalyst\tFire\tEnchantment\t3\t\t\t\tWhen this Minion is damaged, you may untap one Device.\t3\t1\t1\t1\t\t\t32\t\t\t1.65\t\t\t\t\t\t\t0.00\t3.31\t2.00\t0\t\r
+    Hellhound\tFire\tMinion\t3\t2\t3\t0\t\t3\t1\t1\t1\t\t\t41\t\t\t\t\t\t\t2.25\t2.25\t0.00\t2.25\t3.17\t1.41025641\t0\tFALSE\r\nDjinn\tFire\tMinion\t2\t3\t3\t0\t\t5\t1\t1\t1\t\t\t56\t\t\t\t\t\t\t2.25\t2.25\t0.00\t2.25\t4.76\t2.115384615\t0\tFALSE\r\nFire Elemental\tFire\tMinion\t2\t5\t1\t0\tWhen this Minion takes a damage, draw a card.\t4\t1\t1\t1\t\t\t8\t\t\t0.25\t\t\t\t0.75\t0.75\t0.00\t0.75\t3.53\t3.525641026\t0\tFALSE\r\nSalamander\tFire\tMinion\t2\t3\t2\t0\tWhen this Minion takes a damage, damage all opponent Minions by 1.\t5\t1\t1\t1\t\t\t45\t\t\t0.75\t\t\t\t1.50\t1.5\t0.00\t1.50\t4.76\t2.115384615\t0\tFALSE\r\nFlame Whip\tFire\tDevice\t3\t3\t\t\tT: Damage a non Device you control by 1. If the target receives damage, increase any damage you do by 1 until the end of the current turn.\t3\t1\t1\t1\t\t\t72\t\t\t\t1.5\t\t\t\t\t\t1.50\t3.17\t2.115384615\t0\tFALSE\r\nFire Ward\tFire\tDevice\t3\t3\t\t\tT: Damage up to 2 Minions by 1.\t3\t1\t1\t1\t\t\t23\t\t\t\t1.5\t\t\t\t\t\t1.50\t3.17\t2.115384615\t0\tFALSE\r\nBlast Cannon\tFire\tDevice\t3\t3\t\t\tT: Damage a non Device you control by 1. If the target receives damage, you may destroy up to 2 Minions with at most 1 life.\t3\t1\t1\t1\t\t\t51\t\t\t\t1.595454545\t\t\t\t\t\t1.60\t3.38\t2.115384615\t0\tFALSE\r\nBurning Gear\tFire\tDevice\t2\t3\t\t\tT: Damage a non Device you control by 1. If the target receives damage, you may put a device from hand into play for free.\t2\t1\t1\t1\t\t\t37\t\t\t\t0.75\t\t\t\t\t\t0.75\t1.59\t2.115384615\t0\tFALSE\r\nFire Orb\tFire\tDevice\t4\t3\t\t\tT: Damage a non Device you control by 2. If the target receives damage, draw 3 cards.\t3\t1\t1\t1\t\t\t55\t\t\t\t1.5\t\t\t\t\t\t1.50\t3.17\t2.115384615\t0\tFALSE\r\nSolar Orb\tFire\tDevice\t3\t3\t\t\tT: Damage a non Device you control by 2. If the target receives damage, +3 Energy.\t3\t1\t1\t1\t\t\t34\t\t\t\t1.5\t\t\t\t\t\t1.50\t3.17\t2.115384615\t0\tFALSE\r\nCall of the Wild\tEarth\tSpell\t3\t\t\t\tReveal the top 4 cards of the deck. Put any Minions in hand, discard the rest or replace them in any order. Draw a card.\t1\t1\t1\t1\t\t\t42\t\t2.20\t\t\t\t\t\t\t\t0.00\t1.20\t0\t-1\tFALSE\r\nEvolve\tEarth\tSpell\t2\t\t\t\tPut a Minion in play back in your hand. Put another Minion in your discard pile costing at most one more into play.\t2\t1\t1\t1\t\t\t65\t\t3.00\t\t\t\t\t\t\t\t0.00\t2.00\t0\t-1\tFALSE\r\nRevive\tEarth\tSpell\t4\t\t\t\tDraw a card from your discard pile.\t1\t1\t1\t1\t\t\t40\t\t2.00\t\t\t\t\t\t\t\t0.00\t1.00\t0\t-1\tFALSE\r\nCircle of Life\tEarth\tEnchantment\t4\t\t\t\tWhen your Minion enters play, you may take a card from your discard pile and put it on top of your deck.\t2\t1\t1\t1\t\t\t18\t\t\t1.00\t\t\t\t\t\t\t0.00\t2.00\t2.00\t0\tFALSE\r\nAdaptation\tEarth\tEnchantment\t3\t\t\t\tAt the beginning of the turn, reveal the top 4 cards of your deck. Discard any of them and put the rest back in any order.\t2\t1\t1\t1\t\t\t46\t\t\t1.00\t\t\t\t\t\t\t0.00\t2.00\t2.00\t0\tFALSE\r\nSymbiosis\tEarth\tEnchantment\t3\t\t\t\tWhen this Minion is about to receive a damage, you may redirect it to another Minion you control.\t2\t1\t1\t1\t\t\t16\t\t\t1.00\t\t\t\t\t\t\t0.00\t2.00\t2.00\t0\tFALSE\r\nHive Mind\tEarth\tEnchantment\t2\t\t\t\tWhen your Minion enters play, draw a card.\t2\t1\t1\t1\t\t\t36\t\t\t1.00\t\t\t\t\t\t\t0.00\t2.00\t2.00\t0\tFALSE\r\nGnome\tEarth\tMinion\t3\t2\t1\t0\tWhen your Minion enters play, put a card in your discard pile on top of your deck.\t2\t1\t1\t1\t\t\t38\t\t\t1.00\t\t\t\t0.75\t0.75\t0.00\t0.75\t2.47\t1.41025641\t0\tFALSE\r\nEarth Elemental\tEarth\tMinion\t3\t3\t0\t0\tWhen your Minion enters play, draw a card.\t2\t1\t1\t1\t\t\t15\t\t\t1.00\t\t\t\t0.00\t0\t0.00\t0.00\t2.12\t2.115384615\t0\tFALSE\r\nJungle Vines\tEarth\tMinion\t3\t1\t1\t1\tYou may put this Minion into play from your discard pile.\t2\t1\t1\t1\t\t\t5\t\t1.00\t\t\t\t\t1.75\t0.75\t1.00\t1.75\t2.23\t0.7051282051\t0\tTRUE\r\nThorny Vines\tEarth\tMinion\t3\t1\t2\t0\tYou may put this Minion into play from your discard pile.\t2\t1\t1\t1\t\t\t62\t\t1.00\t\t\t\t\t1.50\t1.5\t0.00\t1.50\t2.06\t0.7051282051\t0\tTRUE\r\nBark Vines\tEarth\tMinion\t3\t1\t0\t2\tYou may put this Minion into play from your discard pile.\t2\t1\t1\t1\t\t\t17\t\t1.00\t\t\t\t\t1.42\t0\t1.42\t1.42\t2.00\t0.7051282051\t0\tTRUE\r\nKitsune\tEarth\tMinion\t3\t2\t1\t1\tWhen your Minion enters play, look at the top 2 cards of your deck; replace them in any order. Each player discards the top card of their deck.\t2\t1\t1\t1\t\t\t25\t\t\t\t\t\t\t1.75\t0.75\t1.00\t1.75\t2.47\t1.41025641\t0\tFALSE\r\nNature Orb\tEarth\tDevice\t2\t3\t\t\tT: Draw a card. Every player discards the top card of their deck.\t2\t1\t1\t1\t\t\t53\t\t\t\t1.00\t\t\t\t\t\t1.00\t2.12\t2.115384615\t0\tFALSE\r\nRevival Pendant\tEarth\tDevice\t2\t3\t\t\tT: Put a card in your discard pile on top of your deck.\t2\t1\t1\t1\t1\t\t\t\t\t\t1.00\t\t\t\t\t\t1.00\t2.12\t2.115384615\t0\tFALSE\r\nMorph Proxy\tEarth\tDevice\t2\t3\t\t\tT: Put a Minion in play back in your hand. Put another Minion with the same cost into play.\t3\t1\t1\t1\t\t\t31\t\t\t\t1.38\t\t\t\t\t\t1.38\t2.92\t2.115384615\t0\tFALSE\r\nGathering Storm\tAir\tSpell\t3\t\t\t\tReduce energy cost of Spells by 1. Draw a card.\t2\t1\t1\t1\t\t\t69\t2\t2.00\t\t\t\t\t\t\t\t0.00\t1.00\t0\t-1\tFALSE\r\nBird's Eye View\tAir\tSpell\t4\t\t\t\tPick a player. For every Spell you have in play, discard a card you pick from that player's hand. Draw a card.\t1\t1\t1\t1\t\t\t64\t\t2.00\t\t\t\t\t\t\t\t0.00\t1.00\t0\t-1\tFALSE\r\nSonic Boom\tAir\tSpell\t3\t\t\t\tDamage a target by X, where X is the number of spells you have in play. Draw a card.\t1\t1\t1\t1\t\t\t33\t\t2.00\t\t\t\t\t\t\t\t0.00\t1.00\t0\t-1\tFALSE\r\nShock\tAir\tSpell\t4\t\t\t\tDisable a card. Draw a card.\t1\t1\t1\t1\t\t\t30\t\t2.35\t\t\t\t\t\t\t\t0.00\t1.35\t0\t-1\tFALSE\r\nFear\tAir\tSpell\t2\t\t\t\tMove a Minion you control back to the owner's hand. The owner gains the same amount of energy used to summon the Minion. Draw a card.\t1\t1\t1\t1\t\t\t28\t\t2.38\t\t\t\t\t\t\t\t0.00\t1.38\t0\t-1\tFALSE\r\nDeja Vu\tAir\tSpell\t2\t\t\t\tShuffle your discard pile and put it on top of your deck. Draw a card.\t2\t1\t1\t1\t\t\t27\t\t3.00\t\t\t\t\t\t\t\t0.00\t2.00\t0\t-1\tFALSE\r\nMind Splinter\tAir\tEnchantment\t3\t\t\t\tAt the beginning of the turn, you may deal X damage to a target, where X is the number of Spells in play.\t2\t1\t1\t1\t\t\t14\t\t\t0.75\t\t\t\t\t\t\t0.00\t1.50\t2.00\t0\tFALSE\r\nFlight\tAir\tEnchantment\t4\t\t\t\tThis Minion is Flying. (This Minion's attack cannot be blocked.)\t2\t1\t1\t1\t\t\t19\t\t\t1.00\t\t\t\t\t\t\t0.00\t2.00\t2.00\t0\tFALSE\r\nThird Eye\tAir\tEnchantment\t2\t\t\t\tAt the beginning of the turn, you may draw X cards, where X is the number of Spells in play.\t2\t1\t1\t1\t\t\t59\t\t\t1.00\t\t\t\t\t\t\t0.00\t2.00\t2.00\t0\tFALSE\r\nSylph\tAir\tMinion\t2\t2\t1\t0\tFlying. (This Minion's attack cannot be blocked.)\t2\t1\t1\t1\t1\t\t\t\t\t1.00\t\t\t\t0.75\t0.75\t0.00\t0.75\t2.47\t1.41025641\t0\tFALSE\r\nGaruda\tAir\tMinion\t2\t2\t2\t0\tFlying. (This Minion's attack cannot be blocked.)\t4\t1\t1\t1\t\t\t20\t\t\t1.00\t\t\t\t1.50\t1.5\t0.00\t1.50\t3.53\t1.41025641\t0\tFALSE\r\nPoltergeist\tAir\tMinion\t2\t3\t1.00\t0\tThis Minion's attack power is equal to the number of Spells you have in play.\t2\t1\t1\t1\t\t\t54\t\t\t\t\t\t\t0.75\t0.75\t0.00\t0.75\t1.59\t2.115384615\t0\tFALSE\r\nSpell Node\tAir\tDevice\t3\t3\t\t\tT: Reveal the top card of your deck. If it is a spell, put it into play for free. Otherwise, put it in your hand.\t2\t1\t1\t1\t\t\t61\t\t\t1.075\t\t\t\t\t\t\t0.00\t2.27\t2.115384615\t0\tFALSE\r\nHypnocube\tAir\tDevice\t2\t3\t\t\tT: Take control of a Minion with the same summoning cost as the number of Spell you have in play until the end of the current turn.\t2\t1\t1\t1\t\t\t22\t\t\t\t1.00\t\t\t\t\t\t1.00\t2.12\t2.115384615\t0\tFALSE\r\nMist Orb\tAir\tDevice\t2\t3\t\t\tT: Draw a card. Pick a player. Both you and that player take a card from hand and put it on top of the other player’s deck.\t2\t1\t1\t1\t\t\t47\t\t\t\t1.00\t\t\t\t\t\t1.00\t2.12\t2.115384615\t0\tFALSE\r\nHologram\tAir\tDevice\t2\t3\t\t\tT: Pick a Minion. Redirect that Minion's next attack causing up to X damage, where X is the number of Spells in play, to a target of your choice.\t3\t1\t1\t1\t\t\t39\t\t\t\t1.50\t\t\t\t\t\t1.50\t3.17\t2.115384615\t0\tFALSE\r\nLooking Glass\tAir\tDevice\t3\t3\t\t\tT: Look at the top 4 cards of a deck. You may put any of them at the bottom of the deck in any order. Replace the rest of them in any order.\t2\t1\t1\t1\t\t\t49\t\t\t\t1.00\t\t\t\t\t\t1.00\t2.12\t2.115384615\t0\tFALSE\r\nHealing Rain\tWater\tSpell\t3\t\t\t\tFully heal a Minion. Refresh that Minion.\t2\t1\t1\t1\t\t\t12\t\t2.88\t\t\t\t\t\t\t\t0.00\t1.88\t0\t-1\tFALSE\r\nWater Clone\tWater\tSpell\t3\t\t\t\tPick a Minion. While this card is in play, increase its attack by X, where X is the number of Enchants on that Minion. Refresh that Minion.\t2\t1\t1\t1\t\t\t66\t\t2.625\t\t\t\t\t\t\t\t0.00\t1.63\t0\t-1\tFALSE\r\nIce Shield\tWater\tEnchantment\t3\t\t\t\tArmor +1.\t2\t1\t1\t1\t\t\t57\t\t\t0.75\t\t\t\t\t\t\t0.00\t1.50\t2.00\t0\tFALSE\r\nLongevity\tWater\tEnchantment\t3\t\t\t\tLife +X, where X is the number of Enchants on this Minion.\t2\t1\t1\t1\t\t\t50\t\t\t1.13\t\t\t\t\t\t\t0.00\t2.25\t2.00\t0\tFALSE\r\nMomentum\tWater\tEnchantment\t3\t\t\t\tWhen this Minion destroys a Device, you may refresh it.\t3\t1\t1\t1\t\t\t29\t\t\t1.50\t\t\t\t\t\t\t0.00\t3.01\t2.00\t0\tFALSE\r\nChilling Aura\tWater\tEnchantment\t3\t\t\t\tAttack +X, where X is the number of Enchants on this Minion.\t2\t1\t1\t1\t\t\t58\t\t\t1.13\t\t\t\t\t\t\t0.00\t2.25\t2.00\t0\tFALSE\r\nRegeneration\tWater\tEnchantment\t2\t\t\t\tAt the beginning of the turn, this Minion heals one life.\t2\t1\t1\t1\t\t\t9\t\t\t0.75\t\t\t\t\t\t\t0.00\t1.50\t2.00\t0\tFALSE\r\nReflection\tWater\tEnchantment\t2\t\t\t\tAt the beginning of the turn, pick an Enchant on this Minion. This Enchant gains all the abilities of that Enchant.\t2\t1\t1\t1\t\t\t44\t\t\t1.10\t\t\t\t\t\t\t0.00\t2.20\t2.00\t0\tFALSE\r\nClarity\tWater\tEnchantment\t2\t\t\t\tAt the beginning of the turn, draw a card for every Enchant on this Minion.\t3\t1\t1\t1\t\t\t35\t\t\t1.50\t\t\t\t\t\t\t0.00\t3.01\t2.00\t0\tFALSE\r\nIce Golem\tWater\tMinion\t2\t3\t2\t2\tDiscard an Enchant from play or from hand to redirect damage to this Minion.\t6\t1\t1\t1\t\t\t21\t\t\t0.00\t\t\t\t2.92\t1.5\t1.42\t2.92\t6.17\t2.115384615\t0\tFALSE\r\nWater Elemental\tWater\tMinion\t3\t3\t1\t2\tDiscard an Enchant from play or from hand to draw 2 cards.\t6\t1\t1\t1\t1\t\t\t\t\t0.50\t\t\t\t2.17\t0.75\t1.42\t2.17\t5.64\t2.115384615\t0\tFALSE\r\nWater Blob\tWater\tMinion\t2\t5\t2\t0\tDiscard an Enchant from play or from hand to fully heal a Minion.\t5\t1\t1\t1\t\t\t60\t\t\t-0.12\t\t\t\t1.50\t1.5\t0.00\t1.50\t4.87\t3.525641026\t0\tFALSE\r\nApsara\tWater\tMinion\t2\t5\t0\t3\tDiscard an Enchant from play or from hand to refresh a Minion.\t5\t1\t1\t1\t\t\t52\t\t\t0.00\t\t\t\t1.42\t0\t1.42\t1.42\t5.00\t3.525641026\t0\tFALSE\r\nNaga\tWater\tMinion\t3\t5\t1\t1\tDiscard an Enchant from play or from hand to increase this Minion's attack by 2 until the end of the current turn.\t6\t1\t1\t1\t\t\t43\t\t\t0.00\t\t\t\t1.75\t0.75\t1.00\t1.75\t6.17\t3.525641026\t0\tFALSE\r\nAqua Orb\tWater\tDevice\t2\t3\t\t\tT: Pick a Minion. Draw a card for every Enchant on that Minion.\t3\t1\t1\t1\t\t\t10\t\t\t\t1.5\t\t\t\t\t\t1.50\t3.17\t2.115384615\t0\tFALSE\r\nCurative Salve\tWater\tDevice\t3\t3\t\t\tT: Heal a Minion by 1 for every Enchant on that Minion.\t2\t1\t1\t1\t\t\t63\t\t\t\t1.125\t\t\t\t\t\t1.13\t2.38\t2.115384615\t0\tFALSE\r\nIce Trident\tWater\tDevice\t2\t3\t\t\tT: Pick a Minion. Increase that Minion's attack by 1 for every Enchant on that Minion, until the end of the current turn.\t2\t1\t1\t1\t\t\t13\t\t\t\t1.125\t\t\t\t\t\t1.13\t2.38\t2.115384615\t0\tFALSE\r\nRefreshing Jar\tWater\tDevice\t2\t3\t\t\tT: Refresh a Minion.\t3\t1\t1\t1\t\t\t11\t\t\t\t1.5\t\t\t\t\t\t1.50\t3.17\t2.115384615\t0\tFALSE"
   },
   "dataProcessor": {
     "_type": "FunctionObject",
@@ -744,5 +757,217 @@
     "T": "<img class=\"icon\" src=\"{{_imgUrl 'activate.svg'}}\">",
     "E": "<img class=\"icon circled\" src=\"{{_imgUrl 'energy.svg'}}\">"
   },
-  "templateString": "<style>\n  @import url(https://fonts.googleapis.com/css?family=Audiowide);\n  @import url(https://fonts.googleapis.com/css?family=Montserrat);\n  \n  .root {\n    display: flex;\n    position: relative;\n    width: {{_pc.size.width}};\n    height: {{_pc.size.height}};\n    box-sizing: border-box;\n    background: url(\"{{frame _.element}}\"),\n                url(\"{{bg _.type _.element}}\");\n    font-family: 'Montserrat', sans-serif;\n  }\n  \n  .name {\n    font-family: 'Audiowide', cursive;\n    font-size: 3.5rem;\n    text-align: left;\n    color: white;\n    text-shadow: 2px 2px black;\n    position: absolute;\n    left: 75px;\n    top: 75px;\n    width: 619px;\n  }\n  \n  .name .first-letter {\n    font-size: 4.5rem;\n  }\n  \n  .cost {\n    text-align: center;\n    font-size: 6rem;\n    position: absolute;\n    right: 25.5px;\n    top: 47.5px;\n    width: 150px;\n    height: 150px;\n    line-height: 150px;\n    background: url(\"{{_imgUrl \"cost_icon.png\"}}\") center;\n  }\n  \n  .art {\n    position: absolute;\n    left: 77px;\n    top: 172px;\n    width: 675px;\n    height: 392px;\n    background-image: url(\"{{art _.name}}\");\n    background-position: center;\n    background-size: auto 392px;\n    /** background-size: contain; */ /* TODO(gs): html2canvas doesn't support this */\n    background-repeat: no-repeat;\n    border-radius: 17px;\n  }\n  \n  .stats {\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n  }\n  \n  .life, .attack, .armor {\n    font-size: 4rem;\n    color: white;\n    width: 64px;\n    height: 63px;\n    text-align: center;\n    position: absolute;\n    top: 540px;\n    line-height: 63px;\n  }\n  \n  .life {\n    left: 196px;\n  }\n  \n  .attack {\n    left: 354px;\n  }\n  \n  .armor {\n    left: 522px;\n  }\n  \n  .type {\n    width: 320px;\n    height: 64px;\n    position: absolute;\n    right: 165px;\n    top: 985px;\n    line-height: 64px;\n    text-transform: uppercase;\n    text-align: center;\n    font-size: 2rem;\n    color: white;\n  }\n  \n  .description {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 64px;\n    position: absolute;\n    left: 77px;\n    top: 580px;\n    width: 544px;\n    height: 305px;\n  }\n  \n  .description-container {\n    display: flex;\n    align-items: flex-start;\n    flex: 1;\n    font-size: 1.75rem; /** TODO(gs): Use flowtype */\n    font-size: 2rem;\n    line-height: 46px;\n  }\n  \n  .text {\n    flex: 1;\n    text-align: justify;\n  }\n  \n  .template {\n    display: none;\n    width: {{_pc.size.width}};\n    height: {{_pc.size.height}};\n    position: absolute;\n    top: 0;\n    left: 0;\n    opacity: .1;\n  }\n  \n  /* Inline styles */\n  .icon {\n    width: 46px;\n    display: inline-block;\n    vertical-align: bottom;\n  }\n  \n  .tap .icon {\n    height: 46px;\n  }\n  \n  .tap {\n    margin-right: .75em;\n  }\n  \n  .icon.circled {\n    border: 3px solid black;\n    border-radius: 23px;\n  }\n  \n  .stats {\n    background-image: {{#_ifeq _.type \"device\"}}\n                        url(\"{{_imgUrl \"device.png\"}}\"),\n                        url(\"{{stats _.element \"device\"}}\");\n                      {{/_ifeq}}\n                      {{#_ifeq _.type \"minion\"}}\n                        url(\"{{_imgUrl \"minion.png\"}}\"),\n                        url(\"{{stats _.element \"minion\"}}\");\n                      {{/_ifeq}}\n  }\n  \n  .sigil {\n    font-size: 3em;\n    position: absolute;\n    left: 65px;\n    bottom: 67px;\n    text-align: center;\n    width: 83px;\n    height: 83px;\n    line-height: 83px;\n  }\n</style>\n\n<div class=\"root\">\n  <div class=\"name\">{{capitalize _.name}}</div>\n  <div class=\"art\"></div>\n  <div class=\"cost\">{{_.cost}}</div>\n  <div class=\"stats\"></div>\n  <div class=\"type\">{{elem _.element}} &bull; {{_.type}}</div>\n  <div class=\"description\">\n    <div class=\"description-container\">\n      {{#if _.tap}}\n        <p><img class=\"icon tap\" src=\"{{_imgUrl 'activate.svg'}}\"></p>\n      {{/if}}\n      <div class=\"text\">\n        {{{desc _.description}}}\n      </div>\n    </div>\n  </div>\n  <div class=\"sigil\">\n    {{#_ifeq _.element \"ether\"}}\n      <img src=\"{{_imgUrl 'player.svg'}}\">\n    {{else}}\n      {{_.count}}\n    {{/_ifeq}}\n  </div>\n  \n  {{#_ifeq _.type \"device\"}}\n    <div class=\"life\">{{_.life}}</div>\n  {{/_ifeq}}\n  {{#_ifeq _.type \"minion\"}}\n    <div class=\"life\">{{_.life}}</div>\n    <div class=\"attack\">{{_.attack}}</div>\n    <div class=\"armor\">{{_.armor}}</div>\n  {{/_ifeq}}\n</div>\n"
+  "templateString": "<style>
+    @import url(https://fonts.googleapis.com/css?family=Audiowide);
+    @import url(https://fonts.googleapis.com/css?family=Montserrat);
+  
+    .root {
+        display: flex;
+      position: relative;
+      width: {{_pc.size.width}};
+      height: {{_pc.size.height}};
+      box-sizing: border-box;
+      background: url(\"{{frame _.element}}\"),
+                  url(\"{{bg _.type _.element}}\");
+      font-family: 'Montserrat', sans-serif;
+    }
+  
+    .name {
+        font-family: 'Audiowide', cursive;
+      font-size: 3.5rem;
+      text-align: left;
+      color: white;
+      text-shadow: 2px 2px black;
+      position: absolute;
+      left: 75px;
+      top: 75px;
+      width: 619px;
+    }
+  
+    .name .first-letter {
+        font-size: 4.5rem;
+    }
+  
+    .cost {
+        text-align: center;
+      font-size: 6rem;
+      position: absolute;
+      right: 25.5px;
+      top: 47.5px;
+      width: 150px;
+      height: 150px;
+      line-height: 150px;
+      background: url(\"{{_imgUrl \"cost_icon.png\"}}\") center;
+    }
+  
+    .art {
+        position: absolute;
+      left: 77px;
+      top: 172px;
+      width: 675px;
+      height: 392px;
+      background-image: url(\"{{art _.name}}\");
+      background-position: center;
+      background-size: auto 392px;
+      /** background-size: contain; */ /* TODO(gs): html2canvas doesn't support this */
+      background-repeat: no-repeat;
+      border-radius: 17px;
+    }
+  
+    .stats {
+        position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .life, .attack, .armor {
+        font-size: 4rem;
+      color: white;
+      width: 64px;
+      height: 63px;
+      text-align: center;
+      position: absolute;
+      top: 540px;
+      line-height: 63px;
+    }
+  
+    .life {
+        left: 196px;
+    }
+  
+    .attack {
+        left: 354px;
+    }
+  
+    .armor {
+        left: 522px;
+    }
+  
+    .type {
+        width: 320px;
+      height: 64px;
+      position: absolute;
+      right: 165px;
+      top: 985px;
+      line-height: 64px;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2rem;
+      color: white;
+    }
+  
+    .description {
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 64px;
+      position: absolute;
+      left: 77px;
+      top: 580px;
+      width: 544px;
+      height: 305px;
+    }
+  
+    .description-container {
+        display: flex;
+      align-items: flex-start;
+      flex: 1;
+      font-size: 1.75rem; /** TODO(gs): Use flowtype */
+      font-size: 2rem;
+      line-height: 46px;
+    }
+  
+    .text {
+        flex: 1;
+      text-align: justify;
+    }
+  
+    .template {
+        display: none;
+      width: {{_pc.size.width}};
+      height: {{_pc.size.height}};
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: .1;
+    }
+  
+    /* Inline styles */
+    .icon {
+        width: 46px;
+      display: inline-block;
+      vertical-align: bottom;
+    }
+  
+    .tap .icon {
+        height: 46px;
+    }
+  
+    .tap {
+        margin-right: .75em;
+    }
+  
+    .icon.circled {
+        border: 3px solid black;
+      border-radius: 23px;
+    }
+  
+    .stats {
+        background-image: {{#_ifeq _.type \"device\"}}
+                          url(\"{{_imgUrl \"device.png\"}}\"),
+                          url(\"{{stats _.element \"device\"}}\");
+                        {{/_ifeq}}
+                        {{#_ifeq _.type \"minion\"}}
+                          url(\"{{_imgUrl \"minion.png\"}}\"),
+                          url(\"{{stats _.element \"minion\"}}\");
+                        {{/_ifeq}}
+    }
+  
+    .sigil {
+        font-size: 3em;
+      position: absolute;
+      left: 65px;
+      bottom: 67px;
+      text-align: center;
+      width: 83px;
+      height: 83px;
+      line-height: 83px;
+    }
+  </style>
+  <div class=\"root\">
+    <div class=\"name\">{{capitalize _.name}}</div>
+    <div class=\"art\"></div>
+    <div class=\"cost\">{{_.cost}}</div>
+    <div class=\"stats\"></div>
+    <div class=\"type\">{{elem _.element}} &bull; {{_.type}}</div>
+    <div class=\"description\">
+      <div class=\"description-container\">
+        {{#if _.tap}}
+          <p><img class=\"icon tap\" src=\"{{_imgUrl 'activate.svg'}}\"></p>
+        {{/if}}
+        <div class=\"text\">
+          {{{desc _.description}}}
+        </div>
+      </div>
+    </div>
+    <div class=\"sigil\">
+      {{#_ifeq _.element \"ether\"}}
+        <img src=\"{{_imgUrl 'player.svg'}}\">
+      {{else}}
+        {{_.count}}
+      {{/_ifeq}}
+    </div>
+  
+    {{#_ifeq _.type \"device\"}}
+      <div class=\"life\">{{_.life}}</div>
+    {{/_ifeq}}
+    {{#_ifeq _.type \"minion\"}}
+      <div class=\"life\">{{_.life}}</div>
+      <div class=\"attack\">{{_.attack}}</div>
+      <div class=\"armor\">{{_.armor}}</div>
+    {{/_ifeq}}
+  </div>
+  "
 }
